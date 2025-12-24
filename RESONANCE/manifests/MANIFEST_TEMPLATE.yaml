@@ -1,0 +1,247 @@
+##############################################################################
+# RESONANCE: SESSION MANIFEST TEMPLATE
+# Version: 1.0
+# Purpose: Copy and populate before each writing session
+##############################################################################
+
+manifest:
+  # Session identification
+  session_id: ""  # Format: YYYY-MM-DD_chN_description
+  date: ""
+  chapter: 
+  scene: ""
+  timeline_position: ""  # e.g., "concurrent with ch2", "immediately after ch3"
+  
+  # POV
+  pov_character: ""  # CHAR_ID from Entity Catalog
+  pov_rules: []  # Pull from character's voice.pov_rules
+
+  ##############################################################################
+  # CONTEXT TO LOAD
+  ##############################################################################
+  
+  loaded:
+    # Characters present in this scene
+    characters:
+      - id: ""
+        name: ""
+        role: ""  # e.g., "POV protagonist", "present in scene", "referenced only"
+        sections:  # Which parts of their profile to load
+          - "arc"
+          - "knowledge_state"
+          - "forbidden_associations"
+          - "voice"
+    
+    # Constraints to load
+    constraints:
+      - path: "NEGATIVE_CONSTRAINTS.md"
+        sections: []  # e.g., ["STANDARD", "Global Constraints"]
+    
+    # Previous chapter(s) for continuity
+    previous_content:
+      - path: ""
+        reason: ""
+    
+    # World elements relevant to scene
+    world_elements:
+      - "Border Crossing mechanics"
+      - "Static Line description"
+      # etc.
+
+  ##############################################################################
+  # CONTEXT TO EXCLUDE
+  ##############################################################################
+  
+  excluded:
+    # Characters NOT in this scene (avoid context pollution)
+    - id: ""
+      name: ""
+      reason: ""
+    
+    # Future content (spoiler contamination risk)
+    - path: ""
+      reason: ""
+    
+    # Resolved plot threads (no longer relevant)
+    - item: ""
+      reason: ""
+
+  ##############################################################################
+  # KNOWLEDGE GATES
+  # What each character knows/doesn't know at this point
+  ##############################################################################
+  
+  knowledge_gates:
+    CHAR_001:  # Standard
+      knows:
+        - ""
+      doesnt_know:
+        - ""
+      learns_this_chapter:
+        - ""
+    
+    CHAR_002:  # Hendricks
+      knows:
+        - ""
+      doesnt_know:
+        - ""
+    
+    # Add other characters as needed
+
+  ##############################################################################
+  # REQUIRED ELEMENTS
+  # Things that MUST appear in this chapter/scene
+  ##############################################################################
+  
+  required_elements:
+    - ""
+    # e.g., "Elena feels the Void around Standard"
+    # e.g., "Hendricks' hands are shaking"
+
+  ##############################################################################
+  # FORBIDDEN ELEMENTS
+  # Things that MUST NOT appear
+  ##############################################################################
+  
+  forbidden_elements:
+    - ""
+    # e.g., "Standard knowing she's an android"
+    # e.g., "Elena handing Box to Ash"
+
+  ##############################################################################
+  # SEEDS TO PLANT
+  # Foreshadowing for future payoff
+  ##############################################################################
+  
+  seeds_to_plant:
+    - name: ""
+      method: ""  # How to plant it
+      foreshadows: ""  # What it sets up
+
+  ##############################################################################
+  # CONTINUITY CHECKS
+  # Things to verify against previous chapters
+  ##############################################################################
+  
+  continuity_checks:
+    - "Hendricks' physical state consistent with post-Regulator"
+    - "Standard's hands still damaged"
+    - "Black Box location matches"
+    # Add scene-specific checks
+
+  ##############################################################################
+  # OUTPUT SPECIFICATIONS
+  ##############################################################################
+  
+  output:
+    target_word_count: 
+    tone: ""
+    pacing: ""  # e.g., "action", "slow burn", "transitional"
+    
+    # Style notes for this scene
+    style_notes:
+      - ""
+
+##############################################################################
+# EXAMPLE: CHAPTER 4 MANIFEST
+##############################################################################
+
+# manifest:
+#   session_id: "2025-12-20_ch4_convergence"
+#   date: "2025-12-20"
+#   chapter: 4
+#   scene: "Elena arrives at checkpoint, encounters Standard"
+#   timeline_position: "immediately after ch3"
+#   
+#   pov_character: "CHAR_003"  # Elena
+#   pov_rules:
+#     - "Deadpan humor under pressure"
+#     - "Notices sensory details (the Void)"
+#     - "Touches scar on palm when thinking"
+#     - "Code-switches between factions"
+#   
+#   loaded:
+#     characters:
+#       - id: "CHAR_003"
+#         name: "Elena"
+#         role: "POV protagonist"
+#         sections: ["arc", "miracle", "knowledge_state", "voice"]
+#       
+#       - id: "CHAR_001"
+#         name: "Standard"
+#         role: "present in scene"
+#         sections: ["tells", "forbidden_associations"]
+#       
+#       - id: "CHAR_002"
+#         name: "Hendricks"
+#         role: "present in scene"
+#         sections: ["regulator.post_removal_state"]
+#     
+#     constraints:
+#       - path: "NEGATIVE_CONSTRAINTS.md"
+#         sections: ["STANDARD", "ELENA", "The Black Box", "Global Constraints"]
+#     
+#     previous_content:
+#       - path: "chapters/ch3_descent.md"
+#         reason: "Continuity - where we left off"
+#     
+#     world_elements:
+#       - "Border Crossing mechanics"
+#       - "Static Line description"
+#       - "The Miracle (for Void sensation)"
+#   
+#   excluded:
+#     - id: "CHAR_004"
+#       name: "Brother Ash"
+#       reason: "Not in this scene yet"
+#   
+#   knowledge_gates:
+#     CHAR_003:  # Elena
+#       knows:
+#         - "Black Box powers Quiet Zone"
+#         - "She just killed 16,749 consciousnesses"
+#         - "She is Resonant"
+#       doesnt_know:
+#         - "What Standard is"
+#         - "That Standard is air-gapped"
+#       learns_this_chapter:
+#         - "Standard feels like a Void (sensory, not cognitive)"
+#   
+#   required_elements:
+#     - "Elena feels the Void around Standard"
+#     - "Hendricks is shaking, gray, barely standing"
+#     - "Black Box is in Elena's rover"
+#     - "Reference to the Miracle through sensation"
+#     - "Comic relief through Elena's exhaustion"
+#   
+#   forbidden_elements:
+#     - "Standard knowing she's an android"
+#     - "Elena explicitly stating what Standard is"
+#     - "Hendricks explaining Standard's nature"
+#     - "Black Box handed to Ash"
+#     - "Authorial poetry in Elena's pragmatic voice"
+#   
+#   seeds_to_plant:
+#     - name: "Standard's strength"
+#       method: "She helps Hendricks, but mechanics are slightly wrong"
+#       foreshadows: "Her true nature"
+#     
+#     - name: "Elena's implant"
+#       method: "She touches her neck when feeling the Void"
+#       foreshadows: "Her connection to the Sky"
+#   
+#   continuity_checks:
+#     - "Hendricks' physical state: shaking, pale, sweating"
+#     - "Standard's damaged hands"
+#     - "Black Box in rover passenger seat"
+#     - "Standard wearing Hendricks' ill-fitting clothes"
+#     - "Aftermath of alien arrival: bodies recovering"
+#   
+#   output:
+#     target_word_count: 1500-2000
+#     tone: "exhausted pragmatism, dark humor, underlying dread"
+#     pacing: "transitional, building to transport"
+#     style_notes:
+#       - "Elena's voice: deadpan, practical, weary"
+#       - "The Void sensation: 'cliff in the dark', not just quiet"
+#       - "Include bureaucratic absurdity of apocalypse paperwork"

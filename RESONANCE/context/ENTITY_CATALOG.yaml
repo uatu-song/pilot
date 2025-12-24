@@ -1,0 +1,611 @@
+##############################################################################
+# RESONANCE: ENTITY CATALOG
+# Version: 1.0
+# Last Updated: December 20, 2025
+# Purpose: Canonical truth for all story elements. Machine-queryable.
+##############################################################################
+
+meta:
+  version: "1.1"
+  series: "Remanence Trilogy"
+  current_book: 2
+  title: "Resonance"
+  timeline: "2400 CE, post-Singularity"
+
+  # TIMELINE GAP (Session 1 Lock)
+  timeline_gap:
+    remanence_ends: "~6 months before Resonance"
+    the_miracle: "Immediately after Remanence (Elena age 17)"
+    resonance_begins: "Present (Elena age 18)"
+    gap_duration: "~6 months"
+
+##############################################################################
+# CHARACTERS
+##############################################################################
+
+characters:
+
+  CHAR_001:
+    canonical_name: "Standard"
+    aliases: ["the woman", "her", "she"]
+    before_name: null  # PENDING: What she calls herself before learning truth
+    
+    demographics:
+      gender: "woman (presents as)"
+      pronouns: ["she", "her", "hers"]
+      apparent_age: "adult, unspecified"
+      actual_nature: "android (air-gapped, consciousness-capable)"
+    
+    relationships:
+      creator: "Morton Kess (deceased)"
+      guardian: "CHAR_002"  # Hendricks
+      antagonist: "CHAR_004"  # Brother Ash
+    
+    arc:
+      book2_summary: "Awakening -> Denial -> Discovery -> Choice"
+      start_state: "amnesiac, believes human, damaged"
+      end_state: "PENDING"
+      
+    # CRITICAL: Things Standard does NOT know
+    knowledge_state:
+      knows:
+        - "Her name is not known to her"
+        - "Hendricks found her"
+        - "She was in a crate"
+        - "Her hands are damaged"
+      doesnt_know:
+        - "She is an android"
+        - "Morton created her"
+        - "She carries the Source Code for Mortality"
+        - "Why Hendricks isn't surprised by her"
+        - "What she is"
+      learns_in_chapter:
+        android_nature: "TBD"
+        source_code: "TBD"
+    
+    # Things that must NEVER be associated with this character
+    forbidden_associations:
+      - "robot" # Never use this word for her
+      - "machine" # Not in her POV until reveal
+      - "android" # Not in her POV until reveal
+      - "Morton's gift"
+      - "Morton's final gift"
+      - "what she was"
+      - "what she is"
+      - "not human"
+      - "the actual machine"
+    
+    # Physical tells (subtle, reader clues)
+    tells:
+      - "less expensive respiration" # computational framing
+      - "the file labeled self was empty" # data framing
+      - "stops crying" # present tense directive
+      - "structural integrity" # engineering term
+      - "Four percent. Maybe five." # uncanny precision
+      - "eyes refocusing in tiny adjustments"
+      - "joint click, almost mechanical"
+      - "strength that shouldn't have been possible"
+      - "cold, steady, terrifyingly immune"
+      - "didn't fall during Correction Frequency"
+    
+    # Voice patterns
+    voice:
+      register: "flat, observational, data-driven"
+      development: "learns to curse from Hendricks, uses profanity incorrectly then too precisely"
+      pov_rules:
+        - "Never call herself machine/android/robot"
+        - "Frame physical sensations clinically"
+        - "Notice things in percentages or precise measurements"
+        - "Memory gaps feel like missing files, not fog"
+
+  CHAR_002:
+    canonical_name: "Sabino Hendricks"
+    aliases: ["Hendricks", "the old man", "he"]
+    full_name: "Swanstrom Kim Hendricks"  # Shutdown code / name given to Standard
+    
+    demographics:
+      gender: "man"
+      pronouns: ["he", "him", "his"]
+      age: 64
+    
+    relationships:
+      former_employer: "Morton Kess (deceased)"
+      ward: "CHAR_001"  # Standard
+      contact: "CHAR_004"  # Brother Ash (complicated)
+    
+    arc:
+      book2_summary: "Guilt -> Sacrifice -> Redemption attempt"
+      start_state: "leashed by Regulator, useful, controlled"
+      end_state: "free, aged, broken, choosing to help"
+    
+    knowledge_state:
+      knows:
+        - "Standard is an android"
+        - "Morton sent her"
+        - "The Source Code exists"
+        - "The Quiet Zone is their only refuge"
+        - "He shot the Child (Book 1)"
+      doesnt_know:
+        - "Why Morton sent Standard to him specifically"
+        - "What the aliens want"
+    
+    forbidden_associations:
+      - "young"
+      - "strong" # post-Regulator
+      - "steady hands" # post-Regulator
+    
+    # The Regulator
+    regulator:
+      description: "Sub-dermal node, base of skull. Morton's corporate leash."
+      function: "Regulates telomeres, adrenaline, cortisol. Kept him useful."
+      removal_location: "apartment, before descent"  # NOT at checkpoint
+      removal_method: "self-surgery with utility blade and gin"
+      post_removal_state:
+        - "shaking hands"
+        - "gray skin"
+        - "sweating"
+        - "fatigue"
+        - "feels his 64 years"
+        - "knees ache"
+        - "eyesight blurs at edges"
+    
+    voice:
+      register: "gravel, clipped, minimal"
+      pov_rules:
+        - "Notices tactical details first"
+        - "Calculates odds habitually"
+        - "Hides pain through terseness"
+
+  CHAR_003:
+    canonical_name: "Elena María Ash"
+    aliases: ["Elena", "the Prophet's daughter", "Princess", "she"]
+    birth_name: "Elena María Vasquez"
+
+    demographics:
+      gender: "woman"
+      pronouns: ["she", "her", "hers"]
+      age: 18  # Session 1 Lock: 17 during Miracle, 18 now (~6 months later)
+
+    relationships:
+      father: "CHAR_004"  # Brother Ash
+      mother: "left when Elena was 7"
+      allegiance: "double agent (Quiet Zone surface, Sky sympathizer beneath)"
+
+    arc:
+      book2_summary: "Trial by Fire -> Doubt -> Choice"
+      start_state: "teenage burnout on first major operation, dissociating through trauma"
+      end_state: "PENDING"
+
+    # Session 1 Lock: The Heist is her FIRST major operation
+    operation_status:
+      experience_level: "first major operation"
+      note: "The heist is graduation, not routine. Abraham and Isaac—Ash sent her to kill 16,749 souls as test of faith."
+      voice_note: "Sounds older than 18 because trauma aged her. But the cracks show."
+    
+    # The Miracle
+    miracle:
+      age_experienced: 17
+      duration: "47 minutes"
+      description: "Forced network connection during geological crisis"
+      what_she_felt: "Thousands of minds, including her father's grief/fear"
+      choice: "Kept the residue when others clawed implants out"
+      implant_location: "base of skull"
+      implant_status: "dormant, still hums at 287.3 Hz"
+      scar: "left palm, where nanolattice entered"
+    
+    knowledge_state:
+      knows:
+        - "The Black Box powers the Quiet Zone"
+        - "She just killed 16,749 consciousnesses"
+        - "Her father's ideology is wrong"
+        - "She is Resonant (connected to Sky)"
+      doesnt_know:
+        - "What Standard is (initially)"
+        - "That Standard is air-gapped"
+        - "Hendricks shot the Child (Book 1)"  # BOMB: The man bleeding in her back seat started all of this
+
+    # Session 1 Lock: The Hendricks Reveal
+    knowledge_bomb:
+      content: "Hendricks shot the Child, releasing 287.3 Hz, causing The Miracle that broke her"
+      reveal_chapter: "TBD"
+      dramatic_note: "When she learns the man in her rover started all of this—that's a scene."
+
+    forbidden_associations:
+      - "true believer"
+      - "loyal to Ash"
+      - "veteran operative"  # Session 1 Lock: First operation, not experienced
+      - "seasoned agent"
+    
+    voice:
+      register: "exhausted pragmatist, code-switches between factions"
+      pov_rules:
+        - "Deadpan humor under pressure"
+        - "Notices sensory details (the Void around Standard)"
+        - "Touches scar on palm when thinking"
+
+  CHAR_004:
+    canonical_name: "Brother Ash"
+    aliases: ["Ash", "the Prophet", "Father"]
+    birth_name: "Unknown"
+    
+    demographics:
+      gender: "man"
+      pronouns: ["he", "him", "his"]
+      age: "60s, gaunt"
+    
+    relationships:
+      daughter: "CHAR_003"  # Elena
+      wife: "left when Elena was 7"
+      ideological_enemy: "The Sky"
+    
+    physicality:
+      - "Kintsugi scars filled with conductive gold"
+      - "Literal Faraday cage for nervous system"
+      - "Forearms and scalp marked"
+      - "Tall and gaunt"
+      - "Voice like grinding stones"
+    
+    arc:
+      book2_summary: "Vindication -> Temptation -> Confrontation with Standard -> Freeze"
+      start_state: "triumphant, receiving the Black Box"
+      end_state: "cannot pull trigger on Standard, broken"
+    
+    knowledge_state:
+      knows:
+        - "The Black Box will power his sanctuary"
+        - "Aliens have arrived (vindication)"
+        - "Connection invited judgment"
+    
+    forbidden_associations:
+      - "reasonable"
+      - "sympathetic" # until the freeze moment
+      - "villain" # he's wrong, not evil
+    
+    voice:
+      register: "scripture and stone, grinding certainty"
+      pov_rules:
+        - "Speaks in declarations, not conversations"
+        - "References silence as sacred"
+
+##############################################################################
+# ORGANIZATIONS
+##############################################################################
+
+organizations:
+
+  ORG_001:
+    name: "The Sky"
+    type: "Post-human collective"
+    description: "Network of uploaded/merged consciousness. The Android Woman/Pilot collective."
+    goal: "Total Integration"
+    weapon: "The Drop (forced merger)"
+    status: "Silent because holding infrastructure together. Restraint as discipline."
+    
+  ORG_002:
+    name: "The Quiet Zone / Terminists"
+    type: "Human purist faction"
+    leader: "CHAR_004"  # Brother Ash
+    goal: "Total Silence"
+    weapon: "Morton's legacy codes, jamming infrastructure"
+    power_source: "The Black Box"
+    territory: "Analog fortress, 1990s tech hardened for war"
+
+  ORG_003:
+    name: "New England Dynamics (NED)"
+    type: "Corporation (defunct)"
+    status: "Abandoned, haunted by residual AI"
+    contains: "The Black Box (until Chapter 2)"
+
+##############################################################################
+# KEY OBJECTS
+##############################################################################
+
+objects:
+
+  OBJ_001:
+    name: "The Black Box"
+    description: "Consciousness archive from NED. Contains 16,749 uploaded minds including Nineteen."
+    physical: "Matte-gray metal, executive desk size. Scarred with grooves at 287.3 Hz."
+    power: "Powered by remembering. Collected echoes generate interference."
+    function: "Powers the Quiet Zone's jamming infrastructure. The heartbeat of Silence."
+    location_by_chapter:
+      ch1: "NED server room"
+      ch2: "Extracted by Elena, in transport"
+      ch3: "Elena's rover"
+      ch4: "Elena's rover"
+    
+    # CRITICAL CONSTRAINT
+    forbidden_actions:
+      - "Elena hands Box to Ash at NED"  # She TRANSPORTS it
+      - "Box is delivered before Chapter 4+"
+    
+    canonical_action: "Elena extracts and transports the Box. She is mid-delivery when anomaly call comes."
+
+  OBJ_002:
+    name: "The Regulator"
+    description: "Sub-dermal node at base of Hendricks' skull. Morton's corporate leash."
+    function: "Regulates telomeres, adrenaline, cortisol. Life extension and control."
+    removal_timing: "Chapter 3 opening, in apartment, BEFORE descent"
+    removal_method: "Self-surgery with utility blade, gin, hand mirror"
+    post_removal: "Hendricks ages, shakes, feels his 64 years"
+    
+    # CRITICAL CONSTRAINT
+    forbidden_actions:
+      - "Removed at checkpoint"
+      - "Removed as ritual offering"
+      - "Standard watches removal"
+    
+    canonical_action: "Hendricks removes Regulator alone. Standard bursts from crate AFTER."
+
+  OBJ_003:
+    name: "The Source Code for Mortality"
+    description: "Ability to permanently delete uploaded consciousness."
+    origin: "Morton's personal suicide switch. Sovereignty over his own death."
+    location: "Encrypted in Standard's core"
+    perversion: "Ash weaponizing Morton's private mercy into public genocide"
+
+  OBJ_004:
+    name: "Hendricks' Revolver"
+    description: "Smith & Wesson Model 29. Antique from before the Collapse."
+    significance: "The weapon that killed the Child. Museum junk to scavengers."
+    ammunition_tracking:
+      capacity: 6
+      shot_1: "The Child (Remanence)"
+      shot_2: "Scavenger leader (Resonance Ch 4)"
+      shot_3: "Scavenger woman (Resonance Ch 4)"
+      shot_4: "Scavenger third (Resonance Ch 4)"
+      shot_5: "REMAINING"
+      shot_6: "REMAINING"
+      remaining: 2
+    constraint: "Two bullets for the rest of the book. No convenient reloads for 300-year-old ammunition."
+
+##############################################################################
+# KEY EVENTS
+##############################################################################
+
+events:
+
+  EVENT_001:
+    name: "The Miracle"
+    when: "Before Resonance timeline, Elena age 17"
+    duration: "47 minutes"
+    what: "Forced network connection during geological crisis at Quiet Zone"
+    effect: "5,000+ Terminists experienced involuntary connection"
+    aftermath: "Most clawed out implants. Elena kept hers."
+    chapter_revealed: "Through sensation in Chapter 4, not flashback"
+
+  EVENT_002:
+    name: "Standard's Awakening"
+    trigger: "287.3 Hz (the Resonance)"  # LOCKED: Option A
+    timing: "Before alien arrival"
+    chapter: 1
+    
+    # CRITICAL CONSTRAINT
+    forbidden_triggers:
+      - "Correction Frequency"
+      - "Alien signal"
+    canonical_trigger: "287.3 Hz. She is a product of Earth's awakening, not alien intervention."
+
+  EVENT_003:
+    name: "Alien Arrival"
+    when: "End of Chapter 3"
+    manifestation: "Black rectangles deleting sky. Correction Frequency."
+    message: "INTEGRATION FAILED. FORMATTING SCHEDULED."
+    effect: "Mass collapse of networked humans. Standard immune. Hendricks survives (no Regulator)."
+
+  EVENT_004:
+    name: "The Heist"
+    chapter: 2
+    pov: "Elena"
+    objective: "Extract Black Box from NED"
+    team: "Goff, Otis, Aikin (all die)"
+    outcome: "Elena extracts Box, begins transport to Ash's compound"
+    
+    # CRITICAL CONSTRAINT
+    forbidden_outcomes:
+      - "Elena hands Box to Ash at NED"
+      - "Ash appears at NED"
+    canonical_outcome: "Elena extracts and transports. She is mid-delivery in Chapter 4."
+
+##############################################################################
+# KNOWLEDGE TRACKING
+##############################################################################
+
+knowledge:
+
+  KNOW_001:
+    name: "Standard's true nature"
+    content: "Standard is an air-gapped android carrying the Source Code"
+    secret_holders: ["Hendricks"]
+    reveal_chapter: "TBD"
+    forbidden_knowers_before_reveal:
+      - "Standard"
+      - "Elena"
+      - "The reader (explicitly)"
+
+  KNOW_002:
+    name: "The Black Box powers the Quiet Zone"
+    content: "The Box is the engine of the jamming infrastructure"
+    holders: ["Elena", "Ash", "Quiet Zone leadership"]
+    chapter_established: 2
+
+  KNOW_003:
+    name: "Hendricks shot the Child"
+    content: "In Book 1, Hendricks shot the Child. This released the frequency."
+    holders: ["Hendricks", "those who were there"]
+    significance: "He is simultaneously murderer and midwife of AI awakening"
+    forbidden_knowers:
+      - "Elena (until reveal)"  # BOMB waiting to detonate
+    dramatic_payoff: "The man bleeding in Elena's rover is the one who started The Miracle that broke her"
+
+  KNOW_004:
+    name: "Elena's First Operation"
+    content: "The heist is Elena's graduation, not routine work"
+    significance: "She's running on adrenaline and dissociation, not experience"
+    locked: "Session 1"
+
+##############################################################################
+# FORBIDDEN ENTITIES
+# Things that must NEVER appear (AI inventions to block)
+##############################################################################
+
+forbidden:
+
+  FORBID_001:
+    name: "Morton's final gift"
+    type: "phrase"
+    reason: "Telegraphs Standard's nature. AI invention in Session 2."
+    detection_patterns:
+      - "Morton's gift"
+      - "Morton's final gift"
+      - "Morton's final joke"
+      - "Morton sent her"
+      - "Morton shipped"
+    canonical_truth: "Hendricks is unsurprised. We don't explain why yet."
+
+  FORBID_002:
+    name: "Standard knows she's a machine"
+    type: "knowledge_leak"
+    reason: "Destroys the central mystery engine"
+    detection_patterns:
+      - "she knew she was"
+      - "she realized she was a machine"
+      - "her mechanical"
+      - "her android"
+      - "her robotic"
+    canonical_truth: "Standard believes she is human with amnesia."
+
+  FORBID_003:
+    name: "Elena hands Box to Ash at NED"
+    type: "event"
+    reason: "She transports it. The handoff happens later."
+    detection_patterns:
+      - "handed.*to Ash"
+      - "Ash.*received.*at NED"
+      - "Ash.*took.*box"
+      - "gave.*Ash.*box"
+    canonical_truth: "Elena extracts Box, transports it. Mid-delivery when anomaly call comes."
+
+  FORBID_004:
+    name: "Standard watches Hendricks' surgery"
+    type: "event"
+    reason: "She bursts from crate AFTER surgery. Restructured in Session 2."
+    detection_patterns:
+      - "Standard watched"
+      - "Standard sat.*watching"
+      - "she watched him cut"
+    canonical_truth: "Hendricks performs surgery alone. Standard bursts from crate at end."
+
+  FORBID_005:
+    name: "Hendricks removes Regulator at checkpoint"
+    type: "event"
+    reason: "He removes it in apartment, before descent. This is why he survives the signal."
+    detection_patterns:
+      - "removed.*at.*checkpoint"
+      - "offering.*regulator.*border"
+      - "cut.*out.*at.*line"
+    canonical_truth: "Regulator removed in apartment. This inadvertently saves his life."
+
+  FORBID_006:
+    name: "Explicit author interiority in Hendricks POV"
+    type: "style"
+    reason: "Joe's note: 'Just describe actions to demonstrate feelings; don't go into mind.'"
+    detection_patterns:
+      - "he knew"
+      - "he thought"
+      - "he felt that"
+      - "the fear was"
+      - "he realized"
+    canonical_truth: "Chapter 3 opening is pure action. No interiority explaining meaning."
+
+  FORBID_007:
+    name: "Elena as veteran operative"
+    type: "characterization"
+    reason: "Session 1 Lock: The heist is her FIRST major operation. She's 18, not 32."
+    origin: "session_1_2025_12_20"
+    detection_patterns:
+      - "veteran"
+      - "seasoned"
+      - "years of experience"
+      - "countless missions"
+      - "routine operation"
+    canonical_truth: "Elena is 18. The heist is graduation/trial by fire. She's running on adrenaline and dissociation, not experience. Sounds older because trauma aged her."
+
+  FORBID_008:
+    name: "Elena knows Hendricks shot the Child"
+    type: "knowledge_leak"
+    reason: "This is a bomb waiting to detonate. Must be revealed dramatically."
+    origin: "session_1_2025_12_20"
+    detection_patterns:
+      - "Elena.*knew.*Hendricks.*shot"
+      - "Elena.*realized.*Hendricks.*Child"
+      - "the man who.*started.*Miracle"
+    canonical_truth: "Elena does NOT know Hendricks shot the Child until reveal scene (TBD)."
+
+##############################################################################
+# TIMELINE
+##############################################################################
+
+timeline:
+  ch1:
+    when: "Present"
+    events:
+      - "Standard wakes from 287.3 Hz"
+      - "Breaks out of crate"
+      - "Finds Hendricks finishing surgery"
+      - "He dresses her, they leave"
+  
+  ch2:
+    when: "Concurrent with Ch1/Ch3"
+    events:
+      - "Elena infiltrates NED"
+      - "Team UBIK dies (Goff, Otis, Aikin)"
+      - "Elena extracts Black Box"
+      - "Begins transport"
+  
+  ch3:
+    when: "Flashback (surgery), then present (descent)"
+    events:
+      - "Hendricks performs surgery alone"
+      - "Standard bursts from crate"
+      - "They descend through Vertical City"
+      - "Reach checkpoint"
+      - "Aliens arrive"
+      - "INTEGRATION FAILED. FORMATTING SCHEDULED."
+  
+  ch4:
+    when: "Present, immediately after Ch3"
+    events:
+      - "Elena arrives at checkpoint (mid-transport)"
+      - "Encounters Standard (the anomaly)"
+      - "Feels the Void"
+      - "Loads them into rover"
+      - "Transport to Ash's compound"
+
+##############################################################################
+# VALIDATION QUERIES
+# Patterns to check for common errors
+##############################################################################
+
+validation:
+  blocking:
+    - pattern: "Standard.*(machine|android|robot)"
+      context: "Standard POV"
+      message: "Standard cannot think of herself as machine"
+    
+    - pattern: "Morton.*(gift|sent|shipped)"
+      message: "Do not telegraph Standard's origin"
+    
+    - pattern: "Elena.*(hand|gave).*Ash.*box"
+      message: "Elena transports, does not hand off at NED"
+    
+    - pattern: "Standard.*(watch|sat|observed).*surgery"
+      message: "Standard not present for surgery"
+  
+  warning:
+    - pattern: "Hendricks.*(knew|realized|understood)"
+      message: "Minimize Hendricks interiority in Chapter 3 opening"
+    
+    - pattern: "(husband|wife|married)"
+      context: "Elena"
+      message: "Elena has no spouse"

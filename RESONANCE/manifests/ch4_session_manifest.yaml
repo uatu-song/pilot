@@ -1,0 +1,197 @@
+##############################################################################
+# RESONANCE: CHAPTER 4 SESSION MANIFEST
+# Session ID: 2025-12-20_ch4_convergence
+# Created: December 20, 2025
+##############################################################################
+
+manifest:
+  session_id: "2025-12-20_ch4_convergence"
+  date: "2025-12-20"
+  chapter: 4
+  title: "The Convergence"
+  timeline_position: "Minutes after Alien Arrival"
+  
+  pov_character: "CHAR_003"  # Elena
+  pov_rules:
+    - "Exhausted pragmatist voice"
+    - "Deadpan humor under pressure"
+    - "Code-switches between factions"
+    - "Touches scar on palm when thinking"
+    - "NOT authorial poetry—practical, weary"
+
+  ##############################################################################
+  # CONTEXT TO LOAD
+  ##############################################################################
+  
+  loaded:
+    characters:
+      - id: "CHAR_003"
+        name: "Elena"
+        role: "POV Protagonist"
+        state: "Driving the Rover. Has Black Box. Feeling the Void. Exhausted."
+        sections:
+          - "arc"
+          - "miracle"
+          - "knowledge_state"
+          - "voice"
+      
+      - id: "CHAR_001"
+        name: "Standard"
+        role: "Passenger / Anomaly"
+        state: "Silent. Staring at hands. Studying Elena. Does not know what she is."
+        sections:
+          - "tells"
+          - "forbidden_associations"
+          - "voice"
+      
+      - id: "CHAR_002"
+        name: "Hendricks"
+        role: "Passenger / Liability"
+        state: "Bleeding out. Shaking. Barely conscious. Suspicious of Elena."
+        sections:
+          - "regulator.post_removal_state"
+          - "knowledge_state"
+    
+    constraints:
+      - path: "NEGATIVE_CONSTRAINTS.md"
+        sections:
+          - "STANDARD"
+          - "ELENA"
+          - "HENDRICKS"
+          - "The Black Box"
+          - "Global Constraints"
+    
+    previous_content:
+      - path: "chapters/ch3_descent.md"
+        reason: "Continuity - where we left off (alien arrival, checkpoint chaos)"
+    
+    environmental_conditions:
+      - "The Sky is Redacted (Black Rectangles deleting clouds)"
+      - "The Rover interior (Diesel, steel, cramped, analog)"
+      - "The Black Box is humming (287.3 Hz physical vibration)"
+      - "Aftermath of Correction Frequency (bodies recovering, moans, chaos)"
+      - "Checkpoint guards rattled, scared"
+
+  ##############################################################################
+  # CONTEXT TO EXCLUDE
+  ##############################################################################
+  
+  excluded:
+    - id: "CHAR_004"
+      name: "Brother Ash"
+      reason: "Not in this scene. He is at the destination (compound)."
+    
+    - path: "chapters/ch5+.md"
+      reason: "Future content, spoiler contamination risk"
+
+  ##############################################################################
+  # KNOWLEDGE GATES
+  ##############################################################################
+  
+  knowledge_gates:
+    CHAR_003:  # Elena
+      knows:
+        - "The Box is the Engine (powers Quiet Zone)"
+        - "She just killed 16,749 consciousnesses"
+        - "Standard feels like a Void (The Miracle memory triggered)"
+        - "The aliens have arrived (Formatting Scheduled)"
+        - "Hendricks cut something out of his neck"
+      doesnt_know:
+        - "Standard carries the Mortality Code"
+        - "Standard is air-gapped (knows she's quiet, not why)"
+        - "What Standard actually is (android)"
+      learns_this_chapter:
+        - "Standard feels like a Void (sensory, not cognitive)"
+        - "Standard's strength is wrong (mechanics, not power)"
+    
+    CHAR_002:  # Hendricks
+      knows:
+        - "Standard is an android"
+        - "Elena is Ash's daughter"
+      doesnt_know:
+        - "Elena is a Double Agent (Resonant sympathizer)"
+    
+    CHAR_001:  # Standard
+      knows:
+        - "She didn't fall when others did"
+        - "Something is wrong with her"
+      doesnt_know:
+        - "She is a machine"
+        - "Why she's immune"
+
+  ##############################################################################
+  # REQUIRED ELEMENTS
+  ##############################################################################
+  
+  required_elements:
+    - "Elena feels the Void around Standard (sensory, visceral)"
+    - "The physical weight of the Black Box between them (humming, present)"
+    - "Hendricks' physical degradation (shaking, gray, barely conscious)"
+    - "Standard wearing Hendricks' ill-fitting clothes"
+    - "Standard's damaged hands (raw, torn)"
+    - "Reference to The Miracle through sensation (not flashback)"
+    - "Comic relief through Elena's exhaustion (bureaucratic absurdity)"
+    - "At least one guard staring at Standard (she didn't fall)"
+    - "Elena makes a choice to take them (tactical, not charitable)"
+
+  ##############################################################################
+  # FORBIDDEN ELEMENTS
+  ##############################################################################
+  
+  forbidden_elements:
+    - "Elena revealing her Resonant nature to them explicitly"
+    - "Standard acting robotic or using tech jargon"
+    - "Standard knowing she's an android"
+    - "Ash appearing in this scene"
+    - "Hendricks explaining Standard's nature"
+    - "Authorial poetry in Elena's pragmatic voice"
+    - "Black Box handed to Ash (she's transporting, not delivering yet)"
+    - "Morton's gift / Morton's final gift"
+    - "Standard described as 'machine' or 'android' in her POV"
+
+  ##############################################################################
+  # SEEDS TO PLANT
+  ##############################################################################
+  
+  seeds_to_plant:
+    - name: "Standard's strength"
+      method: "She helps Hendricks into rover, but mechanics are slightly wrong"
+      foreshadows: "Her true nature"
+    
+    - name: "Elena's implant"
+      method: "She touches her neck when feeling the Void"
+      foreshadows: "Her connection to the Sky, double agent status"
+    
+    - name: "The Black Box's presence"
+      method: "It hums. Standard doesn't react to it. Elena does."
+      foreshadows: "Standard is air-gapped, can't hear the frequency"
+
+  ##############################################################################
+  # CONTINUITY CHECKS
+  ##############################################################################
+  
+  continuity_checks:
+    - "Hendricks' physical state: shaking, pale, sweating, bleeding"
+    - "Standard's damaged hands (raw, torn, two nails missing)"
+    - "Standard wearing Hendricks' ill-fitting clothes"
+    - "Black Box in rover (she was transporting when call came)"
+    - "Aftermath of alien arrival: bodies recovering, chaos"
+    - "Standard stood while everyone else fell"
+    - "Hendricks grabbed barricade to stay upright (painful, not fatal)"
+
+  ##############################################################################
+  # OUTPUT SPECIFICATIONS
+  ##############################################################################
+  
+  output:
+    target_word_count: 1500-2000
+    tone: "exhausted pragmatism, dark humor, underlying dread"
+    pacing: "transitional, building to transport"
+    
+    style_notes:
+      - "Elena's voice: deadpan, practical, weary"
+      - "The Void sensation: 'cliff in the dark', not just quiet"
+      - "Include bureaucratic absurdity of apocalypse paperwork"
+      - "Hendricks barely speaks—too weak"
+      - "Standard observes, catalogs, doesn't understand"
+      - "The Black Box is PRESENT—heavy, humming, cargo"
