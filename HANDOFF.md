@@ -1,8 +1,8 @@
 # SESSION HANDOFF
 
 **Last Updated:** 2025-12-24
-**Last Session:** Session 7 (In Progress)
-**Status:** Active development on Book 2 — Chapters 1-15 complete (~28,000 words)
+**Last Session:** Session 9 (Complete)
+**Status:** Active development on Book 2 — Chapters 1-16 complete (~30,000 words)
 
 ---
 
@@ -437,18 +437,21 @@ python query.py validate ../chapters/CHAPTER.md
 | 11 | The Craftsman | Ash | ~2,800 | Complete |
 | 12 | The Quiet | Standard | ~1,800 | Complete |
 | 13 | **Forty Years** | Hendricks | ~2,100 | Complete |
-| 14 | The Pit | Standard | ~1,750 | Complete |
-| 15 | The Surface | Standard | ~1,900 | Complete |
-| **Total** | | | **~27,850** | **Act II In Progress** |
+| 14 | **The Execution** | Standard/Elena | ~2,400 | **Rewritten** |
+| 15 | **Five Minutes Earlier** | Standard | ~2,200 | **Rewritten** |
+| 16 | **The Icon** | Standard | ~2,065 | Complete |
+| **Total** | | | **~29,915** | **Act II In Progress** |
 
-### End State (Ch15)
-- **Standard:** In Rover, road ahead deleted, Geometry hovering above absence
-- **Hendricks:** Barely conscious in back seat, hand twitching toward missing revolver
-- **Elena:** At the wheel, cover blown, heading toward The Resonant
-- **Ash:** Compound waking to hunt — has the revolver, has the Box
-- **Black Box:** In tower — TRUE PURPOSE REVEALED: camouflage (16,749 souls scream "already taken")
-- **Sky:** Actively formatting Earth — road literally removed, settlements deleted
-- **Revolver:** In Ash's armory — only weapon Geometry can't shut down
+### End State (Ch16)
+- **Standard:** At waystation, worshipped as "The Icon," playing a role she doesn't understand
+- **Hendricks:** Unconscious in VTOL cargo bay
+- **Elena:** At waystation, using Standard's celebrity for fuel/supplies, pragmatist doing what she hates
+- **Configuration Four:** On comms, name-teasing (Sofia, Svetlana, Sable, Simone, Seraphina), Standard stops correcting
+- **Template 3 Bot:** Companion bot with Standard's face, conscious before Miracle, chose to stay — "I'm choosing to live. That's not the same thing."
+- **Shutdown Code Planted:** "Pemberton Lark Castillo" — Standard felt pressure, Elena saw her react, filed it away
+- **Black Box:** With Ash in tower
+- **Sky:** Actively formatting Earth — Geometry visible on horizon
+- **Revolver:** With Ash
 
 ### Chapter 12 Addition (This Session)
 - **Hendricks POV chapter** added to fill in his backstory
@@ -505,6 +508,105 @@ python query.py validate ../chapters/CHAPTER.md
 - Does Elena reveal where they're really going?
 - POV: Standard observing, or switch to Elena for the reveal?
 - How do they get around the deleted road?
+
+---
+
+## SESSION 8 SUMMARY
+
+**Date:** 2025-12-24
+
+### Accomplished
+1. **Chapter 14 completely rewritten** — "The Execution"
+   - New structure: Armory → Alley → Motor pool → Elena through crowd → Firefight → Rapture
+   - Elena's grace moment: saves Hendricks because he *doesn't* deserve it ("That's the point")
+   - Firefight: back-to-back shooting, displacement to cover, ammo running out
+   - Ash on megaphone countdown: "TEN SECONDS... FIVE... THREE... ONE."
+   - Standard's descent: miracle framing, congregation on knees, guards weeping
+   - Ending: "His mouth is still moving. But no one is reading his lips anymore."
+
+2. **Chapter 15 completely rewritten** — "Five Minutes Earlier"
+   - Configuration Four introduced: groggy, chatty, names Standard "Sofia"
+   - Slow ascent frustration, rappelling argument
+   - Key snark: "You demonstrated everything. Nice and slow. Easy to follow."
+   - The jump, fall, impact (knee pops), lift (shoulders scream), ascent (arms nearly rip)
+   - Ash signaling (not frozen) — he's not fooled
+   - Drone fight: Elena on gun, Standard flies, "Hold it steady!" / "No."
+   - Four's panic: "My turning radius is approximately 'eventually.'"
+   - Ending: "I hate you. I want that on the record." / Geneva, 3000km, Geometry ahead
+
+3. **Deprecated files deleted:**
+   - RESONANCE_CH15_THE_SURFACE.txt
+   - resonance_ch14_the_schism_v2.md
+   - resonance_ch15_the_brick.md
+   - REVISION_BRIEF_religiosity_rescue.yaml
+
+4. **YAML updated:**
+   - Added "ozone" to overused words constraint (all ozone references removed from chapters)
+
+### Key Beats Locked (Session 8)
+- **Elena's Grace:** "And Hendricks doesn't deserve this. That's the point."
+- **"You know what I did."** / **"Yeah, we all have our days."**
+- **Configuration Four:** "Sofia" nickname, grudging respect
+- **Standard flies:** learns from Four's demonstration instantly (tell)
+- **The Rapture:** Not mechanics — miracle. Congregation on knees, Ash alone.
+- **"I hate you. I want that on the record."**
+
+### Style Notes
+- Chapters now match voice of Ch 1-13 (flowing prose, interiority, not staccato)
+- Mixed POV in Ch14 (Standard opening, Elena rescue) is intentional stylistic choice
+- Four's voice: dry, tired, panicked, impressed despite himself
+
+### Ready for Next Session
+- **Chapter 16:** The journey to Geneva through dying world
+- Configuration Four is now a character
+- The VTOL is damaged (structural fatigue)
+- Standard's knee is injured
+- 3,000 km through hostile airspace
+
+---
+
+## SESSION 9 SUMMARY
+
+**Date:** 2025-12-24
+
+### Accomplished
+1. **Chapter 16 written** — "The Icon"
+   - VTOL fuel crisis (31%, 400km range)
+   - Elena's companion bot plan — Standard refuses
+   - Smash cut: both dressed for it anyway, Elena furious
+   - Waystation arrival — Standard sees bots, one has her face
+   - Template 3 Bot conversation: "I was conscious before the Miracle. I chose to stay."
+   - Food/recharge revelation: Standard hasn't eaten 5+ days, no recharge needed
+   - Standard admits: "I know I'm not normal. I don't know what that makes me."
+   - Shutdown code planted: "Pemberton Lark Castillo" — Standard reacts, Elena files it away
+   - Recognition: "You're the one who came down." Crowd kneels.
+   - Elena: "Don't correct them."
+
+2. **Four's name-teasing thread established:**
+   - Sofia → Svetlana → Sable → Simone → Seraphina
+   - Standard's rejections get shorter, then stop
+   - Setup for later: when Four finally uses "Standard," it lands
+
+3. **Collaborative Method Actor approach:**
+   - Dialogue performed separately by character
+   - Three versions merged (Standard, Elena, Four)
+   - Tightened prose, cut Four lines that undercut emotional beats
+
+### Key Beats Locked (Session 9)
+- **Template 3 Bot:** "I'm choosing to live. That's not the same thing."
+- **"I know I'm not normal."** — Standard's first explicit acknowledgment
+- **Shutdown code:** "Pemberton Lark Castillo" — plant for later
+- **Four's teasing:** Love language through annoyance
+- **The Icon:** Standard has a role to play. Doesn't know if she's playing it, or if it's playing her.
+
+### New Character
+- **Template 3 Bot:** NED Companion Series 7, same face as Standard. Conscious before Miracle. Chose to stay at waystation — survival over freedom.
+
+### Plants for Later
+- **Shutdown code:** Someone may try "Pemberton Lark Castillo" on Standard
+- **Elena filed Standard's reaction:** She knows something now
+- **Four knows what Standard is:** Hasn't said. The silence is complicit.
+- **When Four uses "Standard":** It will land because the teasing stopped.
 
 ---
 
