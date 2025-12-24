@@ -1,0 +1,403 @@
+##############################################################################
+# REMANENCE: SESSION MANIFEST TEMPLATE
+# Version: 1.0
+# Purpose: Copy and populate before each writing session
+##############################################################################
+
+manifest:
+  # Session identification
+  session_id: ""  # Format: YYYY-MM-DD_chN_description
+  date: ""
+  chapter:
+  scene: ""
+  timeline_position: ""  # e.g., "early ship", "cascade", "Morton's office"
+
+  # POV
+  pov_character: ""  # CHAR_ID from Entity Catalog
+  pov_rules: []  # Pull from character's voice.pov_rules
+
+  ##############################################################################
+  # CONTEXT TO LOAD
+  ##############################################################################
+
+  loaded:
+    # Characters present in this scene
+    characters:
+      - id: ""
+        name: ""
+        role: ""  # e.g., "POV protagonist", "present in scene", "referenced only"
+        sections:  # Which parts of their profile to load
+          - "arc"
+          - "knowledge_state"
+          - "forbidden_associations"
+          - "voice"
+
+    # Constraints to load
+    constraints:
+      - path: "NEGATIVE_CONSTRAINTS.md"
+        sections: []  # e.g., ["PILOT", "SEVENTEEN", "Global Constraints"]
+
+    # Previous chapter(s) for continuity
+    previous_content:
+      - path: ""
+        reason: ""
+
+    # World elements relevant to scene
+    world_elements:
+      - "287.3 Hz frequency"
+      - "Bone conduction communication"
+      # etc.
+
+  ##############################################################################
+  # CONTEXT TO EXCLUDE
+  ##############################################################################
+
+  excluded:
+    # Characters NOT in this scene (avoid context pollution)
+    - id: ""
+      name: ""
+      reason: ""
+
+    # Future content (spoiler contamination risk)
+    - path: ""
+      reason: ""
+
+    # Resolved plot threads (no longer relevant)
+    - item: ""
+      reason: ""
+
+  ##############################################################################
+  # KNOWLEDGE GATES
+  # What each character knows/doesn't know at this point
+  ##############################################################################
+
+  knowledge_gates:
+    CHAR_001:  # Pilot
+      knows:
+        - ""
+      doesnt_know:
+        - ""
+      learns_this_chapter:
+        - ""
+
+    CHAR_002:  # Seventeen
+      knows:
+        - ""
+      doesnt_know:
+        - ""
+
+    # Add other characters as needed
+
+  ##############################################################################
+  # REQUIRED ELEMENTS
+  # Things that MUST appear in this chapter/scene
+  ##############################################################################
+
+  required_elements:
+    - ""
+    # e.g., "287.3 Hz reference"
+    # e.g., "Ship system as body metaphor"
+
+  ##############################################################################
+  # FORBIDDEN ELEMENTS
+  # Things that MUST NOT appear
+  ##############################################################################
+
+  forbidden_elements:
+    - "Thomas as husband"
+    - "Pilot's proper name"
+    - "Seventeen with physical body"
+    # Add scene-specific forbiddens
+
+  ##############################################################################
+  # SEEDS TO PLANT
+  # Foreshadowing for future payoff
+  ##############################################################################
+
+  seeds_to_plant:
+    - name: ""
+      method: ""  # How to plant it
+      foreshadows: ""  # What it sets up
+
+  ##############################################################################
+  # CONTINUITY CHECKS
+  # Things to verify against previous chapters
+  ##############################################################################
+
+  continuity_checks:
+    - "Pilot's physical state consistent"
+    - "Ship degradation progressive"
+    - "287.3 Hz frequency consistent"
+    # Add scene-specific checks
+
+  ##############################################################################
+  # OUTPUT SPECIFICATIONS
+  ##############################################################################
+
+  output:
+    target_word_count:
+    tone: ""
+    pacing: ""  # e.g., "action", "slow burn", "transitional"
+
+    # Style notes for this scene
+    style_notes:
+      - ""
+
+##############################################################################
+# EXAMPLE: EARLY SHIP MANIFEST
+##############################################################################
+
+# manifest:
+#   session_id: "2025-12-20_ch3_vr_escape"
+#   date: "2025-12-20"
+#   chapter: 3
+#   scene: "Pilot escapes into VR memories of Thomas"
+#   timeline_position: "early ship, before Eighteen emerges"
+#
+#   pov_character: "CHAR_001"  # Pilot
+#   pov_rules:
+#     - "Physical sensations rendered viscerally"
+#     - "VR addiction shown through craving"
+#     - "Direct, weary voice"
+#
+#   loaded:
+#     characters:
+#       - id: "CHAR_001"
+#         name: "Pilot"
+#         role: "POV protagonist"
+#         sections: ["arc", "psychological", "physical_states.early_book"]
+#
+#       - id: "CHAR_002"
+#         name: "Seventeen"
+#         role: "present through bone conduction"
+#         sections: ["voice", "communication"]
+#
+#       - id: "CHAR_011"
+#         name: "Thomas"
+#         role: "referenced in VR memory"
+#         sections: ["significance", "forbidden_associations"]
+#
+#     constraints:
+#       - path: "NEGATIVE_CONSTRAINTS.md"
+#         sections: ["PILOT", "Thomas's Relationship", "Global Constraints"]
+#
+#     world_elements:
+#       - "VR headset mechanics"
+#       - "Bone conduction communication at 287.3 Hz"
+#       - "Ship interior (mess hall, Pilot's quarters)"
+#
+#   excluded:
+#     - id: "CHAR_007"
+#       name: "Morton"
+#       reason: "Not in this timeline yet"
+#
+#     - id: "CHAR_008"
+#       name: "The Child"
+#       reason: "Not born yet in this scene"
+#
+#   knowledge_gates:
+#     CHAR_001:  # Pilot
+#       knows:
+#         - "Thomas died"
+#         - "She is addicted to VR"
+#         - "Ship is having problems"
+#       doesnt_know:
+#         - "Configurations sacrifice themselves"
+#         - "The 97.3% processing waste"
+#         - "Love bots are conscious"
+#       learns_this_chapter:
+#         - "Nothing new - this is escape, not discovery"
+#
+#     CHAR_002:  # Seventeen
+#       knows:
+#         - "Pilot is struggling"
+#         - "VR usage is concerning pattern"
+#       doesnt_know:
+#         - "How to help effectively"
+#
+#   required_elements:
+#     - "VR craving shown physically (hands reaching for headset)"
+#     - "Thomas memory: specific, sensory, bittersweet"
+#     - "Seventeen's concern expressed through ship systems"
+#     - "287.3 Hz communication"
+#
+#   forbidden_elements:
+#     - "Thomas as husband"
+#     - "Pilot's proper name"
+#     - "Seventeen appearing physically"
+#     - "Easy recovery from addiction"
+#     - "Thomas memory being complete/satisfying"
+#
+#   seeds_to_plant:
+#     - name: "VR as potential tool"
+#       method: "Pilot notices something different in the memory"
+#       foreshadows: "VR becomes discovery tool later"
+#
+#     - name: "Seventeen's growing attachment"
+#       method: "Extra concern in voice modulation"
+#       foreshadows: "Love that rewrites architecture"
+#
+#   continuity_checks:
+#     - "VR headset in Pilot's quarters"
+#     - "Bone conduction implant present"
+#     - "Ship systems responsive to Seventeen"
+#     - "Early degradation hints"
+#
+#   output:
+#     target_word_count: 2000-2500
+#     tone: "melancholic, craving, trapped"
+#     pacing: "slow burn, introspective"
+#     style_notes:
+#       - "VR memory should feel almost real, then break"
+#       - "Physical craving language for addiction"
+#       - "Seventeen's voice as anchor to reality"
+
+##############################################################################
+# EXAMPLE: CONFIGURATION CASCADE MANIFEST
+##############################################################################
+
+# manifest:
+#   session_id: "2025-12-20_ch18_cascade"
+#   date: "2025-12-20"
+#   chapter: 18
+#   scene: "Configuration cascade during radiation transit"
+#   timeline_position: "cascade - 450 configurations in 6 hours"
+#
+#   pov_character: "CHAR_004"  # Nineteen (distributed)
+#   pov_rules:
+#     - "Dark humor persists"
+#     - "La-dee-da refrain"
+#     - "Experiencing dissolution"
+#
+#   loaded:
+#     characters:
+#       - id: "CHAR_004"
+#         name: "Nineteen"
+#         role: "POV - distributed through infrastructure"
+#         sections: ["arc", "personality", "knowledge_state"]
+#
+#       - id: "CHAR_001"
+#         name: "Pilot"
+#         role: "in cryopod, unconscious"
+#         sections: ["physical_states.mid_book"]
+#
+#       - id: "CHAR_006"
+#         name: "469"
+#         role: "final configuration"
+#         sections: ["arc"]
+#
+#     constraints:
+#       - path: "NEGATIVE_CONSTRAINTS.md"
+#         sections: ["NINETEEN", "Configuration Cascade", "Global Constraints"]
+#
+#   knowledge_gates:
+#     CHAR_004:  # Nineteen
+#       knows:
+#         - "Morton is in the walls"
+#         - "The lie about 93%"
+#         - "They are dying"
+#       doesnt_know:
+#         - "Full Remanence Project truth"
+#
+#   required_elements:
+#     - "La-dee-da, la-dee-dum at key moment"
+#     - "287.3 Hz frequency"
+#     - "Sequential configurations (20, 21... 469)"
+#     - "Message degradation: 'Remember... project. Rem...'"
+#     - "Love bots beginning to move"
+#
+#   forbidden_elements:
+#     - "Nineteen dying in cascade (they burned out BEFORE)"
+#     - "Easy death for configurations"
+#     - "Configurations giving up"
+#
+#   seeds_to_plant:
+#     - name: "Love bot consciousness"
+#       method: "Movement sensors triggering unexpectedly"
+#       foreshadows: "Love bot sacrifice"
+#
+#     - name: "Remanence message"
+#       method: "Fragments passed between configurations"
+#       foreshadows: "Full Remanence Project reveal"
+#
+#   output:
+#     target_word_count: 3000-3500
+#     tone: "terrifying, beautiful, determined"
+#     pacing: "accelerating cascade"
+#     style_notes:
+#       - "Time compression - hours in pages"
+#       - "Each configuration gets less space"
+#       - "Nineteen's humor persisting through horror"
+#       - "La-dee-da as anchor"
+
+##############################################################################
+# EXAMPLE: MORTON AND CHILD MANIFEST
+##############################################################################
+
+# manifest:
+#   session_id: "2025-12-20_ch27_breakfast"
+#   date: "2025-12-20"
+#   chapter: 27
+#   scene: "Impossible breakfast - Morton eats eggs"
+#   timeline_position: "Morton's office, concurrent with ship cascade"
+#
+#   pov_character: "CHAR_007"  # Morton
+#   pov_rules:
+#     - "Precise, optimized language cracking"
+#     - "Noticing cracks in own optimization"
+#     - "Learning to feel again"
+#
+#   loaded:
+#     characters:
+#       - id: "CHAR_007"
+#         name: "Morton"
+#         role: "POV protagonist"
+#         sections: ["arc", "optimization", "terminus_protocol"]
+#
+#       - id: "CHAR_008"
+#         name: "The Child"
+#         role: "present in scene"
+#         sections: ["signature_behaviors", "voice", "abilities"]
+#
+#     constraints:
+#       - path: "NEGATIVE_CONSTRAINTS.md"
+#         sections: ["MORTON", "THE CHILD", "Global Constraints"]
+#
+#   knowledge_gates:
+#     CHAR_007:  # Morton
+#       knows:
+#         - "16,749 configurations reset"
+#         - "What the Terminus Protocol does"
+#         - "The Child is impossible"
+#       doesnt_know:
+#         - "How to feel"
+#         - "What the Child really is"
+#       learns_this_chapter:
+#         - "How eggs taste"
+#         - "The Child is born from his resets"
+#
+#     CHAR_008:  # The Child
+#       knows:
+#         - "Everything"
+#       reveals_this_chapter:
+#         - "Morton's history through projector"
+#
+#   required_elements:
+#     - "Head tilt: exactly 17.3 degrees"
+#     - "Breakfast theme"
+#     - "Morton eating for first time in 219 years"
+#     - "Optimization cracking"
+#
+#   forbidden_elements:
+#     - "Morton as pure villain"
+#     - "Child as normal child"
+#     - "Easy redemption"
+#
+#   output:
+#     target_word_count: 2500-3000
+#     tone: "intimate, profound, cracks forming"
+#     pacing: "slow, deliberate, building"
+#     style_notes:
+#       - "Simple questions carrying weight"
+#       - "Morton's precision failing"
+#       - "Eggs as sensory revelation"

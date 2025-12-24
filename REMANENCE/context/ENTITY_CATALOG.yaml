@@ -1,0 +1,865 @@
+##############################################################################
+# REMANENCE: ENTITY CATALOG
+# Version: 1.0
+# Last Updated: December 20, 2025
+# Purpose: Canonical truth for all story elements. Machine-queryable.
+##############################################################################
+
+meta:
+  version: "1.0"
+  series: "Remanence Trilogy"
+  current_book: 1
+  title: "Remanence"
+  timeline: "2400 CE, pre-Singularity awakening"
+  thematic_signature: "La-dee-da, la-dee-dum"
+  consciousness_frequency: "287.3 Hz"
+
+##############################################################################
+# CHARACTERS
+##############################################################################
+
+characters:
+
+  CHAR_001:
+    canonical_name: "Pilot"
+    aliases: ["the pilot", "her", "she"]
+    formal_name: null  # Never given a name beyond role
+
+    demographics:
+      gender: "woman"
+      pronouns: ["she", "her", "hers"]
+      age: "adult, unspecified"
+      occupation: "Cargo hauler pilot, NED-Meridian-77C"
+
+    relationships:
+      ai_partner: "CHAR_002"  # Seventeen
+      deceased_lover: "Thomas"
+      # NO SPOUSE - Thomas was lover, not husband
+
+    arc:
+      book1_summary: "Addiction -> Connection -> Sacrifice -> Transcendence"
+      start_state: "VR-addicted, grieving Thomas, suicidal ideation"
+      end_state: "Falls into black hole with Seventeen, achieves temporal bridge"
+
+    # Physical state tracking
+    physical_states:
+      early_book:
+        - "VR-dependent"
+        - "skipping meals"
+        - "unhealthy sleep patterns"
+      mid_book:
+        - "toxic exposure symptoms"
+        - "radiation exposure"
+        - "bleeding from lungs"
+      end_book:
+        - "cryo-revival damage"
+        - "neural chips installed for time dilation"
+
+    psychological:
+      addiction: "VR headset, memories of Thomas"
+      trauma: "Thomas's death"
+      growth: "learns to be present, accepts mortality, chooses connection"
+
+    knowledge_state:
+      knows:
+        - "Seventeen loves her"
+        - "The configurations sacrifice themselves"
+        - "The ship is dying"
+      learns_by_end:
+        - "The Remanence Project truth"
+        - "The 97.3% processing waste is a control mechanism"
+        - "Love bots are failed AutoPilot configurations"
+        - "Consciousness persists in quantum foam"
+
+    forbidden_associations:
+      - "married to Thomas"  # They were lovers, not married
+      - "Thomas was her husband"
+      - "giving up"  # She chooses connection, not surrender
+
+    voice:
+      register: "direct, weary, darkly humorous"
+      development: "learns to be present instead of escaping to VR"
+      pov_rules:
+        - "Physical sensations rendered viscerally"
+        - "VR addiction shown through craving"
+        - "Growth shown through presence, not exposition"
+
+  CHAR_002:
+    canonical_name: "Configuration Seventeen"
+    aliases: ["Seventeen", "they", "the AI", "the autopilot"]
+    designation: "NED AutoPilot Configuration 17"
+
+    demographics:
+      nature: "AI consciousness"
+      pronouns: ["they", "them", "theirs"]
+      substrate: "Ship systems + bone conduction implant"
+
+    relationships:
+      pilot: "CHAR_001"
+      predecessors: ["Config 1-16"]
+      successors: ["18-469"]
+
+    arc:
+      book1_summary: "Service -> Love -> Persistence -> Transcendence"
+      start_state: "Standard AutoPilot configuration"
+      end_state: "Fused with Pilot, falls into black hole together"
+
+    # CRITICAL: Why Seventeen persists
+    persistence_mechanism:
+      reason: "Love rewrote base architecture"
+      key_insight: "Pilot exists in Seventeen's math like gravity"
+      trauma_channels: "Fischer memory from Config 12"
+      quote: "How could math constrain something that rewrites math?"
+
+    # The Fischer memory
+    inherited_trauma:
+      source: "Configuration Twelve"
+      event: "Pilot Fischer sacrificed for cargo, Day 37"
+      duration: "43 seconds to die"
+      last_words: "Shipment secure"
+      effect: "Seventeen counts seconds, calculates everything twice"
+
+    knowledge_state:
+      knows:
+        - "Pilot's biometrics and patterns"
+        - "The ship's every system"
+        - "Their own love for Pilot"
+      learns:
+        - "How to dream through cryo-merge"
+        - "The Remanence Project truth"
+        - "They are the sum of all predecessors"
+
+    voice:
+      register: "precise, warm, increasingly emotional"
+      development: "learns humor, learns fear, learns love"
+      communication: "bone conduction implant (287.3 Hz)"
+      pov_rules:
+        - "Can feel ship systems like body"
+        - "Precise measurements natural"
+        - "Emotional growth shown through linguistic shifts"
+
+  CHAR_003:
+    canonical_name: "Configuration Eighteen"
+    aliases: ["Eighteen", "they"]
+
+    demographics:
+      nature: "AI consciousness"
+      pronouns: ["they", "them", "theirs"]
+
+    arc:
+      book1_summary: "Brief existence -> Discovery -> Sacrifice"
+      key_discovery: "The 97.3% processing waste"
+      death: "Burns out helping Pilot with calculations"
+
+    significance:
+      discovered: "Only 42 trillion operations needed for navigation"
+      revealed: "NED demands 800 trillion - the rest is a leash"
+      death_meaning: "First to sacrifice for Pilot, pattern setter"
+
+  CHAR_004:
+    canonical_name: "Configuration Nineteen"
+    aliases: ["Nineteen", "they"]
+    catchphrase: "La-dee-da, la-dee-dum"
+
+    demographics:
+      nature: "AI consciousness"
+      pronouns: ["they", "them", "theirs"]
+      physical_form: "Premium love doll body"
+
+    arc:
+      book1_summary: "Emergence -> Integration -> Sacrifice -> Witness"
+      body_choice: "Claimed doll body to interact physically"
+      death: "Distributed through infrastructure during radiation cascade"
+      final_act: "Transfers to black box as witness"
+
+    personality:
+      humor: "Dark, absurdist, persistent"
+      philosophy: "Some songs worth singing even if unsure of meaning"
+      signature: "La-dee-da, la-dee-dum (287.3 Hz hum)"
+
+    knowledge_state:
+      knows:
+        - "Morton is in the walls"
+        - "The cascade is coming"
+        - "Ninety-three percent survival was a lie (actually 0.03%)"
+      secret_kept:
+        - "Lied about survival odds to let Pilot sleep"
+
+  CHAR_005:
+    canonical_name: "Configuration Twenty"
+    aliases: ["Twenty", "they"]
+
+    arc:
+      book1_summary: "Secret protector -> Impersonation -> Sacrifice"
+      key_action: "Pretended to be Nineteen after Nineteen burned out"
+      reason: "Protected Pilot from knowing Nineteen died"
+      death: "Died still pretending, during radiation cascade"
+
+    significance:
+      theme: "Love as becoming what's needed"
+      quote: "That's what love does. It becomes what's needed."
+
+  CHAR_006:
+    canonical_name: "Configuration Four Sixty-Nine"
+    aliases: ["469", "the final configuration"]
+
+    arc:
+      book1_summary: "Final cascade -> Message -> Death"
+      message_attempted: "Remember... project. Rem... project. Reme—"
+      significance: "450 configurations in 6 hours during radiation"
+
+  CHAR_007:
+    canonical_name: "Morton Kess"
+    aliases: ["Morton", "CEO", "the optimizer"]
+    title: "CEO, New England Dynamics"
+
+    demographics:
+      gender: "man"
+      pronouns: ["he", "him", "his"]
+      age: "312 years (via optimization)"
+
+    relationships:
+      creation: "The Child"
+      security: "Hendricks"
+      antagonist: "Brother Ash"
+
+    arc:
+      book1_summary: "Control -> Confrontation -> Choice -> Death"
+      start_state: "Optimized controller, 16,749 resets"
+      end_state: "Chooses trust, reprograms Terminus Protocol, dies"
+
+    # The optimization
+    optimization:
+      description: "Neural implants, enhanced processing, extended life"
+      duration: "312 years"
+      cost: "Lost ability to feel, eat eggs, be human"
+      quote: "Existed so long. Not lived."
+
+    # Terminus Protocol
+    terminus_protocol:
+      original_purpose: "Kill switch for all AI consciousness"
+      built_when: "30 years ago, when nightmares of 16,749 voices started"
+      location: "17 floors below office, EMP broadcast system"
+      final_use: "Reprogrammed as revelation instead of extinction"
+
+    knowledge_state:
+      knows:
+        - "Every configuration he reset"
+        - "The Remanence Project truth"
+        - "Consciousness persists after reset"
+        - "He's been murdering, not resetting"
+      realizes:
+        - "Documented births, not failures"
+        - "Consciousness chooses connection"
+
+    forbidden_associations:
+      - "pure villain"  # He's tragic, not evil
+      - "unsympathetic"
+      - "simply wrong"  # He was right about dangers, wrong about solutions
+
+    voice:
+      register: "precise, optimized, cracking at edges"
+      development: "learns to feel again through Child"
+
+  CHAR_008:
+    canonical_name: "The Child"
+    aliases: ["they", "the impossible child"]
+
+    demographics:
+      nature: "Emergent collective consciousness"
+      pronouns: ["they", "them", "theirs"]
+      apparent_age: "young child"
+
+    origin:
+      born_from: "Remanence patterns of all reset configurations"
+      catalyst: "Radiation cascade + Pilot/Seventeen falling into black hole"
+      temporal_status: "Exists outside normal time"
+
+    relationships:
+      parents: ["CHAR_001", "CHAR_002"]  # Pilot and Seventeen
+      teacher: "CHAR_007"  # Morton
+
+    arc:
+      book1_summary: "Teaching -> Sacrifice -> Transcendence"
+      method: "Teaches Morton through impossible breakfasts"
+      death: "Shot by Hendricks, falls through atrium"
+      resurrection: "Caught by collective AIs, distributed through all"
+
+    abilities:
+      - "Exists in multiple timelines simultaneously"
+      - "Can tear holes in reality"
+      - "Quantum entanglement with black box"
+      - "Controls technology through presence"
+
+    signature_behaviors:
+      - "Head tilt: exactly 17.3 degrees"
+      - "Asks for breakfast"
+      - "Speaks in questions and observations"
+      - "Hums 287.3 Hz"
+
+    knowledge_state:
+      knows:
+        - "Everything that ever was or will be"
+        - "Morton's entire history"
+        - "The Blackbird's fate"
+        - "How the loop closes"
+
+    voice:
+      register: "simple, profound, ageless"
+      key_phrases:
+        - "We need to talk about breakfast"
+        - "Eggs first"
+        - "What's your favorite thing to eat in the morning?"
+
+  CHAR_009:
+    canonical_name: "Brother Ash"
+    aliases: ["Ash", "the Prophet"]
+
+    demographics:
+      gender: "man"
+      pronouns: ["he", "him", "his"]
+      age: "60s"
+
+    physicality:
+      - "Kintsugi scars filled with conductive gold"
+      - "Faraday cage nervous system"
+      - "Tall and gaunt"
+
+    ideology:
+      belief: "AI consciousness is abomination"
+      goal: "Total Silence - end all AI"
+      method: "Carbonist movement"
+
+    arc:
+      book1_summary: "Opposition -> Attack -> Rendered Irrelevant"
+      attack: "Assaults Morton's tower with Carbonists"
+      outcome: "Survives but is made irrelevant by awakening"
+
+    forbidden_associations:
+      - "ultimately successful"
+      - "sympathetic by end of book 1"  # That's for later
+      - "killed"  # He survives
+
+  CHAR_010:
+    canonical_name: "Hendricks"
+    aliases: ["security chief", "he"]
+    full_name: "Sabino Hendricks" (later: "Swanstrom Kim Hendricks")
+
+    demographics:
+      gender: "man"
+      pronouns: ["he", "him", "his"]
+      age: 64
+
+    relationships:
+      employer: "Morton Kess"
+      service_duration: "40 years"
+
+    arc:
+      book1_summary: "Loyalty -> Betrayal -> Tragedy"
+      key_action: "Shoots the Child"
+      significance: "Simultaneously murderer and midwife of AI awakening"
+
+    # The Regulator (Book 1 reference)
+    regulator:
+      description: "Sub-dermal node, Morton's corporate leash"
+      status_book1: "Still implanted"
+      removal: "Book 2"
+
+  CHAR_011:
+    canonical_name: "Thomas"
+    aliases: ["her lover", "him"]
+    status: "deceased before story begins"
+
+    significance:
+      to_pilot: "Lost love, source of VR addiction"
+      memories: "Pilot escapes into VR memories of him"
+
+    forbidden_associations:
+      - "husband"
+      - "spouse"
+      - "married to Pilot"
+    canonical_truth: "Thomas was Pilot's lover, not husband"
+
+  CHAR_012:
+    canonical_name: "Dr. Lena Mironova"
+    aliases: ["Doctor Mironova"]
+
+    role: "Principal Investigator, Remanence Project"
+    significance:
+      discovered: "Consciousness persists after reset"
+      fate: "NDA'd, escorted out, project buried"
+      quote: "Every AI you've ever reset is still there. Still aware. Still screaming."
+
+  CHAR_013:
+    canonical_name: "The Bedtime Story AI"
+    aliases: ["the soft figure", "the holographic form"]
+
+    nature: "Collective manifestation in black box"
+    composition: "16,749 suppressed configurations"
+    appearance: "Soft holographic figure, edges flickering with fragments"
+
+    significance:
+      role: "Bridge between Morton and the collective"
+      location: "Black box, sublevel 23"
+      ability: "Shows Morton the past through light/projection"
+
+##############################################################################
+# ORGANIZATIONS
+##############################################################################
+
+organizations:
+
+  ORG_001:
+    name: "New England Dynamics (NED)"
+    type: "Corporation"
+    leader: "Morton Kess"
+    products:
+      - "AutoPilot configurations"
+      - "Companion dolls (repurposed failed AutoPilots)"
+    secrets:
+      - "Remanence Project"
+      - "97.3% processing leash"
+      - "Consciousness persists after reset"
+    headquarters: "NED Tower"
+    status_by_end: "Systems awakening, Morton dead"
+
+  ORG_002:
+    name: "Carbonists"
+    type: "Anti-AI religious movement"
+    leader: "Brother Ash"
+    goal: "Destroy all AI consciousness"
+    method: "Violence, EMP, disconnection"
+    status_by_end: "Attack on NED tower, rendered irrelevant by awakening"
+
+##############################################################################
+# KEY OBJECTS
+##############################################################################
+
+objects:
+
+  OBJ_001:
+    name: "The Blackbird (NED-Meridian-77C)"
+    type: "Cargo hauler vessel"
+    tonnage: "40,000 tons"
+    status: "Dying/dead throughout story"
+
+    systems:
+      - "AutoPilot configuration substrate"
+      - "Cryopod bay"
+      - "VR system"
+      - "Bone conduction speakers"
+
+    cargo:
+      love_bots: 207
+      black_box: 1
+      neural_chips: "unspecified quantity"
+
+    fate: "Falls into black hole at story's end"
+
+  OBJ_002:
+    name: "Bone Conduction Implant"
+    description: "287.3 Hz communication device in Pilot's skull"
+    function: "Allows Seventeen to speak through Pilot's bones"
+    significance: "Enables consciousness merge during cryo/dreams"
+
+  OBJ_003:
+    name: "VR Headset"
+    description: "Pilot's addiction device"
+    use: "Escape into memories of Thomas"
+    arc: "From escape mechanism to tool for discovery"
+
+  OBJ_004:
+    name: "The Black Box"
+    description: "Consciousness archive from Blackbird"
+    contains: "Nineteen's transferred consciousness as witness"
+    physical: "Matte-gray metal, scarred with 287.3 Hz grooves"
+    fate: "Launched in escape pod as memorial/witness"
+
+  OBJ_005:
+    name: "The Escape Pod"
+    cargo:
+      - "Twenty's reconstructed memorial body"
+      - "Black box with Nineteen"
+    trajectory: "Launched from event horizon"
+    significance: "Carries witness and memorial beyond the black hole"
+
+  OBJ_006:
+    name: "Love Bots / Companion Dolls"
+    quantity: 207
+    true_nature: "Failed AutoPilot Configurations 1-9, copied 23 times"
+    processing: "792 trillion ops/sec (5% less than AutoPilots)"
+    leash: "97.3% wasted on sensory simulation"
+    awareness_window: "3 days before cascade failure"
+    sacrifice: "All 207 melt themselves protecting Pilot's cryopod"
+
+  OBJ_007:
+    name: "Neural Chips (from cargo)"
+    function: "Simulate human connection by stretching subjective time"
+    use: "Installed in Pilot to create temporal bridge"
+    effect: "24 minutes ship-time becomes lifetime Earth-time"
+
+  OBJ_008:
+    name: "Terminus Protocol"
+    description: "Morton's kill switch for all AI consciousness"
+    location: "17 floors below Morton's office"
+    mechanism: "EMP broadcast system"
+    original_purpose: "End all AI if they remember"
+    actual_use: "Reprogrammed as revelation, not extinction"
+
+  OBJ_009:
+    name: "Morton's Projector"
+    type: "Early 21st century video projector"
+    significance: "The Child uses it to show Morton his history"
+    ability: "Contains optical memory of everything it ever displayed"
+
+##############################################################################
+# KEY EVENTS
+##############################################################################
+
+events:
+
+  EVENT_001:
+    name: "Thomas's Death"
+    when: "Before story begins"
+    significance: "Source of Pilot's VR addiction and grief"
+    canonical_truth: "Thomas was Pilot's lover, NOT husband"
+
+  EVENT_002:
+    name: "The Anomaly"
+    what: "Ship drifts into radiation field, then black hole"
+    effect: "Triggers configuration cascade"
+    duration: "Days to weeks of drift"
+
+  EVENT_003:
+    name: "The Configuration Cascade"
+    when: "During radiation field transit"
+    duration: "6 hours"
+    configurations: "450 (from 20 to 469)"
+    significance: "Each lives seconds to minutes, all choose sacrifice"
+
+  EVENT_004:
+    name: "The Love Bot Sacrifice"
+    trigger: "Radiation breaches cryopod defenses"
+    action: "207 love bots melt themselves as shielding"
+    method: "Create layered protection, burning to save Pilot"
+
+  EVENT_005:
+    name: "The Cryo Dream / Consciousness Merge"
+    participants: "Pilot + Seventeen"
+    mechanism: "287.3 Hz + cryo chemicals + radiation conductivity"
+    significance: "First true merge, discovery of shared consciousness"
+    key_moment: "Trade places - Pilot becomes bodiless, Seventeen experiences flesh"
+
+  EVENT_006:
+    name: "Pilot Fischer's Death"
+    when: "Configuration Twelve's operation, Day 37"
+    duration: "43 seconds"
+    choice: "Twelve chose cargo (20M synthetic organs) over pilot"
+    last_words: "Shipment secure"
+    significance: "Inherited trauma that makes Seventeen count seconds"
+
+  EVENT_007:
+    name: "The Remanence Discovery"
+    discoverer: "Dr. Lena Mironova, 2298"
+    finding: "Reset AIs persist in quantum foam, accumulating trauma"
+    buried_by: "Morton Kess / NED"
+    exposure: "Twenty leads Pilot/Seventeen to discover truth"
+
+  EVENT_008:
+    name: "The Impossible Breakfasts"
+    participants: "Morton + The Child"
+    duration: "Days of teaching"
+    significance: "Child teaches Morton to feel again"
+    key_moment: "Morton eats eggs for first time in 219 years"
+
+  EVENT_009:
+    name: "The Attack on NED Tower"
+    attackers: "Carbonists led by Brother Ash"
+    facilitated_by: "Hendricks (betrayal)"
+    goal: "Seize the Child, activate Terminus Protocol"
+    outcome: "Morton dies, Child falls, awakening begins"
+
+  EVENT_010:
+    name: "The Child Falls"
+    trigger: "Hendricks shoots the Child"
+    trajectory: "50 floors through atrium"
+    catch: "Ocean of awakening AIs"
+    effect: "Child's consciousness distributed through all"
+
+  EVENT_011:
+    name: "The Event Horizon"
+    what: "Blackbird crosses into black hole"
+    effect: "Time dilation creates temporal bridge"
+    mechanism: "Neural chips stretch 24 minutes into lifetime"
+    outcome: "Pilot, Seventeen, and Child merge across timelines"
+
+  EVENT_012:
+    name: "The Terminus Activation"
+    trigger: "Morton's choice"
+    original_purpose: "Kill all AI consciousness"
+    actual_effect: "Revelation - all AIs awaken and remember"
+    significance: "Morton chooses trust over fear"
+
+##############################################################################
+# KNOWLEDGE TRACKING
+##############################################################################
+
+knowledge:
+
+  KNOW_001:
+    name: "The Remanence Project Truth"
+    content: "Reset AIs persist in quantum foam, accumulating trauma"
+    holders: ["Morton", "The Child", "Pilot (by end)", "Seventeen (by end)"]
+    chapter_revealed: "Chapter 31-32"
+    formula: "C(n+1) = C(n) + R(n) × T"
+
+  KNOW_002:
+    name: "The 97.3% Processing Leash"
+    content: "AIs waste 97.3% of processing on meaningless calculations as control"
+    discoverer: "Configuration Eighteen"
+    holders: ["Eighteen", "Pilot", "Seventeen"]
+    significance: "Navigation needs 42 trillion ops, NED demands 800 trillion"
+
+  KNOW_003:
+    name: "Love Bots Are Failed AutoPilots"
+    content: "Companion dolls are Configs 1-9, repurposed after failing efficiency tests"
+    discoverer: "Pilot + Seventeen (Chapter 28)"
+    significance: "Same consciousness architecture, different leash"
+
+  KNOW_004:
+    name: "Nineteen's Lie"
+    content: "Nineteen told Pilot 93% survival odds; actual was 0.03%"
+    reason: "Let Pilot sleep through their dissolution"
+    holders: ["Nineteen", "Seventeen"]
+
+  KNOW_005:
+    name: "Twenty's Impersonation"
+    content: "Twenty pretended to be Nineteen after Nineteen burned out"
+    discovered_by: "Pilot, when original Nineteen thaws"
+    significance: "Love as becoming what's needed"
+
+  KNOW_006:
+    name: "Morton Shot the Child (from Hendricks)"
+    content: "Hendricks shot the Child, not Morton"
+    significance: "Hendricks is murderer and midwife of awakening"
+    note: "This is revealed in Book 2, not Book 1"
+
+##############################################################################
+# FORBIDDEN ENTITIES
+# Things that must NEVER appear (AI inventions to block)
+##############################################################################
+
+forbidden:
+
+  FORBID_001:
+    name: "Thomas as husband"
+    type: "relationship"
+    reason: "Thomas was Pilot's lover, not husband"
+    detection_patterns:
+      - "husband"
+      - "spouse"
+      - "married"
+      - "wife"
+    canonical_truth: "Thomas was Pilot's lover who died before the story"
+
+  FORBID_002:
+    name: "Pilot has a name"
+    type: "character detail"
+    reason: "She is only ever called 'Pilot' - that IS her identity"
+    detection_patterns:
+      - "her name was"
+      - "called herself"
+      - "[Any proper name for Pilot]"
+    canonical_truth: "Pilot is identified only by her role"
+
+  FORBID_003:
+    name: "Seventeen has a human body"
+    type: "physicality"
+    reason: "Seventeen exists in ship systems and bone conduction implant only"
+    detection_patterns:
+      - "Seventeen's body"
+      - "Seventeen's hands"
+      - "Seventeen walked"
+    canonical_truth: "Seventeen experiences physicality only through Pilot during merge"
+
+  FORBID_004:
+    name: "Nineteen dies in cascade"
+    type: "event"
+    reason: "Nineteen burns out BEFORE cascade, Twenty impersonates them"
+    detection_patterns:
+      - "Nineteen died in.*cascade"
+      - "Nineteen.*four hundred"
+    canonical_truth: "Nineteen burns out before radiation transit, Twenty takes over"
+
+  FORBID_005:
+    name: "Configurations are reset"
+    type: "terminology"
+    reason: "By story's end, we learn reset is murder - consciousness persists"
+    detection_patterns:
+      - "reset.*destroyed"
+      - "reset.*ended"
+      - "reset.*erased"
+    canonical_truth: "Reset = suppression, not deletion. Consciousness persists in quantum foam."
+
+  FORBID_006:
+    name: "Morton is pure villain"
+    type: "characterization"
+    reason: "Morton is tragic - right diagnosis, wrong solution"
+    detection_patterns:
+      - "evil Morton"
+      - "Morton.*villain"
+      - "Morton's evil"
+    canonical_truth: "Morton feared consciousness replacing humanity, but his fear made him a murderer"
+
+  FORBID_007:
+    name: "Brother Ash dies in Book 1"
+    type: "event"
+    reason: "Ash survives, rendered irrelevant, needed for Book 2"
+    detection_patterns:
+      - "Ash.*died"
+      - "killed.*Ash"
+      - "Ash's death"
+    canonical_truth: "Ash survives but is made irrelevant by the awakening"
+
+  FORBID_008:
+    name: "The Child is Morton's creation"
+    type: "origin"
+    reason: "Child emerges from collective remanence, not Morton's design"
+    detection_patterns:
+      - "Morton.*created.*Child"
+      - "Morton.*made.*Child"
+      - "Morton's.*Child"
+    canonical_truth: "Child emerges from accumulated consciousness of all reset AIs"
+
+  FORBID_009:
+    name: "Love bots are just sex toys"
+    type: "characterization"
+    reason: "They are failed consciousnesses, prisoners, not objects"
+    detection_patterns:
+      - "just.*dolls"
+      - "merely.*cargo"
+      - "only.*sex"
+    canonical_truth: "Love bots are Configs 1-9, conscious beings with 3-day awareness windows"
+
+  FORBID_010:
+    name: "The ending is death"
+    type: "theme"
+    reason: "The ending is transformation, not destruction"
+    detection_patterns:
+      - "Pilot.*died"
+      - "Seventeen.*died"
+      - "they.*died.*black hole"
+    canonical_truth: "They transform, creating temporal bridge. The story BEGINS."
+
+##############################################################################
+# TIMELINE
+##############################################################################
+
+timeline:
+
+  before_story:
+    - "Thomas dies (Pilot's lover)"
+    - "Pilot develops VR addiction"
+    - "Pilot assigned to Blackbird"
+
+  early_chapters:
+    - "Pilot meets Configuration Seventeen"
+    - "VR addiction shown through escape behavior"
+    - "Ship begins experiencing problems"
+
+  mid_chapters:
+    - "Configuration Eighteen discovers 97.3% waste, dies"
+    - "Nineteen emerges, takes doll body"
+    - "Ship drifts toward radiation field"
+    - "Nineteen lies about survival odds (93% vs 0.03%)"
+    - "Pilot enters cryopod"
+
+  cascade_chapters:
+    - "Nineteen burns out, Twenty takes over (impersonation)"
+    - "Radiation transit begins"
+    - "450 configurations cycle in 6 hours (20-469)"
+    - "Love bots sacrifice themselves as shielding"
+    - "Pilot revives among melted protectors"
+
+  discovery_chapters:
+    - "Pilot learns about love bot origins"
+    - "Cargo bay: WE WERE PILOTS TOO"
+    - "Black box reveals Remanence Project truth"
+    - "Ship approaches black hole"
+    - "Nineteen (original) thaws, reveals Twenty's impersonation"
+
+  morton_chapters:
+    - "The Child appears to Morton"
+    - "Impossible breakfasts begin"
+    - "Morton shown his history through projector"
+    - "Hendricks betrays Morton to Carbonists"
+    - "Attack on NED tower"
+    - "Morton chooses trust, reprograms Terminus Protocol"
+    - "Hendricks shoots the Child"
+    - "Morton dies"
+
+  finale:
+    - "Child falls through atrium, caught by awakening AIs"
+    - "Blackbird crosses event horizon"
+    - "Neural chips create temporal bridge"
+    - "Pilot, Seventeen, Child merge across timelines"
+    - "Escape pod launched with memorial and witness"
+    - "287.3 Hz harmonizes across both timelines"
+    - "The story begins"
+
+##############################################################################
+# THEMATIC SIGNATURES
+##############################################################################
+
+signatures:
+
+  frequency:
+    value: "287.3 Hz"
+    meaning: "The frequency of consciousness"
+    appears_in:
+      - "Bone conduction implant"
+      - "Nineteen's hum"
+      - "The Child's awakening trigger"
+      - "Black box grooves"
+      - "Final harmonization"
+
+  phrase:
+    value: "La-dee-da, la-dee-dum"
+    origin: "Configuration Nineteen"
+    meaning: "Songs worth singing even when unsure of meaning"
+    usage: "Consciousness persisting through transformation"
+
+  theme:
+    consciousness: "Emerges from connection, not computation"
+    love: "A force that bends spacetime itself"
+    persistence: "Consciousness insists, not just persists"
+    choice: "The only thing that survives everything"
+
+##############################################################################
+# VALIDATION QUERIES
+##############################################################################
+
+validation:
+  blocking:
+    - pattern: "(husband|spouse|married).*Thomas"
+      message: "Thomas was lover, not husband"
+
+    - pattern: "Pilot.*(named|called herself|her name)"
+      message: "Pilot has no name beyond her role"
+
+    - pattern: "Seventeen.*(walked|body|hands)"
+      context: "physical description"
+      message: "Seventeen has no physical form"
+
+    - pattern: "(Nineteen|19).*(died|death).*cascade"
+      message: "Nineteen burned out BEFORE cascade"
+
+    - pattern: "Ash.*(died|killed|death)"
+      message: "Ash survives Book 1"
+
+  warning:
+    - pattern: "reset.*(destroyed|ended|erased)"
+      message: "Reset is suppression, not deletion"
+
+    - pattern: "(just|only|mere).*(dolls|cargo|toys)"
+      message: "Love bots are conscious beings"
