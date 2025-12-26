@@ -33,13 +33,43 @@ import json
 from pathlib import Path
 from typing import Any, Optional
 
-# Load data
-DATA_PATH = Path(__file__).parent / "RESONANCE_DATA.yaml"
+# Data files (split for token efficiency)
+DATA_DIR = Path(__file__).parent
+DATA_FILES = [
+    "CORE.yaml",
+    "CHARACTERS.yaml",
+    "WORLD.yaml",
+    "CHAPTERS.yaml",
+]
+
+# Fallback to legacy single file if split files don't exist
+LEGACY_DATA_PATH = DATA_DIR / "RESONANCE_DATA.yaml"
 
 def load_data() -> dict:
-    """Load the master data file."""
-    with open(DATA_PATH, 'r') as f:
-        return yaml.safe_load(f)
+    """Load and merge all data files, or fall back to legacy single file."""
+    # Check if split files exist
+    split_files_exist = all((DATA_DIR / f).exists() for f in DATA_FILES)
+
+    if split_files_exist:
+        merged = {}
+        for filename in DATA_FILES:
+            filepath = DATA_DIR / filename
+            with open(filepath, 'r') as f:
+                data = yaml.safe_load(f)
+                if data:
+                    # Deep merge - later files override earlier ones
+                    for key, value in data.items():
+                        if key in merged and isinstance(merged[key], dict) and isinstance(value, dict):
+                            merged[key].update(value)
+                        else:
+                            merged[key] = value
+        return merged
+    elif LEGACY_DATA_PATH.exists():
+        # Fall back to legacy single file
+        with open(LEGACY_DATA_PATH, 'r') as f:
+            return yaml.safe_load(f)
+    else:
+        raise FileNotFoundError("No data files found. Expected split files or RESONANCE_DATA.yaml")
 
 def get_character(data: dict, char_id: str, field: Optional[str] = None) -> Any:
     """Get character data."""

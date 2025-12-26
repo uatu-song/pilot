@@ -1,0 +1,105 @@
+# CHAPTER FORMAT TEMPLATE — Dabble Writer Optimized
+# All chapters MUST follow this exact format for clean Dabble import
+
+file_format:
+  extension: ".txt"
+  encoding: "UTF-8"
+
+structure:
+  line_1: ""  # blank
+  line_2: "CHAPTER N"  # chapter number (Dabble can auto-parse)
+  line_3: ""  # blank
+  line_4: "TITLE IN CAPS"  # title
+  line_5: ""  # blank
+  line_6_onwards: "prose"  # story text begins
+
+formatting:
+  italics:
+    syntax: "*text*"  # single asterisks
+    usage:
+      - internal thoughts
+      - emphasized words
+      - foreign words
+      - titles of works
+    examples:
+      - "*Common template. Mass-produced. Interchangeable.*"
+      - "I know I'm not *that*."
+      - "It was my idea for *you*."
+
+  bold:
+    syntax: "**text**"  # double asterisks (use sparingly)
+    usage:
+      - extreme emphasis only
+      - rarely needed in prose
+
+  scene_breaks:
+    syntax: "---"  # three dashes, own line
+    dabble_note: "Dabble converts to centered scene break marker"
+    placement: "blank line before AND after for clarity"
+    example: |
+      She walked away.
+
+      ---
+
+      The next morning came too soon.
+
+  paragraph_spacing:
+    rule: "NO blank lines between paragraphs — prose flows continuously"
+    rationale: "Each paragraph is its own line; Dabble handles visual spacing on import"
+    no_double_blanks: true
+    dialogue_flows: "dialogue and action beats flow without extra spacing"
+
+  chapter_ending:
+    rule: "single blank line after final paragraph"
+    no_trailing_whitespace: true
+
+rules:
+  - NO metadata headers (no **POV:**, no **Tense:**, no YAML front matter)
+  - NO blank lines between paragraphs — prose flows continuously, one paragraph per line
+  - NO double blank lines anywhere
+  - NO tabs, only spaces
+  - Scene breaks get breathing room (blank line before and after ---)
+  - Italics for internal monologue and emphasis only
+  - Present tense throughout (unless flashback)
+
+dabble_import_notes:
+  - Dabble auto-detects "CHAPTER N" as chapter heading
+  - Scene breaks (---) become centered markers
+  - Clean .txt with UTF-8 encoding imports smoothly
+  - Avoid smart quotes in source — Dabble handles conversion
+
+  # IMPORTANT: Markdown italics (*text*) do NOT convert in Dabble manuscript
+  italics_workflow:
+    problem: "Markdown *italics* only works in Story Notes, not manuscript area"
+    solution:
+      step_1: "Paste chapter text into Google Docs or Microsoft Word"
+      step_2: "Find/replace *text* patterns or manually apply Ctrl+I formatting"
+      step_3: "Copy from Word/Docs and paste into Dabble"
+    note: "Rich text formatting (italics, bold) transfers correctly via copy/paste from Word/Docs"
+
+  what_transfers:
+    - "Italics and bold (from Word/Docs rich text)"
+    - "Chapter headings (auto-detected)"
+    - "Scene breaks (auto-detected)"
+
+  what_doesnt_work:
+    - "Markdown in manuscript area (*italics*, **bold**)"
+    - "Underline (not supported in Dabble)"
+
+example_chapter: |
+
+  CHAPTER 18
+
+  DIVINE INTERVENTION
+
+  Even Four wasn't speaking. The only sound is the grinding hum of the VTOL's propulsion.
+  What was there to say?
+  "Question." Elena's arms are crossed, her eyebrows squeezing together. "Did we... die?"
+  Still nothing from Four. That alone is enough to trouble the passengers.
+  "If we died," Hendricks offers, "I should have done that from the start of all this. I've never felt better. Well, at least, for my age."
+  Everyone turns to him. Standard puts her hand on both of his arms to examine him like a landscape painting.
+  *He looks younger.* The thought arrives without permission. Not just healthier — *younger*.
+
+  ---
+
+  The landscape outside has changed.

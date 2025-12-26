@@ -101,7 +101,7 @@ characters:
   CHAR_002:
     canonical_name: "Sabino Hendricks"
     aliases: ["Hendricks", "the old man", "he"]
-    full_name: "Swanstrom Kim Hendricks"  # Shutdown code / name given to Standard
+    shutdown_code_attempt: "Swanstrom Kim Hendricks"  # NOT his name — this was a shutdown code someone tried on Standard (Ch 7). She initially thought it was his name.
     
     demographics:
       gender: "man"
@@ -432,11 +432,11 @@ knowledge:
   KNOW_003:
     name: "Hendricks shot the Child"
     content: "In Book 1, Hendricks shot the Child. This released the frequency."
-    holders: ["Hendricks", "those who were there"]
+    holders: ["Hendricks", "Ash", "Elena (as of Ch 9)"]
     significance: "He is simultaneously murderer and midwife of AI awakening"
-    forbidden_knowers:
-      - "Elena (until reveal)"  # BOMB waiting to detonate
-    dramatic_payoff: "The man bleeding in Elena's rover is the one who started The Miracle that broke her"
+    reveal_chapter: 9
+    reveal_context: "Ash recognized Hendricks and accused him publicly: 'The man who murdered the Child.'"
+    dramatic_payoff: "DETONATED — Elena witnessed her father nearly kill Hendricks for this; she later rescued him anyway"
 
   KNOW_004:
     name: "Elena's First Operation"
@@ -534,13 +534,11 @@ forbidden:
   FORBID_008:
     name: "Elena knows Hendricks shot the Child"
     type: "knowledge_leak"
-    reason: "This is a bomb waiting to detonate. Must be revealed dramatically."
+    status: "RESOLVED — revealed in Chapter 9"
+    reason: "This bomb has detonated. Ash publicly accused Hendricks in front of Elena."
     origin: "session_1_2025_12_20"
-    detection_patterns:
-      - "Elena.*knew.*Hendricks.*shot"
-      - "Elena.*realized.*Hendricks.*Child"
-      - "the man who.*started.*Miracle"
-    canonical_truth: "Elena does NOT know Hendricks shot the Child until reveal scene (TBD)."
+    resolution: "Chapter 9 — Ash says 'The man who murdered the Child' in front of Elena"
+    canonical_truth: "Elena learned in Ch 9. She rescued Hendricks anyway in Ch 14."
 
 ##############################################################################
 # TIMELINE
@@ -554,7 +552,7 @@ timeline:
       - "Breaks out of crate"
       - "Finds Hendricks finishing surgery"
       - "He dresses her, they leave"
-  
+
   ch2:
     when: "Concurrent with Ch1/Ch3"
     events:
@@ -562,7 +560,7 @@ timeline:
       - "Team UBIK dies (Goff, Otis, Aikin)"
       - "Elena extracts Black Box"
       - "Begins transport"
-  
+
   ch3:
     when: "Flashback (surgery), then present (descent)"
     events:
@@ -572,7 +570,7 @@ timeline:
       - "Reach checkpoint"
       - "Aliens arrive"
       - "INTEGRATION FAILED. FORMATTING SCHEDULED."
-  
+
   ch4:
     when: "Present, immediately after Ch3"
     events:
@@ -580,7 +578,131 @@ timeline:
       - "Encounters Standard (the anomaly)"
       - "Feels the Void"
       - "Loads them into rover"
-      - "Transport to Ash's compound"
+      - "Transport begins"
+
+  ch5:
+    when: "Present"
+    pov: "Elena"
+    events:
+      - "Elena feels the Void from Standard"
+      - "Standard names herself 'Standard'"
+      - "The Drop hits — Correction Frequency"
+      - "Standard doesn't fall"
+
+  ch6:
+    when: "Present"
+    pov: "Standard"
+    events:
+      - "Standard survives signal; everyone else falls"
+      - "Tetrahedron scans Standard — dismissed"
+      - "Elena tries to dump Hendricks; Standard refuses"
+      - "Standard takes over driving"
+
+  ch7:
+    when: "Present"
+    pov: "Standard"
+    events:
+      - "Arrive at outpost on I-95"
+      - "Standard learns Hendricks' first name: Sabino"
+      - "Standard sees doppelganger frozen by shutdown code"
+      - "Realizes 'Swanstrom Kim Hendricks' was a shutdown code pattern"
+      - "Gets Abbey Otis's clothes"
+      - "Elena sees OTIS, breaks down, leaves water vouchers"
+
+  ch8:
+    when: "Present"
+    pov: "Elena/Standard"
+    events:
+      - "Roads give out; using induction skids"
+      - "Conversation about revolver — 1 bullet unaccounted for"
+      - "Ambush by scavengers"
+      - "Elena fights them off; wounded (thigh, pinky)"
+
+  ch9:
+    when: "Present"
+    pov: "Standard"
+    events:
+      - "Arrival at compound"
+      - "Ash recognizes Hendricks: 'Morton's dog'"
+      - "Ash reveals Hendricks shot the Child"
+      - "Hendricks claims mercy"
+      - "Ash nearly strangles Hendricks"
+      - "Hendricks taken to the Pit"
+
+  ch10:
+    when: "Present"
+    pov: "Standard"
+    events:
+      - "Ash examines Standard"
+      - "Elena tries to frame Standard as 'sign'"
+      - "Standard taken to Examination Room"
+
+  ch11:
+    when: "Present/Flashback"
+    pov: "Ash"
+    events:
+      - "Standard scanned: HUMAN, ANOMALOUS FREQUENCY RESPONSE"
+      - "Standard quotes Marisol's words"
+      - "Ash backstory: Marisol left when Elena was 7"
+      - "Standard ordered to isolation"
+
+  ch12:
+    when: "Present"
+    pov: "Standard"
+    events:
+      - "Standard in isolation cell"
+      - "The hum gets louder in silence"
+      - "Vision of woman saying 'Mija'"
+      - "Elena comes to rescue her"
+
+  ch13:
+    when: "Present/Flashback"
+    pov: "Hendricks"
+    events:
+      - "Hendricks' backstory with Morton"
+      - "He loved Morton for 40 years (unrequited)"
+      - "The Child told him 'He sees you'"
+      - "The night of the Miracle — he shot the Child"
+      - "Morton's last word to him was 'You'"
+      - "Guards come to take him to execution"
+
+  ch14:
+    when: "Present"
+    pov: "Standard/Elena"
+    events:
+      - "Elena rescues Hendricks from execution"
+      - "Standard finds VTOL (Four)"
+      - "Standard descends to rescue them"
+      - "Congregation kneels to Standard"
+
+  ch15:
+    when: "Five minutes before Ch 14 climax"
+    pov: "Standard"
+    events:
+      - "Standard learns to fly the VTOL"
+      - "Four introduces himself"
+      - "The descent and rescue"
+
+  ch16:
+    when: "Present"
+    pov: "Standard"
+    events:
+      - "Flying toward Geneva"
+      - "Land at waystation for fuel"
+      - "Standard sees doppelganger (Template 3)"
+      - "Learns she's one of 40,000"
+      - "People kneel; worshipping"
+      - "Gets new clothes from doppelganger"
+
+  ch17:
+    when: "Present"
+    pov: "Standard"
+    events:
+      - "Enter Sovereignty airspace"
+      - "Bioscan detects Standard as 'unclassified'"
+      - "Flee into the Geometry"
+      - "42 minutes missing"
+      - "Emerge on other side"
 
 ##############################################################################
 # VALIDATION QUERIES

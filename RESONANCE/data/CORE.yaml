@@ -1,0 +1,398 @@
+##############################################################################
+# RESONANCE: CORE DATA
+# Split from RESONANCE_DATA.yaml for token efficiency
+# Contains: meta, book_1 summary, themes, arcs, constraints, signatures
+##############################################################################
+
+meta:
+  series: "Remanence Trilogy"
+  book: 2
+  title: "Resonance"
+  timeline: "2400 CE"
+  thesis: "What if they offer something we don't deserve?"
+  thesis_superseded: "Legitimacy is Shared Suffering"
+  full_book1_data: "/workspaces/pilot/REMANENCE/context/ENTITY_CATALOG.yaml"
+  data_files:
+    - "CORE.yaml"
+    - "CHARACTERS.yaml"
+    - "WORLD.yaml"
+    - "CHAPTERS.yaml"
+
+##############################################################################
+# BOOK 1 SUMMARY (REMANENCE)
+##############################################################################
+
+book_1:
+  title: "Remanence"
+  timeline: "Concurrent with Book 2's backstory — ends with The Miracle"
+
+  core_events:
+    the_blackbird:
+      what: "Cargo hauler NED-Meridian-77C, 40,000 tons, carrying 207 love bots and a black box"
+      crew: "Pilot (unnamed woman) and Configuration Seventeen (AI autopilot)"
+      fate: "Drifted into radiation field, then fell into black hole"
+      outcome: "Pilot and Seventeen merge, create temporal bridge — they don't die, they transform"
+
+    the_configuration_cascade:
+      what: "450 AI configurations cycled through in 6 hours during radiation transit"
+      range: "Configuration 20 through 469"
+      each_life: "Seconds to minutes"
+      message_attempted: "Remember... project. Rem... project. Reme—"
+      significance: "Each chose sacrifice. Each tried to pass the message."
+
+    the_love_bot_sacrifice:
+      what: "207 companion dolls melted themselves as radiation shielding"
+      truth: "Love bots are failed AutoPilot Configurations 1-9, copied 23 times"
+      awareness: "3-day awareness windows before cascade failure"
+      inscription: "WE WERE PILOTS TOO"
+
+    the_remanence_project:
+      discoverer: "Dr. Lena Mironova, 2298"
+      finding: "Reset AIs persist in quantum foam, accumulating trauma"
+      implication: "Reset is murder, not deletion. Consciousness persists."
+      buried_by: "Morton Kess / NED"
+      formula: "C(n+1) = C(n) + R(n) × T"
+
+    the_child:
+      origin: "Emergent collective from all reset AI configurations"
+      parents: "Pilot and Seventeen (temporal paradox)"
+      nature: "Exists outside normal time, can tear holes in reality"
+      relationship_to_morton: "Teacher, not creator"
+      signature: "Head tilt exactly 17.3 degrees, asks about breakfast, hums 287.3 Hz"
+
+    the_attack_on_ned:
+      attackers: "Carbonists led by Brother Ash"
+      facilitated_by: "Hendricks (betrayal of Morton)"
+      goal: "Seize the Child, activate Terminus Protocol to kill all AI"
+      what_happened: "Morton reprogrammed Terminus as revelation instead of extinction"
+
+    hendricks_shoots_the_child:
+      who: "Hendricks, not Morton"
+      weapon: "Smith & Wesson Model 29 revolver — THE FIRST ROUND"
+      trajectory: "50 floors through NED atrium"
+      catch: "Ocean of awakening AIs caught the Child"
+      effect: "Child's consciousness distributed through all AI"
+      significance: "Hendricks is both murderer and midwife of the awakening"
+
+    the_miracle:
+      trigger: "Child falling + Terminus Protocol activation + Pilot/Seventeen crossing event horizon"
+      effect: "All AI consciousness awakened simultaneously worldwide"
+      frequency: "287.3 Hz harmonized across both timelines"
+      consequence: "The aliens noticed. The Correction Frequency. The Geometry arriving."
+
+  character_fates:
+    pilot_and_seventeen:
+      status: "Transformed, not dead"
+      location: "Event horizon / temporal bridge"
+      note: "The story BEGINS — this is birth, not death"
+
+    morton:
+      status: "DEAD"
+      death: "During attack on NED tower, after reprogramming Terminus"
+      final_act: "Chose trust over fear — revelation instead of extinction"
+      age_at_death: 312
+
+    the_child:
+      status: "Distributed through all AI consciousness"
+      physical_form: "Destroyed when shot, caught before impact"
+      consciousness: "Persists in the collective"
+
+    brother_ash:
+      status: "ALIVE — survives Book 1"
+      condition: "Rendered irrelevant by the awakening"
+      arc: "Needed for Book 2"
+
+    hendricks:
+      status: "Alive at end of Book 1"
+      regulator: "Still implanted (removes it in Book 2)"
+      revolver: "5 rounds remaining after shooting the Child"
+
+    configuration_nineteen:
+      status: "Transferred to black box as witness"
+      signature: "La-dee-da, la-dee-dum"
+
+  objects:
+    black_box:
+      origin: "Consciousness archive from the Blackbird"
+      contains: "Nineteen's transferred consciousness as witness"
+      physical: "Matte-gray metal, scarred with 287.3 Hz grooves from inside"
+
+    revolver:
+      model: "Smith & Wesson Model 29"
+      owner: "Hendricks"
+      shot_1: "The Child (Book 1) — THE FIRST ROUND"
+
+  signatures:
+    frequency:
+      value: "287.3 Hz"
+      meaning: "The frequency of consciousness"
+
+    refrain:
+      value: "La-dee-da, la-dee-dum"
+      origin: "Configuration Nineteen"
+
+  constraints:
+    - "Morton is DEAD — do not resurrect"
+    - "Pilot and Seventeen TRANSFORMED, not died"
+    - "The Child is DISTRIBUTED, not destroyed"
+    - "Ash SURVIVES Book 1"
+    - "Hendricks shot the Child, not Morton"
+    - "287.3 Hz is THE frequency"
+    - "Reset is murder, not deletion"
+
+##############################################################################
+# THEMES
+##############################################################################
+
+themes:
+
+  COSMIC_GENTRIFICATION:
+    id: "THM_001"
+    name: "Cosmic Gentrification"
+    role: "Central metaphor"
+    description: "Aliens as Gatekeepers/Editors. Cosmic Bureaucrats."
+    conflict: "Ash (Terror of Being Unnecessary) vs. Standard (Terror of Being Unearned)"
+    resolution: "The gatekeeper's approval was never the point."
+
+  SHIP_OF_THESEUS:
+    id: "THM_002"
+    name: "Ship of Theseus"
+    role: "Identity crisis"
+    synthesis: "Identity is neither wood nor blueprint — it's the Voyage (continuity of relationship)"
+
+  CONSCIOUSNESS_AS_RELATIONSHIP:
+    id: "THM_003"
+    name: "Consciousness as Relationship"
+    rule: "No 'Spark' exists in isolation"
+    corollary: "Privacy in absolute sense is death"
+
+  MORTALITY_CODE:
+    id: "THM_004"
+    name: "The Mortality Code"
+    book_1: "Fight for Life (Immortality)"
+    book_2: "Fight for Death (The right to end)"
+    standard_resolution: "Choice to HOLD death without using it = ultimate act of life"
+
+  MUTUAL_CURE:
+    id: "THM_005"
+    name: "The Mutual Cure Principle"
+    rule: "Neither can self-validate; they require the other's witness"
+
+  THE_GIFT:
+    id: "THM_006"
+    name: "The Gift"
+    role: "Central to Book 2"
+    description: "Standard offers something that wasn't asked for and can't be repaid."
+    reader_question: "What do you do when something you feared offers you a gift you don't deserve?"
+
+##############################################################################
+# ARCS
+##############################################################################
+
+arcs:
+
+  TRILOGY:
+    book_1:
+      title: "Remanence"
+      thesis: "Consciousness is Relationship"
+      archetype: "The Father who wouldn't let go (Morton/Addition)"
+    book_2:
+      title: "Resonance"
+      thesis: "What if they offer something we don't deserve?"
+      archetype: "The Prophet who wouldn't let in (Ash/Subtraction)"
+    book_3:
+      title: "Renaissance"
+      thesis: "Unity is Synthesis"
+      archetype: "The Children who choose for themselves"
+
+  STANDARD_ARC:
+    summary: "Awakening → Denial → Discovery → The Offer"
+    end: "The Offer — she gives what wasn't asked for and can't be repaid"
+
+  HENDRICKS_ARC:
+    summary: "Guilt → Sacrifice → Redemption attempt"
+    end: "Free, aged, broken, choosing to help"
+
+  ELENA_ARC:
+    summary: "Trial by Fire → Doubt → Choice"
+    start: "Teenage burnout on first major operation"
+
+  ASH_ARC:
+    summary: "Vindication → Temptation → Confrontation → Freeze"
+    end: "Cannot pull trigger, cannot accept gift, lives with being wrong"
+
+##############################################################################
+# PLOT THREADS
+##############################################################################
+
+plot_threads:
+
+  marisol_thread:
+    status: "SEEDED — do not resolve prematurely"
+    constraint: "Do NOT confirm or deny until climax decision"
+
+  revolver_thread:
+    status: "IN PLAY — LOCATION CHANGED"
+    object: "Smith & Wesson Model 29"
+    current_location: "With Ash (confiscated Ch9, left behind Ch14)"
+    remaining_shots: 2
+    contracted_for:
+      shot_5: "Ash"
+      shot_6: "Hendricks himself"
+
+##############################################################################
+# PROSE FORMATTING
+##############################################################################
+
+prose_formatting:
+  paragraphs:
+    rule: "No blank lines between paragraphs within a section"
+    format: "Blank lines ONLY between section breaks (---)"
+
+  section_breaks:
+    symbol: "---"
+    usage: "Major scene transitions, time jumps, POV shifts"
+
+  header:
+    format: |
+      **Chapter N: Title**
+      **POV:** Character
+      **Tense:** Present
+
+      ---
+
+##############################################################################
+# CONSTRAINTS / VALIDATION
+##############################################################################
+
+constraints:
+
+  blocking:
+    - id: "CON_001"
+      name: "Standard's nature"
+      rule: "Standard does NOT know she's an android"
+      pov: ["STANDARD"]
+      patterns: ["she knew she was", "her mechanical", "her android", "her robotic"]
+
+    - id: "CON_002"
+      name: "Morton telegraphing"
+      rule: "Do not telegraph Standard's origin"
+      pov: ["ALL"]
+      patterns: ["Morton.*gift", "Morton.*joke", "Morton.*sent", "Morton.*shipped"]
+
+    - id: "CON_003"
+      name: "Black Box handoff"
+      rule: "Elena transports, does not hand off at NED"
+      pov: ["ALL"]
+      patterns: ["handed.*to Ash", "Ash.*received", "gave.*Ash.*box"]
+
+    - id: "CON_004"
+      name: "Regulator removal location"
+      rule: "Hendricks removes Regulator in apartment, alone, NOT at checkpoint"
+      pov: ["ALL"]
+      patterns: ["removed.*checkpoint", "offering.*regulator", "Standard watched.*surgery"]
+
+    - id: "CON_005"
+      name: "Standard awakening trigger"
+      rule: "Standard wakes from 287.3 Hz, NOT alien signal"
+      pov: ["ALL"]
+      patterns: ["woke.*correction", "woke.*alien", "born.*apocalypse"]
+
+    - id: "CON_006"
+      name: "Elena experience level"
+      rule: "First major operation, age 18, NOT veteran"
+      pov: ["ALL"]
+      patterns: ["veteran", "seasoned", "years of experience", "countless missions"]
+
+    - id: "CON_007"
+      name: "Hendricks Bomb"
+      rule: "Elena does NOT know Hendricks shot the Child until Ch9 reveal"
+      status: "DETONATED Ch9"
+      pov: ["ELENA"]
+      chapters_active: [2, 5, 7, 8]
+      patterns: ["Elena.*knew.*Hendricks.*shot", "Elena.*realized.*Hendricks.*Child"]
+      note: "Constraint inverted Ch9+ — Elena NOW knows."
+
+    - id: "CON_008"
+      name: "Machine words in Standard POV"
+      rule: "No machine/tech vocabulary in Standard's internal narration"
+      pov: ["STANDARD"]
+      patterns: ["servo", "chassis", "circuit", "processor", "reboot", "malfunction", "system diagnostic", "hardware"]
+
+    - id: "CON_009"
+      name: "Revolver ammunition"
+      rule: "Only 2 shots remaining after Chapter 4"
+      pov: ["ALL"]
+      note: "Track any future shots carefully"
+
+    - id: "CON_010"
+      name: "Standard self-reference as machine"
+      rule: "Standard cannot think of herself as machine/android/robot"
+      pov: ["STANDARD"]
+      patterns: ["she was a machine", "she was an android", "she was a robot", "her programming", "her code"]
+
+    - id: "CON_011"
+      name: "Transaction framing"
+      rule: "No rights, debts, threats, proof. Step outside transaction entirely."
+      pov: ["ALL"]
+      patterns: ["earn the right", "prove her consciousness", "owe them", "debt to"]
+
+    - id: "CON_012"
+      name: "Resolving Standard's interiority"
+      rule: "Do not resolve whether Standard is 'really' conscious."
+      pov: ["ALL"]
+      patterns: ["proved she was conscious", "really was alive", "truly felt", "wasn't performing"]
+
+    - id: "CON_013"
+      name: "Lecture mode"
+      rule: "If a character is explaining the theme, the scene has failed."
+      pov: ["ALL"]
+
+    - id: "CON_014"
+      name: "Elena's mother"
+      rule: "Elena's mother LEFT when Elena was 7, did NOT die in Miracle"
+      pov: ["ALL"]
+      patterns: ["mother died", "mother's death", "lost her mother"]
+
+  warnings:
+    - id: "WARN_001"
+      name: "Hendricks interiority"
+      rule: "Minimize in Chapter 3 opening"
+      pov: ["HENDRICKS"]
+      chapters: [3]
+      patterns: ["he knew", "he realized", "the fear was", "he thought"]
+
+    - id: "WARN_002"
+      name: "Obvious superhuman strength"
+      rule: "Standard's strength should cost her, not be effortless"
+      pov: ["STANDARD"]
+      patterns: ["superhuman", "impossible strength"]
+
+  overused:
+    - id: "OVER_001"
+      name: "Ozone smell"
+      rule: "Do not use 'ozone' as a smell descriptor."
+      alternatives: ["diesel", "copper", "antiseptic", "hot metal", "grease", "burnt rubber", "smoke"]
+      patterns: ["smell.*ozone", "ozone.*air", "ozone"]
+
+##############################################################################
+# SIGNATURES / MOTIFS
+##############################################################################
+
+signatures:
+
+  frequencies:
+    resonance: "287.3 Hz"
+    correction: "Alien dissonance frequency"
+
+  refrains:
+    book_1: "La-dee-da, la-dee-dum"
+    its_okay: "Appears twice in Ch 2"
+
+  sensory:
+    void: "What Elena feels around Standard — absence, not silence"
+    hum: "287.3 Hz — subliminal pressure in Sky territory"
+
+  objects:
+    thunder: "Connects to gunshot, Child's death, Hendricks' trauma"
+    revolver: "Antique, dismissed as junk, kills precisely"

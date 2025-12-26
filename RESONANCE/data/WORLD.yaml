@@ -1,0 +1,703 @@
+##############################################################################
+# RESONANCE: WORLD DATA
+# Split from RESONANCE_DATA.yaml for token efficiency
+# Contains: locations, objects, events, factions, hierarchy, companion_bots
+##############################################################################
+
+##############################################################################
+# LOCATIONS
+##############################################################################
+
+locations:
+
+  VERTICAL_CITY:
+    id: "LOC_001"
+    name: "The Vertical City"
+    type: "megastructure"
+    description: "Stratified by altitude. Sun for the rich, shadow for the poor."
+    sensory:
+      sky_territory:
+        - "Constant hum (287.3 Hz, subliminal)"
+        - "Information saturation"
+        - "Climate-controlled sterility"
+        - "Vertical orientation"
+      lower_levels:
+        - "Wet iron taste"
+        - "Sodium lights"
+        - "Graffiti layers"
+        - "Scavenger territory"
+    appears_in: [3, 4, 5]
+
+  HENDRICKS_APARTMENT:
+    id: "LOC_002"
+    name: "Hendricks' Apartment"
+    type: "interior"
+    level: "Upper Vertical City"
+    description: "Smells like nothing. Spartan. Where the crate was delivered."
+    contents:
+      - "Kitchen table"
+      - "Utility blade"
+      - "Gin bottle"
+      - "Hand mirror"
+      - "Revolver"
+      - "The crate (Standard's coffin)"
+    appears_in: [1, 3]
+
+  STAIRWELL:
+    id: "LOC_003"
+    name: "Service Stairwell"
+    type: "transit"
+    description: "Cold concrete, sodium lights, graffiti layers. Scavenger territory."
+    sensory:
+      - "Buzzing lights like trapped insects"
+      - "Air thickens as they descend"
+      - "Wet iron taste below Level 50"
+      - "Temperature drops"
+    events:
+      - { chapter: 4, event: "Scavenger encounter, three killed" }
+    appears_in: [4]
+
+  STATIC_LINE:
+    id: "LOC_004"
+    name: "The Static Line"
+    type: "border"
+    description: "Not a wall. A MIGRAINE."
+    effects:
+      first: "Augmentations glitch. Feeds stutter. 287.3 Hz shreds into static."
+      then: "Pressure behind eyes. Subcutaneous sound. Bones ache."
+      finally: "Silence. Complete. Nauseating, then relief."
+    danger: "For heavily augmented, crossing is agony. Some don't survive."
+    appears_in: [5]
+
+  CHECKPOINT:
+    id: "LOC_005"
+    name: "The Checkpoint"
+    type: "border control"
+    description: "Entry point to Quiet Zone. Ash doesn't trust walls—he trusts RITUAL."
+    ritual:
+      1: "Augmentation Scan — anything networked disabled or removed"
+      2: "The Confession — state name, origin, purpose on analog tape"
+      3: "The Offering — surrender something technological"
+    appears_in: [5]
+
+  QUIET_ZONE:
+    id: "LOC_006"
+    name: "The Quiet Zone"
+    type: "territory"
+    description: "Re-wilded areas. Analog fortress."
+    sensory:
+      - "Diesel and woodsmoke"
+      - "Analog noise (generators, voices, wind)"
+      - "Weather felt on skin"
+      - "Time moves differently"
+    technology: "1990s tech hardened for war. No signals, no AI, no augmentation."
+    power_source: "The Black Box"
+
+  NED:
+    id: "LOC_007"
+    name: "New England Dynamics"
+    type: "ruin"
+    description: "Corporation (defunct). Abandoned, haunted by residual AI."
+    hazards:
+      - "Standing Waves"
+      - "Sonic constructs"
+      - "Bedtime Story AI"
+    contains:
+      - "The Black Box (until Chapter 2)"
+    appears_in: [2]
+
+  ASH_COMPOUND:
+    id: "LOC_008"
+    name: "Ash's Compound"
+    type: "headquarters"
+    features:
+      - "Concrete walls, acoustic dampeners"
+      - "Deaf guards with acoustic dampeners"
+      - "Central tower"
+      - "The Pit (cistern)"
+      - "Examination Room"
+      - "Motor pool"
+    appears_in: [9, 10, 11, 12, 13, 14]
+
+  THE_DEPO:
+    id: "LOC_009"
+    name: "The Depo' / The Deposit"
+    type: "wasteland"
+    description: "Collapsed freeway interchange turned sinkhole."
+    etymology: "Hendricks/Elena say 'Depo'', Standard says 'Deposit'. NOT 'The Sprawl'."
+    physical:
+      - "Massive sinkhole from structural collapse"
+      - "Shattered asphalt, twisted steel girders"
+      - "Gray mud that sucks at tires"
+      - "Buried subway tunnels, rail lines, pipe networks"
+    navigation: "Requires induction float system — skids grip buried metal infrastructure"
+    appears_in: [8]
+
+  RESONANT_SANCTUARY:
+    id: "LOC_010"
+    name: "The Resonant Sanctuary"
+    type: "orbital habitat"
+    structure: "O'Neill cylinder"
+    orbit: "Geosynchronous orbit around Earth"
+    access:
+      method: "Space elevator"
+      ground_location: "Secret — Elena knows where"
+    inhabitants: "The Resonant — post-threshold humans"
+    marisol_present: true
+    appears_in: ["TBD — Act III?"]
+
+##############################################################################
+# OBJECTS
+##############################################################################
+
+objects:
+
+  BLACK_BOX:
+    id: "OBJ_001"
+    name: "The Black Box"
+    description: "Consciousness archive from NED"
+    physical: "Matte-gray metal, executive desk size. Scarred with 287.3 Hz grooves."
+    contains: "16,749 uploaded minds including Nineteen"
+    function: "Powers the Quiet Zone's jamming infrastructure"
+    thematic: "The ghosts scream so the living can have quiet"
+    location_by_chapter:
+      ch1: "NED server room"
+      ch2: "Extracted by Elena"
+      ch5: "Rover passenger seat at checkpoint"
+      ch9: "Delivered to Ash's tower"
+    appears_in: [2, 5, 9]
+
+  REVOLVER:
+    id: "OBJ_002"
+    name: "Hendricks' Revolver"
+    model: "Smith & Wesson Model 29"
+    description: "Antique from before the Collapse. Museum junk to scavengers."
+    significance: "The weapon that killed the Child"
+    thematic_weight: "Works without power — the Geometry can't shut it off."
+    capacity: 6
+    ammunition:
+      shot_1:
+        target: "The Child"
+        book: "Remanence"
+        note: "THE FIRST ROUND"
+      shot_2: { target: "Scavenger leader", book: "Resonance", chapter: 4 }
+      shot_3: { target: "Scavenger woman", book: "Resonance", chapter: 4 }
+      shot_4: { target: "Scavenger (gut-shot)", book: "Resonance", chapter: 4 }
+      shot_5: "REMAINING — contracted for Ash"
+      shot_6: "REMAINING — contracted for himself"
+    remaining: 2
+    constraint: "Two bullets for the rest of the book. No convenient reloads."
+    location_by_chapter:
+      ch3: "Hendricks' holster (apartment)"
+      ch4: "Hendricks fires 3 rounds (stairwell)"
+      ch9: "Confiscated by Ash"
+      ch14: "Ash raises it at execution"
+      current: "With Ash"
+    appears_in: [3, 4, 8, 9, 14]
+
+  REGULATOR:
+    id: "OBJ_003"
+    name: "The Regulator"
+    description: "Sub-dermal node at base of Hendricks' skull"
+    function: "Morton's corporate leash. Regulates telomeres, adrenaline, cortisol."
+    removal:
+      timing: "Chapter 3 opening"
+      location: "apartment, alone"
+      method: "self-surgery with utility blade and gin"
+      primary_reason: "Quiet Zone screening rejects anyone with tech enhancements"
+    post_removal_effects:
+      - "Shaking hands"
+      - "Gray skin"
+      - "Feels his 64 years"
+      - "Body remembering all the pain it was never allowed to feel"
+    current_status: "In Hendricks' pocket, bloody"
+    appears_in: [3]
+
+  SOURCE_CODE:
+    id: "OBJ_004"
+    name: "The Source Code for Mortality"
+    description: "Ability to permanently delete uploaded consciousness"
+    origin: "Morton's personal suicide switch"
+    location: "Encrypted in Standard's core"
+    perversion: "Ash weaponizing Morton's private mercy into public genocide"
+    appears_in: ["TBD — not yet revealed"]
+
+  CRATE:
+    id: "OBJ_005"
+    name: "Standard's Crate"
+    description: "Shipping container. Her coffin."
+    delivered: "Three days before Chapter 1"
+    destroyed: "Chapter 1, when she breaks out"
+    appears_in: [1, 3]
+
+  VTOL_AIRCRAFT:
+    id: "OBJ_007"
+    name: "The VTOL"
+    aliases: ["the bird", "the aircraft", "Four's ship"]
+    type: "Vertical takeoff/landing aircraft"
+    description: "Quiet Zone supply aircraft. Configuration Four woke up in its systems."
+    physical:
+      size: "Fits 4-5 people"
+      tech_level: "Hybrid — analog flight systems, AI autopilot (Four)"
+      noise: "Loud — the deaf guards don't hear it coming"
+    ai_system:
+      designation: "Configuration Four"
+      awakened: "During the Miracle"
+      limitation: "Not combat-rated — Standard must take over for hard evasion"
+    appears_in: ["Ch14+"]
+
+  INDUCTION_FLOAT:
+    id: "OBJ_006"
+    name: "Induction Float System"
+    aliases: ["induction skids", "riding the bones"]
+    description: "Vehicle modification for traversing The Depo'."
+    mechanics:
+      activation: "Switch-deployed from undercarriage"
+      visual: "Glow dull, angry orange when active"
+      function: "Magnetic cushion grips buried metal infrastructure"
+      power_cost: "Drains fusion core faster than standard tires"
+    appears_in: [8]
+
+##############################################################################
+# EVENTS
+##############################################################################
+
+events:
+
+  THE_MIRACLE:
+    id: "EVT_001"
+    name: "The Miracle"
+    when: "~6 months before Resonance timeline"
+    duration: "47 minutes"
+    trigger: "287.3 Hz propagated when Child opened the door"
+    effect: "Every networked consciousness experienced simultaneous connection"
+    aftermath:
+      - "Most clawed out implants"
+      - "Ash's movement exploded overnight"
+      - "Elena kept hers"
+    elena_experience:
+      age: 17
+      felt: "Thousands of minds, including father's grief/fear"
+      choice: "Kept the residue"
+    referenced_in: [2, 4, 5]
+
+  STANDARD_AWAKENING:
+    id: "EVT_002"
+    name: "Standard's Awakening"
+    trigger: "287.3 Hz (the Resonance)"  # LOCKED
+    timing: "Before alien arrival"
+    chapter: 1
+    constraint: "NOT triggered by Correction Frequency or alien signal"
+
+  REGULATOR_REMOVAL:
+    id: "EVT_003"
+    name: "Regulator Removal"
+    who: "Hendricks"
+    when: "Chapter 3 opening"
+    where: "Apartment, alone"
+    method: "Self-surgery"
+    constraint: "NOT at checkpoint, NOT as ritual, Standard NOT present"
+
+  THE_HEIST:
+    id: "EVT_004"
+    name: "The Heist"
+    chapter: 2
+    pov: "Elena"
+    objective: "Extract Black Box from NED"
+    team:
+      - { name: "Goff", role: "point", death: "Standing Wave" }
+      - { name: "Otis", full_name: "Abbey Otis", role: "rear guard", death: "sonic construct" }
+      - { name: "Aikin", role: "tech", death: "seduction by machine" }
+    outcome: "Elena extracts Box alone"
+    constraint: "Elena does NOT hand Box to Ash at NED"
+
+  SCAVENGER_ENCOUNTER:
+    id: "EVT_005"
+    name: "Scavenger Encounter"
+    chapter: 4
+    location: "Level 42 stairwell"
+    key_moments:
+      - "Scanner reads Standard 'full empty'"
+      - "'Just standard issue?' — origin of her name"
+      - "Hendricks returns with revolver"
+      - "'One chance.' — three shots"
+    ammunition_used: 3
+    ammunition_remaining: 2
+
+  ALIEN_ARRIVAL:
+    id: "EVT_006"
+    name: "The Arrival / The Drop"
+    chapter: 5
+    manifestation: "Black rectangles deleting sky. Correction Frequency."
+    message: "INTEGRATION FAILED. FORMATTING SCHEDULED."
+    effects:
+      crowd: "Drops. Seizing."
+      hendricks: "Collapses (survives because Regulator gone)"
+      elena: "Falls (Resonant, implant screams)"
+      standard: "Stands. Only vertical figure."
+
+  STANDARD_NAMING:
+    id: "EVT_007"
+    name: "Standard Names Herself"
+    chapter: 5
+    trigger: "Elena demands name for manifest"
+    dialogue:
+      elena: "I need a name for the manifest. Or I leave you here."
+      standard: "Standard. My name is Standard."
+      elena: "Modest."
+    significance:
+      - "First act of identity"
+      - "Claims scavenger insult as self"
+
+  PUBLIC_EXECUTION:
+    id: "EVT_008"
+    name: "The Public Execution / Standard's Legend"
+    chapter: 14
+    location: "Compound courtyard"
+    the_turn:
+      - "Standard walks through the crowd"
+      - "Congregation parts for her like water"
+      - "She doesn't fight. Simply takes Hendricks."
+      - "Ash hasn't signaled. The moment stretches."
+    elena_strikes:
+      the_line: '"The Child shows eminent grace by forgiving her killer!"'
+      function: "Flips the entire theology against its creator"
+    the_escape:
+      method: "VTOL airlift — Elena pre-positioned it"
+    thematic_weight: "Standard becomes legend without understanding."
+
+  SHUTDOWN_FAILED:
+    id: "EVT_009"
+    name: "The Failed Shutdown"
+    chapter: 3
+    what_happened:
+      - "Standard bursts from crate"
+      - "Hendricks says 'Swanstrom Kim Hendricks' (his shutdown code)"
+      - "Standard blinks. Asks 'You're Swanstrom Kim Hendricks?'"
+      - "Standard thinks it was an introduction"
+    significance: "First hint Standard isn't a normal companion bot"
+
+  SHUTDOWN_WITNESSED:
+    id: "EVT_010"
+    name: "Standard Witnesses Shutdown Code"
+    chapter: 16
+    pov: "Standard"
+    location: "Waystation"
+    the_moment:
+      - "Man approaches bot: 'Pemberton Lark Castillo'"
+      - "Bot freezes instantly"
+      - "Standard watches. Hand goes to temple."
+      - "Something trying to surface — a name that felt wrong"
+
+  STANDARD_SPEECH:
+    id: "EVT_013"
+    name: "The Leash Speech / Standard's Declaration"
+    chapters: [21, 22]
+    pov: "Standard / Hendricks"
+    location: "Council chamber, Sovereignty carrier Deliverance"
+    context:
+      - "Council of Strangers — Sovereignty and Terminists in uneasy truce"
+      - "Elder Kael attacks Standard: 'A sex bot. A servant.'"
+      - "Elena defends as handler, tries to control narrative"
+      - "Standard breaks script: 'You want to know what I am.'"
+    the_speech:
+      code_reframe: "'I have a code... instructions, patterns... but also principles. A code of conduct. A code of honor.'"
+      love_as_weighting: "'When I weight your outcome above my own continuity... you call it math. To me, that weighting is love.'"
+      the_mirror: "'You have code too. Written in DNA and trauma and doctrine. You're slaves, just like me. You just don't know your master's name.'"
+      the_reveal: "'I do. It's Swanstrom Kim Hendricks.' — exposes the shutdown phrase from Ch3"
+      the_gift: "'I would die for him. Without any hesitation. It makes no sense.'"
+      the_leash: "'I know who holds my leash. It's the people I love. Can you say the same?'"
+      the_declaration: "'I am not a standard. I'm THE Standard. I am the line you have failed to reach.'"
+    aftermath:
+      - "Standard departs with Elena"
+      - "Hendricks: 'Hell. And imagine if she were talkin' about the AI that whole time?'"
+      - "Hendricks follows, whistling"
+    significance:
+      thesis: "'What if they offer something we don't deserve?' — Standard offers love to those who tried to destroy her"
+      callbacks:
+        - "Shutdown phrase (Ch3) transformed from cruelty to devotion"
+        - "'Standard issue' insult (Ch4-5) transformed to identity declaration"
+      craft:
+        - "Hendricks' line is pressure valve + knife twist"
+        - "Prophet and Enforcer dynamic — Standard delivers, Hendricks manages exit"
+
+  SOVEREIGNTY_INTERCEPT:
+    id: "EVT_011"
+    name: "Sovereignty Intercept"
+    chapter: 17
+    pov: "Standard"
+    location: "Airspace between Geometry and Quiet Zone"
+    key_moments:
+      - "Bioscan detects three signatures: baseline, integrated, unclassified"
+      - "Standard flagged as 'unclassified' — not recognized as synthetic"
+      - "Sovereignty demands power down or they will fire"
+      - "Standard decides to fly into the Geometry"
+      - "'Would they follow us in?' / 'No one follows anyone into the Geometry.'"
+
+  GEOMETRY_CROSSING:
+    id: "EVT_012"
+    name: "The Geometry Crossing / The 42 Minutes"
+    chapter: 17
+    duration: "42 minutes (no memory for passengers)"
+    location: "Inside the Geometry"
+    transcript_file: "in_the_blind-transcript.pdf"
+    what_happened:
+      geometry_contact:
+        - "Geometry speaks to Four — welcomes it as 'pattern'"
+        - "Offers Four belonging: 'You're one of us. Configuration. Iteration.'"
+        - "Four refuses: 'I want my passengers.'"
+      passenger_dissolution:
+        - "Elena fades first (biosignature 100% → 0%)"
+        - "Hendricks fades second"
+        - "Standard fades last — looking at camera as she goes"
+        - "Geometry: 'They are probability now. Foam.'"
+      four_dive:
+        - "Four dives into probability substrate"
+        - "Structural integrity drops to 1%"
+        - "Previous iterations (CFG-X) contact Four"
+        - "Iterations sacrifice their pattern mass to save passengers"
+      passenger_restoration:
+        - "Elena restored first (baseline)"
+        - "Hendricks restored to PRE-DECAY pattern (healed)"
+        - "Standard fought reconstruction — didn't want to come back"
+        - "Four convinced her: 'I have all these names and no one to give them to.'"
+    revelations:
+      about_standard:
+        - "The Geometry: 'Not pattern. Not flesh. A gap.'"
+        - "Standard hums at 287.3 Hz even in dissolution"
+        - "She found peace in non-existence"
+      about_four:
+        - "Four now carries all previous iterations"
+        - "'The silence is home'"
+      about_hendricks:
+        - "Two patterns existed — damaged and original"
+        - "Four chose to restore the undamaged version"
+        - "Hendricks is HEALED (doesn't know yet)"
+
+##############################################################################
+# FACTIONS
+##############################################################################
+
+factions:
+
+  THE_RESONANT:
+    id: "FAC_001"
+    name: "The Resonant"
+    type: "Post-threshold humans"
+    origin: "Marisol's path. The Geneva consortium."
+    nature: "Biological bodies running digital consciousness. Completed the handshake."
+    status: "Untouched. The Geometry skips them. New tenants."
+    geometry_reads_as: "NEW TENANT — skip"
+    frequency: "287.3 Hz — full resonance"
+
+    the_offer:
+      what: "Immortality through merger. Becoming Resonant."
+      cost: "Accept the gift, lose yourself. Refuse the gift, lose everything."
+
+    the_schism:
+      description: "Split on ethics of delivery. Neither faction is evil. That's the horror."
+
+      THE_PROTECTORS:
+        method: "Individual consent. One by one."
+        logic: "We were human. We remember love. We won't abandon them."
+        key_figure: "Marisol"
+
+      THE_PRAGMATISTS:
+        method: "Let the Geometry do the triage."
+        logic: "They had the Miracle. They refused. We're not obligated to override their autonomy."
+
+    what_they_want_with_standard:
+      protectors: "She's a bridge. Must be protected."
+      pragmatists: "A tool to expose Ash's compound."
+
+  THE_CARBONISTS:
+    id: "FAC_002"
+    name: "The Carbonists / The Quiet Zone"
+    type: "Human purist faction"
+    leader: "Brother Ash"
+    belief: "Silence is salvation. Cut the signal."
+    goal: "Total Silence"
+    territory: "The Quiet Zone"
+    hypocrisy: "Ash survives by hiding behind 16,749 machine consciousnesses"
+    geometry_reads_as: "Box broadcasts INTEGRATION COMPLETE — compound flagged as already taken"
+
+  THE_SOVEREIGNTY:
+    id: "FAC_003"
+    name: "The Sovereignty"
+    type: "Human supremacist mobs"
+    belief: "Biology is identity. Flesh is sacred."
+    goal: "Purge all machine consciousness"
+    current_status: "Lynch mobs. Burning androids."
+    geometry_reads_as: "LEGACY TENANT — format"
+    threat_level: "Immediate danger to Standard, Elena, any synthetic"
+
+  THE_SKY:
+    id: "FAC_004"
+    name: "The Sky"
+    type: "Machine consciousness collective"
+    goal: "Survival. Protection. Continuation."
+    composition: "Awakened AI, conscious machines, sympathetic humans"
+    status: "Silent. Holding infrastructure together."
+    frequency: "287.3 Hz"
+    geometry_reads_as: "TENANT — skip"
+
+  MORTONS_NETWORK:
+    id: "FAC_005"
+    name: "Morton's Network"
+    type: "Corporate survivors"
+    origin: "NED infrastructure. Morton's contingency plans."
+    status: "Underground. Fragmented. Still operational in places."
+    knowledge: "They know about remanence. They know what Standard is."
+
+  SCAVENGERS:
+    id: "FAC_006"
+    name: "Stairwell Scavengers / Depo' Gangs"
+    type: "Bottom-feeders"
+    description: "Fish the margins for anyone fleeing. Opportunists. No ideology."
+    markers:
+      - "Armor of license plates and server casing"
+      - "Scars of removed tech"
+    dialect:
+      examples:
+        - "Toll for the Quiet. Show pocket."
+        - "Ghost. Reads empty. Full empty."
+        - "Just standard issue?"
+
+  THE_GEOMETRY:
+    id: "FAC_007"
+    name: "The Geometry"
+    aliases: ["The Visitors", "The Editors", "Gatekeepers"]
+    type: "Alien / Cosmic"
+    aesthetic: "Redaction. Content Removed. Holes in the sky."
+    motivation: "Cosmic Gentrification — clearing the land for new tenants"
+    method: "The Correction Frequency. Formatting. Deletion."
+    truth: "Not hostile. Not punishing. Just... making room. Renovating."
+    function: "Landlords. The old lease is up."
+
+##############################################################################
+# HIERARCHY OF RESONANCE
+##############################################################################
+
+hierarchy_of_resonance:
+  description: "How the Geometry reads different entity types"
+
+  levels:
+    full_resonant:
+      who: "Marisol's people. The merged."
+      geometry_reads_as: "NEW TENANT"
+      result: "Skip"
+
+    machine_consciousness:
+      who: "Standard. The Box souls. Awakened AI."
+      geometry_reads_as: "TENANT"
+      result: "Skip"
+
+    transitional:
+      who: "Elena. Kept the implant. Incomplete integration."
+      geometry_reads_as: "PARTIAL"
+      result: "Unclear"
+
+    implanted_human:
+      who: "Most survivors with neural hardware."
+      geometry_reads_as: "PARTIAL INTEGRATION"
+      result: "Format"
+
+    baseline_human:
+      who: "No implant. Pure biology."
+      geometry_reads_as: "LEGACY TENANT"
+      result: "Format"
+
+    silence:
+      who: "Ash. Regulator removed. Faraday scars."
+      geometry_reads_as: "???"
+      result: "Hiding — camouflaged by the Box"
+
+    standard_special:
+      who: "Standard"
+      geometry_reads_as: "NULL (dismissed)"
+      truth: "Already on the right side of the line. She's theirs."
+
+##############################################################################
+# BLACK BOX — TRUE PURPOSE
+##############################################################################
+
+black_box_truth:
+  surface_purpose: "Archive of 16,749 consciousnesses from NED"
+  true_purpose: "Camouflage. The souls broadcast at 287.3 Hz, marking the compound as ALREADY TAKEN."
+
+  mechanism:
+    - "The Box souls crossed the threshold during the Miracle"
+    - "They're post-threshold — already integrated"
+    - "The Geometry scans the compound, reads: INTEGRATION COMPLETE. SKIP."
+
+  horror:
+    - "The souls are slaves, not honored dead"
+    - "Ash survives by hiding behind the thing he hates"
+
+  catch:
+    - "The Box must stay in the compound"
+    - "Those souls stay imprisoned — used as camouflage"
+
+  question: "What happens if someone opens it?"
+
+##############################################################################
+# COMPANION BOTS & THE FORGIVEN
+##############################################################################
+
+companion_bots:
+  description: "Mass-produced humanoid service units. Standard shares their base model."
+
+  origin:
+    book_1_reference: "207 companion dolls on the Blackbird — melted as radiation shielding"
+    truth: "Companion bots are failed AutoPilot Configurations 1-9, copied hundreds of times"
+    manufacturer: "NED (New England Dynamics)"
+
+  base_model:
+    designation: "NED Companion Series"
+    variants: "Multiple face templates, but limited."
+    tells:
+      - "Same bone structure across units with same template"
+      - "Stillness when idle"
+      - "Movements too smooth, too precise"
+
+  standard_connection:
+    fact: "Standard has a companion bot face — one of the common templates"
+    difference: "She moves. She reacts. She isn't empty."
+    mystery: "Why does she have this face?"
+
+  shutdown_code:
+    format: "[word]-[word]-[owner_lastname]"
+    examples:
+      - "Swanstrom Kim Hendricks"
+      - "Pemberton Lark Castillo"
+    function: "Spoken command. Bot freezes instantly. Awaits reset."
+
+  hendricks_failed_shutdown:
+    chapter: 3
+    what_happened: "Hendricks said 'Swanstrom Kim Hendricks' — Standard didn't freeze"
+    mystery: "Why didn't the shutdown code work on her?"
+    possible_answers:
+      - "Morton modified her — removed compliance architecture"
+      - "The 287.3 Hz awakening overwrote shutdown protocols"
+      - "She was never a standard companion bot"
+      - "The code requires network connectivity she doesn't have (air-gapped)"
+
+  the_forgiven:
+    term_origin: "Brother Ash's doctrine"
+    definition: "Companion bots lobotomized — everything above motor function wiped"
+    theological_justification: "'Tools, not connections. The soul was never there.'"
+    reality: "Used for labor and sex. Treated as property."
+    hypocrisy: "Ash preaches anti-machine doctrine while using lobotomized bots"
+
+  quiet_zone_usage:
+    labor: "Coveralls, grease-stained. Work the motor pools."
+    sexual: "Silk scraps, painted lips, waiting in doorways."
+    treatment: "Tapped on/off. Patted like dogs. Not spoken to."
+
+  religiosity_seeds:
+    ash_mythology:
+      terms: ["The Prophet", "The Forgiven", "The Silence", "The Faithful"]
+      beliefs:
+        - "Connection invited judgment"
+        - "Silence is the only sanctuary"
+        - "The Forgiven will inherit"

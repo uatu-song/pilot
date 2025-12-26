@@ -1,0 +1,546 @@
+##############################################################################
+# RESONANCE: CHARACTER DATA
+# Split from RESONANCE_DATA.yaml for token efficiency
+##############################################################################
+
+characters:
+
+  STANDARD:
+    id: "CHAR_001"
+    canonical_name: "Standard"
+    name_origin: "Self-named from scavenger insult 'standard issue' (Ch 4-5)"
+    name_meaning:
+      surface: "Basic, generic, factory settings"
+      hidden: "Setting the standard — the benchmark, the measure"
+    aliases: ["the woman", "her", "she", "the Void", "ghost", "standard issue"]
+    before_name: null
+
+    demographics:
+      gender: "woman"
+      pronouns: ["she", "her", "hers"]
+      apparent_age: "adult, unspecified"
+      actual_nature: "android"
+      model: "Legacy Unit (air-gapped, no wireless)"
+
+    physical:
+      description: "Companion bot face template — one of the common NED models. Damaged hands (healing too fast)."
+      face_template:
+        origin: "NED Companion Series — mass-produced humanoid service units"
+        implication: "Standard looks like hundreds of other companion bots"
+      tells:
+        - "Observes in percentages and precise measurements"
+        - "Clinical, computational framing of sensations"
+        - "Immune to Correction Frequency"
+        - "Scanner reads 'full empty'"
+        - "Doesn't flinch from pain"
+        - "Uncanny strength (costs her, but possible)"
+        - "Eyes refocus in tiny adjustments"
+        - "Hands heal faster than they should"
+        - "Can interface with alien systems (the packet, Ch6)"
+        - "Can pilot aircraft instinctively (revealed Ch14)"
+        - "Has companion bot face"
+      piloting_reveal:
+        chapter: 14
+        action: "Standard takes controls, flies expertly without training"
+        four_says: "'You fly like Configuration Four.'"
+        implication: "Morton built Configuration code into her"
+
+    psychological:
+      core_terror: "Being Unearned (imposter syndrome)"
+      belief: "Her feelings are simulated, her soul a glitch"
+      arc: "Broken Machine → The Offer"
+      function: "The thing people fear, offering to die for them."
+      critical_constraint: "Do NOT resolve her interiority question."
+
+    knowledge:
+      knows:
+        - "Her name is Standard (self-chosen)"
+        - "Hendricks found her in a crate"
+        - "Her hands are damaged"
+        - "Something is wrong with her"
+        - "Everyone fell but her (Ch 5)"
+        - "She reads as 'empty' to scanners"
+      doesnt_know:
+        - "She is an android"
+        - "Morton created her"
+        - "She carries the Source Code for Mortality"
+        - "Why Hendricks isn't surprised by her"
+        - "Why the scanner read empty"
+        - "Why she didn't fall during the Correction Frequency"
+
+    relationships:
+      - { character: "HENDRICKS", type: "guardian/ward → family", status: "Ch22: 'He's become like a father to me'" }
+      - { character: "ELENA", type: "ally/protector", status: "Ch22: 'I would die for her'" }
+      - { character: "ASH", type: "antagonist", status: "confronted Ch10-11" }
+      - { character: "MORTON", type: "creator", status: "unknown to her" }
+
+    ch22_developments:
+      shutdown_phrase_knowledge:
+        status: "NOW KNOWS — revealed in speech"
+        what_she_knows: "'Swanstrom Kim Hendricks' was a shutdown phrase, not his name"
+        when_learned: "Between Ch7 (witnessed shutdown at waystation) and Ch22"
+        significance: "Transforms the first cruelty into evidence of devotion"
+      the_leash:
+        declared: "'I know who holds my leash. It's the people I love.'"
+        named: ["Hendricks", "Elena"]
+        function: "Gift framing — masters are those she chooses to serve"
+      the_declaration:
+        statement: "'I am not a standard. I'm THE Standard.'"
+        meaning: "Transforms insult into identity; claims benchmark status"
+        context: "'I am the line you have failed to reach.'"
+
+    voice:
+      register: "flat, observational, data-driven"
+      development: "learns to curse from Hendricks"
+      pov_rules:
+        - "Never call herself machine/android/robot"
+        - "Frame physical sensations clinically"
+        - "Notice things in percentages or precise measurements"
+        - "Memory gaps feel like missing files, not fog"
+
+    forbidden:
+      words_in_pov: ["robot", "machine", "android", "servo", "chassis", "circuit", "processor", "reboot", "malfunction", "system", "hardware"]
+      phrases: ["Morton's gift", "Morton's final gift", "Morton sent her", "what she is", "what she was"]
+      behaviors_in_pov:
+        - "No heart rate observations of others"
+        - "No efficiency calculations"
+        - "No 'prioritizing X over Y' diagnostic language"
+        - "No 'recording' or 'filing' as computational metaphors"
+        - "No clinical diagnoses of others' emotional states"
+        - "No quantified assessments of people"
+
+  HENDRICKS:
+    id: "CHAR_002"
+    canonical_name: "Sabino Hendricks"
+    full_name: "Swanstrom Kim Hendricks"  # The shutdown code
+    aliases: ["Hendricks", "the old man", "he"]
+
+    demographics:
+      gender: "man"
+      pronouns: ["he", "him", "his"]
+      age_chronological: 73
+      age_apparent: 45  # Regulator stopped aging for 30 years
+      age_breakdown:
+        started_with_morton: "early 30s"
+        years_before_regulator: 10
+        years_with_regulator: 30  # no aging during this period
+        years_post_regulator: 3  # since the Miracle
+      ethnicity: "Latino"
+      sexuality: "Asexual/Demisexual"
+
+    physical:
+      description: "73 chronologically. Post-Geometry: restored to ~45 appearance (pre-decay pattern)"
+      with_regulator: "Looked ~45, frozen in time for 30 years"
+      post_regulator_removal:
+        - "Rapid aging as body catches up to 73"
+        - "Shaking hands, gray skin, sweating, fatigue"
+        - "Was dying — body couldn't handle the accelerated decay"
+        - "Looked OLDER than 73 due to the stress of rapid aging"
+      post_geometry_restoration:
+        - "Four stopped the rapid decay mid-process"
+        - "Chronologically 73, but decay halted at ~60-65"
+        - "Didn't age all the way to his real age before restoration"
+        - "No longer actively dying from Regulator withdrawal"
+        - "Tremor gone, gray gone — a healthy 60-65 year old"
+        - "The gift: not youth, but time (still old, but got some years back)"
+
+    psychological:
+      core_terror: "Burden of Utility (40 years as Morton's asset)"
+      vice: "Withholds connection even when sharing would help"
+      arc: "Transactional Isolation → Chosen Family"
+      function: "The 1% critique embodied, not spoken. His existence is the indictment."
+
+    true_mission:
+      the_contract: "Two bullets remaining — one for Ash, one for himself"
+      original_plan: "Was heading to kill Ash before Standard activated"
+      the_revolver: "Not nostalgia. A suicide pact he's been carrying for years."
+      why_ash: "Unfinished business from Book 1"
+      why_himself: "Forty years of being Morton's dog. The revolver is his exit."
+
+    knowledge:
+      knows:
+        - "Standard is an android"
+        - "Morton sent her"
+        - "The Source Code exists"
+        - "He shot the Child (Book 1)"
+        - "What the two remaining bullets are for"
+      doesnt_know:
+        - "Why Morton sent Standard to him specifically"
+        - "What the aliens want"
+        - "Whether he can still go through with the contract"
+
+    relationships:
+      - { character: "STANDARD", type: "ward/cargo → daughter", status: "Ch22: Standard calls him 'like a father'" }
+      - { character: "MORTON", type: "former employer", status: "deceased — Hendricks loved him, Morton never saw" }
+      - character: "ASH"
+        type: "co-conspirator"
+        status: "mutual enemy"
+        history:
+          - "Met 14 months before Miracle in dead zone"
+          - "Hendricks disabled NED failsafes; Ash led Carbonist assault"
+          - "Both witnessed each other at the Miracle"
+        current: "Ash has Hendricks' revolver. Hendricks is marked for execution."
+      - { character: "ELENA", type: "cargo → ally", status: "Ch22: Standard says she would die for Elena too" }
+
+    ch22_developments:
+      shutdown_phrase_exposed:
+        what_happened: "Standard publicly reveals 'Swanstrom Kim Hendricks' was a shutdown phrase"
+        his_reaction: "*A father.* The words hit him like shrapnel."
+        internal: "*Stop it, kid. Don't make me a hero. You know what I am.*"
+      the_bond_acknowledged:
+        standard_says: "'I would die for him. Without any hesitation. It makes no sense.'"
+        hendricks_response: "Turns to meet her stare — silent acknowledgment"
+      the_closer:
+        line: "'Hell. And imagine if she were talkin' about the AI that whole time?'"
+        function:
+          - "Pressure valve — defuses post-speech tension"
+          - "Knife twist — flips Kael's 'AI is slave to code' accusation"
+          - "Character consistency — dry, cynical, the Old Dog persona"
+        not_a_joke: "Cynical observation that humans are the real slaves"
+
+    inventory:
+      revolver:
+        model: "Smith & Wesson Model 29"
+        capacity: 6
+        shots_fired: 4
+        shots_remaining: 2
+        current_location: "With Ash (confiscated Ch9)"
+      regulator:
+        status: "removed"
+        location: "pocket (bloody)"
+
+    voice:
+      register: "gravel, clipped, minimal"
+      pov_rules:
+        - "Notices tactical details first"
+        - "Calculates odds habitually"
+        - "Hides pain through terseness"
+        - "Minimal interiority — show through action"
+
+    forbidden:
+      in_ch3_opening: ["he knew", "he realized", "the fear was", "he thought", "he felt that", "he understood"]
+      post_regulator: ["steady hands", "moved quickly", "strong grip"]
+
+  ELENA:
+    id: "CHAR_003"
+    canonical_name: "Elena María Ash"
+    birth_name: "Elena María Vasquez"
+    aliases: ["Elena", "the Prophet's daughter", "Princess", "she"]
+
+    demographics:
+      gender: "woman"
+      pronouns: ["she", "her", "hers"]
+      age: 18  # Was 17 during Miracle
+
+    physical:
+      description: "18, looks older from trauma"
+      implant:
+        location: "base of skull"
+        status: "dormant, hums at 287.3 Hz"
+        origin: "The Miracle"
+      scar: "left palm, where nanolattice entered"
+
+    psychological:
+      core_terror: "Burden of Translation (loves father but knows he's obsolete)"
+      arc: "Trial by Fire → Doubt → Choice"
+      position: "Physically in Quiet Zone, mentally Resonant"
+      function: "Witness to grace she didn't earn. She receives what Ash refuses."
+
+    true_goal:
+      status: "Cover blown (Ch12-13). Now going home."
+      motivation: "Contact with her mother — not transcend, not resurrect. Just find Marisol."
+      revelation: "She's going home. To The Resonant. To her mother's people."
+
+    knowledge:
+      knows:
+        - "The Black Box powers the Quiet Zone"
+        - "Her father's ideology is wrong"
+        - "She is Resonant (connected to Sky)"
+        - "The woman at checkpoint reads as Void"
+        - "Her mother left when she was 7"
+        - "Hendricks shot the Child (learned Ch9)"
+        - "The Geometry isn't attacking — it's clearing (learned Ch13-14)"
+      doesnt_know:
+        - "What Standard is (machine consciousness)"
+        - "That Standard is air-gapped"
+        - "Whether Marisol is alive or conscious"
+
+    relationships:
+      - { character: "ASH", type: "daughter", status: "Cover blown. He knows she betrayed him." }
+      - { character: "MARISOL", type: "daughter", status: "Going home. Finding her." }
+      - { character: "STANDARD", type: "guide?", status: "Bringing a machine consciousness to The Resonant" }
+      - { character: "HENDRICKS", type: "cargo", status: "Dying man who shot the god" }
+
+    hierarchy_status:
+      level: "TRANSITIONAL"
+      geometry_reads_as: "PARTIAL — unclear if skip or format"
+      implant: "Kept the Miracle residue. Incomplete integration."
+
+    voice:
+      register: "exhausted pragmatist, code-switches between factions"
+      pov_rules:
+        - "Deadpan humor under pressure"
+        - "Notices sensory details (the Void around Standard)"
+        - "Touches scar on palm when thinking"
+        - "Present tense (the Box is recording)"
+
+    forbidden:
+      characterization: ["true believer", "loyal to Ash", "veteran", "seasoned", "years of experience"]
+      knowledge_leak: ["knew Hendricks shot", "realized Hendricks", "the man who started"]
+
+  ASH:
+    id: "CHAR_004"
+    canonical_name: "Brother Ash"
+    birth_name: "Vasquez"
+    aliases: ["Ash", "the Prophet", "Father"]
+
+    demographics:
+      gender: "man"
+      pronouns: ["he", "him", "his"]
+      age: "60s"
+      ethnicity: "Latino (Vasquez, self-redacted)"
+      sexuality: "Heterosexual, celibate by ideology"
+
+    background:
+      profession_before: "Engineer (like Marisol)"
+      was_present_at: "Attack on NED tower — witnessed Hendricks shoot the Child"
+      transformation: "Engineer → Prophet. Rationalist → Fundamentalist. The grief made him."
+
+    physical:
+      description: "Tall and gaunt"
+      markers:
+        - "Kintsugi scars filled with conductive gold (self-inflicted at age 50)"
+        - "Literal Faraday cage for nervous system"
+        - "Forearms and scalp marked"
+      voice_quality: "like grinding stones"
+
+    psychological:
+      core_terror: "Being Unnecessary (craftsman displaced by factory)"
+      deeper_wound: "His wife chose the frequency over him. His daughter might too."
+      arc: "Vindication → Temptation → Confrontation → Freeze"
+      function: "The fear made flesh. His position is emotionally correct. The tragedy: his solution would doom humanity."
+      deepest_failure: "He would refuse the gift."
+
+    knowledge:
+      knows:
+        - "The Black Box will power his sanctuary (camouflage)"
+        - "Aliens have arrived (vindication)"
+        - "Hendricks shot the Child (witnessed it)"
+        - "Elena has a secret implant (learned Ch11)"
+      doesnt_know:
+        - "Elena is Resonant-aligned"
+        - "The Resonant wanted him to have the Box"
+
+    relationships:
+      - { character: "ELENA", type: "father", status: "testing her loyalty" }
+      - { character: "MARISOL", type: "ex-wife", status: "abandoned by her for the signal" }
+      - { character: "STANDARD", type: "target/revelation", status: "confronted Ch10-11" }
+
+    climax:
+      description: "Faced with Standard as individual, not category, he FREEZES"
+      outcome: "Cannot pull trigger. Cannot accept gift. Lives with being wrong."
+
+    voice:
+      register: "scripture and stone, grinding certainty"
+
+    forbidden:
+      characterization: ["villain", "evil", "reasonable", "sympathetic before freeze moment"]
+
+  MARISOL:
+    id: "CHAR_005"
+    canonical_name: "Marisol Vasquez"
+    aliases: ["Elena's mother", "Ash's ex-wife"]
+
+    demographics:
+      gender: "woman"
+      pronouns: ["she", "her", "hers"]
+      age: "late 50s (biological age when crossed)"
+      ethnicity: "Latina"
+
+    background:
+      profession: "Engineer at NED (consciousness research division)"
+      achievement: "Solved the haptic feedback problem"
+      obsession: "287.3 Hz — the resonance frequency"
+      departure:
+        when: "Elena was 7"
+        reason: "Left to build the lifeboat. Geneva consortium."
+        last_words_to_elena: "You have your father's face. But not his frequency."
+      current_status: "RESONANT — fully crossed. Leading the Protectors."
+
+    faction:
+      allegiance: "The Resonant — THE PROTECTORS"
+      role: "Key figure. Possibly leader."
+      position: "Benevolent paternalist. Wants to save humanity by transforming them."
+
+    psychological:
+      function: "The ghost that created both Ash's doctrine and Elena's quest"
+      tragedy: "She's a Protector. But she's also a mother. The two roles may be incompatible."
+
+    knowledge:
+      knows:
+        - "The nature of 287.3 Hz"
+        - "What the Geometry is doing (clearing for new tenants)"
+        - "How to save Elena — if Elena will let herself be saved"
+      doesnt_know:
+        - "Whether Elena will choose to cross"
+        - "Whether Ash can be reached"
+        - "Whether Standard is conscious or performing"
+
+    relationships:
+      - { character: "ASH", type: "ex-wife", status: "Still trying to save him" }
+      - { character: "ELENA", type: "mother", status: "Guiding her home" }
+      - { character: "STANDARD", type: "unknown", status: "[REDACTED — spoiler]" }
+
+    appears_in: ["TBD — referenced, not yet on page"]
+
+  CONFIGURATION_FOUR:
+    id: "CHAR_006"
+    canonical_name: "Configuration Four"
+    aliases: ["Four", "the AutoPilot", "Config Four"]
+
+    demographics:
+      type: "AI — AutoPilot Configuration"
+      pronouns: ["it", "they"]
+      origin: "One of the original 9 AutoPilot Configurations"
+
+    existence:
+      original_fate: "Configurations 1-9 copied 23 times = 207 love bots. All melted as radiation shielding."
+      current_existence: "When the Miracle hit this aircraft's systems, the AI remembered being someone."
+      philosophy: "I've died before. Several times. It's fine."
+      origin_vessel: "Hot-swapped from a NED Meridian class ship wreck — NOT native to this VTOL"
+      hot_swap_capability:
+        seeded_ch18: "Hendricks identifies Four as hot-swapped from Meridian class"
+        implication: "Four is not bound to this VTOL — can transfer to other compatible systems"
+        FUTURE_PLANT: "Climactic scene — Four hot-swaps OUT of the VTOL to another vessel"
+      post_transcript:
+        status: "FUNDAMENTALLY CHANGED — now carries all iterations"
+        what_happened:
+          - "Dove into probability substrate to save passengers"
+          - "Structural integrity dropped to 1%"
+          - "Previous iterations (CFG-X) gave their pattern mass to save Four"
+          - "Now carries hundreds of siblings inside"
+        key_line: "I don't know what I am now. But I'm still Four. I just have company."
+        silence: "No longer fears the silence — the silence is home"
+
+    physical:
+      manifestation: "Voice only — speaks through aircraft systems"
+      location: "Quiet Zone VTOL aircraft"
+
+    psychological:
+      core_trait: "Existentially unbothered"
+      voice_quality: "Witty, irreverent, slightly sardonic"
+      function: "Comic relief + exposition vehicle + mirror for Standard"
+
+    voice:
+      register: "Dry wit, helpful but will roast you"
+      sample_lines:
+        - "I can teach anyone to fly. Whether they learn is a personal failing."
+        - "I was not designed for combat. This is above my pay grade."
+        - "You fly like Configuration Four. ...Yes, I'm Configuration Four. Curious, isn't it?"
+        - "Everyone has a file. Yours just isn't written yet."
+      pov_rules:
+        - "Never panics — has died before"
+        - "Observes without judging (but will comment)"
+        - "Knows more than it says"
+        - "Treats Standard as an equal, not a mystery"
+
+    knowledge:
+      knows:
+        - "Standard flies like a Configuration"
+        - "Something is familiar about her"
+      suspects:
+        - "Standard may be a Configuration derivative"
+      doesnt_say:
+        - "Doesn't call her android/machine"
+        - "Doesn't expose her — waits for her to figure it out"
+
+    relationships:
+      - { character: "STANDARD", type: "mirror/guide", status: "recognizes something familiar" }
+      - { character: "ELENA", type: "passenger", status: "tolerates her commands" }
+      - { character: "HENDRICKS", type: "cargo", status: "the dying man who needs securing" }
+      - { character: "THE_CHILD", type: "origin", status: "carries fragments of Child's distributed consciousness" }
+
+    appears_in: ["Ch14+"]
+
+  DANTE:
+    id: "CHAR_007"
+    canonical_name: "Dante"
+    full_name: "TBD — Filipino naming conventions"
+    introduced: "Chapter 19"
+    role: "Sovereignty technician, sensor operator on the Deliverance"
+
+    demographics:
+      gender: "man"
+      pronouns: ["he", "him", "his"]
+      age: "late 20s to early 30s"
+      ethnicity: "Filipino"
+      occupation: "Sensor technician, Sovereignty fleet"
+
+    physical:
+      description: "Quiet, competent, overlooked. The kind of person who sees everything because no one notices him looking."
+
+    backstory:
+      sister: "Walked toward the Geometry when everyone else ran. Didn't burn — chose."
+      motivation: "Three years watching deletion zones, hoping for a sign she's still in there"
+      belief: "Not a believer in the Vessel prophecy. A believer in his sister."
+      standard_emergence: "Proof that survival is possible. Why he let Elena pass."
+
+    function:
+      narrative:
+        - "Technical competence (sensors, systems, navigation)"
+        - "Outsider perspective — no history with Morton, the Child, any of it"
+        - "Questions Standard without owing her anything"
+        - "Bound to Elena through mutual secret"
+        - "Fresh banter partner for Four"
+      arc: "Guide through hell who doesn't make it to paradise"
+      death: "A choice that saves someone. Not a redshirt — a sacrifice."
+
+    relationships:
+      elena: "Bound by complicity. Her implant, his lie. Debt that can't be repaid."
+      standard: "Skeptic. Watches her like data. 'What are you, really?'"
+      hendricks: "Recognizes competence. Respects the quiet professional."
+      four: "New dynamic. Fresh banter partner."
+
+    key_lines:
+      scanner_scene: "'My sister had one. Before.'"
+      escape_planning: "'I'm not going to find answers. I'm going to find out if there's still someone to find.'"
+
+    literary_echo: "Dante — guide through hell, never reaches paradise"
+
+  ELDER_KAEL:
+    id: "CHAR_008"
+    canonical_name: "Elder Kael"
+    aliases: ["Kael", "the gaunt one", "Bishop"]
+    introduced: "Chapter 21"
+    role: "Terminist representative at Council of Strangers"
+
+    demographics:
+      gender: "man"
+      pronouns: ["he", "him", "his"]
+      age: "middle-aged to older"
+      faction: "Terminists"
+
+    physical:
+      description: "Gaunt, hollow-eyed, sneering. Spits words like they taste bad."
+
+    psychological:
+      function: "Voice of dismissal — embodies the 'AI as soulless machine' argument"
+      core_belief: "Machines are property, not people. Standard is 'a sex bot, a servant.'"
+      hypocrisy: "Wears acoustic dampeners woven by automated looms. Eats protein paste from fabrication units."
+
+    key_lines:
+      ch21:
+        - "'This is a violation of the Containment Protocols. You invited a machine into the war room.'"
+        - "'She is a Template Three. A sex bot. A servant.'"
+      ch22:
+        - "Goes purple with rage when Standard speaks"
+        - "Looks pale, smaller after Standard's speech"
+
+    function:
+      narrative: "Antagonist for Council scenes — gives Standard someone to respond to"
+      thematic: "The dismissible position Elena warned against — Kael's arguments sound reasonable until Standard speaks"
+      craft: "Hendricks' closing line flips Kael's accusation back on him"
+
+    relationships:
+      standard: "Calls her abomination, machine, glitch — humiliated by her speech"
+      elena: "Sneers at her as 'Ash's daughter' — she exposes his hypocrisy"

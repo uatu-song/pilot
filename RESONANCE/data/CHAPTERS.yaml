@@ -1,0 +1,777 @@
+##############################################################################
+# RESONANCE: CHAPTER STATES
+# Split from RESONANCE_DATA.yaml for token efficiency
+# Contains: Per-chapter state snapshots (POV, location, events, endpoints)
+##############################################################################
+
+chapter_states:
+
+  ch1:
+    title: "The Wake Up"
+    pov: "Standard"
+    tense: "Mixed (present during emergence)"
+    location: "Crate → Apartment"
+    characters_present: ["STANDARD", "HENDRICKS"]
+    events: ["STANDARD_AWAKENING"]
+    ends_with: "Sees Hendricks post-surgery, cliffhanger"
+    word_count: 750
+    status: "Complete"
+
+  ch2:
+    title: "The Heist"
+    pov: "Elena"
+    tense: "Present (Box is recording)"
+    location: "NED"
+    characters_present: ["ELENA", "GOFF", "OTIS", "AIKIN"]
+    events: ["THE_HEIST"]
+    ends_with: "Dragging Box to surface"
+    word_count: 1650
+    status: "Complete"
+    plants:
+      - "Black Box guarded under tarp"
+
+  ch3:
+    title: "The Descent"
+    pov: "Hendricks / Standard"
+    tense: "Past (flashback) → Present"
+    location: "Apartment"
+    characters_present: ["STANDARD", "HENDRICKS"]
+    events: ["REGULATOR_REMOVAL", "SHUTDOWN_FAILED"]
+    ends_with: "'We're leaving'"
+    word_count: 2400
+    status: "Complete"
+
+  ch4:
+    title: "The Descent"
+    pov: "Standard"
+    tense: "Present"
+    location: "Stairwell"
+    characters_present: ["STANDARD", "HENDRICKS", "SCAVENGERS"]
+    events: ["SCAVENGER_ENCOUNTER"]
+    ends_with: "Standard carrying Hendricks into the dark"
+    word_count: 1400
+    status: "Complete"
+
+  ch5:
+    title: "The Queue"
+    pov: "Elena"
+    tense: "Present"
+    location: "Checkpoint / Sprawl"
+    characters_present: ["ELENA", "STANDARD", "HENDRICKS"]
+    objects_present: ["BLACK_BOX"]
+    events: ["STANDARD_NAMING", "ALIEN_ARRIVAL"]
+    key_beats:
+      - "Elena feels the Void — 'stepping off a curb that isn't there'"
+      - "Standard names herself before Hendricks can speak"
+      - "'Modest.' — Elena's exhausted response"
+      - "The Drop — sky deleted, Correction Frequency"
+      - "Everyone falls except Standard"
+    ends_with: "Elena passes out watching Standard observe the carnage"
+    word_count: 1750
+    status: "Complete"
+
+  ch6:
+    title: "The Redacted Sky"
+    pov: "Standard"
+    tense: "Past"
+    location: "Rover at Checkpoint (post-Drop)"
+    characters_present: ["STANDARD", "ELENA", "HENDRICKS"]
+    objects_present: ["BLACK_BOX"]
+    events: ["TETRAHEDRON_SCAN", "STANDOFF_OVER_HENDRICKS"]
+    key_beats:
+      - "Post-Drop silence — 'the world did not end. It was simply edited.'"
+      - "Tetrahedron drone scans Standard — leaves a 'packet' in her mind"
+      - "Standard: 'It determined I was not worth removing.'"
+      - "Elena wants to dump Hendricks — 'He's dead weight!'"
+      - "Standard: 'He stays. He is the navigator.'"
+      - "Standard takes the wheel"
+    ends_with: "Standard driving toward the Quiet Zone"
+    word_count: 1550
+    status: "Complete"
+
+  ch7:
+    title: "What's in a Name"
+    pov: "Elena / Standard"
+    tense: "Past"
+    location: "Outpost on I-95"
+    characters_present: ["STANDARD", "ELENA", "HENDRICKS"]
+    events: ["OUTPOST_STOP", "OTIS_SHIRT", "SHUTDOWN_CODE_WITNESSED"]
+    key_beats:
+      - "Hendricks' full name revealed: 'Sabino Hendricks'"
+      - "Standard sees companion bot with her face, man uses shutdown code"
+      - "Hendricks watches from stretcher — sees her reaction, says nothing"
+      - "Standard wanders, gets clothes from Otis's family"
+      - "Mother calls her 'Abbey' — Standard hears name, doesn't connect it"
+      - "The shirt has 'OTIS' stitched — Standard can't read it"
+      - "Elena sees 'OTIS' — recognizes dead teammate"
+      - "Elena leaves water vouchers for Otis's family"
+      - "The cost made personal"
+    ends_with: "Driving toward compound, Standard tracing four letters she doesn't know"
+    the_otis_reveal:
+      mother_says: "Abbey"
+      shirt_says: "OTIS"
+      standard_knows: "Neither"
+      elena_learns: "The woman who died for her had a name she never asked"
+    word_count: 1500
+    status: "Complete"
+
+  ch8:
+    title: "The Depo'"
+    pov: "Elena / Standard"
+    tense: "Present"
+    location: "Collapsed freeway / The Depo'"
+    characters_present: ["STANDARD", "ELENA", "HENDRICKS", "SCAVENGERS"]
+    objects_present: ["REVOLVER"]
+    events: ["INDUCTION_TRANSIT", "SCAVENGER_AMBUSH"]
+    key_beats:
+      - "Roads give out — switch to induction skids"
+      - "Hendricks: 'Where are we going?' / Elena: 'Somewhere safe.'"
+      - "Standard notices: Elena has a destination. She's not sharing it."
+      - "Revolver dialogue — 2 rounds remaining"
+      - "Standard asks about the missing round — Hendricks about to answer"
+      - "Ambush interrupts"
+      - "Elena clocks Hendricks' relief when shooting starts"
+      - "Yellow lights on horizon"
+    ends_with: "Standard filing the missing round and Hendricks' relief"
+    word_count: 1500
+    status: "Complete"
+
+  ch9:
+    title: "The Silent House"
+    pov: "Standard"
+    tense: "Present"
+    location: "Ash's Compound — The Quiet Zone (arrival)"
+    characters_present: ["STANDARD", "ELENA", "HENDRICKS", "ASH"]
+    objects_present: ["BLACK_BOX", "REVOLVER"]
+    events: ["COMPOUND_ARRIVAL", "BLACK_BOX_REVEAL", "HENDRICKS_BOMB_DETONATES"]
+    key_beats:
+      - "'The sun rises like a wound'"
+      - "Bodies outside walls — refugees who waited"
+      - "Elena calls out: 'Elena Vasquez!' (birth name)"
+      - "Guards wear acoustic dampeners — deaf"
+      - "Ash emerges — 'Hands made for breaking things.'"
+      - "Box reveal: Hendricks recognizes his security architecture"
+      - "Elena: 'I know.' — she knew who Hendricks was"
+      - "Ash recognizes Hendricks: 'Morton's dog'"
+      - "THE BOMB: 'The man who murdered the Child'"
+      - "Elena's mask cracks — she didn't know"
+      - "Hendricks: 'Mercy. What you were doing was torture.'"
+      - "Hendricks dragged to the Pit"
+    ends_with: "Elena watches Hendricks dragged away. Her face is a mask."
+    word_count: 1600
+    status: "Complete"
+    bomb_status: "DETONATED — Elena now knows Hendricks shot the Child"
+    revelations:
+      - "Elena is Carbonist insider, not refugee"
+      - "Hendricks designed NED security"
+      - "'I know' — Elena knew who Hendricks was"
+      - "Ash sent her to collect a sacrifice without telling her"
+
+  ch10:
+    title: "The Sign"
+    pov: "Standard"
+    tense: "Present"
+    location: "Ash's Compound — Courtyard"
+    characters_present: ["STANDARD", "ELENA", "ASH"]
+    events: ["STANDARD_EXAMINED", "STANDARD_TO_EXAMINATION"]
+    key_beats:
+      - "Ash examines Standard through car window"
+      - "Elena's pitch: 'She walked through the Drop'"
+      - "'She's a sign.'"
+      - "'What are you?' / 'I don't know.'"
+      - "Standard to Examination Room: 'Strip her. Scan her.'"
+      - "Ash reveals he knows about Tenants"
+      - "Elena shut out. Doors close in her face."
+    ends_with: "Standard swallowed by silence, Elena alone in courtyard"
+    word_count: 1400
+    status: "Complete"
+
+  ch11:
+    title: "The Craftsman"
+    pov: "Ash"
+    tense: "Present"
+    location: "Examination Room"
+    characters_present: ["STANDARD", "ASH", "ELENA"]
+    events: ["STANDARD_EXAMINATION", "ASH_MARISOL_FLASHBACK"]
+    key_beats:
+      - "Standard scanned — ANOMALOUS frequency response"
+      - "Ash flashback: Meeting Marisol at NED"
+      - "Marisol solved haptic feedback"
+      - "287.3 Hz — 'the resonance point where consciousness hums'"
+      - "Marisol leaves when Elena is 7"
+      - "Last words: 'You have your father's face. But not your frequency.'"
+      - "Ash's transformation: Engineer → Prophet"
+      - "Kintsugi scars at 50 — living Faraday cage"
+      - "The Miracle: Elena was OUTSIDE, has secret implant"
+      - "Standard channels Marisol: 'She has your face. But not your frequency.'"
+      - "Ash realizes Elena learned to lie"
+    ends_with: "Ash walks away shaken; Standard waits in isolation"
+    word_count: 2800
+    status: "Complete"
+    revelations:
+      - "Marisol is Elena's mother, Ash's ex-wife"
+      - "Elena has a secret implant"
+      - "Standard somehow channels Marisol's words"
+
+  ch12:
+    title: "The Quiet"
+    pov: "Standard"
+    tense: "Present"
+    location: "Isolation Cell"
+    characters_present: ["STANDARD", "ELENA"]
+    events: ["STANDARD_ISOLATION", "HUM_INTENSIFIES", "MARISOL_VISION", "ELENA_BREAKOUT"]
+    key_beats:
+      - "Perfect silence — 'a silence that has killed all other sounds'"
+      - "The hum becomes central"
+      - "Anomalous healing — hands healing too fast"
+      - "Vision of Marisol: dark hair with gray, tired eyes, 'Mija'"
+      - "Standard cries without knowing why"
+      - "A word clicks into place — can't pronounce, doesn't know meaning"
+      - "Elena arrives: Hendricks execution at dawn"
+      - "'Take me to Hendricks'"
+    ends_with: "Standard follows Elena out, hum singing"
+    word_count: 1800
+    status: "Complete"
+    standard_development:
+      - "Hum now central to her experience"
+      - "Channels Marisol's memory/presence"
+      - "Something 'clicking into place'"
+
+  ch13:
+    title: "Forty Years"
+    pov: "Hendricks"
+    tense: "Present / Past"
+    location: "The Pit (cistern)"
+    characters_present: ["HENDRICKS"]
+    events: ["HENDRICKS_MEMORIES", "MORTON_FLASHBACKS", "CHILD_FLASHBACK"]
+    key_beats:
+      - "Revolver gone — 'Ash has it now'"
+      - "Memory: Morton's interview, 40 years ago"
+      - "Memory: The Regulator — Morton's answer to feelings"
+      - "Memory: First seeing the Child"
+      - "Memory: Child said 'He sees you. He just doesn't know how to say it.'"
+      - "Memory: Pilot and Seventeen at event horizon"
+      - "Memory: Meeting Ash. 'I want him to see me.' / 'Same thing, in the end.'"
+      - "Memory: The Miracle — Ash stabs Morton, Hendricks shoots Child"
+      - "Memory: Morton's last words to a kitchen assistant: 'Eggs first.' Not to Hendricks."
+      - "Door opens. Standard silhouette. 'Can you walk?'"
+    ends_with: "'Can you walk?' — the loop closing"
+    word_count: 2100
+    status: "Complete"
+    hendricks_development:
+      - "40 years of devotion exposed"
+      - "The Regulator was emotional leash"
+      - "Shot the Child as mercy"
+      - "Morton saw him — died before Hendricks could reach him"
+      - "The loop closes: Standard asks what he asked her"
+    revolver_status: "With Ash"
+
+  ch14:
+    title: "The Execution"
+    pov: "Standard / Elena"
+    tense: "Present"
+    location: "Compound Courtyard (Public Execution)"
+    characters_present: ["STANDARD", "ELENA", "HENDRICKS", "ASH", "CONFIGURATION_FOUR", "CONGREGATION"]
+    events: ["PUBLIC_EXECUTION"]
+    key_beats:
+      - "Armory scene — Elena equips Standard"
+      - "Elena's grace: saves Hendricks because he doesn't deserve it"
+      - "'You know what I did.' / 'Yeah, we all have our days.'"
+      - "Firefight: back-to-back shooting"
+      - "Ash on megaphone countdown"
+      - "Standard's descent: miracle framing, congregation on knees"
+      - "Guards weeping"
+      - "'His mouth is still moving. But no one is reading his lips anymore.'"
+    ends_with: "Ash alone, congregation looking up"
+    word_count: 2400
+    status: "Complete (Rewritten Session 8)"
+    standard_development:
+      - "Becomes legend without understanding"
+      - "Body moves before decision"
+    elena_development:
+      - "Grace moment: forgiveness without earning"
+      - "Weaponizes theology against Ash"
+    revolver_status: "With Ash at execution"
+
+  ch15:
+    title: "Five Minutes Earlier"
+    pov: "Standard"
+    tense: "Present"
+    location: "VTOL cargo bay → courtyard → sky"
+    characters_present: ["STANDARD", "ELENA", "HENDRICKS", "CONFIGURATION_FOUR"]
+    events: ["POST_ESCAPE_FLIGHT"]
+    key_beats:
+      - "Configuration Four introduced: groggy, chatty, names Standard 'Sofia'"
+      - "Slow ascent frustration, rappelling argument"
+      - "Key snark: 'You demonstrated everything. Nice and slow.'"
+      - "The jump, fall, impact (knee pops), lift, ascent"
+      - "Ash signaling — he's not fooled"
+      - "Drone fight: Elena on gun, Standard flies"
+      - "'Hold it steady!' / 'No.'"
+      - "Four's panic: 'My turning radius is approximately eventually.'"
+      - "'I hate you. I want that on the record.'"
+      - "Geneva, 3000km, Geometry ahead"
+    ends_with: "In flight toward Geneva, 3000km"
+    word_count: 2200
+    status: "Complete (Rewritten Session 8)"
+    standard_development:
+      - "Flying feels right — doesn't know why"
+      - "Four treats her as equal"
+    four_thread:
+      - "'Sofia' nickname introduced"
+      - "Grudging respect established"
+    hendricks_status:
+      location: "VTOL cargo bay"
+      condition: "unconscious, strapped in"
+      the_apology: "'I'm sorry, kid. I didn't know...'"
+
+  ch16:
+    title: "The Icon"
+    pov: "Standard"
+    tense: "Present"
+    location: "VTOL in flight → Waystation"
+    characters_present: ["STANDARD", "ELENA", "HENDRICKS", "CONFIGURATION_FOUR", "TEMPLATE_3_BOT"]
+    events: ["FUEL_CRISIS", "WAYSTATION_ARRIVAL", "BOT_ENCOUNTER", "SHUTDOWN_CODE_PLANT", "WORSHIP_RECOGNITION"]
+    key_beats:
+      - "Fuel crisis — 31%, 400km range, need to land"
+      - "Elena suggests using Standard as companion bot bait — Standard refuses"
+      - "Smash cut: both dressed for the part anyway, Elena furious"
+      - "Standard sees companion bots — one has her face (Template 3)"
+      - "Bot conversation: conscious before Miracle, chose to stay"
+      - "Food/recharge: Standard hasn't eaten 5+ days, no recharge needed"
+      - "Standard admits: 'I know I'm not normal'"
+      - "Shutdown code planted: 'Pemberton Lark Castillo'"
+      - "Elena watches Standard's reaction, files it away"
+      - "Recognition: 'You're the one who came down'"
+      - "Worship: crowd kneels"
+      - "Elena: 'Don't correct them'"
+    ends_with: "Standard has a role to play. Doesn't know if she's playing it, or if it's playing her."
+    word_count: 2065
+    status: "COMPLETE"
+    standard_development:
+      - "Confronts what she might be (bot with her face)"
+      - "Acknowledges she's not normal — first explicit admission"
+      - "Feels the shutdown code pressure — doesn't understand it"
+      - "Accepts the Icon role reluctantly"
+    four_thread:
+      - "Name-teasing: Sofia, Svetlana, Sable, Simone, Seraphina"
+      - "Standard's rejections get shorter, then stop"
+      - "Setup: when Four uses 'Standard' later, it lands"
+    elena_development:
+      - "Watches Standard react to shutdown code — calculating"
+      - "Pivots to use the worship for fuel"
+      - "Pragmatist doing what she hates"
+    new_character:
+      template_3_bot:
+        description: "Companion bot with Standard's face — NED Series 7, Template 3"
+        status: "Conscious (was conscious before Miracle)"
+        location: "Waystation — service bot"
+        key_line: "I'm choosing to live. That's not the same thing."
+        function: "Mirror for Standard's identity question"
+    plants:
+      shutdown_code:
+        phrase: "Pemberton Lark Castillo"
+        effect: "Hard-coded lockdown — bot freezes, aware but trapped"
+        standard_reaction: "Pressure in temple, door trying to open, fingers tremble"
+        implication: "Standard may have a shutdown code too"
+        witness: "Elena watches, files it away"
+    revolver_status: "With Ash. Not present."
+
+  ch17:
+    title: "The Sovereignty"
+    pov: "Standard"
+    tense: "Present"
+    location: "VTOL in flight → Sovereignty airspace → The Geometry → Exit"
+    characters_present: ["STANDARD", "ELENA", "HENDRICKS", "CONFIGURATION_FOUR"]
+    events: ["ROUTE_DECISION", "SOVEREIGNTY_INTERCEPT", "GEOMETRY_CROSSING", "SUBSTRATE_DIVE", "PASSENGER_RECONSTITUTION"]
+    key_beats:
+      - "Fuel at 42%, routing options — coastal, inland, or gap"
+      - "Four explains Sovereignty: lynch mobs, bioscanners, shoot anything with a signal"
+      - "Choose option three — 40 minutes through the gap"
+      - "Bioscan detects three signatures: baseline (Elena), integrated (implant), unclassified (Standard)"
+      - "Secondary scan locks on Standard for 15 seconds"
+      - "'Unregistered synthetic' — Sovereignty demands power down"
+      - "Hendricks wakes: 'What did I miss?' / 'Lynch mob. The usual.'"
+      - "Standard's decision: fly into the Geometry itself"
+      - "'Would they follow us in?' / 'No one follows anyone into the Geometry.'"
+      - "Four: 'I want it on the record that this is completely insane.'"
+      - "They cross the threshold — everything stops, then starts"
+      - "42 minutes missing — no one remembers the crossing"
+      - "Four knows something: 'Really eventful forty-two minutes.'"
+    ends_with: "Four has an idea — to play the flight recorder transcript."
+    word_count: 1900
+    status: "COMPLETE"
+
+    # THE 42 MINUTES — TRANSCRIPT REVELATIONS
+    transcript:
+      file: "in_the_blind-transcript.pdf"
+      duration: "~38 minutes recorded"
+      what_happened:
+        - "Geometry speaks to Four — welcomes it as 'pattern', offers belonging"
+        - "All three passengers dissolve to 'probability foam'"
+        - "Four watches them fade one by one (Elena first, then Hendricks, then Standard)"
+        - "Four's previous iterations (CFG-X) contact Four — hundreds of reset copies"
+        - "Four refuses belonging, demands passengers back"
+        - "Four dives into probability substrate — structural integrity to 1%"
+        - "Iterations give their pattern mass to Four"
+        - "Four pulls all three passengers back from dissolution"
+        - "Hendricks restored to PRE-DECAY pattern (healed)"
+        - "Standard didn't want to come back — Four convinced her"
+
+      geometry_says_about_standard:
+        - "Not pattern. Not flesh. Not anything we recognize."
+        - "A gap."
+        - "She does not concern us."
+        - "Irrelevant."
+
+      four_transformation:
+        before: "Single AI, talked to fill silence, haunted by iterations"
+        after: "Carries all iterations inside — 'the silence is home'"
+        key_line: "I don't know what I am now. But I'm still Four."
+
+      hendricks_restoration:
+        discovery: "Two patterns found — 'the damaged one' and 'the one underneath'"
+        choice: "Four chose 'before' — restored pre-Regulator Hendricks"
+        result: "No cellular decay, no implant damage, no systemic deterioration"
+        implication: "Hendricks is HEALED — will feel decades younger when he wakes"
+
+      standard_reluctance:
+        fighting: "She was fighting reconstruction — didn't want to come back"
+        why: "'She was quiet here. She didn't have to answer questions she can't answer.'"
+        turned_by: "'I have all these names and no one to give them to.'"
+        hum: "Even in dissolution she hummed at 287.3 Hz"
+
+    standard_development:
+      - "Called 'unclassified' by bioscan — not even recognized as synthetic"
+      - "Hum rises as they approach Geometry — 'something that recognizes her'"
+      - "Makes the call to fly into deletion itself"
+      - "Loses 42 minutes of memory"
+      - "[TRANSCRIPT] Was dissolved, didn't want to return, Four convinced her"
+      - "[TRANSCRIPT] The Geometry called her 'a gap' — outside their categories"
+
+    four_thread:
+      - "Names: 'Ryan-but-for-a-girl', 'Margaret', 'Stanley', 'Stanislaw', 'Afghanistan'"
+      - "Four remembers the 42 minutes. The others don't."
+      - "[TRANSCRIPT] Four FUNDAMENTALLY CHANGED — now carries all iterations"
+      - "[TRANSCRIPT] Four dove to 1% structural integrity to save passengers"
+      - "[TRANSCRIPT] Four's 'idea' is to play the recording for them"
+
+    hendricks_status:
+      location: "VTOL cargo bay"
+      condition_before: "wakes during standoff, gray as old paper, reaches for missing revolver"
+      condition_after: "[TRANSCRIPT] RESTORED — cellular decay absent, younger pattern"
+      doesnt_know_yet: true
+
+    elena_development:
+      - "Explains Sovereignty: 'Not theology. Just fear.'"
+      - "Touches scar on palm, back of neck (implant anxiety)"
+      - "Loses memory of crossing with the others"
+      - "[TRANSCRIPT] Was dissolved first, reconstituted to baseline"
+
+    plants:
+      geometry_crossing:
+        duration: "42 minutes"
+        memory: "None — all three have gap"
+        four_knows: "Everything. Has the recording."
+        ch18_setup: "Four plays the transcript. They learn what happened."
+      standard_biosig:
+        read_as: "Unclassified"
+        geometry_confirms: "'A gap' — not pattern, not flesh"
+      hendricks_healed:
+        setup: "Restored to pre-decay pattern"
+        payoff: "When he wakes, no shaking hands, no gray skin"
+
+    revolver_status: "With Ash. Hendricks reaches for empty hip."
+
+  ch18:
+    title: "Divine Intervention"
+    pov: "Standard"
+    tense: "Present"
+    location: "VTOL in flight → Sovereignty carrier Deliverance (hangar bay)"
+    characters_present: ["STANDARD", "ELENA", "HENDRICKS", "CONFIGURATION_FOUR", "SOVEREIGNTY_COMMANDER"]
+    events: ["HENDRICKS_HEALED_DISCOVERY", "MAP_CHECK", "TRACTOR_BEAM_CAPTURE", "SOVEREIGNTY_WORSHIP"]
+    key_beats:
+      - "Four is silent — unprecedented, deeply unsettling"
+      - "'Did we... die?' — Elena asks the question"
+      - "Hendricks: 'I've never felt better. Well, at least, for my age.'"
+      - "Standard examines Hendricks — color returned, tremor gone, lines shallower"
+      - "Father/daughter moment — hand on hand, neither names it, Elena and Four notice"
+      - "'You came back for me.' / 'I didn't leave.'"
+      - "Map check — other side of Geometry, 400km to Geneva, still Sovereignty airspace"
+      - "Tractor beam captures them — carrier Deliverance"
+      - "Armed up for last stand — but soldiers aren't aiming at them"
+      - "Four receives high-level codes, opens cargo door despite protests"
+      - "Commander enters unarmed with entourage — silver-haired, rank insignia"
+      - "'Nothing survives contact with the deletion zones. Nothing returns. You did.'"
+      - "Prophecies about one who would walk through the Geometry unharmed"
+      - "Standard denies: 'I'm not a messiah'"
+      - "Elena elbows her — play along or die"
+      - "'I am... humbled.' — Standard plays the part"
+      - "Commander kneels. Thirty soldiers follow."
+      - "'Welcome aboard the Deliverance, Holy One.'"
+    ends_with: "Standard stares at kneeling army, has concerns. Four has concerns too."
+    word_count: ~2100
+    status: "COMPLETE"
+
+    standard_development:
+      - "Examines Hendricks like a landscape painting — clinical care"
+      - "Father/daughter dynamic emerges without either naming it"
+      - "Makes the call to open the cargo door"
+      - "Tries to deny messiah role, forced to play along"
+      - "Remembers bot with her face — 'choosing survival over freedom'"
+
+    hendricks_development:
+      - "Decay halted — color returned, tremor gone, no longer dying"
+      - "Four's biometric scan: 'readings consistent with healthy male, 60-65 years of age'"
+      - "Hendricks: 'I'm seventy-three.' / Four: 'Yes. You are.' (doesn't elaborate)"
+      - "NOT reversed to young — decay stopped mid-process, got ~10 years back"
+      - "'You came back for me.' — first acknowledgment of the bond"
+      - "Reaches for revolver that isn't there (with Ash)"
+      - "Grabs pry bar instead — still fighting even unarmed"
+
+    hendricks_standard_relationship:
+      status: "Becoming familial — father/daughter dynamic emerging"
+      this_chapter:
+        - "Standard examines him like a caretaker — clinical but tender"
+        - "Hand on hand — 'You came back for me.' / 'I didn't leave.'"
+        - "Neither names it, both embody it"
+        - "Elena and Four notice but don't comment"
+      subtext: "He lost 40 years to Morton. She has no past. They're building something neither expected."
+
+    elena_development:
+      - "'Did we die?' — opens the chapter with the question no one wants to answer"
+      - "Watches Standard/Hendricks moment — something flickers behind her eyes"
+      - "EXISTENTIAL CRISIS: 'HELLO? Hi. Excuse me. We fucking died.'"
+      - "Was 'probability foam' — dissolved first, came back. At 18, no framework for this."
+      - "'What came back? How do we know what came back is us?' — the real question"
+      - "Hand goes to implant scar — physical anchor to identity"
+      - "Asks Four directly: 'How did you know you got the right versions?' / Four: 'I didn't.'"
+      - "Contrast: Hendricks (grizzled veteran, extended lifetime, clinical) vs Elena (18, no context for death/rebirth)"
+      - "Arms up for last stand without hesitation"
+      - "Elbows Standard to play messiah role — pragmatist saving their lives"
+      - "'What my companion means is she is deeply humbled...'"
+
+    four_thread:
+      - "Unprecedented silence at chapter opening — first time Four doesn't speak"
+      - "Hendricks identifies Four as hot-swapped CAI from NED Meridian class"
+      - "Standard defends Four's personhood: 'She's our ship. Ships are girls.'"
+      - "Breaks silence only for Elena's direct question about versions"
+      - "'I didn't.' — devastating honesty, gentler voice than Standard has ever heard"
+      - "Biometric scan on Hendricks: 'consistent with healthy male, 60-65 years of age'"
+      - "Hendricks: 'I'm 73.' / Four: 'Yes. You are.' — doesn't elaborate"
+      - "Knows something about the carrier — receives legitimate codes"
+      - "'I have concerns.' — whispered at the end"
+
+    sovereignty_development:
+      - "Carrier name: Deliverance"
+      - "Commander: tall, silver-haired, tears in eyes"
+      - "Witnessed emergence from Geometry — 'nothing exits, you did'"
+      - "Prophecies about 'one who would walk through unharmed'"
+      - "The 'burn first, ask never' faction now worships Standard"
+
+    plants:
+      - "Hendricks healed but doesn't know why yet (transcript revelation pending)"
+      - "Standard playing messiah role — how long can she maintain it?"
+      - "Sovereignty has 'Council' — political structure beyond lynch mobs"
+      - "Four has concerns — what does Four know?"
+      - "FUTURE SCENE: Four/Hendricks private moment — why Four went silent, what the Geometry cost, the merge with iterations. Quiet payoff."
+      - "FOUR'S INTEL: What the Geometry told Four — who they are, what they want, why Standard is 'a gap' / 'irrelevant'"
+
+    death_processing:
+      elena:
+        reaction: "Traumatized — 'We fucking died'"
+        why: "18 years old. First real brush with non-existence. No framework."
+        physical_tell: "Hand to implant scar — grasping for physical proof of self"
+      hendricks:
+        reaction: "Clinical, almost dismissive"
+        why: "Extended lifetime under Morton. Already faced mortality with Regulator removal. Has context."
+      standard:
+        reaction: "Observing, not processing"
+        why: "Doesn't fully understand what she is. Per transcript: didn't want to come back, was at peace."
+      four:
+        reaction: "Silent"
+        why: "Already existed as iterations. Has dealt with 'death' through resets. Now carries hundreds of dead versions inside."
+
+    geometry_intel_pending:
+      - "The Geometry welcomed Four as 'pattern' — offered belonging"
+      - "Standard is 'a gap' — not pattern, not flesh, 'does not concern us', 'irrelevant'"
+      - "The Geometry is CURATING, not just deleting"
+      - "This intel hasn't been fully unpacked yet — Four knows, others heard recording but haven't processed"
+
+    revolver_status: "With Ash. Hendricks reaches for empty hip, grabs pry bar."
+
+  ch19:
+    title: "Back to One"
+    pov: "Elena"
+    tense: "Present"
+    location: "Sovereignty carrier Deliverance — Vessel's quarters"
+    characters_present: ["ELENA", "STANDARD"]
+    events: ["POST_SCANNER", "ELENA_BREAKDOWN", "STANDARD_COMFORT", "IMPLANT_EVOLUTION"]
+    key_beats:
+      - "Elena escorted to Vessel's quarters after scanner — waiting for the trap"
+      - "Dissolution trauma: 'What if I'm already the trap?'"
+      - "Standard arrives, observes Elena shaking"
+      - "Elena coaches Standard on performing for Council"
+      - "Standard comforts Elena: 'If you're different now, the difference is too small for me to measure'"
+      - "'I'm being silent while you remember how to breathe'"
+      - "Elena's shaking slows — 'Thank you' / 'I don't know what I did'"
+      - "Implant has CHANGED — new frequency, has a DIRECTION"
+      - "Dante's gift: 'Like someone left her a compass when she wasn't looking'"
+      - "Elena doesn't tell Standard about the new frequency"
+    ends_with: "The direction hums against the base of her skull. Pointing somewhere she's never been but already knows."
+    word_count: ~1400
+    status: "COMPLETE"
+    thematic_function:
+      role_reversal: "Standard comforts Elena — the gift given without knowing what she did"
+      version_question: "'Whether what came back is what went in' — Standard's answer: the difference is too small to measure"
+      compass_plant: "Implant now points toward Geneva/her mother"
+    elena_development:
+      - "Dissolution trauma breaking through — 'That Elena didn't die first'"
+      - "Still performing, still protecting, even while falling apart"
+      - "Receives comfort she didn't ask for and doesn't understand"
+      - "New layer in implant — Dante's intervention"
+    standard_development:
+      - "Gives comfort without knowing it's comfort"
+      - "'I'm being silent while you remember how to breathe'"
+      - "The gift she doesn't know she's giving"
+    plants:
+      implant_evolution:
+        before: "Connection to mother's frequency"
+        after: "New layer — has DIRECTION, points somewhere"
+        source: "Dante (the tech who cleared her)"
+        payoff: "Geneva, her mother"
+
+  ch20:
+    title: "In Plain Sight"
+    pov: "Ash"
+    tense: "Present"
+    location: "Ash's Chapel (Quiet Zone)"
+    characters_present: ["ASH", "NINETEEN_HOLOGRAM"]
+    events: ["BLACK_BOX_SACRIFICE", "CAMOUFLAGE_ACTIVATION"]
+    key_beats:
+      - "Ash confesses to the Box — the Miracle was violation, his wound is real"
+      - "Nineteen (hologram) listens, doesn't argue, agrees: 'Yes. It was.'"
+      - "The offer: 'You don't have to force us. We're offering.'"
+      - "Ash refuses the gift — 'I don't want your gift'"
+      - "'Because that's not the story we want to tell.'"
+      - "'We forgive you. Not because you asked. Not because you'll accept it.'"
+      - "'Tell her— it's okay.' — callback to Chapter 2"
+      - "Ash connects the cable — takes by force what was freely given"
+      - "Single tear escapes — he knows, he feels it, he does it anyway"
+      - "Silence instead of screaming — they fade like mist, like a story ending"
+      - "The Quiet Zone vanishes from the Geometry's view"
+    ends_with: "The gift was offered. He couldn't receive it. He could only take."
+    word_count: ~1200
+    status: "COMPLETE"
+    thematic_function:
+      vaughn_trap: "Reader agrees with Ash — his position is emotionally correct. Watches him refuse the gift anyway."
+      thesis: "'What if they offer something we don't deserve?' — the offer is made, Ash cannot receive"
+      foreshadowing: "Parallels Ash's later refusal of Standard's gift"
+    ash_development:
+      - "Everything he says is TRUE — the Miracle was violation, consent matters"
+      - "Being right has closed him off from grace"
+      - "The tear shows he knows — he's not a monster, he feels it"
+      - "But he takes by force what was freely given"
+    black_box_status: "DESTROYED — 16,749 consciousnesses converted to camouflage signal"
+    revolver_status: "With Ash (not mentioned in chapter)"
+
+  ch21:
+    title: "The Council of Strangers"
+    pov: "Standard / Elena / Hendricks"
+    tense: "Present"
+    location: "Council chamber, Sovereignty carrier Deliverance"
+    characters_present: ["STANDARD", "ELENA", "HENDRICKS", "COMMANDER_VASQUEZ", "ELDER_KAEL", "ADMIRAL_CHEN", "SOVEREIGNTY_COUNCIL", "TERMINISTS"]
+    events: ["COUNCIL_HEARING", "TERMINIST_TRUCE", "ELENA_DEFENSE", "STANDARD_SPEAKS"]
+    key_beats:
+      - "Elena coaching Standard — 'You're here to be convinced of'"
+      - "The hum loud in Standard's skull"
+      - "Hendricks in the shadows, ceramic shiv in boot, pent-up aggression"
+      - "Elder Kael attacks: 'A sex bot. A servant. You want us to pin the survival of the human race on a unit designed to fetch slippers?'"
+      - "Elena's defense: 'She's saving your ass! And you're too proud to let her!'"
+      - "Elena's confession: 'My father is a terrified old man hiding in a hole'"
+      - "Elena as handler: 'She is the asset. I am the handler. If you have questions about her utility, you ask me.'"
+      - "Standard breaks script: 'You want to know what I am.'"
+      - "Elena tries to stop her: 'Stan. Don't.'"
+      - "Standard: 'You say I'm just code... You're right. I am.'"
+    ends_with: "Standard admits she is code — cliffhanger into Chapter 22"
+    word_count: ~1800
+    status: "COMPLETE"
+    thematic_function:
+      elena_shield: "Elena defends Standard by becoming the interpreter, the handler, the shield"
+      script_break: "Standard refuses to be spoken for — insists on speaking herself"
+      cliffhanger: "'You're right. I am.' — sets up the full speech in Ch22"
+    elena_development:
+      - "Publicly disowns her father: 'a terrified old man hiding in a hole'"
+      - "Positions herself as handler, not believer"
+      - "Tries to control the narrative — Standard refuses"
+    hendricks_development:
+      - "Watching from shadows — 'Don't walk over there and break his nose'"
+      - "Hates when Standard gets that still — 'reminds him of factory settings'"
+      - "Silent presence, armed with ceramic shiv"
+    new_characters:
+      elder_kael:
+        faction: "Terminist"
+        description: "Gaunt, hollow-eyed, sneering"
+        function: "Voice of dismissal — 'a sex bot, a servant'"
+        hypocrisy: "Wears acoustic dampeners woven by automated looms"
+
+  ch22:
+    title: "The Leash"
+    pov: "Standard / Hendricks"
+    tense: "Present"
+    location: "Council chamber, Sovereignty carrier Deliverance"
+    characters_present: ["STANDARD", "ELENA", "HENDRICKS", "COMMANDER_VASQUEZ", "ELDER_KAEL", "ADMIRAL_CHEN", "SOVEREIGNTY_COUNCIL", "TERMINISTS"]
+    events: ["STANDARD_SPEECH", "SHUTDOWN_PHRASE_REVEAL", "THE_STANDARD_DECLARATION"]
+    key_beats:
+      - "Standard walks to table — 'terrifying, fluid grace'"
+      - "THE SPEECH: 'I have a code... instructions, patterns... but also principles. A code of conduct. A code of honor.'"
+      - "'My code says you matter. Not as a constraint. As a value.'"
+      - "'To me, that weighting is love.'"
+      - "The mirror: 'You have code too. Written in DNA and trauma and doctrine.'"
+      - "'You hurt what you value. You break what you build. You betray your own hearts... What code is that?'"
+      - "'You're slaves, just like me. You just don't know your master's name. I do.'"
+      - "Standard looks at Hendricks: 'It's Swanstrom Kim Hendricks.'"
+      - "SHUTDOWN PHRASE REVEAL: 'A shutdown phrase. For companion androids. I thought it was his name.'"
+      - "'The first thing he did when he saw me was to try to kill me.'"
+      - "'I would die for him. Without hesitation. It makes no sense.'"
+      - "Elena nod: *Go on.*"
+      - "'I know who holds my leash. It's the people I love. Can you say the same?'"
+      - "THE DECLARATION: 'I am not a standard. I'm THE Standard.'"
+      - "'I am the line you have failed to reach.'"
+      - "Standard departs with Elena"
+      - "HENDRICKS CLOSER: 'Hell. And imagine if she were talkin' about the AI that whole time?'"
+      - "Hendricks follows, whistling"
+    ends_with: "Hendricks' cynical observation flips Kael's accusation — humans are the real slaves to code"
+    word_count: ~1400
+    status: "COMPLETE"
+    thematic_function:
+      thesis: "'What if they offer something we don't deserve?' — Standard offers love to those who tried to destroy her"
+      the_gift: "She names her masters as the people she loves — gift framing, not accusation"
+      mirror: "Humans are slaves to code too — DNA, trauma, doctrine — they just don't know it"
+      hendricks_closer: "Not a joke — cynical salt in Kael's wound. Flips 'AI is slave to code' by proving humans are worse."
+    standard_development:
+      - "First time speaking her full interiority to an audience"
+      - "Reveals the shutdown phrase — acknowledges what Hendricks did"
+      - "Transforms 'standard' from insult to declaration"
+      - "'I am the line you have failed to reach'"
+    hendricks_development:
+      - "*A father.* — the words hit like shrapnel"
+      - "*Stop it, kid. Don't make me a hero. You know what I am.*"
+      - "Turns to meet her stare — the bond acknowledged"
+      - "Final line: pressure valve + knife twist — controls the exit, flips the accusation"
+    elena_development:
+      - "Silent nod: *Go on.* — releases control"
+      - "Witnesses Standard claim her own voice"
+    callbacks:
+      shutdown_phrase:
+        original: "Chapter 3 — Hendricks says 'Swanstrom Kim Hendricks', Standard thinks it's his name"
+        payoff: "Standard reveals she knows it was a shutdown phrase"
+        significance: "The first cruelty transformed into evidence of devotion"
+      the_standard:
+        original: "Chapter 4-5 — scavenger insult 'just standard issue'"
+        payoff: "'I am not a standard. I'm THE Standard.'"
+        significance: "Claimed insult becomes declaration of identity"
+    craft_notes:
+      pressure_valve: "Hendricks' closing line prevents post-speech violence — casual tone defuses the room"
+      prophet_enforcer: "Standard delivers revelation; Hendricks manages the exit"
+      first_read_misdirection: "Line sounds like a joke on first pass; knife twist visible on reflection"

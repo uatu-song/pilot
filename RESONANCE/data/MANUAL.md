@@ -22,24 +22,41 @@ The RESONANCE Data System is a **constraint enforcement and continuity tracking 
 
 ```
 /RESONANCE/data/
-├── RESONANCE_DATA.yaml    # Master canonical truth (all entities)
-├── query.py               # Query and validation interface
-└── MANUAL.md              # This file
+├── CORE.yaml              # Meta, book_1 summary, themes, arcs, constraints, signatures
+├── CHARACTERS.yaml        # All character profiles
+├── WORLD.yaml             # Locations, objects, events, factions, hierarchy
+├── CHAPTERS.yaml          # Per-chapter state snapshots (grows each session)
+├── query.py               # Query and validation interface (auto-merges all files)
+├── MANUAL.md              # This file
+└── RESONANCE_DATA.yaml    # [LEGACY] Original single file (kept as backup)
 ```
+
+**Why the split?** The original single file grew to 31k tokens — too large to load in one context. The split files allow loading only what's needed per session while `query.py` transparently merges them for queries.
 
 **Related files (context documents):**
 ```
 /RESONANCE/context/
 ├── CODEX_V1.md            # Thematic spine, methodology, world (prose)
-├── ENTITY_CATALOG.yaml    # Legacy format (being replaced by RESONANCE_DATA.yaml)
+├── ENTITY_CATALOG.yaml    # Legacy format
 └── NEGATIVE_CONSTRAINTS.md # Prose version of constraints
 ```
 
 ---
 
-## The Master Data File
+## The Data Files
 
-`RESONANCE_DATA.yaml` contains all canonical story elements in queryable format:
+The canonical story elements are split across 4 files for token efficiency:
+
+| File | Contents | ~Lines |
+|------|----------|--------|
+| `CORE.yaml` | meta, book_1 summary, themes, arcs, constraints, signatures | ~350 |
+| `CHARACTERS.yaml` | All character profiles | ~400 |
+| `WORLD.yaml` | locations, objects, events, factions, hierarchy | ~450 |
+| `CHAPTERS.yaml` | Per-chapter state snapshots | ~450+ (grows) |
+
+`query.py` automatically merges these files — all queries work transparently.
+
+**What each file contains:**
 
 | Section | Contents |
 |---------|----------|

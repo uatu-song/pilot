@@ -13,8 +13,28 @@
 |------|--------|
 | Book 1 Draft | Complete (~120K words) |
 | Book 1 Context Engineering | Complete |
-| Book 2 Chapters | 4 drafted (~6,550 words) |
-| Book 2 Context Engineering | Active |
+| Book 2 Chapters | 18 complete + interstitial (~34,000 words), Ch19 scaffolded |
+| Book 2 Context Engineering | Active (split YAML system) |
+
+---
+
+## TODO: Dabble Export Workflow
+
+**Problem:** Markdown `*italics*` in .txt files doesn't convert in Dabble's manuscript area.
+
+**Solution needed:** Create a Python script to convert chapter .txt files to .docx with proper formatting:
+- Convert `*text*` to italic runs
+- Convert `**text**` to bold runs
+- Convert `---` to centered scene break markers
+- Preserve chapter/title structure
+- Use `python-docx` library
+
+**Workflow:**
+1. Write chapters in .txt with `*italics*` markers
+2. When ready for Dabble, run conversion script
+3. Import .docx files into Dabble (rich text transfers correctly)
+
+**Script location (when created):** `/workspaces/pilot/RESONANCE/scripts/convert_to_docx.py`
 
 ---
 

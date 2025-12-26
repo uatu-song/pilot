@@ -1,8 +1,8 @@
 # SESSION HANDOFF
 
-**Last Updated:** 2025-12-24
-**Last Session:** Session 9 (Complete)
-**Status:** Active development on Book 2 — Chapters 1-16 complete (~30,000 words)
+**Last Updated:** 2025-12-26
+**Last Session:** Session 11 (In Progress)
+**Status:** Active development on Book 2 — Chapters 1-21 complete + interstitial (~40,000 words)
 
 ---
 
@@ -12,7 +12,16 @@ Read these files in order:
 1. `/workspaces/pilot/CONTEXT_ENGINEERING_FOR_FICTION.md` — The system we're using
 2. `/workspaces/pilot/RESONANCE/data/MANUAL.md` — **Data system manual (START HERE)**
 3. `/workspaces/pilot/RESONANCE/context/CODEX_V1.md` — Thematic spine, methodology, world
-4. `/workspaces/pilot/RESONANCE/data/RESONANCE_DATA.yaml` — **Machine-queryable canonical truth**
+
+### The Split Data Files (Session 10+)
+
+The canonical data is now split across four files for token efficiency:
+- `/workspaces/pilot/RESONANCE/data/CORE.yaml` — Meta, themes, arcs, constraints, signatures
+- `/workspaces/pilot/RESONANCE/data/CHARACTERS.yaml` — All character profiles
+- `/workspaces/pilot/RESONANCE/data/WORLD.yaml` — Locations, objects, events, factions
+- `/workspaces/pilot/RESONANCE/data/CHAPTERS.yaml` — Per-chapter state snapshots
+
+`query.py` auto-merges these files — all queries work transparently. The original `RESONANCE_DATA.yaml` is kept as legacy backup.
 
 ### The Data System (Session 4+)
 
@@ -184,10 +193,12 @@ Not a wall. A MIGRAINE.
 - Finally: Silence. Complete. Nauseating, then relief.
 
 ### The Black Box
-- Contains 16,749 uploaded minds including Nineteen
-- Powers Quiet Zone's jamming infrastructure
+- **STATUS: DESTROYED (Ch 20)** — Ash activated camouflage system
+- Contained 16,749 uploaded minds including Nineteen
+- Powered Quiet Zone's jamming infrastructure → now powers CAMOUFLAGE
 - "The ghosts scream so the living can have quiet"
-- Scarred with grooves at 287.3 Hz
+- Scarred with grooves at 287.3 Hz → grooves burned smooth after activation
+- **The Gift Refused:** They offered to power it willingly. Ash took by force.
 
 ### The Source Code for Mortality
 - Morton's personal SUICIDE SWITCH—sovereignty over his own death
@@ -236,29 +247,41 @@ Not a wall. A MIGRAINE.
 
 ## WHERE WE LEFT OFF
 
-**Last Chapter Written:** Chapter 9 — The Silent House
+**Last Chapters Written:** Chapter 18 — Divine Intervention, Chapter 19 — Back to One, Chapter 20 — In Plain Sight, Chapter 21 — The Council of Strangers
 
-**Scene (End of Ch 9):** Standard is led into the Examination Room at Ash's compound. Elena stands alone in the courtyard, shut out by her father. Hendricks is chained in "the Pit." The silence swallows Standard whole.
+**Scene (End of Ch 19):** Elena alone with Standard in the Vessel's quarters. Standard just comforted her: "If you're different now, the difference is too small for me to measure." Elena's implant has changed — new frequency with a direction. Dante's gift. "Pointing somewhere she's never been but already knows."
 
-**Character States (End of Ch 9):**
-- **Standard:** In custody, being taken to Examination Room to be "stripped and scanned"
-- **Hendricks:** Chained in the Pit, dying, exposed as "the man who murdered the Child"
-- **Elena:** Standing in courtyard, rejected by Ash, armor crumbling
-- **Ash:** In the tower, has the Black Box, preparing for the Tenants
-- **Black Box:** Delivered to Ash, carried into the tower
+**Scene (End of Ch 20):** Ash stands alone in the chapel he built for silence. The Black Box is dark and still. His people are saved. He was right. And the tear dries on his cheek. The gift was offered. He couldn't receive it. He could only take.
 
-**Key Chapter 6-9 Beats:**
-- **Ch 6:** Tetrahedron drone scans Standard, leaves a "packet" in her mind, dismisses her as "not worth removing"
-- **Ch 6:** Elena tries to dump Hendricks; Standard refuses ("He stays"); Hendricks calls Elena's bluff ("You don't shoot people")
-- **Ch 7:** Hendricks' full name: Sabino Hendricks
-- **Ch 7:** Standard gets Otis's shirt from Otis's family (unknowingly); Elena sees it, leaves water vouchers
-- **Ch 8:** The Hollows — pristine empty houses, "FORMAT COMPLETE / BIO-LOAD: 0.00%"
-- **Ch 8:** Standard interfaces with alien system (the packet): "TENANT ARRIVAL: T-MINUS 02:14:00"
-- **Ch 9:** Ash recognizes Hendricks — "Morton's dog" / "The man who murdered the Child"
-- **Ch 9:** Hendricks: "I put it down... that was mercy"
-- **Ch 9:** Elena revealed as Ash's daughter
-- **Ch 9:** Ash nearly kills Hendricks; Elena intervenes; Hendricks to the Pit
-- **Ch 9:** "What are you?" / "I don't know." — Standard's honesty disarms Ash momentarily
+**Scene (End of Ch 21):** Standard has offered to walk back into the Geometry. To carry anyone who wants to come. To find Miriam, the gaunt Terminist's sister. The room stood. "I think it was me. Whatever that means."
+
+**Character States (Current):**
+- **Standard:** Offered to walk into Geometry, find Miriam, carry anyone who wants to come. "Let me be useful. Even if I'm not real." The hum brought knowledge she can't explain (207, 450, Seventeen).
+- **Hendricks:** Restored to 60-65 apparent age, healthy, father-daughter dynamic emerging with Standard
+- **Elena:** PTSD from dissolution, implant nearly detected (Dante saved her), watched Standard break script and mean it
+- **Four:** "I have concerns. But I think we should hear you out."
+- **Dante:** New — technician who cleared Elena, sister walked into Geometry, will help escape
+- **Ash:** Activated Black Box camouflage (Ch 20), Quiet Zone hidden from Geometry, single tear, has revolver
+- **Gaunt Terminist:** New — brother of Miriam, broke down when Standard took his hands, promised to find his sister
+
+**Key Chapter 18 Beats:**
+- **Elena's breakdown:** "We fucking died!" — 18-year-old with no framework for dissolution
+- **Four's admission:** "I didn't" know if the right versions came back
+- **Hendricks restored:** Biometric reads 60-65 despite being 73. Decay halted mid-process.
+- **Standard/Hendricks:** Father-daughter dynamic — "You came back for me." / "I didn't leave."
+- **The Geometry intel:** Standard is "a gap" — curating, not deleting. Irrelevant to them.
+- **CAI reveal:** Four is hot-swapped from NED Meridian class (Chekhov's gun for later)
+- **Sovereignty worship:** Commander kneels, "Welcome aboard the Deliverance, Holy One."
+
+**Chapter 19 Scaffolded:** "The Interpreter" — Elena POV
+- 8 scenes with dialogue seeds
+- Elena coaches Standard to lie (the Forgiven parallel)
+- The Council demands Standard enter Geometry again with their people
+- Four finds previous emergence event 60 years ago in Geneva
+- Four/Hendricks private moment: "Which version came back?"
+- Dante finds Elena, offers escape: "I can get you off this ship."
+- Plan forms: Geneva as holy pilgrimage, 16-hour window
+- Elena reveals: implant is Resonant tech, her mother's design
 
 ---
 
@@ -322,8 +345,8 @@ But Standard offers. And the question the reader carries out:
 ### New Questions (from Ch 6-9)
 - **The Packet** — Standard can interface with alien systems. What else can it do?
 - **Hendricks in the Pit** — Does he die there? Does someone rescue him?
-- **The 16,749** — Ash has the Black Box now. What does he plan to do with it?
-- **Ash's Plan** — He "built the Quiet Zone for the silence." What's his play with the Tenants?
+- ~~**The 16,749** — Ash has the Black Box now. What does he plan to do with it?~~ → **RESOLVED (Ch 20): Activated camouflage. They offered willingly. He took by force.**
+- ~~**Ash's Plan** — He "built the Quiet Zone for the silence." What's his play with the Tenants?~~ → **RESOLVED (Ch 20): Camouflage hides Quiet Zone from Geometry's view.**
 - **Elena's Loyalty** — She's Ash's daughter but defended Hendricks. Where does she land?
 
 ### The Gift Questions
@@ -335,10 +358,12 @@ But Standard offers. And the question the reader carries out:
 
 ## IMMEDIATE NEXT STEPS
 
-1. **Decide Chapter 10 POV** — Standard (in Examination)? Elena (in courtyard)? Hendricks (in Pit)?
-2. **The Examination** — What do they find when they scan Standard? This is the reveal moment.
-3. **Elena's Choice** — She's between father and the people she brought. What does she do?
-4. **Ash's Plan** — He knew the Tenants were coming. What's his move with the Box?
+1. **Chapter 19 Prose** — "The Interpreter," Elena POV. Full scaffold ready.
+2. **Nail down:** Four's connectivity (isolated in VTOL?), prophecy specifics, timeline aboard Deliverance
+3. **Land properly:** Elena's implant reveal ("my mother designed it")
+4. **Dante's arc:** Complicity → escape help → eventual sacrifice (guide through hell, dies before paradise)
+5. **The skeptic:** Council member still watching. Potential threat later.
+6. **Previous emergence:** 60 years ago, Geneva. Who? What happened? (planted, not resolved)
 
 ---
 
@@ -348,8 +373,12 @@ But Standard offers. And the question the reader carries out:
 |---------|------|
 | **Data System** | |
 | Manual | `/workspaces/pilot/RESONANCE/data/MANUAL.md` |
-| Master Data | `/workspaces/pilot/RESONANCE/data/RESONANCE_DATA.yaml` |
+| Core Data | `/workspaces/pilot/RESONANCE/data/CORE.yaml` |
+| Characters | `/workspaces/pilot/RESONANCE/data/CHARACTERS.yaml` |
+| World | `/workspaces/pilot/RESONANCE/data/WORLD.yaml` |
+| Chapters | `/workspaces/pilot/RESONANCE/data/CHAPTERS.yaml` |
 | Query Script | `/workspaces/pilot/RESONANCE/data/query.py` |
+| Legacy (backup) | `/workspaces/pilot/RESONANCE/data/RESONANCE_DATA.yaml` |
 | **Context** | |
 | Codex | `/workspaces/pilot/RESONANCE/context/CODEX_V1.md` |
 | **Prose** | |
@@ -382,7 +411,7 @@ python query.py ammo                        # Object tracking
 python query.py validate ../chapters/CHAPTER.md
 ```
 - If violations: fix and re-validate
-- If clean: update RESONANCE_DATA.yaml with new state
+- If clean: update relevant YAML files (CHAPTERS.yaml for state, CHARACTERS.yaml for knowledge, etc.)
 - Update HANDOFF.md with chapter endpoint
 
 ---
@@ -440,18 +469,27 @@ python query.py validate ../chapters/CHAPTER.md
 | 14 | **The Execution** | Standard/Elena | ~2,400 | **Rewritten** |
 | 15 | **Five Minutes Earlier** | Standard | ~2,200 | **Rewritten** |
 | 16 | **The Icon** | Standard | ~2,065 | Complete |
-| **Total** | | | **~29,915** | **Act II In Progress** |
+| 17 | **The Sovereignty** | Standard | ~1,800 | Complete |
+| — | **In The Blind** | Four (transcript) | ~??? | Complete (interstitial) |
+| 18 | **Divine Intervention** | Standard | ~2,500 | Complete |
+| 19 | **The Interpreter** | Elena | — | Scaffolded |
+| **Total** | | | **~34,000** | **Act II In Progress** |
 
-### End State (Ch16)
-- **Standard:** At waystation, worshipped as "The Icon," playing a role she doesn't understand
-- **Hendricks:** Unconscious in VTOL cargo bay
-- **Elena:** At waystation, using Standard's celebrity for fuel/supplies, pragmatist doing what she hates
-- **Configuration Four:** On comms, name-teasing (Sofia, Svetlana, Sable, Simone, Seraphina), Standard stops correcting
-- **Template 3 Bot:** Companion bot with Standard's face, conscious before Miracle, chose to stay — "I'm choosing to live. That's not the same thing."
-- **Shutdown Code Planted:** "Pemberton Lark Castillo" — Standard felt pressure, Elena saw her react, filed it away
-- **Black Box:** With Ash in tower
-- **Sky:** Actively formatting Earth — Geometry visible on horizon
-- **Revolver:** With Ash
+### End State (Ch18)
+- **Standard:** Aboard Sovereignty carrier *Deliverance*, being worshipped as "the Vessel," playing messiah role reluctantly
+- **Hendricks:** Restored to 60-65 apparent age (decay halted), healthy, father-daughter dynamic with Standard emerging
+- **Elena:** PTSD from dissolution, implant nearly exposed, building escape plan
+- **Configuration Four:** Accessing Sovereignty systems, found previous emergence event 60 years ago in Geneva
+- **Dante:** New character — Filipino technician, let Elena through scanner, sister walked into Geometry
+- **The Sovereignty:** True believers, but Council includes skeptics. Expect Standard to enter Geometry again with their people.
+- **The Geometry:** Standard is "a gap" — not pattern, not flesh, irrelevant to them. That's why they survived.
+- **Black Box:** With Ash at Quiet Zone
+- **Revolver:** With Ash (2 bullets remaining)
+
+### The Interstitial: "In The Blind"
+- PDF transcript format (`in_the_blind-transcript.pdf`)
+- Four's recording of what happened during the 42 minutes inside the Geometry
+- Recording has been played — they know Four saved them, Hendricks was restored, Standard didn't want to come back
 
 ### Chapter 12 Addition (This Session)
 - **Hendricks POV chapter** added to fill in his backstory
@@ -607,6 +645,47 @@ python query.py validate ../chapters/CHAPTER.md
 - **Elena filed Standard's reaction:** She knows something now
 - **Four knows what Standard is:** Hasn't said. The silence is complicit.
 - **When Four uses "Standard":** It will land because the teasing stopped.
+
+---
+
+## SESSION 10 SUMMARY
+
+**Date:** 2025-12-25
+
+### Accomplished
+1. **Chapter 18 "Divine Intervention" complete** (~2,500 words)
+   - Elena's breakdown: "We fucking died!" (18, no framework for dissolution)
+   - Hendricks/Four first meeting — CAI hot-swap seed planted
+   - Four's "I didn't" — devastating honesty about versions
+   - Standard/Hendricks father-daughter moment emerging
+   - Four's biometric: Hendricks reads 60-65 despite being 73
+   - Geometry intel unpacked: Standard is "a gap," they're curating not deleting
+   - Sovereignty worship, commander kneels, "Welcome aboard the Deliverance"
+2. **Chapter 19 "The Interpreter" fully scaffolded** — Elena POV
+   - 8 scenes planned with dialogue seeds
+   - Dante introduced (Filipino technician, sister walked into Geometry)
+   - Elena's implant nearly exposed, Dante lets her through
+   - The Council scene with prophecy and skeptic
+   - Four/Hendricks private moment planned
+   - Escape plan: Geneva as holy pilgrimage, 16-hour window
+3. **Character Dante created** — Guide through hell, dies before paradise
+4. **Hendricks age corrected** — 73 chronological, 60-65 apparent (decay halted mid-process)
+5. **System updates** — CHAPTER_FORMAT.yaml, Dabble workflow, all trackers current
+
+### Key Beats Locked (Session 10)
+- **Hendricks restoration:** Not youth, but time. Decay stopped at 60-65.
+- **Four's biometric:** "Readings consistent with healthy male, 60-65 years of age."
+- **Death processing:** Elena traumatized, Hendricks clinical, Standard observing, Four silent
+- **The Geometry:** "A gap. Not pattern. Not flesh. She does not concern us."
+- **CAI:** Cognitive Avionics Interface — Four hot-swapped from Meridian class wreck
+- **Dante's line:** "My sister had one. Before."
+- **Elena's implant:** Resonant tech, her mother's design
+
+### Ready for Next Session
+- **Chapter 19 prose** — Elena POV, the Interpreter
+- **Nail down:** Four's connectivity, prophecy specifics, timeline
+- **Land properly:** Elena's implant reveal to the group
+- **Dante's arc:** Complicity → escape help → eventual sacrifice
 
 ---
 
