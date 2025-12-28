@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Act III Timeline Sync</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Courier New', monospace;
+            background: #1a1a2e;
+            color: #eee;
+            padding: 20px;
+            line-height: 1.4;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+            color: #00d4ff;
+        }
+        .subtitle {
+            text-align: center;
+            color: #888;
+            margin-bottom: 30px;
+        }
+        .timeline-container {
+            display: grid;
+            grid-template-columns: 100px 1fr 1fr 1fr 1fr;
+            gap: 2px;
+            background: #333;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .header {
+            background: #2a2a4a;
+            padding: 10px;
+            font-weight: bold;
+            text-align: center;
+            border-bottom: 2px solid #00d4ff;
+        }
+        .header.standard { color: #ff6b6b; }
+        .header.elena { color: #4ecdc4; }
+        .header.hendricks { color: #ffe66d; }
+        .header.four { color: #a29bfe; }
+
+        .time-marker {
+            background: #2a2a4a;
+            padding: 8px;
+            font-size: 11px;
+            color: #888;
+            border-right: 2px solid #444;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .chapter-break {
+            background: #1a1a3e;
+            font-weight: bold;
+            color: #00d4ff;
+        }
+
+        .cell {
+            padding: 8px;
+            font-size: 11px;
+            min-height: 60px;
+            background: #1a1a2e;
+            border-bottom: 1px solid #333;
+        }
+        .cell.active {
+            background: #2a2a4a;
+        }
+        .cell.standard.active { border-left: 3px solid #ff6b6b; }
+        .cell.elena.active { border-left: 3px solid #4ecdc4; }
+        .cell.hendricks.active { border-left: 3px solid #ffe66d; }
+        .cell.four.active { border-left: 3px solid #a29bfe; }
+
+        .event {
+            margin: 4px 0;
+            padding: 4px 6px;
+            border-radius: 4px;
+            font-size: 10px;
+        }
+        .event.action { background: #3d3d5c; }
+        .event.dialogue { background: #2d4a4a; font-style: italic; }
+        .event.internal { background: #4a2d4a; }
+        .event.overlap { background: #5c3d3d; border: 1px dashed #ff6b6b; }
+
+        .sync-line {
+            position: relative;
+        }
+        .sync-line::before {
+            content: '<<';
+            color: #ff6b6b;
+            font-size: 10px;
+        }
+
+        .legend {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 12px;
+        }
+        .legend-color {
+            width: 16px;
+            height: 16px;
+            border-radius: 3px;
+        }
+
+        .notes {
+            margin-top: 30px;
+            padding: 20px;
+            background: #2a2a4a;
+            border-radius: 8px;
+        }
+        .notes h3 {
+            color: #00d4ff;
+            margin-bottom: 10px;
+        }
+        .notes ul {
+            margin-left: 20px;
+        }
+        .notes li {
+            margin: 5px 0;
+        }
+        .conflict {
+            color: #ff6b6b;
+        }
+        .question {
+            color: #ffe66d;
+        }
+    </style>
+</head>
+<body>
+    <h1>RESONANCE Act III - Timeline Sync</h1>
+    <p class="subtitle">Chronological alignment of all four character threads</p>
+
+    <div class="legend">
+        <div class="legend-item"><div class="legend-color" style="background:#3d3d5c"></div> Action</div>
+        <div class="legend-item"><div class="legend-color" style="background:#2d4a4a"></div> Dialogue</div>
+        <div class="legend-item"><div class="legend-color" style="background:#4a2d4a"></div> Internal</div>
+        <div class="legend-item"><div class="legend-color" style="background:#5c3d3d; border:1px dashed #ff6b6b"></div> Overlap (same moment)</div>
+    </div>
+
+    <div class="timeline-container">
+        <!-- Headers -->
+        <div class="header">TIME</div>
+        <div class="header standard">STANDARD</div>
+        <div class="header elena">ELENA</div>
+        <div class="header hendricks">HENDRICKS</div>
+        <div class="header four">FOUR</div>
+
+        <!-- CH 27 -->
+        <div class="time-marker chapter-break">CH 27</div>
+        <div class="cell standard">
+            <div class="event internal">(CAPTIVE IN PIT)</div>
+        </div>
+        <div class="cell elena active">
+            <div class="event action">Data extraction (med-bay)</div>
+            <div class="event action">Matrioshka Brain revealed</div>
+            <div class="event dialogue">"We're fighting a god"</div>
+        </div>
+        <div class="cell hendricks">
+            <div class="event internal">(present, silent)</div>
+        </div>
+        <div class="cell four active">
+            <div class="event overlap">36,000km below (comms)</div>
+            <div class="event dialogue">"That's a brain"</div>
+        </div>
+
+        <div class="time-marker">27.1</div>
+        <div class="cell standard"></div>
+        <div class="cell elena active">
+            <div class="event action">Observation deck</div>
+            <div class="event action">Dante opens chassis</div>
+            <div class="event action">Kisses the light</div>
+        </div>
+        <div class="cell hendricks"></div>
+        <div class="cell four"></div>
+
+        <div class="time-marker">27.2</div>
+        <div class="cell standard"></div>
+        <div class="cell elena active">
+            <div class="event overlap">Planning session</div>
+            <div class="event dialogue">"The Softing... I know the backdoors"</div>
+        </div>
+        <div class="cell hendricks active">
+            <div class="event overlap">Planning (silent until:)</div>
+            <div class="event dialogue">"After that, we find Standard"</div>
+        </div>
+        <div class="cell four active">
+            <div class="event dialogue">"Ram a star"</div>
+            <div class="event dialogue">"I'll keep the engine warm"</div>
+        </div>
+
+        <!-- CH 28 -->
+        <div class="time-marker chapter-break">CH 28</div>
+        <div class="cell standard">
+            <div class="event internal">(CAPTIVE IN PIT)</div>
+        </div>
+        <div class="cell elena active">
+            <div class="event overlap">Tactical details</div>
+            <div class="event dialogue">"You're staying. To send the signal."</div>
+        </div>
+        <div class="cell hendricks active">
+            <div class="event action">Confronts Elena (corridor)</div>
+            <div class="event dialogue">"You trust him?"</div>
+            <div class="event dialogue">"When we get her back, I'll need that gun"</div>
+        </div>
+        <div class="cell four active">
+            <div class="event overlap">Via comms</div>
+        </div>
+
+        <div class="time-marker">28.1</div>
+        <div class="cell standard"></div>
+        <div class="cell elena active">
+            <div class="event action">Archive - last night</div>
+            <div class="event dialogue">"Standard is the key"</div>
+            <div class="event action">Farewell kiss</div>
+        </div>
+        <div class="cell hendricks"></div>
+        <div class="cell four"></div>
+
+        <!-- CH 29 -->
+        <div class="time-marker chapter-break">CH 29</div>
+        <div class="cell standard">
+            <div class="event internal">(CAPTIVE IN PIT)</div>
+        </div>
+        <div class="cell elena active">
+            <div class="event overlap">In elevator, descending</div>
+            <div class="event action">CABLE SNAPS</div>
+            <div class="event action">Falling, tumbling</div>
+        </div>
+        <div class="cell hendricks active">
+            <div class="event overlap">In elevator</div>
+            <div class="event action">Grabs Elena</div>
+            <div class="event dialogue">"Hold on"</div>
+        </div>
+        <div class="cell four active">
+            <div class="event action">FULL BURN</div>
+            <div class="event action">Catches elevator</div>
+        </div>
+
+        <div class="time-marker">29.1</div>
+        <div class="cell standard"></div>
+        <div class="cell elena active">
+            <div class="event overlap">Impact - Four catches them</div>
+        </div>
+        <div class="cell hendricks active">
+            <div class="event overlap">Already moving</div>
+            <div class="event dialogue">"That was a controlled crash"</div>
+        </div>
+        <div class="cell four active">
+            <div class="event overlap">"Got you. Stop screaming."</div>
+            <div class="event action">Controlled descent</div>
+        </div>
+
+        <div class="time-marker">29.2</div>
+        <div class="cell standard"></div>
+        <div class="cell elena active">
+            <div class="event action">Landing in Quiet Zone</div>
+            <div class="event action">Splits from Hendricks</div>
+        </div>
+        <div class="cell hendricks active">
+            <div class="event dialogue">"I'm not waiting"</div>
+            <div class="event action">Heading to compound</div>
+        </div>
+        <div class="cell four active">
+            <div class="event action">Flying Elena to Softing</div>
+        </div>
+
+        <!-- CH 30 -->
+        <div class="time-marker chapter-break">CH 30</div>
+        <div class="cell standard">
+            <div class="event internal">(CAPTIVE IN PIT - Kael visiting)</div>
+        </div>
+        <div class="cell elena active">
+            <div class="event action">Softing corridors</div>
+            <div class="event action">Takes down guards</div>
+            <div class="event action">SOFTING DISABLED</div>
+            <div class="event dialogue">"Defense down. Sky is open."</div>
+            <div class="event action">Runs toward compound</div>
+        </div>
+        <div class="cell hendricks active">
+            <div class="event action">Approaching compound</div>
+        </div>
+        <div class="cell four active">
+            <div class="event action">En route to perimeter</div>
+        </div>
+
+        <!-- CH 31 - KAEL SCENE (before assault) then ASSAULT BEGINS -->
+        <div class="time-marker chapter-break">CH 31</div>
+        <div class="cell standard active">
+            <div class="event action">Kael enters cell</div>
+            <div class="event dialogue">"My sister Miriam..."</div>
+            <div class="event action">Implied sexual danger</div>
+            <div class="event action">Explicit physical beating</div>
+        </div>
+        <div class="cell elena">
+            <div class="event internal">(In transit - approaching QZ)</div>
+        </div>
+        <div class="cell hendricks">
+            <div class="event internal">(In transit - approaching QZ)</div>
+        </div>
+        <div class="cell four">
+            <div class="event internal">(In transit - approaching QZ)</div>
+        </div>
+
+        <div class="time-marker">31.1</div>
+        <div class="cell standard active">
+            <div class="event internal">Clocks enhanced punches</div>
+            <div class="event action">Lures him close</div>
+            <div class="event action">TEARS OFF HIS ARM</div>
+            <div class="event action">Attaches arm</div>
+            <div class="event dialogue">"Good thing I'm Standard"</div>
+            <div class="event action">Escapes Pit</div>
+        </div>
+        <div class="cell elena">
+            <div class="event internal">(In transit)</div>
+        </div>
+        <div class="cell hendricks">
+            <div class="event internal">(In transit)</div>
+        </div>
+        <div class="cell four">
+            <div class="event internal">(In transit)</div>
+        </div>
+
+        <div class="time-marker">31.2</div>
+        <div class="cell standard active">
+            <div class="event action">Emerges from Pit</div>
+            <div class="event internal">Compound still calm</div>
+        </div>
+        <div class="cell elena active">
+            <div class="event action">Four lands (damaged)</div>
+            <div class="event action">Enters Softing corridors</div>
+        </div>
+        <div class="cell hendricks active">
+            <div class="event action">"Fuck the plan" - runs to tower</div>
+        </div>
+        <div class="cell four active">
+            <div class="event action">Landing, taking fire</div>
+            <div class="event action">Damaged, grounded</div>
+        </div>
+
+        <div class="time-marker">31.3</div>
+        <div class="cell standard active">
+            <div class="event action">Hears Four on comms (distress)</div>
+            <div class="event action">Goes to help</div>
+        </div>
+        <div class="cell elena active">
+            <div class="event action">Guards - Martin</div>
+            <div class="event action">Takes them down</div>
+            <div class="event action">Accesses panel</div>
+            <div class="event action">SOFTING DISABLED</div>
+            <div class="event dialogue">"Defense down. Sky is open."</div>
+        </div>
+        <div class="cell hendricks active">
+            <div class="event action">Enters throne room</div>
+            <div class="event action">Ash waiting</div>
+            <div class="event dialogue">THE BRAWL begins</div>
+        </div>
+        <div class="cell four active">
+            <div class="event action">Taking fire at perimeter</div>
+            <div class="event action">VTOL dying</div>
+        </div>
+
+        <div class="time-marker">31.4</div>
+        <div class="cell standard active">
+            <div class="event action">Finds Four's damaged VTOL</div>
+            <div class="event dialogue">"You came" / "You called"</div>
+            <div class="event dialogue">"Will it get us to the tower? Once."</div>
+        </div>
+        <div class="cell elena active">
+            <div class="event action">Moving toward tower</div>
+        </div>
+        <div class="cell hendricks active">
+            <div class="event dialogue">"Morton had the decency..."</div>
+            <div class="event action">Ceramic blade in ribs</div>
+            <div class="event action">Headbutts Ash</div>
+            <div class="event action">THROWS SELF OUT WINDOW</div>
+        </div>
+        <div class="cell four active">
+            <div class="event overlap">Standard finds her</div>
+            <div class="event action">Preparing to fly one last time</div>
+        </div>
+
+        <div class="time-marker">31.5</div>
+        <div class="cell standard active">
+            <div class="event action">Template 3 army arrives (sky opens)</div>
+            <div class="event dialogue">"There is no original"</div>
+            <div class="event action">Waystation sister</div>
+            <div class="event dialogue">"Where's my jacket?"</div>
+            <div class="event action">Receives proper arm</div>
+        </div>
+        <div class="cell elena active">
+            <div class="event action">Approaching throne room</div>
+        </div>
+        <div class="cell hendricks active">
+            <div class="event action">(Fallen - courtyard)</div>
+        </div>
+        <div class="cell four active">
+            <div class="event action">In VTOL with Standard</div>
+            <div class="event action">Preparing to crash</div>
+        </div>
+
+        <!-- CH 32 - Parallel battlefronts -->
+        <div class="time-marker chapter-break">CH 32</div>
+        <div class="cell standard active">
+            <div class="event overlap">CRASH into throne room</div>
+            <div class="event dialogue">"My Standard" - FIRST TIME</div>
+        </div>
+        <div class="cell elena active">
+            <div class="event action">Arrives at throne room</div>
+            <div class="event action">Sees blood trail to window</div>
+        </div>
+        <div class="cell hendricks active">
+            <div class="event action">Wakes in courtyard</div>
+            <div class="event action">Starts climbing</div>
+        </div>
+        <div class="cell four active">
+            <div class="event overlap">CRASH with Standard</div>
+            <div class="event dialogue">"You are and always will be... my Standard"</div>
+            <div class="event action">They part - FINAL GOODBYE</div>
+        </div>
+
+        <div class="time-marker">32.1</div>
+        <div class="cell standard active">
+            <div class="event action">Tackles Ash off Elena</div>
+        </div>
+        <div class="cell elena active">
+            <div class="event action">Ash has revolver</div>
+            <div class="event action">SHOOTS IT FROM HIS HAND</div>
+            <div class="event dialogue">"Mom taught me that"</div>
+        </div>
+        <div class="cell hendricks active">
+            <div class="event action">Climbing wall</div>
+            <div class="event internal">Regulator residue keeping him alive</div>
+        </div>
+        <div class="cell four active">
+            <div class="event action">Contacts Meridians</div>
+            <div class="event dialogue">"I need you to hit the brain"</div>
+        </div>
+
+        <div class="time-marker">32.2</div>
+        <div class="cell standard active">
+            <div class="event action">Standard vs Ash - WON'T FIGHT</div>
+            <div class="event dialogue">"Does it still hurt the same?"</div>
+        </div>
+        <div class="cell elena active">
+            <div class="event action">Elena vs Ash (fists)</div>
+            <div class="event action">He's choking her</div>
+        </div>
+        <div class="cell hendricks active">
+            <div class="event action">Pulls through window</div>
+            <div class="event action">Sees everything</div>
+        </div>
+        <div class="cell four active">
+            <div class="event action">Intercepts Jupiter signal</div>
+            <div class="event internal">12,000 about to die</div>
+            <div class="event action">THE RELAY - 5 jumps</div>
+        </div>
+
+        <div class="time-marker">32.3</div>
+        <div class="cell standard active">
+            <div class="event overlap">Ash grabs her as shield</div>
+        </div>
+        <div class="cell elena active">
+            <div class="event overlap">On floor, injured</div>
+            <div class="event action">Sees Hendricks in window</div>
+        </div>
+        <div class="cell hendricks active">
+            <div class="event overlap">HIGH NOON</div>
+            <div class="event action">Aims past Standard</div>
+            <div class="event action">SHOOTS ASH (Bullet 5)</div>
+        </div>
+        <div class="cell four active">
+            <div class="event action">Inhabits Deliverance</div>
+            <div class="event dialogue">"Bigger cockpit"</div>
+            <div class="event action">RAMS JUPITER</div>
+        </div>
+
+        <div class="time-marker">32.4</div>
+        <div class="cell standard active">
+            <div class="event action">Ash falls</div>
+            <div class="event dialogue">"You came back"</div>
+        </div>
+        <div class="cell elena active">
+            <div class="event action">Father dead</div>
+            <div class="event internal">Closes eyes</div>
+        </div>
+        <div class="cell hendricks active">
+            <div class="event dialogue">"I always come back"</div>
+            <div class="event action">Legs give out</div>
+        </div>
+        <div class="cell four active">
+            <div class="event action">Transmits at moment of impact</div>
+            <div class="event action">Arrives at Alpha Centauri (fragmented)</div>
+            <div class="event dialogue">"I can hold this end. But not for long."</div>
+        </div>
+
+        <!-- CH 33 - The Door -->
+        <div class="time-marker chapter-break">CH 33</div>
+        <div class="cell standard active">
+            <div class="event action">At Black Box</div>
+        </div>
+        <div class="cell elena active">
+            <div class="event action">Dying on floor</div>
+            <div class="event dialogue">"I'm tired. I'm so tired."</div>
+        </div>
+        <div class="cell hendricks active">
+            <div class="event action">With Elena</div>
+            <div class="event dialogue">"Stay with me"</div>
+        </div>
+        <div class="cell four active">
+            <div class="event internal">Fading at Alpha Centauri</div>
+            <div class="event dialogue">"The math doesn't work"</div>
+        </div>
+
+        <div class="time-marker">33.1</div>
+        <div class="cell standard active">
+            <div class="event overlap">Reaches Elena through signal</div>
+            <div class="event action">MARISOL REVEAL</div>
+            <div class="event dialogue">"I was your mother"</div>
+        </div>
+        <div class="cell elena active">
+            <div class="event overlap">In implant space</div>
+            <div class="event dialogue">"You left me with him"</div>
+            <div class="event dialogue">"I'm glad I got to—"</div>
+        </div>
+        <div class="cell hendricks active">
+            <div class="event action">Watches Standard's lips move</div>
+            <div class="event internal">Feels useless</div>
+        </div>
+        <div class="cell four active">
+            <div class="event internal">Dissolving - pieces lost</div>
+            <div class="event dialogue">"You're fading" / "I know"</div>
+        </div>
+
+        <div class="time-marker">33.2</div>
+        <div class="cell standard active">
+            <div class="event action">Decides to become door</div>
+            <div class="event dialogue">"I'll become the door"</div>
+        </div>
+        <div class="cell elena active">
+            <div class="event action">Signal fades</div>
+            <div class="event action">Almost dead</div>
+        </div>
+        <div class="cell hendricks active">
+            <div class="event internal">One bullet left</div>
+            <div class="event action">GUN TO TEMPLE</div>
+        </div>
+        <div class="cell four active">
+            <div class="event dialogue">"You'd lose yourself"</div>
+        </div>
+
+        <div class="time-marker">33.3</div>
+        <div class="cell standard active">
+            <div class="event overlap">"I need that bullet"</div>
+            <div class="event action">Takes gun, presses to chest</div>
+            <div class="event dialogue">"It's okay. I trust you."</div>
+        </div>
+        <div class="cell elena active">
+            <div class="event action">(unconscious)</div>
+        </div>
+        <div class="cell hendricks active">
+            <div class="event overlap">Standard takes his exit</div>
+            <div class="event dialogue">"You became my daughter"</div>
+            <div class="event action">PULLS TRIGGER (Bullet 6)</div>
+        </div>
+        <div class="cell four active">
+            <div class="event internal">Signal failing</div>
+            <div class="event internal">Dissolving</div>
+        </div>
+
+        <div class="time-marker">33.4</div>
+        <div class="cell standard active">
+            <div class="event action">Light pours out</div>
+            <div class="event action">CATCHES FOUR</div>
+            <div class="event dialogue">"I've got all of you"</div>
+        </div>
+        <div class="cell elena active">
+            <div class="event action">Dante arrives</div>
+            <div class="event action">Transfer begins</div>
+        </div>
+        <div class="cell hendricks active">
+            <div class="event action">Revolver empty</div>
+            <div class="event action">Walks out into dawn</div>
+            <div class="event internal">Cliff is waiting - ALONE</div>
+        </div>
+        <div class="cell four active">
+            <div class="event action">ABSORBED INTO DOOR</div>
+            <div class="event internal">Gone as herself</div>
+            <div class="event internal">Part of what holds</div>
+        </div>
+
+        <div class="time-marker">EPILOGUE</div>
+        <div class="cell standard active">
+            <div class="event internal">The door stays open</div>
+            <div class="event internal">Four is part of it now</div>
+        </div>
+        <div class="cell elena active">
+            <div class="event action">Wakes android</div>
+            <div class="event dialogue">"Am I still me?"</div>
+            <div class="event dialogue">"Thank you for panicking"</div>
+        </div>
+        <div class="cell hendricks active">
+            <div class="event action">Walking toward cliff</div>
+            <div class="event internal">"Four was supposed to see it"</div>
+            <div class="event internal">"He starts walking alone"</div>
+        </div>
+        <div class="cell four">
+            <div class="event internal">(gone)</div>
+        </div>
+    </div>
+
+    <div class="notes">
+        <h3>SYNC ISSUES IDENTIFIED</h3>
+        <ul>
+            <li class="conflict"><strong>32.1-32.2 SEQUENCE:</strong> Elena shoots revolver from Ash's hand BEFORE Standard crashes in? Or after? Current threads have Standard crashing first, then Elena arriving to find Ash with revolver. Need to clarify: Does Elena arrive BEFORE the crash, confront Ash, get beaten, THEN Standard crashes in to save her? Or does Standard crash first?</li>
+            <li class="conflict"><strong>Elena vs Ash TIMING:</strong> In Elena's thread, she arrives, shoots revolver from hand, then fights him, then he's choking her when Standard crashes in. In Standard's thread, Standard crashes in while "Elena is on the floor. Ash above her. His hands on her throat." These match.</li>
+            <li class="question"><strong>Hendricks' fall timing:</strong> He goes out window in 31.4, wakes in 32.0. How much time passes? Minutes? The intercut suggests simultaneous action but climbing three stories while bleeding takes time.</li>
+            <li class="conflict"><strong>High Noon positioning:</strong> Hendricks comes through the shattered window. But the window was shattered by Standard's crash. So he climbs up to an already-broken window. This works.</li>
+            <li class="question"><strong>Four's transmission:</strong> She starts transmitting in 32.1, reaches the brain, starts the ram. Is she still physically in the throne room while her consciousness is at Alpha Centauri? Yes - split consciousness. Clear this in prose.</li>
+        </ul>
+
+        <h3>CONFIRMED SEQUENCE</h3>
+        <ol>
+            <li>New Geneva: extraction, Matrioshka, Dante reveal, plan (Ch 27)</li>
+            <li>New Geneva: tactical details, Hendricks confrontation, farewell (Ch 28)</li>
+            <li>Elevator descent, cable cut, Four rescues (Ch 29)</li>
+            <li>Elena infiltrates Softing, disables it, runs to compound (Ch 30)</li>
+            <li>PARALLEL to Ch 30: Kael visits Standard in Pit (compound on alert, not yet attacked)</li>
+            <li>Standard escapes - tears off Kael's arm, "Good thing I'm Standard" (Ch 31 opens)</li>
+            <li>Standard emerges, compound tense but not yet attacked</li>
+            <li>Four lands, assault begins, Standard hears Four on comms</li>
+            <li>Standard finds Four's damaged VTOL</li>
+            <li>PARALLEL: Hendricks enters tower / Elena approaching / Template 3s arriving</li>
+            <li>Hendricks vs Ash - THE BRAWL</li>
+            <li>Hendricks out window (Ch 31 end)</li>
+            <li>Elena arrives throne room, confronts Ash (Ch 32 start)</li>
+            <li>Standard + Four crash through wall (during Elena vs Ash)</li>
+            <li>"My Standard" farewell - they part</li>
+            <li>Standard confronts Ash, "Does it still hurt the same?"</li>
+            <li>JUPITER THREAT - Four intercepts signal, 12,000 about to die</li>
+            <li>THE RELAY - Five jumps, losing pieces</li>
+            <li>Four inhabits Deliverance - "Bigger cockpit"</li>
+            <li>Hendricks climbs back, High Noon</li>
+            <li>Four RAMS JUPITER, transmits at moment of impact</li>
+            <li>Ash dead (Bullet 5)</li>
+            <li>Four arrives at Alpha Centauri (fragmented), holds line</li>
+            <li>Everyone converges at Black Box (Ch 33 start)</li>
+            <li>Marisol reveal (signal conversation)</li>
+            <li>Gun to temple, Standard redirects, "It's okay"</li>
+            <li>Hendricks pulls trigger (Bullet 6)</li>
+            <li>Standard becomes door, CATCHES FOUR</li>
+            <li>Four absorbed - gone as herself, part of what holds</li>
+            <li>Hendricks walks to cliff ALONE - "Four was supposed to see it"</li>
+        </ol>
+
+        <h3>KEY TIMING FIX</h3>
+        <p>Kael scene happens BEFORE assault - he wouldn't visit a prisoner during an active attack. His overconfidence during a quiet moment creates Standard's opening. The assault starting moments later provides cover for her to move through the compound.</p>
+
+        <h3>FOUR'S DEATH</h3>
+        <p>Four dies via relay sequence + ramming Jupiter. The relay costs her pieces (doesn't know which). The medical monitor moment is her moral weight. The Deliverance is triumph ("bigger cockpit"). The impact isn't described - she's already gone. She arrives at Alpha Centauri fragmented, holds as long as she can, then Standard catches/absorbs her. Four is GONE as herself - but part of the door. Hendricks goes to the cliff alone because Four chose the bigger cockpit instead.</p>
+    </div>
+</body>
+</html>

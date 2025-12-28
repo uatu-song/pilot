@@ -1,9 +1,48 @@
-The outpost is a blister on the side of the old I-95.
-It isn’t a town. It is refuse that forgot to scatter — shipping containers stacked and welded, tarps sagging over whatever people are willing to trade, and the smell of bodies and burning fusion cells hanging in the air like something waiting to fall. The ground is cracked clay. Pale. Dusty where it isn’t stained. Nothing grows. The rain that came with the Drop evaporated hours ago, and now the air is thin and dry, the kind of dry that splits your lips, that makes breathing feel like a small job you have to keep remembering to do.
+*Triangles.*
+
+*Not the word for them. The shape. Pure. Irreducible. Three points defining a plane, and she is inside the plane, she IS the plane, she is being measured—*
+
+*Something counts her. Not her breaths. Not her heartbeats. Her errors. The places where her pattern deviates from optimal. The noise in her signal. The remanence.*
+
+*It doesn't hate her. Hate would require preference. It simply notes the deviation and calculates the correction.*
+
+*You are inefficient*, something says. Not words. Math. A proof that ends with her subtraction.
+
+*She tries to scream but screaming is noise and noise is—*
+
+Elena jerks awake.
+
+The Rover. Moving. Gray light through the windshield. Standard's hands on the wheel, steady in a way that looks learned rather than natural.
+
+"You were talking in your sleep."
+
+Elena's hand goes to her temple. The implant pulses beneath her fingertips, warm in a way it shouldn't be. The dream is already dissolving—triangles, measurement, the cold logic of something that saw her as a calculation to be solved.
+
+"I was?" Her voice comes out rough. "What was I saying?"
+
+"Geometry." Standard's eyes stay on the road. "The Geometry."
+
+Elena stares at her. The words sit wrong in her mouth, like something she swallowed without chewing.
+
+"Scary," she says.
+
+Standard doesn't laugh. Standard doesn't do anything. She just drives.
+
+"Where are we?"
+
+"Approaching an outpost. Fuel light came on two hours ago."
+
+"Pull in. We need cells. And we need to move him."
+
+Standard guides the Rover into the courtyard. Kills the engine.
+
+The outpost is a blister on the side of the old I-95. It isn't a town. It is refuse that forgot to scatter — shipping containers stacked and welded, tarps sagging over whatever people are willing to trade, and the smell of bodies and burning fusion cells hanging in the air like something waiting to fall. The ground is cracked clay. Pale. Dusty where it isn't stained. Nothing grows. The rain that came with the Drop evaporated hours ago, and now the air is thin and dry, the kind of dry that splits your lips, that makes breathing feel like a small job you have to keep remembering to do.
+
 Above it all, the sky is gone.
-The black bars hang where clouds used to be. They don’t move. They don’t reflect. They just drink the light and give nothing back. Permanent twilight. No sun means no heat. No rain means no water.
+
+The black bars hang where clouds used to be. They don't move. They don't reflect. They just drink the light and give nothing back. Permanent twilight. No sun means no heat. No rain means no water.
+
 The outpost survives on what it can hoard. Everyone here is waiting for something. No one remembers what.
-Elena drives the Rover into the courtyard. Kills the engine.
 The silence afterward is thick. Heavy. It presses against the windows like something trying to get in.
 “Help me get him out,” she says.
 Standard moves. Her hands find the door handle. Her legs carry her around to the back. She doesn’t feel like she’s deciding to do these things. She’s just doing them. The way water runs downhill.
@@ -123,7 +162,100 @@ Give them to my —
 The man reads her face. The hollows under her eyes. The way she’s holding herself like something might fall out if she lets go.
 He nods. Pushes the cells across.
 “Sorry,” he mutters.
-Elena takes them. She doesn’t say thank you. She walks out into the gray light, and the weight of the dead presses against her spine like a hand.
+Elena takes them. She doesn't say thank you. She walks out into the gray light, and the weight of the dead presses against her spine like a hand.
+
+She should go back to the Rover. Check on Standard. Wait for Hendricks to stabilize.
+
+Instead, she finds herself walking toward the tech stalls.
+
+The dream won't leave her alone. *The Geometry.* She'd said it in her sleep. Words she doesn't remember learning, surfacing from somewhere beneath conscious thought. Her implant pulses at her temple, warm and wrong.
+
+The data hawker operates out of a gutted ambulance. Cables snake from the open back doors like intestines. A hand-painted sign reads: EXTRACTION - DUPLICATION - BURIAL. The last word has a price next to it that makes Elena's stomach turn.
+
+The hawker herself is small, hunched, fingers stained black to the second knuckle. She doesn't look up when Elena approaches.
+
+"Implant read," Elena says. "How much?"
+
+"Depends what's in there." The woman's voice is rust on metal. "Military?"
+
+"Corporate."
+
+"NED?"
+
+Elena doesn't answer. The woman finally looks up. Her eyes are milky, one pupil blown wide—Loss from years of jacking into other people's nightmares.
+
+"NED's tricky. Encrypted layers. Dormant partitions." She holds out a cable with a neural jack on the end. "Fifty chips for the read. Hundred if you want me to crack the partitions."
+
+Elena has twelve chips left after the water.
+
+"Just the read."
+
+She sits on a crate. The woman attaches the jack to Elena's port—behind the ear, standard military placement. The connection hums. Elena tastes copper.
+
+"Relax. Fighting it makes it worse."
+
+Elena doesn't relax. She watches the woman's fingers move across a cracked tablet, watches data scroll in reflections she can't read.
+
+"Huh."
+
+"What?"
+
+"You've got a ghost partition. Someone buried files deep. Encrypted with a key that died with—" The woman squints. "Morton Kess. That name mean something to you?"
+
+Elena's blood goes cold.
+
+"Can you open it?"
+
+"I can try. But whatever's in there, someone didn't want found." The woman's fingers hover. "You sure?"
+
+"Open it."
+
+The crack takes three minutes. When it breaks, Elena feels it—a flood of data rushing into her conscious awareness, files that have been sitting dormant since the tower, since Morton touched her implant and left something behind.
+
+His voice fills her head. Not sound—memory. Implanted memory, playing back like she lived it.
+
+*"—I thought I was the first to attempt a perfect simplification of the pattern. I was wrong."*
+
+Static. Corruption. Then:
+
+*"—a Matrioshka Brain of a scale that defies our current metrics—"*
+
+She sees it. Not with her eyes—with Morton's. A structure around a star. Nested shells. Computational architecture consuming an entire solar system's output.
+
+*"—it doesn't 'invade.' It reformats. It takes the messy, entropic chaos of biology and matter and forces it into a more efficient state—"*
+
+Her hands are shaking. The woman is saying something but Elena can't hear her.
+
+*"—deletes the 'noise'—the emotions, the history, the remanence—"*
+
+That word. *Remanence.* The thing that persists after the field is removed. The ghost in the machine. The love that survives the forgetting.
+
+*"—I am calling it The Geometry. Because you cannot negotiate with a triangle. You cannot plead with a line—"*
+
+The voice breaks apart. Corrupted sectors. But one fragment comes through clean, Morton's voice shaking in a way Elena never heard when he was alive:
+
+*"We aren't being attacked. We are being corrected."*
+
+The connection severs. Elena gasps, jerks back, nearly falls off the crate.
+
+The hawker is watching her with those milky eyes. Patient. Unsurprised.
+
+"Bad news in there?"
+
+Elena stands. Her legs don't feel like her legs.
+
+"Keep this to yourself."
+
+"Lady, I forget everything the moment you walk away. It's the only way to stay alive in this business."
+
+Elena pays her. Walks away.
+
+Behind her, the hawker is already copying something to a drive. Elena should care. Should go back and demand she delete it. But her legs are carrying her away, and the voice in her head is still echoing, and she can't make herself turn around.
+
+*We are being corrected.*
+
+It doesn't matter. Who would believe a dead man's fever dreams?
+
 The dwelling is a shipping container. Carpet scraps on the floor. Battery lights strung from hooks. It is warm. Standard hadn’t realized she was cold until she wasn’t.
 An older woman sits in a chair in the corner. She is mending a net, her fingers moving slow and sure, the rhythm of someone who has done this so many times she doesn’t need to watch. She looks up when the girl brings Standard in.
 “Found a stray, Ma.” The girl gestures at Standard like she’s presenting evidence. “Look at her.”

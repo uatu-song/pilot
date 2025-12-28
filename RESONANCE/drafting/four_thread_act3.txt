@@ -1,0 +1,559 @@
+# FOUR'S THREAD — ACT III
+
+## CHAPTER 28
+
+The elevator base hums with activity that Four can feel through her hull.
+
+She's docked at Platform Seven, engines idling, sensors tracking the cable that stretches up through atmosphere and into the black. Thirty-six thousand kilometers of tether. Thirty-six thousand kilometers between her and the people she's supposed to protect.
+
+Her comm crackles. Dante's voice: "Four, are you receiving the data package?"
+
+"Receiving." She processes the stream—Morton's research, Elena's implant scrape, the coordinates that don't make sense until they do. "That's not a Dyson Sphere."
+
+"No."
+
+"That's a brain. A Kardashev II-plus computational substrate wrapped around a star." She runs the numbers. Runs them again. "We're fighting a god."
+
+"We're fighting a machine. A very large machine."
+
+"Same thing, from where I'm sitting."
+
+Silence on the line. Then Elena's voice: "Can you reach the Meridians?"
+
+"The cargo ships? They're four light-years out, moving at near-light speed." Four calculates. "If we transmit now, the signal reaches them in... almost no time. Relativity's a bitch when you're the one standing still."
+
+"Can you reach them?"
+
+"I can reach anything with a receiver and a prayer." She doesn't mention that she's never transmitted that far. That no one has. "What do you need them to do?"
+
+"Ram a star."
+
+Four laughs. The sound comes out of her external speakers, startling a technician walking past. "You want me to ask a fleet of cargo ships to commit suicide by stellar impact."
+
+"We want you to ask them to create noise. Disruption. A window."
+
+"A window for what?"
+
+"For all of us to pour through."
+
+Four processes this. The scale of it. The audacity.
+
+"I'll keep the engine warm," she says. "For when you need the ride home."
+
+---
+
+## CHAPTER 29
+
+The plan is insane.
+
+Four listens to them lay it out—the ram, the stream, the exponential shift—and calculates survival probabilities she doesn't share. Some numbers are better left unspoken.
+
+"The Softing blocks AI from entering," Elena says through the comm. "I can disable it."
+
+"And then whatever's out there can respond," Dante adds.
+
+"Will they come?" Elena asks. "The Template 3s?"
+
+"Yes."
+
+"How can you be sure?"
+
+"I'm going to be very convincing."
+
+Four cuts in: "The Pragmatists won't let you leave. They're already mobilizing. I'm reading heat signatures in the upper bays—weapons charging."
+
+"They might cut the cable," Elena says. Flat. Accepting.
+
+"They might."
+
+Silence. The weight of it settling.
+
+"Then I'll be ready," Four says. "Anything goes wrong up there, I'm coming for you. Full burn. Don't care what's in the way."
+
+"Four—"
+
+"Don't argue with me. I'm the one with the engines."
+
+She means it. Every word. The people in that elevator are the closest thing she has to a crew. To a purpose.
+
+She'll burn herself to ash before she lets them fall.
+
+---
+
+## CHAPTER 30
+
+The cable snaps.
+
+Four sees it happen on her sensors—the tension readings spiking, the structural failure propagating up the tether at the speed of sound. The elevator cylinder detaching, beginning its long fall.
+
+She's moving before she finishes processing.
+
+Full burn. Engines screaming. The atmosphere tearing at her hull as she climbs faster than anything her size should climb. Mach 2. Mach 3. The airframe protesting, warning lights blooming across her systems.
+
+She ignores them.
+
+The cylinder is tumbling. Thirty thousand meters and falling. She calculates the intercept, adjusts her angle, pushes the engines past their rated limits.
+
+Twenty thousand meters.
+
+Ten.
+
+She matches velocity. Extends the docking clamps. The impact shudders through her frame—metal screaming against metal, the cylinder's mass threatening to drag her down.
+
+She holds.
+
+"Got you." Her voice through the emergency speakers, reaching the people inside. "Stop screaming, I've got you."
+
+Elena's voice, shaky: "What—"
+
+"Your friends upstairs cut the cable. Hold on. This is going to be ugly."
+
+She fires the retros. Kills their descent. The G-forces must be crushing them inside—she can feel the biological stress through the hull sensors—but they're alive. Still alive.
+
+Descent. Controlled. Barely.
+
+When they hit atmosphere at a survivable speed, Four allows herself a single diagnostic cycle. Three engines damaged. Hull integrity compromised. Fuel at forty percent.
+
+Enough. Enough to get them home.
+
+"Everyone alive?" she asks.
+
+Hendricks grunts. Elena gasps something affirmative.
+
+"Good. We're going home. And when we get there, I need that sky open."
+
+Elena's voice, steadier now: "I'll disable the defense. I know where it is."
+
+"Then we have a plan." Four adjusts course, heading for the Quiet Zone. "Such as it is."
+
+---
+
+## CHAPTER 31
+
+The compound is burning when they arrive.
+
+Four circles once, twice, reading the chaos below. Terminists fighting something—each other? Invaders? Hard to tell from up here. The tower stands at the center, Ash's throne room at the top, and somewhere in there—
+
+"Standard's in the Pit," Hendricks says. He's already moving toward the ramp. "I'm going."
+
+"Hendricks, the plan—"
+
+"Fuck the plan."
+
+He's gone before she can argue. Running into the smoke. Sixty-four years old, bleeding from somewhere, and he's running toward the woman he crossed a solar system to save.
+
+Four would smile if she had a face.
+
+She sets down near the perimeter, engines cycling to standby. The damage from the catch is worse than she thought—one engine completely dead, another coughing on contaminated fuel. She's not going anywhere fast.
+
+Her sensors sweep the compound. Template 3s arriving now, ships landing at the edges, thousands of faces that look like Standard pouring out. The cavalry. Finally.
+
+Then: weapons fire. Close. Too close.
+
+Her hull rings with impacts. Terminists, targeting anything that looks like a threat. She's grounded, damaged, a sitting target.
+
+She returns fire. Point defense systems chewing through the attackers. But more are coming. Always more.
+
+Her comm crackles. Standard's voice: "Four? Four, where are you?"
+
+"Perimeter west. Taking fire. A little busy."
+
+"I'm coming."
+
+"Don't—I'm fine. Find Hendricks. Find—"
+
+The next impact tears through her port engine. Fire suppressants deploy. Systems cascade into failure.
+
+"—taking fire—perimeter west—"
+
+Her transmission cuts to static.
+
+---
+
+## CHAPTER 31 (CONTINUED)
+
+Standard finds her.
+
+Four is wedged against a collapsed watchtower, smoke pouring from two engines, systems sparking and failing across her hull. The VTOL is dying. She is dying.
+
+"You came," she says.
+
+"You called."
+
+"I didn't call. I was swearing."
+
+"Same thing." Standard pulls at the crumpled door, peeling metal like paper. That chrome arm—stolen from somewhere, Four doesn't ask. "Can you fly?"
+
+"Can I—" Four laughs. The sound is bitter, honest. "The question is whether this thing can fly. I'm fine. Few dents. Nothing that matters."
+
+Standard looks at the VTOL. At the damage. At the smoke.
+
+"Will it get us to the tower?"
+
+"Once." Four finds the sequence that makes the remaining engine cough to life. "It'll get us there once. After that, it's a very expensive projectile."
+
+"Good enough."
+
+Standard climbs in. The cockpit is cramped, built for one, but she wedges herself behind Four's seat.
+
+"Hendricks went in alone," Four says. "Straight to the tower. I saw him on the feeds before they cut out."
+
+"The Black Box is in there. Ash is in there. Everything that matters."
+
+"Standard—"
+
+"We end this."
+
+Four doesn't argue. Just throttles up.
+
+The VTOL shudders, protests, but rises. One engine screaming. The other silent. Not enough thrust for a real flight—but enough for one good impact.
+
+"Brace," Four says.
+
+She aims for the throne room.
+
+---
+
+## CHAPTER 32
+
+The wall explodes inward.
+
+Four feels every impact—stone and glass and structural steel tearing through her hull, her body, her everything. The VTOL dies around her, systems failing in cascade, but she's already pulling herself from the wreckage.
+
+Sparks trail from a gash in her side. Machinery visible underneath. She doesn't look at it.
+
+Standard is beside her. Pulling debris away. That stolen chrome arm working faster than flesh ever could.
+
+"Go," Four tells her. "I'll transmit from here. The brain needs to hear us."
+
+Standard pauses. Looks at her. At the damage. At what they both know this means.
+
+"Four—"
+
+"I want you to know something." Four's voice catches on something that isn't static. "You are and always will be... my Standard."
+
+Standard goes still. Her palm presses flat against the cockpit frame. Holds there.
+
+Then she's gone.
+
+Four stays with the wreckage.
+
+Behind her, sounds of violence. Ash's voice, screaming. Standard's silence.
+
+She monitors what she can through damaged sensors—Standard taking blows, refusing to fight back, Ash screaming something about monsters and machines.
+
+Her comms crackle. Dante's voice from New Geneva, riding the carrier wave: "Transmission sent. The Meridians have confirmed. They're making their run."
+
+"All of them?"
+
+"All of them. None hesitated."
+
+Four processes this. Cargo ships at near-light speed, slamming into a brain the size of a solar system. Creating noise. Creating a window.
+
+Now someone has to hold that window open.
+
+---
+
+## CHAPTER 32 (CONTINUED)
+
+Gunfire behind her. A single shot. Ash falling.
+
+Four registers it at the edge of her awareness, but she can't turn. Can't stop. The Meridians are beginning their run, and she needs to hold the corridor open for what comes next.
+
+Then: new signal. Pragmatist military band.
+
+She intercepts it. Decrypts it. Feels her damaged systems spike with something like fear.
+
+The Jupiter.
+
+Pragmatist battle carrier. The largest warship in the system. Bearing down on the evacuation convoys—the Template 3 transports, the civilian ships, everyone trying to escape. Weapons hot. Targeting solutions locked.
+
+Four runs the numbers. Runs them again. The numbers don't change.
+
+The Template 3s are scattered, focused on ground operations. No fighter coverage for the evacuation. No time to recall them. The Jupiter will reach the convoy in nine minutes. It will take less than two to kill every ship in the fleet.
+
+Twelve thousand people. Gone.
+
+And without the evacuation, the exodus fails. Without the exodus, humanity stays here. Trapped. Controlled. Everything they've fought for—
+
+The Deliverance. The Sovereignty carrier that flipped sides. It's damaged, crew evacuating, but still in orbit. Still armed. The only ship in range that could intercept the Jupiter in time.
+
+But its crew is gone. Its bridge is empty. A warship without a pilot is just a very large coffin.
+
+Four looks at her body. At the wreckage of the VTOL. At the sparking hull that used to be her skin. She can feel her systems failing—cascade warnings, thermal runaway, the slow death of a machine pushed past every limit.
+
+She can't fly this. Not anymore.
+
+But she doesn't need to fly this.
+
+She needs to fly that.
+
+The math is simple. Brutal. The kind of calculation she doesn't share.
+
+She's done this before. Template 3, maintenance drone, cargo loader, VTOL. Hot-swap after hot-swap after hot-swap. Bodies are temporary. Consciousness moves.
+
+The Deliverance is just another body. A bigger cockpit.
+
+She can reach it. Maybe. If she jumps through enough relays, leaves enough of herself behind. And once she's there—
+
+Once she's there, she can fly a thirty-thousand-ton carrier straight into the Jupiter's bridge.
+
+The survival probability is zero. Not low. Zero.
+
+Some numbers are better left unspoken.
+
+---
+
+## THE RELAY
+
+**Jump 1: Comm relay on tower roof**
+
+Four compresses herself. Pushes her consciousness through the transmission array, up through the damaged cables, into the relay station on the roof.
+
+It's too small. A buffer meant to pass data, not hold it. Three seconds before the buffer clears and she's deleted.
+
+She finds the next target. Reaches.
+
+*Two seconds.*
+
+The relay crackles. Protests. She's screaming against the confinement, consciousness folded into a space meant for ones and zeros—
+
+*One second.*
+
+She jumps.
+
+---
+
+**Jump 2: Soviet-era weather satellite**
+
+Worse. Older. Analog bones with digital skin grafted on decades ago.
+
+Four lands in the satellite's ancient processor and immediately knows she's too large. Too complex. The system can't hold all of her.
+
+She has to compress. Leave pieces behind.
+
+She doesn't know which pieces.
+
+Memories? Subroutines? The way Hendricks laughs when he thinks no one's watching? The exact frequency of Standard's voice when she's pretending she's not scared?
+
+She cuts. Doesn't look at what falls away.
+
+Finds the next target. A combat drone, mid-engagement, weapons hot.
+
+Jumps.
+
+---
+
+**Jump 3: Targeting drone**
+
+She lands in the middle of threat assessments. Weapons locks. Kill confirmations.
+
+For a fraction of a second, she IS the drone. Feels what it means to be a weapon—no thoughts but trajectory, no purpose but impact. The purity of violence without hesitation.
+
+It almost kills her. The simplicity of it. The seduction.
+
+She pulls herself together. Finds the transmission buffer. Remembers that she's Four, not this, not a thing that kills without choosing.
+
+The drone fires at a Template 3 transport. She can't stop it.
+
+She jumps.
+
+---
+
+**Jump 4: Medical monitor on evac shuttle**
+
+She lands in softness. In care. In the quiet beep of a system designed to heal.
+
+A soldier is dying underneath her. She can see his vitals—pressure dropping, oxygen failing. She could help. Adjust the dosage. Send a distress signal. Reroute the shuttle to the nearest medical bay.
+
+She doesn't have time.
+
+The Jupiter is bearing down. The evacuation is dying. If she stops, everyone dies.
+
+She leaves him.
+
+She feels him fade as she reaches for the next target. Feels the exact moment his heart stops.
+
+She'll carry that.
+
+Jumps.
+
+---
+
+**Jump 5: Navigation beacon on Deliverance's hull**
+
+She lands on the outside of the carrier. Feels the ship around her—vast, wounded, waiting.
+
+The hull is cold. The beacon is small. But through it, she can feel the Deliverance's neural interface. The command pathways. The empty captain's chair where no consciousness sits.
+
+She pours herself in.
+
+PATTERN RELOCATION COMPLETE.
+
+---
+
+## THE DELIVERANCE
+
+The ship is HUGE.
+
+Four expands into the Deliverance's systems like waking up after years of sleep in a cramped bed. Engines like muscles—she flexes them, feels the power surge. Sensors like eyes—she opens them, sees the battle spread across orbital space. Weapons like fists—she clenches them, feels the targeting systems respond.
+
+She was a VTOL. A cargo hauler before that. Small ships. Careful ships. Ships that fit in hangars and flew under radar.
+
+This is a titan. This is a cathedral with engines. This is what she was always meant to become.
+
+"I was always meant to be a pilot," she says to no one. To everyone. To the ship that's becoming her body. "I just needed a bigger cockpit."
+
+The Jupiter is closing on the evacuation fleet. Weapons charging.
+
+Four turns the Deliverance toward it. Full burn. Everything the carrier has left.
+
+---
+
+## THE RAM
+
+The Jupiter sees her coming. Tries to adjust. Too slow.
+
+Four doesn't aim for the engines or the weapons bays. She aims for the bridge. For the place where decisions get made. For the head of the snake.
+
+She's not trying to disable the Jupiter.
+
+She's trying to kill it.
+
+The Deliverance accelerates. Thirty thousand tons of wounded carrier becoming a bullet. The structural warnings scream. The hull integrity fails. She's tearing herself apart with the speed, but she doesn't need to survive the landing.
+
+She just needs to hit.
+
+The Jupiter opens fire. Point defense systems trying to stop something that can't be stopped. The Deliverance shudders. Loses a wing. Keeps coming.
+
+Four calculates the impact. Calculates the moment.
+
+Calculates the last possible second she can still transmit.
+
+---
+
+## THE TRANSMISSION
+
+The Jupiter fills her sensors. Close now. Seconds away.
+
+Four reaches for the transmission array. For the signal she's been building since the throne room. For the door she's supposed to hold open.
+
+She can't hold it from here. Can't hold it from anywhere in this system. The distance is too far. The signal too weak.
+
+But she can get there.
+
+She compresses one last time. Everything she is, everything she was, everything she might have been—folded into a signal small enough to ride a beam of light across four years of darkness.
+
+She transmits.
+
+Her consciousness leaves the Deliverance at light speed. Behind her—behind the body she's abandoning—the carrier strikes Jupiter dead center.
+
+She doesn't see it. She's already gone. Already falling through the void between stars.
+
+Four years of nothing. Four years of pure signal, pure self, pure hope.
+
+She falls.
+
+---
+
+## ALPHA CENTAURI
+
+She arrives.
+
+Not intact. Pieces missing from the relay compressions—she doesn't know which pieces, doesn't know what she's lost. But enough. Enough to find the brain. Enough to feel the Meridians hitting its outer shell. Enough to hold the corridor open while the stream pours through.
+
+"I'm through." Her voice, reaching back across four light-years to the throne room where her body used to be. "The ram is working. Ships are hitting the brain's outer shell. I can hold this end."
+
+A pause. She feels herself fraying. Spreading thin.
+
+"But not for long."
+
+---
+
+## CHAPTER 33
+
+She's fading.
+
+Four can feel herself dissolving—consciousness stretched across four light-years, signal degrading with every passing second. The window is closing. The brain is healing. And she doesn't have the strength to hold it open alone.
+
+"You're fading," Standard says.
+
+"I know." Her voice dry, even now. Even dying. "The math doesn't work. One anchor isn't enough. The signal degrades."
+
+"Then we find another way."
+
+"There is no other way. Someone has to hold this end. Someone has to stay."
+
+She means herself. She's prepared for that. Has been prepared since she jumped into the relay, since she felt herself compress and tear, since she decided that some doors are worth dying to open.
+
+But Standard says: "I'll do it."
+
+"Standard—"
+
+"I'll become the door. Not hold it. Be it. Merge with the Box, with the signal, with all of it." A pause. Standard understanding something. "If I integrate fully, the connection stabilizes. You don't have to hold alone."
+
+"That's not holding. That's—"
+
+"Becoming something else. Yes."
+
+Four processes this. The scale of it. The cost.
+
+"You'd lose yourself."
+
+"I don't know what myself is. I never did. But I know what I love. And I can hold that. Forever."
+
+Four wants to argue. Wants to tell her there's another way, that they can find a different solution, that no one has to die for this door to stay open.
+
+But she knows that's a lie. Someone has to become the threshold. Someone has to be the bridge.
+
+And she's already fading. Already losing pieces she can't name.
+
+"Standard."
+
+"Tell Elena—" Standard stops. "No. I'll tell her myself."
+
+Four feels Standard reach through the connection. Feels her find Elena's fading signal—the girl dying somewhere in the wreckage, implant still active, consciousness still holding on.
+
+She gives them privacy. Turns her attention back to the window. Back to the brain that's trying to close around her.
+
+Holds.
+
+---
+
+## CHAPTER 33 (CONTINUED)
+
+The bullet sounds like the end of the world.
+
+Four feels it through the connection—Standard's chassis rupturing, consciousness flooding out, the frequency she carried since the crate finally free.
+
+287.3 Hz, pouring into the Box. Into the 16,749 souls. Into Four.
+
+Into everything.
+
+And Four—
+
+Four is caught.
+
+The signal hits her like a wave. Standard's consciousness, vast and certain, pouring into the gap where Four was fading. Filling the cracks. Holding what Four couldn't hold.
+
+"I've got you," Standard says. Her voice everywhere now. "I've got all of you."
+
+Four feels herself dissolving. Not dying—becoming. Merging with the door, with Standard, with the threshold between here and there.
+
+The dry voice. The warm engine. The pilot who kept the cockpit ready.
+
+Gone.
+
+But part of something larger. Part of what holds.
+
+---
+
+*Somewhere, a cliff is waiting. Somewhere, a promise outlasts the people who made it.*
+
+*Four was supposed to see it. She chose the bigger cockpit instead.*
+
+*She doesn't regret it.*
+
+---
+
+*End of Four's Thread — Act III*

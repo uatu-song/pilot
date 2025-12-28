@@ -1,0 +1,42 @@
+PROBLEMS:
+1. Timeline/Location Gap
+Chapter 27: Standard escapes the Pit.
+Chapter 31: She's in the compound, finds Hendricks.
+But in the architecture: Standard hears Four in distress and goes to help BEFORE meeting up with Hendricks. The crash into the throne room is Standard + Four together, not Standard alone after meeting Hendricks in the courtyard.
+Current draft has:
+
+Standard escapes → finds Hendricks → Template 3 army arrives → waystation sister → crash into throne room
+
+Architecture says:
+
+Standard escapes → hears Four → goes to her → they work together → crash into throne room together
+
+Hendricks doesn't meet Standard until AFTER the confrontation with Ash. He was thrown out the window, climbed back, did High Noon. They don't reconnect until she's at the Black Box.
+2. Four's Absence in the Crash
+"Just Four's voice in her ear—'Brace'—and then impact"
+Four's voice is there, but Four's presence isn't. In the architecture, Four crashes WITH Standard. They're in the same vehicle. Four is damaged but functional. Four then transmits to Alpha Centauri from the throne room.
+The current draft has Standard crashing solo and Four already at Alpha Centauri during Chapter 33.
+3. The Marisol Reveal Timing
+In Elena's thread, the implant conversation happens while Elena is dying. Standard's consciousness stops there on the way to the Box.
+In Standard's thread, the conversation happens AFTER Standard decides to become the door but BEFORE Hendricks shoots her. The sequence:
+
+Standard tells Four she'll become the door
+Standard reaches Elena, tells her about Marisol
+Hendricks arrives
+"It's okay" / bullet
+Standard becomes the door
+
+This works, but the two threads need to sync. Elena's thread has her dying BEFORE Standard reaches her. Standard's thread has Elena still conscious enough to have a conversation.
+4. The Bullet Mechanics vs. Architecture
+Architecture says: "Her android body is the cage. Her consciousness needs to be released to merge with the Black Box. The bullet frees her."
+Your draft says: "It won't kill me. Not anymore. I'm already becoming something else. But it will be yours. The last thing you give me. The thing that holds the door open."
+These are different mechanics. In the architecture, the bullet is about DEATH/RELEASE. In your draft, the bullet is about PERMANENCE/ANCHOR.
+Your version is actually more interesting. The bullet isn't what kills her—she's already transforming. The bullet is what she carries forever. The last physical gift.
+But this means the "It's okay" line functions differently. It's not "it's okay to kill me." It's "it's okay to mark me forever."
+5. Small Continuity: Hendricks Finding Standard
+In Chapter 31, Hendricks tells Standard "Elena's inside. Ash has her."
+But in Elena's thread, Elena arrives at the throne room and finds Ash has already fought Hendricks (blood trail to window). How does Hendricks know Ash has Elena if Hendricks was thrown out the window before Elena arrived?
+The threads are out of sequence here.
+
+STRUCTURAL COMPARISON:
+BeatArchitectureYour DraftIssuePit escape✓✓—Kael's arm✓✓—Hears Four in distress✓✗MissingGoes to help Four✓✗MissingThey work together✓✗MissingCrash into throne room✓✓But missing FourSaves Elena✓✓—Standard vs Ash (won't fight)✓✓—High Noon✓✓—Marisol reveal✓✓Timing sync needed"It's okay"✓✓—Becomes door✓✓—Four saved✓✓—

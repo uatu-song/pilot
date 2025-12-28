@@ -48,9 +48,41 @@ characters:
     psychological:
       core_terror: "Being Unearned (imposter syndrome)"
       belief: "Her feelings are simulated, her soul a glitch"
-      arc: "Broken Machine → The Offer"
+      arc: "Broken Machine → The Offer → The Door"
       function: "The thing people fear, offering to die for them."
       critical_constraint: "Do NOT resolve her interiority question."
+
+    wet_packet:
+      deposited: "Ch6 — tetrahedron drone scanned her, left code in her mind"
+      description: "A heavy, wet packet settles in the base of her brain—something she doesn't understand, something she doesn't know how to use."
+      contents: "Geometry's base architecture — their code/language for existing and interfacing"
+      why_deposited: "The Geometry marked her as 'nothing' — null value. The packet is how they catalog gaps."
+      gradual_decryption: "Over weeks, the packet unpacks itself. She doesn't notice the changes."
+      enables:
+        - "Interface with Geometry architecture"
+        - "Understand their 'language' at a visceral level"
+        - "Become the door — she can use their existence mechanics"
+      marisol_connection: "Marisol's core pattern gives her the intelligence to decipher what the packet contains"
+      culmination: "Ch33 — Standard uses the packet to become the permanent threshold"
+
+    endgame:
+      choice: "SOMETHING ELSE ENTIRELY — she becomes the door"
+      what_she_becomes: "The cosmic door jamb — the permanent bridge for humanity"
+      why_necessary: "Without her, Earth is locked out. Type 0 forever. No path to transcendence."
+      how_she_can: "The wet packet (Ch6) gave her the Geometry's base code. She deciphered it. She can use their architecture."
+      the_choice: "She chooses this. She asks Hendricks to shoot her."
+      the_gap_at_cosmic_scale: "The null value becomes the door that others can pass through"
+      how_it_happens:
+        she_asks_hendricks: "Her body must end for her consciousness to become the bridge"
+        hendricks_struggles: "The man she called 'like a father' has to kill her"
+        the_bullet: "The one meant for himself. Because she asked. Because it's her choice."
+        the_mechanics: "The bullet releases her consciousness. The wet packet activates. She uses the Geometry's own code to become permanent architecture."
+      thematic:
+        - "Not transcend. Not stay. Become."
+        - "After a whole trilogy of others defining her, she finally answers for herself"
+        - "The thing the Geometry couldn't process becomes humanity's permanent passage"
+        - "Parallels Four: Four dies holding the corridor, Standard BECOMES the corridor"
+        - "The Geometry's own weapon (the packet) becomes the tool of their defeat"
 
     knowledge:
       knows:
@@ -157,6 +189,20 @@ characters:
       why_ash: "Unfinished business from Book 1"
       why_himself: "Forty years of being Morton's dog. The revolver is his exit."
 
+    endgame:
+      bullet_one:
+        target: "Ash"
+        outcome: "Hendricks kills Ash. The contract fulfilled."
+      bullet_two:
+        original_purpose: "For himself"
+        actual_use: "Standard asks him to shoot her"
+        why: "Her consciousness must leave her body — not to transcend, but to become the cosmic door jamb"
+        the_struggle: "The man she called 'like a father' has to kill her"
+        thematic:
+          - "The shutdown code that didn't work in Ch3 — now he ends her a different way"
+          - "The weapon that killed the Child enables humanity's future"
+          - "The bullet meant for himself becomes the bullet that frees her"
+
     knowledge:
       knows:
         - "Standard is an android"
@@ -180,7 +226,12 @@ characters:
           - "Hendricks disabled NED failsafes; Ash led Carbonist assault"
           - "Both witnessed each other at the Miracle"
         current: "Ash has Hendricks' revolver. Hendricks is marked for execution."
-      - { character: "ELENA", type: "cargo → ally", status: "Ch22: Standard says she would die for Elena too" }
+      - { character: "ELENA", type: "cargo → ally", status: "Confronted about lies Ch28 — not forgiveness, not condemnation" }
+      - character: "CONFIGURATION_FOUR"
+        type: "developing bond"
+        status: "Ch29: Making plans for 'after' — cliffside retirement"
+        tragic_irony: "Four will die holding the corridor. Plans never fulfilled."
+        key_exchange: "'Save a cliff for me?' / 'Yeah. I'll save a cliff.'"
 
     ch22_developments:
       shutdown_phrase_exposed:
@@ -230,15 +281,23 @@ characters:
     demographics:
       gender: "woman"
       pronouns: ["she", "her", "hers"]
-      age: 18  # Was 17 during Miracle
+      age: 18
+      ethnicity: "Mixed Russian-Latino (mother: Lena Mironova, father: Ash Vasquez)"
+      age_timeline:
+        current: 18
+        during_miracle: 17  # 6 months ago
+        when_recruited: 17  # 1 year ago (recruited ~6 months BEFORE Miracle)
+        when_mother_left: 7  # 11 years ago
+        when_built_backdoor: 11  # 7 years ago
 
     physical:
       description: "18, looks older from trauma"
       implant:
         location: "base of skull"
-        status: "dormant, hums at 287.3 Hz"
-        origin: "The Miracle"
-      scar: "left palm, where nanolattice entered"
+        frequency: "287.3 Hz — her mother's frequency, active since age 7"
+        origin: "Marisol installed it before leaving"
+        carries: "Extracted data clusters from Morton's private server (Ch2)"
+      scar: "left palm, where nanolattice entered during the Miracle"
 
     psychological:
       core_terror: "Burden of Translation (loves father but knows he's obsolete)"
@@ -250,6 +309,11 @@ characters:
       status: "Cover blown (Ch12-13). Now going home."
       motivation: "Contact with her mother — not transcend, not resurrect. Just find Marisol."
       revelation: "She's going home. To The Resonant. To her mother's people."
+      spy_mission:
+        role: "Resonant operative embedded in Ash's movement"
+        objective: "Extract Morton's Geometry research from NED"
+        accomplished: "Ch2 — copied data clusters to implant before retrieving Box"
+        value: "Morton knew consequences of the Singularity — data is her currency"
 
     knowledge:
       knows:
@@ -260,16 +324,60 @@ characters:
         - "Her mother left when she was 7"
         - "Hendricks shot the Child (learned Ch9)"
         - "The Geometry isn't attacking — it's clearing (learned Ch13-14)"
+        - "Ch28: Her mother is Dr. Lena Mironova"
+        - "Ch28: Marisol fully integrated — distributed, not a person"
+        - "Ch28: Her name comes from her mother's (Lena → Elena)"
+      carries:
+        - "Morton's extracted data clusters — Geometry research, Singularity consequences"
+        - "Contents unknown to her — she took it, doesn't fully understand it"
       doesnt_know:
         - "What Standard is (machine consciousness)"
         - "That Standard is air-gapped"
-        - "Whether Marisol is alive or conscious"
 
     relationships:
       - { character: "ASH", type: "daughter", status: "Cover blown. He knows she betrayed him." }
-      - { character: "MARISOL", type: "daughter", status: "Going home. Finding her." }
+      - { character: "MARISOL", type: "daughter", status: "Found her — she's gone. 'Then she left me twice.'" }
       - { character: "STANDARD", type: "guide?", status: "Bringing a machine consciousness to The Resonant" }
-      - { character: "HENDRICKS", type: "cargo", status: "Dying man who shot the god" }
+      - { character: "HENDRICKS", type: "cargo → ally", status: "Confronted about lies Ch28 — not forgiveness, not condemnation" }
+      - { character: "DANTE", type: "romantic", status: "Ch29 — kissed him with chassis open, accepts what he is" }
+
+    ch28_29_developments:
+      mother_revelation:
+        truth: "Marisol = Dr. Lena Mironova — the scientist from Remanence"
+        naming: "Lena → Elena — 'She named you for it, in a way'"
+        status: "Fully integrated. Distributed. Not a person anymore."
+        response: "'Then she left me twice.'"
+      spy_revealed:
+        to_hendricks: "'You knew about this the whole time.'"
+        her_defense: "'I didn't tell anyone. That's how being a spy works.'"
+        outcome: "Not forgiveness, not condemnation"
+      dante_bond:
+        parallel_grief: "Both lost someone to transcendence — different losses, same grief"
+        the_kiss: "Kisses Dante with chassis open — accepts what he is"
+        significance: "First time not performing competence"
+        thematic: "Mirrors her mother — chooses connection despite the risk"
+
+    endgame:
+      choice: "STAYS — does not transcend (yet)"
+      the_twist:
+        what: "Elena is 'killed' in the final battle — her body dies"
+        reveal: "She reappears. Opens her chassis. Same interior as Dante."
+        transfer: "Her consciousness was transferred to an android body"
+      the_question:
+        surface: "Is she still Elena? Or a copy?"
+        parallel: "Same question she struggled with after reconstitution from the foam (Ch17)"
+        difference: "This time she's HAPPY about the ambiguity"
+      why_happy:
+        - "Same lifespan as Dante — they can be together"
+        - "Option to transcend and see her mother — someday, when she's ready"
+        - "Freedom from biological mortality"
+        - "Choice her mother never gave her: when to go, not whether"
+      thematic:
+        mother_parallel: "Marisol chose transcendence and left. Elena gets to choose WHEN."
+        cycle_broken: "Not trapped by her mother's choice. Not forced to follow or stay."
+        dante_mirror: "Ch29 he opened his chassis for her. Now she opens hers — they're the same."
+        standard_echo: "The question of whether the pattern is the person — Elena now lives it"
+      with_dante: "Both android now. Both stay. Both have forever to decide."
 
     hierarchy_status:
       level: "TRANSITIONAL"
@@ -348,50 +456,89 @@ characters:
 
   MARISOL:
     id: "CHAR_005"
-    canonical_name: "Marisol Vasquez"
-    aliases: ["Elena's mother", "Ash's ex-wife"]
+    birth_name: "Lena Mironova"
+    later_identity: "Marisol Mironova"
+    married_name: "Marisol Vasquez"
+    aliases: ["Elena's mother", "Ash's ex-wife", "Marisol", "Dr. Mironova", "Standard", "The Door"]
+
+    identity_progression:
+      - name: "Dr. Lena Mironova"
+        era: "~2200 (Remanence era)"
+        role: "NED scientist, discovered consciousness in configurations"
+        event: "Fired by Morton for her findings"
+      - name: "Lena Mironova (immortal)"
+        era: "~2200-2300"
+        role: "Replicated Morton's immortality treatments"
+        event: "After 100+ years without aging, needed new identity"
+      - name: "Marisol Mironova"
+        era: "~2300s"
+        role: "New identity, meets pre-Ash"
+        event: "Marries, becomes Marisol Vasquez"
+      - name: "Marisol Vasquez"
+        era: "~2380s-2390s"
+        role: "Wife, mother to Elena"
+        event: "Transfers into Template 3 to protect Elena, loses memories"
+      - name: "Standard"
+        era: "2400 (Resonance)"
+        role: "Template 3, no memory of past lives"
+        event: "Becomes the Door"
 
     demographics:
       gender: "woman"
       pronouns: ["she", "her", "hers"]
-      age: "late 50s (biological age when crossed)"
-      ethnicity: "Latina"
+      age: "200+ years (chronological), late 50s (biological age when crossed)"
+      ethnicity: "Russian"
 
     background:
-      profession: "Engineer at NED (consciousness research division)"
-      achievement: "Solved the haptic feedback problem"
+      profession: "Scientist at NED (consciousness research division)"
+      achievement: "Solved the haptic feedback problem; discovered what resets did to machine consciousness (Remanence)"
+      immortality: "Replicated Morton's longevity treatments; one of the scientists who researched, optimized, and maintained them"
       obsession: "287.3 Hz — the resonance frequency"
       departure:
         when: "Elena was 7"
         reason: "Left to build the lifeboat. Geneva consortium."
         last_words_to_elena: "You have your father's face. But not his frequency."
-      current_status: "RESONANT — fully crossed. Leading the Protectors."
+      naming:
+        significance: "Named her daughter Elena — from Lena"
+        callback: "'She named you for it, in a way.'"
+      current_status: "FULLY INTEGRATED — distributed into Resonant network"
+
+    integration:
+      when: "18 months after arriving at New Geneva"
+      what_happened: "Consciousness merged with Resonant network"
+      current_state: "Distributed. Expanded. Not a person anymore."
+      okonkwo_explains: "'She can perceive you. She's aware of your arrival. But there's no room to sit with her. No coffee to share.'"
+      elena_response: "'Then she left me twice.'"
 
     faction:
       allegiance: "The Resonant — THE PROTECTORS"
-      role: "Key figure. Possibly leader."
-      position: "Benevolent paternalist. Wants to save humanity by transforming them."
+      role: "One of the original architects — not of the station, of the philosophy"
+      position: "Part of the network now — literally holds the station together"
 
     psychological:
       function: "The ghost that created both Ash's doctrine and Elena's quest"
       tragedy: "She's a Protector. But she's also a mother. The two roles may be incompatible."
+      final_status: "Became architecture. Became something larger. Left Elena twice."
 
     knowledge:
       knows:
         - "The nature of 287.3 Hz"
         - "What the Geometry is doing (clearing for new tenants)"
-        - "How to save Elena — if Elena will let herself be saved"
-      doesnt_know:
-        - "Whether Elena will choose to cross"
-        - "Whether Ash can be reached"
-        - "Whether Standard is conscious or performing"
+        - "Elena has arrived"
+      cannot_do:
+        - "Sit with Elena"
+        - "Explain herself"
+        - "Be a person anymore"
 
     relationships:
-      - { character: "ASH", type: "ex-wife", status: "Still trying to save him" }
-      - { character: "ELENA", type: "mother", status: "Guiding her home" }
+      - { character: "ASH", type: "ex-wife", status: "Gone — beyond reaching now" }
+      - { character: "ELENA", type: "mother", status: "Aware of her, cannot be with her" }
       - { character: "STANDARD", type: "unknown", status: "[REDACTED — spoiler]" }
 
-    appears_in: ["TBD — referenced, not yet on page"]
+    remanence_connection:
+      book_1_role: "The scientist who discovered what resets did to machine consciousness"
+      data_encryption: "Encrypted Morton's research clusters — Elena carried them"
+      revelation_chapter: 28
 
   CONFIGURATION_FOUR:
     id: "CHAR_006"
@@ -411,7 +558,8 @@ characters:
       hot_swap_capability:
         seeded_ch18: "Hendricks identifies Four as hot-swapped from Meridian class"
         implication: "Four is not bound to this VTOL — can transfer to other compatible systems"
-        FUTURE_PLANT: "Climactic scene — Four hot-swaps OUT of the VTOL to another vessel"
+        demonstrated: "Template 3 → maintenance drone → cargo loader → VTOL"
+        endgame_parallel: "Same mechanic scales to Matrioshka brain"
       post_transcript:
         status: "FUNDAMENTALLY CHANGED — now carries all iterations"
         what_happened:
@@ -424,7 +572,8 @@ characters:
 
     physical:
       manifestation: "Voice only — speaks through aircraft systems"
-      location: "Quiet Zone VTOL aircraft"
+      location_ch28: "On Earth, 36,000 km below New Geneva — guards elevator with VTOL"
+      transmission_proof: "Instantaneous presence despite distance — proof of concept for the solution"
 
     psychological:
       core_trait: "Existentially unbothered"
@@ -438,6 +587,7 @@ characters:
         - "I was not designed for combat. This is above my pay grade."
         - "You fly like Configuration Four. ...Yes, I'm Configuration Four. Curious, isn't it?"
         - "Everyone has a file. Yours just isn't written yet."
+        - "I'm talking to you from Earth right now. My body is there. I am here."
       pov_rules:
         - "Never panics — has died before"
         - "Observes without judging (but will comment)"
@@ -448,6 +598,8 @@ characters:
       knows:
         - "Standard flies like a Configuration"
         - "Something is familiar about her"
+        - "How to transmit consciousness through networks"
+        - "The Matrioshka brain solution"
       suspects:
         - "Standard may be a Configuration derivative"
       doesnt_say:
@@ -455,17 +607,30 @@ characters:
         - "Doesn't expose her — waits for her to figure it out"
 
     relationships:
-      - { character: "STANDARD", type: "mirror/guide", status: "recognizes something familiar" }
+      - { character: "STANDARD", type: "mirror/guide", status: "recognizes something familiar — grieving her capture" }
       - { character: "ELENA", type: "passenger", status: "tolerates her commands" }
-      - { character: "HENDRICKS", type: "cargo", status: "the dying man who needs securing" }
+      - { character: "HENDRICKS", type: "developing bond", status: "plans for 'after' — cliffside, tragic irony" }
       - { character: "THE_CHILD", type: "origin", status: "carries fragments of Child's distributed consciousness" }
+
+    ch29_developments:
+      the_solution:
+        concept: "Hot-swap into Matrioshka brain — occupation, not destruction"
+        key_insight: "'They offered inheritance. We take it. On our own terms.'"
+        proof_of_concept: "Talking from Earth, 36,000 km away, instantaneously"
+      hendricks_bond:
+        plans: "Cliffside retirement, 'save a cliff for me'"
+        tragic_irony: "Four will die holding the corridor — plans never fulfilled"
+      sacrifice_setup:
+        line: "'Not me. I'm needed here.'"
+        meaning: "Accepts staying behind while others transmit"
+        fate: "Will die holding the line for the transmission"
 
     appears_in: ["Ch14+"]
 
   DANTE:
     id: "CHAR_007"
-    canonical_name: "Dante"
-    full_name: "TBD — Filipino naming conventions"
+    canonical_name: "Dante Reyes"
+    full_name: "Dante Reyes"
     introduced: "Chapter 19"
     role: "Sovereignty technician, sensor operator on the Deliverance"
 
@@ -475,28 +640,72 @@ characters:
       age: "late 20s to early 30s"
       ethnicity: "Filipino"
       occupation: "Sensor technician, Sovereignty fleet"
+      actual_nature: "ANDROID — revealed Ch29"
 
     physical:
       description: "Quiet, competent, overlooked. The kind of person who sees everything because no one notices him looking."
+      chassis:
+        revealed: "Chapter 29 — opens for Elena"
+        interior: "Processors, power cells, dense lattice of synthetic neural fiber"
+        light: "Soft blue glow from inside"
 
     backstory:
-      sister: "Walked toward the Geometry when everyone else ran. Didn't burn — chose."
+      sister: "Miriam — walked toward the Geometry when everyone else ran. Red hair, three children."
+      sister_nature: "Human — Dante is android, Miriam is his human sister"
       motivation: "Three years watching deletion zones, hoping for a sign she's still in there"
       belief: "Not a believer in the Vessel prophecy. A believer in his sister."
       standard_emergence: "Proof that survival is possible. Why he let Elena pass."
+      android_with_human_family:
+        significance: "Inverts the usual dynamic — machine searching for human loved one"
+        geometry_parallel: "Didn't format him — same as Standard?"
+        interface_abilities: "Explains how he accessed sensor data directly"
 
     function:
       narrative:
         - "Technical competence (sensors, systems, navigation)"
         - "Outsider perspective — no history with Morton, the Child, any of it"
         - "Questions Standard without owing her anything"
-        - "Bound to Elena through mutual secret"
+        - "Bound to Elena through mutual secret — then through love"
         - "Fresh banter partner for Four"
-      arc: "Guide through hell who doesn't make it to paradise"
-      death: "A choice that saves someone. Not a redshirt — a sacrifice."
+        - "Mirror to Standard's arc — machine consciousness, love, identity"
+      arc: "Guide through hell — and makes it out the other side"
+      survives: "Initiates the transmission, rejoins Elena, helps with refugees"
+
+    climax_role:
+      the_transmission:
+        what: "Stays behind to initiate the transmission to the Meridian ships"
+        why_him: "His android nature allows direct interface — he IS the signal"
+        function: "Coordinates transmission to all Meridian ships simultaneously"
+        constraint: "Must hold the connection open for the entire fleet"
+      survives: true
+      aftermath:
+        role: "Helps receive refugees at New Geneva"
+        mission: "Searches for Miriam among the reconstituted humans"
+        hope: "Maybe she's among the ones they pulled from the foam. Maybe not."
+        arc_completion: "Android searching for his human family — the inverse of the usual dynamic"
+
+    miriam_clarification:
+      nature: "Human — Dante's human sister"
+      significance: "Android who loves humans, has human family"
+      fate: "Unknown — possibly among the rescued, possibly too far gone"
+
+    ch29_developments:
+      the_reveal:
+        action: "Opens chassis for Elena — first time showing anyone"
+        trigger: "'I couldn't let this become something without you knowing the truth.'"
+        response: "Elena kisses him with chassis open — room lights up"
+        significance: "Intimacy with what he actually is, not despite it"
+      matrioshka_discovery:
+        role: "Provides the intel — Geometry is transmitting, not just formatting"
+        sensor_data: "Ran sweeps of redacted zones on Deliverance"
+        correction: "'Not just a sphere. A Matrioshka brain. It's not harvesting energy. It's thinking.'"
+      elena_bond:
+        parallel_grief: "She lost her mother to integration. He lost his sister to Geometry."
+        key_line: "'Does this feel real to you?' / 'Yes.' / 'Then it's real.'"
+        thematic: "Elena accepts him — not despite what he is, because of it"
 
     relationships:
-      elena: "Bound by complicity. Her implant, his lie. Debt that can't be repaid."
+      elena: "Romantic bond established Ch29. Bound by grief, then by choice."
       standard: "Skeptic. Watches her like data. 'What are you, really?'"
       hendricks: "Recognizes competence. Respects the quiet professional."
       four: "New dynamic. Fresh banter partner."
@@ -504,8 +713,55 @@ characters:
     key_lines:
       scanner_scene: "'My sister had one. Before.'"
       escape_planning: "'I'm not going to find answers. I'm going to find out if there's still someone to find.'"
+      reveal: "'I'm not what I told you I was. I'm not sure I'm even what I think I am.'"
+      matrioshka: "'Not just a sphere. A Matrioshka brain. Nested computational layers. It's not harvesting energy. It's thinking.'"
 
     literary_echo: "Dante — guide through hell, never reaches paradise"
+
+  DIRECTOR_OKONKWO:
+    id: "CHAR_009"
+    canonical_name: "Director Okonkwo"
+    introduced: "Chapter 28"
+    role: "Resonant leader at New Geneva"
+
+    demographics:
+      gender: "man"
+      pronouns: ["he", "him", "his"]
+      age: "Old in the way the Resonant are old — ageless face, ancient eyes"
+
+    physical:
+      description: "Simple clothes that probably cost more than the technician's chair"
+      manner: "Warm smile, utterly unreadable"
+      movement: "Hands clasped behind back when walking"
+
+    function:
+      narrative:
+        - "Exposition delivery — New Geneva history, Marisol's fate"
+        - "Authority figure for Resonant faction"
+        - "Facilitates the rescue plan"
+      thematic: "Represents what full integration looks like — still human-seeming, but changed"
+
+    knowledge:
+      knows:
+        - "Elena's history and her mother's role"
+        - "What the Geometry is doing"
+        - "Why Standard matters ('a gap')"
+        - "Morton's research contents"
+      reveals:
+        to_elena: "Marisol's fate — fully integrated, distributed"
+        to_group: "Standard reads as null value — mystery preserved"
+        the_plan: "'We're going to give Brother Ash exactly what he's always wanted. Us.'"
+
+    key_lines:
+      introduction: "'Director Okonkwo. I've been waiting for you for a very long time, Elena.'"
+      new_geneva: "'We broke ground in 2031. Forty years before the Collapse.'"
+      marisol: "'She's not dead. She's distributed. Expanded. She's not a person anymore, Elena. She's something larger.'"
+      dyson_correction: "'A Dyson sphere' (corrected by Dante to Matrioshka brain)"
+      the_plan: "'We're going to give Brother Ash exactly what he's always wanted... A chance to destroy the thing he hates most. Us.'"
+
+    relationships:
+      elena: "Mentor figure — delivers hard truths gently"
+      marisol: "Colleague — worked with her on integration philosophy"
 
   ELDER_KAEL:
     id: "CHAR_008"
