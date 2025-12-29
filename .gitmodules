@@ -1,0 +1,3 @@
+[submodule "editing-tools"]
+	path = editing-tools
+	url = https://github.com/uatu-song/editing-tools.git

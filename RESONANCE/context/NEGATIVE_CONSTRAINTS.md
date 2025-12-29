@@ -686,6 +686,39 @@ These constraints protect the core thesis: **"What if they offer something we do
 
 ---
 
+### Author Intrusion in Action Beats
+
+**Severity: BLOCKING**
+
+| Status | Statement |
+|--------|-----------|
+| WRONG | Explaining the significance of an action while it happens |
+| WRONG | "toward the confrontation that's been building since..." |
+| WRONG | "this was the moment everything changed" |
+| WRONG | "the choice that would define..." |
+| WRONG | Narrating character arcs mid-scene |
+| WRONG | Telling the reader why a moment matters thematically |
+| RIGHT | Just show the action. Cut when done. |
+| RIGHT | "Then she's gone." |
+| RIGHT | Trust the reader to feel the weight |
+| RIGHT | The significance lives in what happened, not commentary |
+
+**Source of Error:** The temptation to editorialize during climactic moments. The author steps in to say "this matters" instead of letting the moment land.
+
+**Detection Patterns:**
+- "the confrontation that.*been building"
+- "since she.*woke"
+- "since he.*first"
+- "the moment.*everything"
+- "would define"
+- "would change"
+- "this was when"
+- "toward.*destiny"
+- "toward.*fate"
+- "what.*been leading to"
+
+---
+
 ### Exposition
 
 **Severity: WARNING**

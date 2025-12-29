@@ -15,16 +15,18 @@ structure:
 
 formatting:
   italics:
-    syntax: "*text*"  # single asterisks
+    syntax: "_text_"  # single underscores (NOT asterisks)
     usage:
       - internal thoughts
       - emphasized words
       - foreign words
       - titles of works
+    CRITICAL_RULE: "NEVER use asterisks (*) — Dabble interprets as scene markers"
+    dabble_workflow: "Underscores won't render in Dabble but won't break import. Find/replace _text_ with Ctrl+I in Word before pasting to Dabble."
     examples:
-      - "*Common template. Mass-produced. Interchangeable.*"
-      - "I know I'm not *that*."
-      - "It was my idea for *you*."
+      - "She thinks: _Common template. Mass-produced. Interchangeable._"
+      - "I know I'm not _that_."
+      - "It was my idea for _you_."
 
   bold:
     syntax: "**text**"  # double asterisks (use sparingly)

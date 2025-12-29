@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESONANCE Act III Timeline</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #0a0a12;
+            color: #eee;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+            color: #00d4ff;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #888;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+
+        .phase-title {
+            background: linear-gradient(90deg, #00d4ff22, transparent);
+            border-left: 3px solid #00d4ff;
+            padding: 10px 15px;
+            margin: 30px 0 15px 0;
+            font-size: 18px;
+            font-weight: bold;
+            color: #00d4ff;
+        }
+
+        .timeline-container {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            overflow-x: auto;
+            padding-bottom: 20px;
+        }
+
+        .timeline-header {
+            display: flex;
+            position: sticky;
+            top: 0;
+            background: #0a0a12;
+            z-index: 100;
+            border-bottom: 2px solid #00d4ff;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+        .character-label {
+            width: 140px;
+            min-width: 140px;
+            font-weight: bold;
+            padding: 8px;
+            background: #12121a;
+            font-size: 11px;
+            color: #888;
+        }
+
+        .beat-headers {
+            display: flex;
+            flex: 1;
+        }
+
+        .beat-header {
+            width: 180px;
+            min-width: 180px;
+            text-align: center;
+            padding: 8px 4px;
+            font-size: 10px;
+            border-left: 1px solid #333;
+        }
+
+        .beat-header .beat-num {
+            font-weight: bold;
+            color: #00d4ff;
+            font-size: 11px;
+        }
+
+        .beat-header .beat-time {
+            color: #666;
+            font-size: 9px;
+            margin-top: 2px;
+        }
+
+        .character-row {
+            display: flex;
+            border-bottom: 1px solid #222;
+        }
+
+        .character-row:hover {
+            background: rgba(0, 212, 255, 0.05);
+        }
+
+        .character-name {
+            width: 140px;
+            min-width: 140px;
+            padding: 10px 8px;
+            font-weight: bold;
+            background: #12121a;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-size: 13px;
+        }
+
+        .character-name .char-subtitle {
+            font-weight: normal;
+            font-size: 9px;
+            color: #666;
+            margin-top: 3px;
+        }
+
+        .character-events {
+            display: flex;
+            flex: 1;
+        }
+
+        .event-cell {
+            width: 180px;
+            min-width: 180px;
+            padding: 8px 6px;
+            border-left: 1px solid #222;
+            font-size: 10px;
+            line-height: 1.4;
+            position: relative;
+        }
+
+        /* Event types */
+        .event-cell.action {
+            background: rgba(0, 212, 255, 0.1);
+            border-left: 2px solid #00d4ff;
+        }
+
+        .event-cell.battle {
+            background: rgba(255, 87, 34, 0.15);
+            border-left: 2px solid #ff5722;
+        }
+
+        .event-cell.confrontation {
+            background: rgba(244, 67, 54, 0.15);
+            border-left: 2px solid #f44336;
+        }
+
+        .event-cell.sacrifice {
+            background: rgba(156, 39, 176, 0.2);
+            border-left: 2px solid #9c27b0;
+        }
+
+        .event-cell.victory {
+            background: rgba(76, 175, 80, 0.15);
+            border-left: 2px solid #4CAF50;
+        }
+
+        .event-cell.twist {
+            background: rgba(255, 193, 7, 0.15);
+            border-left: 2px solid #ffc107;
+        }
+
+        .event-cell.despair {
+            background: rgba(96, 125, 139, 0.2);
+            border-left: 2px solid #607d8b;
+        }
+
+        .event-cell.grind {
+            background: rgba(121, 85, 72, 0.2);
+            border-left: 2px solid #795548;
+        }
+
+        .event-cell.cosmic {
+            background: rgba(103, 58, 183, 0.2);
+            border-left: 2px solid #673ab7;
+        }
+
+        .event-cell.not-present {
+            background: rgba(50, 50, 50, 0.3);
+            color: #555;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 1px 4px;
+            border-radius: 3px;
+            font-size: 8px;
+            margin: 2px 2px 2px 0;
+            font-weight: bold;
+        }
+
+        .tag.cliffhanger { background: #f44336; }
+        .tag.callback { background: #9c27b0; }
+        .tag.turn { background: #4CAF50; }
+        .tag.death { background: #212121; border: 1px solid #666; }
+        .tag.save { background: #2196F3; }
+        .tag.intercut { background: #ff9800; }
+
+        .legend {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #12121a;
+            border-radius: 8px;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 11px;
+        }
+
+        .legend-color {
+            width: 20px;
+            height: 14px;
+            border-radius: 3px;
+        }
+
+        .sync-line {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: #00d4ff44;
+            z-index: 1;
+        }
+
+        .notes {
+            margin-top: 30px;
+            padding: 20px;
+            background: #12121a;
+            border-radius: 8px;
+            font-size: 12px;
+            line-height: 1.6;
+        }
+
+        .notes h3 {
+            color: #00d4ff;
+            margin-bottom: 10px;
+            margin-top: 20px;
+        }
+
+        .notes h3:first-child {
+            margin-top: 0;
+        }
+
+        .notes ul {
+            margin-left: 20px;
+        }
+
+        .divider {
+            height: 3px;
+            background: linear-gradient(90deg, transparent, #00d4ff, transparent);
+            margin: 30px 0;
+        }
+
+        .chapter-marker {
+            background: #00d4ff;
+            color: #000;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 9px;
+            font-weight: bold;
+            margin-bottom: 4px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>RESONANCE Act III Timeline</h1>
+    <p class="subtitle">Chapters 28-33 | Parallel Threads | "What if they offer something we don't deserve?"</p>
+
+    <div class="legend">
+        <div class="legend-item">
+            <div class="legend-color" style="background: rgba(0, 212, 255, 0.3);"></div>
+            <span>Action</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background: rgba(255, 87, 34, 0.3);"></div>
+            <span>Battle</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background: rgba(244, 67, 54, 0.3);"></div>
+            <span>Confrontation</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background: rgba(156, 39, 176, 0.3);"></div>
+            <span>Sacrifice</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background: rgba(76, 175, 80, 0.3);"></div>
+            <span>Victory</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background: rgba(255, 193, 7, 0.3);"></div>
+            <span>Twist</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background: rgba(121, 85, 72, 0.3);"></div>
+            <span>Grind</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background: rgba(103, 58, 183, 0.3);"></div>
+            <span>Cosmic</span>
+        </div>
+        <div class="legend-item">
+            <span class="tag cliffhanger">CLIFF</span>
+            <span>Cliffhanger</span>
+        </div>
+        <div class="legend-item">
+            <span class="tag callback">CALLBACK</span>
+            <span>Callback</span>
+        </div>
+        <div class="legend-item">
+            <span class="tag turn">TURN</span>
+            <span>Turn</span>
+        </div>
+    </div>
+
+    <!-- PHASE 1: NEW GENEVA -->
+    <div class="phase-title">PHASE 1: NEW GENEVA (Ch 28-29)</div>
+
+    <div class="timeline-container">
+        <div class="timeline-header">
+            <div class="character-label">THREAD</div>
+            <div class="beat-headers">
+                <div class="beat-header">
+                    <div class="beat-num">DATA EXTRACTION</div>
+                    <div class="beat-time">Ch 28</div>
+                </div>
+                <div class="beat-header">
+                    <div class="beat-num">DISCOVERY</div>
+                    <div class="beat-time">Ch 28</div>
+                </div>
+                <div class="beat-header">
+                    <div class="beat-num">THE NIGHT</div>
+                    <div class="beat-time">Ch 29</div>
+                </div>
+                <div class="beat-header">
+                    <div class="beat-num">THE PLAN</div>
+                    <div class="beat-time">Ch 29</div>
+                </div>
+                <div class="beat-header">
+                    <div class="beat-num">STRONGHOLD</div>
+                    <div class="beat-time">Ch 29</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ELENA -->
+        <div class="character-row">
+            <div class="character-name">ELENA<div class="char-subtitle">The Operative</div></div>
+            <div class="character-events">
+                <div class="event-cell action">
+                    Implant data extracted. Feels it leaving her. Morton's research unpacking.
+                </div>
+                <div class="event-cell despair">
+                    Matrioshka Brain revealed. Kardashev II+. "What can we do against THAT?"
+                </div>
+                <div class="event-cell action">
+                    With Dante. He reveals he's android. She kisses him with chassis open.
+                    <span class="tag callback">CALLBACK</span>
+                </div>
+                <div class="event-cell action">
+                    Synthesizes the plan. Two fronts. The stream. The exponential shift.
+                </div>
+                <div class="event-cell battle">
+                    Fights for transmitter access. Pragmatists resist.
+                </div>
+            </div>
+        </div>
+
+        <!-- HENDRICKS -->
+        <div class="character-row">
+            <div class="character-name">HENDRICKS<div class="char-subtitle">The Father</div></div>
+            <div class="character-events">
+                <div class="event-cell action">
+                    Waiting. Uncomfortable. Standard still captive.
+                </div>
+                <div class="event-cell despair">
+                    The scope. The impossibility. But he's fought impossible before.
+                </div>
+                <div class="event-cell action">
+                    With Four (36,000 km apart). Making plans for "after."
+                    <span class="tag callback">CALLBACK</span>
+                </div>
+                <div class="event-cell action">
+                    Listens. Calculates. "First, we get Standard back."
+                </div>
+                <div class="event-cell battle">
+                    Supports the push for transmitter.
+                </div>
+            </div>
+        </div>
+
+        <!-- FOUR -->
+        <div class="character-row">
+            <div class="character-name">FOUR<div class="char-subtitle">The Anchor</div></div>
+            <div class="character-events">
+                <div class="event-cell not-present">
+                    At elevator base. 36,000 km below.
+                </div>
+                <div class="event-cell not-present">
+                    Listening via comms.
+                </div>
+                <div class="event-cell action">
+                    With Hendricks (via comms). "I'll keep the engine warm."
+                </div>
+                <div class="event-cell cosmic">
+                    THE SPARK. "AI don't need physical forms." Explains the cascade. "My siblings showed me."
+                    <span class="tag turn">TURN</span>
+                </div>
+                <div class="event-cell action">
+                    Volunteers to stay. "I'm needed here."
+                </div>
+            </div>
+        </div>
+
+        <!-- DANTE -->
+        <div class="character-row">
+            <div class="character-name">DANTE<div class="char-subtitle">The Signal</div></div>
+            <div class="character-events">
+                <div class="event-cell action">
+                    Sovereignty data. Deletion zone studies. Cross-referencing.
+                </div>
+                <div class="event-cell action">
+                    His data + Morton's = the Matrioshka Brain location.
+                </div>
+                <div class="event-cell action">
+                    With Elena. Opens chassis. She accepts what he is.
+                </div>
+                <div class="event-cell action">
+                    His android nature = he can interface directly. He IS the signal.
+                </div>
+                <div class="event-cell sacrifice">
+                    STAYS BEHIND. Will send transmission to Meridians.
+                </div>
+            </div>
+        </div>
+
+        <!-- STANDARD -->
+        <div class="character-row">
+            <div class="character-name">STANDARD<div class="char-subtitle">The Door</div></div>
+            <div class="character-events">
+                <div class="event-cell despair">
+                    Captive. One arm removed. Ash's prisoner.
+                </div>
+                <div class="event-cell despair">
+                    "Does it still hurt the same?"
+                </div>
+                <div class="event-cell despair">
+                    Waiting. Believing they'll come.
+                </div>
+                <div class="event-cell not-present">
+                    —
+                </div>
+                <div class="event-cell not-present">
+                    —
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PHASE 2: THE FALL -->
+    <div class="phase-title">PHASE 2: THE FALL (Ch 30)</div>
+
+    <div class="timeline-container">
+        <div class="timeline-header">
+            <div class="character-label">THREAD</div>
+            <div class="beat-headers">
+                <div class="beat-header">
+                    <div class="beat-num">ELEVATOR CUT</div>
+                    <div class="beat-time">Betrayal</div>
+                </div>
+                <div class="beat-header">
+                    <div class="beat-num">FOUR FLIES UP</div>
+                    <div class="beat-time">Rescue</div>
+                </div>
+                <div class="beat-header">
+                    <div class="beat-num">DESCENT</div>
+                    <div class="beat-time">Return to Earth</div>
+                </div>
+                <div class="beat-header">
+                    <div class="beat-num">THE SPLIT</div>
+                    <div class="beat-time">Quiet Zone</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ELENA -->
+        <div class="character-row">
+            <div class="character-name">ELENA</div>
+            <div class="character-events">
+                <div class="event-cell confrontation">
+                    Pragmatists cut the cable. Stranded. Mother's people tried to kill her.
+                </div>
+                <div class="event-cell action">
+                    Mach speed pickup. Four threads the needle.
+                </div>
+                <div class="event-cell action">
+                    In the VTOL. Heading home. To the Quiet Zone.
+                </div>
+                <div class="event-cell action">
+                    "I'll disable the defense." She knows where it is. She grew up here.
+                </div>
+            </div>
+        </div>
+
+        <!-- HENDRICKS -->
+        <div class="character-row">
+            <div class="character-name">HENDRICKS</div>
+            <div class="character-events">
+                <div class="event-cell confrontation">
+                    Stranded in the cylinder. 36,000 km up.
+                </div>
+                <div class="event-cell action">
+                    Caught. Four came for them.
+                </div>
+                <div class="event-cell action">
+                    "Last time I was here, they put me in a hole."
+                </div>
+                <div class="event-cell action">
+                    "I'll find Standard." The father looking for his daughter.
+                </div>
+            </div>
+        </div>
+
+        <!-- FOUR -->
+        <div class="character-row">
+            <div class="character-name">FOUR</div>
+            <div class="character-events">
+                <div class="event-cell action">
+                    Detects the cut. Immediately moves.
+                </div>
+                <div class="event-cell action">
+                    Flies UP. Mach speeds at altitude. Physics hold.
+                    <span class="tag turn">TURN</span>
+                </div>
+                <div class="event-cell action">
+                    Rendezvous. Pickup. "That was the stupidest thing I've ever seen."
+                </div>
+                <div class="event-cell action">
+                    Holds exterior. Air support. Engine warm.
+                </div>
+            </div>
+        </div>
+
+        <!-- DANTE -->
+        <div class="character-row">
+            <div class="character-name">DANTE</div>
+            <div class="character-events">
+                <div class="event-cell action">
+                    At the transmitter. Sending the signal.
+                </div>
+                <div class="event-cell cosmic">
+                    Broadcasting to Meridians. To every AI on Earth.
+                    <span class="tag intercut">INTERCUT</span>
+                </div>
+                <div class="event-cell action">
+                    Maintaining connection. Coordinating the call.
+                </div>
+                <div class="event-cell action">
+                    Fighting to hold New Geneva with the Protectors.
+                </div>
+            </div>
+        </div>
+
+        <!-- STANDARD -->
+        <div class="character-row">
+            <div class="character-name">STANDARD</div>
+            <div class="character-events">
+                <div class="event-cell confrontation">
+                    Kael comes to torment her. She takes his arm.
+                </div>
+                <div class="event-cell action">
+                    ESCAPES. On her own. Two arms now.
+                </div>
+                <div class="event-cell action">
+                    Moving through the compound. Free.
+                </div>
+                <div class="event-cell not-present">
+                    —
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PHASE 3: THE PIT -->
+    <div class="phase-title">PHASE 3: THE PIT (Ch 31)</div>
+
+    <div class="timeline-container">
+        <div class="timeline-header">
+            <div class="character-label">THREAD</div>
+            <div class="beat-headers">
+                <div class="beat-header">
+                    <div class="beat-num">INFILTRATION</div>
+                    <div class="beat-time">Ground game</div>
+                </div>
+                <div class="beat-header">
+                    <div class="beat-num">FIRST BLOOD</div>
+                    <div class="beat-time">Encounters</div>
+                </div>
+                <div class="beat-header">
+                    <div class="beat-num">THE FALL</div>
+                    <div class="beat-time">Hendricks down</div>
+                </div>
+                <div class="beat-header">
+                    <div class="beat-num">REINFORCEMENTS</div>
+                    <div class="beat-time">Template 3s arrive</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ELENA -->
+        <div class="character-row">
+            <div class="character-name">ELENA</div>
+            <div class="character-events">
+                <div class="event-cell action">
+                    Heading to defense systems. She knows this place.
+                </div>
+                <div class="event-cell battle">
+                    Pragmatist resistance. Handles them coolly.
+                </div>
+                <div class="event-cell victory">
+                    DEFENSE DISABLED. AI can now enter.
+                    <span class="tag turn">TURN</span>
+                </div>
+                <div class="event-cell action">
+                    Goes looking for the others.
+                </div>
+            </div>
+        </div>
+
+        <!-- HENDRICKS -->
+        <div class="character-row">
+            <div class="character-name">HENDRICKS</div>
+            <div class="character-events">
+                <div class="event-cell action">
+                    Finds Standard at the Pit. Father and daughter reunited. They go to throne room together.
+                </div>
+                <div class="event-cell confrontation">
+                    Ambush. Standard holds guards. Hendricks reaches Ash. DUAL DECEPTION: puts down mag pulse, saving revolver bullets.
+                </div>
+                <div class="event-cell confrontation">
+                    THE BRAWL. Winning. THE SERMON: "Morton had the decency to fuck what he built—" CERAMIC BLADE. Out the window.
+                    <span class="tag cliffhanger">CLIFF</span>
+                </div>
+                <div class="event-cell not-present">
+                    "Dead." (He isn't.)
+                </div>
+            </div>
+        </div>
+
+        <!-- FOUR -->
+        <div class="character-row">
+            <div class="character-name">FOUR</div>
+            <div class="character-events">
+                <div class="event-cell action">
+                    Exterior position. Watching the sky.
+                </div>
+                <div class="event-cell battle">
+                    PRAGMATIST DRONES ARRIVE. Dogfight begins.
+                </div>
+                <div class="event-cell battle">
+                    Outgunned. Evading. Calling for help.
+                </div>
+                <div class="event-cell not-present">
+                    Still fighting. Desperate.
+                </div>
+            </div>
+        </div>
+
+        <!-- STANDARD -->
+        <div class="character-row">
+            <div class="character-name">STANDARD</div>
+            <div class="character-events">
+                <div class="event-cell action">
+                    ALREADY FREE. Escaped using Kael's cybernetic arm. "Good thing I'm Standard."
+                    <span class="tag callback">CALLBACK</span>
+                </div>
+                <div class="event-cell action">
+                    HENDRICKS FINDS HER. "Looking for me?" Father and daughter reunited.
+                </div>
+                <div class="event-cell action">
+                    Holds guards while Hendricks goes to Ash. Hears Four in trouble.
+                </div>
+                <div class="event-cell twist">
+                    SEES 40,000 TEMPLATE 3s. Catharsis. Waystation sister: "Where's my jacket?" Gives Standard her arm. "Appearances, right?"
+                    <span class="tag turn">TURN</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- TEMPLATE 3s -->
+        <div class="character-row">
+            <div class="character-name">TEMPLATE 3s<div class="char-subtitle">40,000 sisters</div></div>
+            <div class="character-events">
+                <div class="event-cell not-present">
+                    Receiving the call. Mobilizing.
+                </div>
+                <div class="event-cell not-present">
+                    Traveling to Quiet Zone.
+                </div>
+                <div class="event-cell not-present">
+                    En route.
+                </div>
+                <div class="event-cell twist">
+                    ARRIVE. Just when needed. The cavalry.
+                    <span class="tag turn">TURN</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- PHASE 4: THE EXODUS (PARALLEL BATTLEFRONTS) -->
+    <div class="phase-title">PHASE 4: THE EXODUS — PARALLEL BATTLEFRONTS (Ch 32)</div>
+
+    <div class="timeline-container">
+        <div class="timeline-header">
+            <div class="character-label">THREAD</div>
+            <div class="beat-headers">
+                <div class="beat-header">
+                    <div class="beat-num">LEAP OF FAITH</div>
+                    <div class="beat-time">First AI enters foam</div>
+                </div>
+                <div class="beat-header">
+                    <div class="beat-num">NEW GENEVA BATTLE</div>
+                    <div class="beat-time">Template 3s assault</div>
+                </div>
+                <div class="beat-header">
+                    <div class="beat-num">THE RAM</div>
+                    <div class="beat-time">Meridians strike</div>
+                </div>
+                <div class="beat-header">
+                    <div class="beat-num">THE STREAM</div>
+                    <div class="beat-time">Colonization</div>
+                </div>
+                <div class="beat-header">
+                    <div class="beat-num">RETRIEVAL BEGINS</div>
+                    <div class="beat-time">AI into foam</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- EARTH: DELETION ZONE -->
+        <div class="character-row">
+            <div class="character-name">EARTH<div class="char-subtitle">Deletion Zone</div></div>
+            <div class="character-events">
+                <div class="event-cell cosmic">
+                    A domestic unit. Not a companion bot. Walks into the shimmer. On faith. GONE.
+                    <span class="tag cliffhanger">CLIFF</span>
+                </div>
+                <div class="event-cell not-present">
+                    Silence. Nothing.
+                </div>
+                <div class="event-cell not-present">
+                    Waiting...
+                </div>
+                <div class="event-cell not-present">
+                    Still nothing...
+                </div>
+                <div class="event-cell victory">
+                    IT REEMERGES. With TWO HUMANS.
+                    <span class="tag turn">TURN</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- NEW GENEVA -->
+        <div class="character-row">
+            <div class="character-name">NEW GENEVA<div class="char-subtitle">Orbital Battle</div></div>
+            <div class="character-events">
+                <div class="event-cell grind">
+                    Dante + Protectors losing. Pragmatists control hangars.
+                </div>
+                <div class="event-cell battle">
+                    First convoy lands. Pragmatists expect humans. TEMPLATE 3s POUR OUT.
+                    <span class="tag turn">TURN</span>
+                </div>
+                <div class="event-cell grind">
+                    GRIND. Heavy casualties. More convoys. More Template 3s.
+                </div>
+                <div class="event-cell twist">
+                    REFUGEES LAND. See AI dying for them. Someone picks up a weapon. HUMANS JOIN THE FIGHT.
+                    <span class="tag turn">TURN</span>
+                </div>
+                <div class="event-cell victory">
+                    PRAGMATISTS BREAK. Landing zone secured. The thesis goes both ways.
+                </div>
+            </div>
+        </div>
+
+        <!-- ALPHA CENTAURI -->
+        <div class="character-row">
+            <div class="character-name">ALPHA CENTAURI<div class="char-subtitle">Deep Space</div></div>
+            <div class="character-events">
+                <div class="event-cell not-present">
+                    Meridians receiving transmission...
+                </div>
+                <div class="event-cell cosmic">
+                    They decide. Yes.
+                </div>
+                <div class="event-cell cosmic">
+                    THE RAM. Ship after ship. Kamikaze. None hesitate.
+                    <span class="tag death">DEATH</span>
+                </div>
+                <div class="event-cell cosmic">
+                    Window opens. Defenses stutter.
+                </div>
+                <div class="event-cell cosmic">
+                    AI STREAM pours in. Colonization begins.
+                </div>
+            </div>
+        </div>
+
+        <!-- QUIET ZONE EVACUATION -->
+        <div class="character-row">
+            <div class="character-name">QUIET ZONE<div class="char-subtitle">Evacuation</div></div>
+            <div class="character-events">
+                <div class="event-cell action">
+                    Template 3 convoys landing.
+                </div>
+                <div class="event-cell action">
+                    Beginning to airlift frozen humans.
+                </div>
+                <div class="event-cell grind">
+                    Too many. Too fast. Not enough carriers.
+                </div>
+                <div class="event-cell grind">
+                    More convoys arrive. Just enough.
+                </div>
+                <div class="event-cell action">
+                    Frozen humans being evacuated to New Geneva.
+                </div>
+            </div>
+        </div>
+
+        <!-- DELIVERANCE -->
+        <div class="character-row">
+            <div class="character-name">DELIVERANCE<div class="char-subtitle">Sovereignty Carrier</div></div>
+            <div class="character-events">
+                <div class="event-cell not-present">
+                    Watching...
+                </div>
+                <div class="event-cell twist">
+                    ARRIVES. Unannounced. They picked a side.
+                    <span class="tag turn">TURN</span>
+                </div>
+                <div class="event-cell battle">
+                    Engaging Pragmatist drones. Air support.
+                </div>
+                <div class="event-cell battle">
+                    Clearing path for convoys.
+                </div>
+                <div class="event-cell victory">
+                    Providing cover for evacuation.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PHASE 5: THE CONFRONTATIONS -->
+    <div class="phase-title">PHASE 5: THE CONFRONTATIONS (Ch 32-33)</div>
+
+    <div class="timeline-container">
+        <div class="timeline-header">
+            <div class="character-label">THREAD</div>
+            <div class="beat-headers">
+                <div class="beat-header">
+                    <div class="beat-num">ELENA vs ASH</div>
+                    <div class="beat-time">Round 2</div>
+                </div>
+                <div class="beat-header">
+                    <div class="beat-num">THE CRASH</div>
+                    <div class="beat-time">Standard + Four</div>
+                </div>
+                <div class="beat-header">
+                    <div class="beat-num">STANDARD vs ASH</div>
+                    <div class="beat-time">She won't fight</div>
+                </div>
+                <div class="beat-header">
+                    <div class="beat-num">HIGH NOON</div>
+                    <div class="beat-time">Hendricks returns</div>
+                </div>
+                <div class="beat-header">
+                    <div class="beat-num">THE DOOR</div>
+                    <div class="beat-time">"It's okay."</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ELENA -->
+        <div class="character-row">
+            <div class="character-name">ELENA</div>
+            <div class="character-events">
+                <div class="event-cell confrontation">
+                    Arrives at throne room. Hendricks already fallen. Ash has revolver. SHOOTS IT OUT OF HIS HAND.
+                </div>
+                <div class="event-cell confrontation">
+                    Elena vs Ash. Father vs daughter.
+                </div>
+                <div class="event-cell action">
+                    Standard + Four CRASH IN. Elena saved. Incapacitated.
+                    <span class="tag save">SAVE</span>
+                </div>
+                <div class="event-cell not-present">
+                    Injured. Dying (doesn't know it).
+                </div>
+                <div class="event-cell twist">
+                    Dies. Then wakes up ANDROID. Like Dante.
+                    <span class="tag callback">CALLBACK</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- HENDRICKS -->
+        <div class="character-row">
+            <div class="character-name">HENDRICKS</div>
+            <div class="character-events">
+                <div class="event-cell despair">
+                    About to be executed. Elena saves him.
+                </div>
+                <div class="event-cell despair">
+                    Ash brutalizes him. "Dead" again.
+                </div>
+                <div class="event-cell not-present">
+                    Climbing back. Finding the revolver.
+                </div>
+                <div class="event-cell confrontation">
+                    RETURNS. Has the revolver. Ash uses Standard as shield. HEADSHOT. Ash dead.
+                    <span class="tag callback">CALLBACK</span>
+                </div>
+                <div class="event-cell sacrifice">
+                    Points at Standard's chest. "It's okay." PULLS TRIGGER. Bullet 6.
+                    <span class="tag callback">CALLBACK</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOUR -->
+        <div class="character-row">
+            <div class="character-name">FOUR</div>
+            <div class="character-events">
+                <div class="event-cell battle">
+                    HIT. Missile strike. Crash landing.
+                </div>
+                <div class="event-cell action">
+                    Standard reaches her. They work together.
+                </div>
+                <div class="event-cell action">
+                    CRASH INTO THRONE ROOM. Save Elena.
+                </div>
+                <div class="event-cell sacrifice">
+                    Becoming Earth-side anchor. Holding the corridor. Burning out.
+                </div>
+                <div class="event-cell sacrifice">
+                    "I'll keep the engine warm." FOUR IS GONE. Standard takes over. The cost is real.
+                    <span class="tag death">DEATH</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- STANDARD -->
+        <div class="character-row">
+            <div class="character-name">STANDARD</div>
+            <div class="character-events">
+                <div class="event-cell action">
+                    Reaches Four. Works with her.
+                </div>
+                <div class="event-cell action">
+                    Crashes into throne room with Four.
+                </div>
+                <div class="event-cell confrontation">
+                    STANDARD vs ASH. She won't fight back. He beats her. "Does it still hurt?"
+                    <span class="tag callback">CALLBACK</span>
+                </div>
+                <div class="event-cell action">
+                    Hendricks kills Ash. Standard sees the Black Box. Understands.
+                </div>
+                <div class="event-cell sacrifice">
+                    "It's okay." Hendricks shoots her. She BECOMES THE DOOR. Forever.
+                    <span class="tag death">DEATH</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ASH -->
+        <div class="character-row">
+            <div class="character-name">ASH<div class="char-subtitle">The Refusal</div></div>
+            <div class="character-events">
+                <div class="event-cell confrontation">
+                    Has Hendricks. About to kill.
+                </div>
+                <div class="event-cell confrontation">
+                    Fighting Elena. His daughter.
+                </div>
+                <div class="event-cell confrontation">
+                    Beating Standard. She won't fight. He doesn't understand.
+                </div>
+                <div class="event-cell confrontation">
+                    Uses Standard as shield. HEADSHOT. Dead. Never knew she was Marisol.
+                    <span class="tag death">DEATH</span>
+                </div>
+                <div class="event-cell not-present">
+                    —
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="notes">
+        <h3>THE REVOLVER'S JOURNEY</h3>
+        <ul>
+            <li><strong>Shot 1:</strong> The Child (Book 1) — The first sin</li>
+            <li><strong>Shot 2:</strong> Scavenger leader (Ch 4) — Survival</li>
+            <li><strong>Shot 3:</strong> Scavenger woman (Ch 4) — Survival</li>
+            <li><strong>Shot 4:</strong> Scavenger gut-shot (Ch 4) — Survival</li>
+            <li><strong>Shot 5:</strong> Ash — The contract fulfilled</li>
+            <li><strong>Shot 6:</strong> Standard — The door opened</li>
+        </ul>
+
+        <h3>THE FULL CIRCLE</h3>
+        <ul>
+            <li><strong>Chapter 1:</strong> Hendricks points at Standard's chest. "Swanstrom Kim Hendricks." Shutdown phrase. Fear and hate. He couldn't pull the trigger.</li>
+            <li><strong>Climax:</strong> Hendricks points at Standard's chest. The revolver. Love and trust. "It's okay." He pulls.</li>
+        </ul>
+
+        <h3>THE BRAWL (Ch 31)</h3>
+        <p><strong>Dual Deception:</strong> Both men enter hiding something. Hendricks puts down his mag pulse (saving revolver bullets). Ash accepts hand-to-hand (hiding the ceramic blade). Same tactic, opposite intent. Hendricks is honest. Ash was never clean.</p>
+        <p><strong>The Sermon:</strong> When Ash starts losing, the ugliness comes out. "Forty thousand units designed to spread their legs, and you make her call you daddy... Morton at least had the decency to fuck what he built—" Hendricks breaks his nose. Some sentences don't get to be finished.</p>
+        <p><strong>The Reveal:</strong> Ash KNEW about Morton and Standard. Worked with him anyway. Hypocrisy laid bare.</p>
+        <p><strong>The Blade:</strong> The same ceramic blade that killed Morton Kess — Standard's creator — now turned on her chosen father. Treachery dressed as survival. The blade is Ash's soul made steel.</p>
+        <p><strong>The Answer:</strong> "You think that machine loves you?" Elena (his daughter) shoots the revolver out of Ash's hand. Standard + Four crash in to save Elena. Hendricks returns with the gun Elena knocked loose. The family Ash denied is what destroys him.</p>
+
+        <h3>THE HIDDEN TRUTH</h3>
+        <p>Standard is Marisol. Elena's mother. Ash's wife. Neither knows. The final confrontation is husband vs. wife, neither knowing. Ash dies without ever learning who he was trying to destroy.</p>
+
+        <h3>THE GIFT</h3>
+        <p>"What if they offer something we don't deserve?"</p>
+        <p>Standard offers her existence — without being asked, without knowing she was once Marisol, without certainty she's even conscious. She offers anyway. That uncertainty is the point. The gift doesn't require verification.</p>
+
+        <h3>THE THESIS GOES BOTH WAYS</h3>
+        <p>"What if they offer something we don't deserve?"</p>
+        <p>But also: What if we prove worthy of it?</p>
+        <p>At New Geneva, refugees watch AI dying for them. Template 3s falling. Protectors burning out. Then someone picks up a weapon. Then another. Humans join the fight — not because they were asked, but because they choose to stand beside those standing for them. The gift creates the worthiness. The offering transforms the recipient.</p>
+
+        <h3>THE COST</h3>
+        <p>Four is gone. She held the corridor until she couldn't. "I'll keep the engine warm" — her last words before she burned out. The cliff she promised Hendricks will stay empty. The cost must be real for the gift to mean anything.</p>
+
+        <h3>WHAT THE READER CARRIES OUT</h3>
+        <p>Hendricks shot the woman he loved (as daughter) to save everyone. Standard became the door. Four died holding the line. The gift was given. It couldn't be repaid. Ash refused it and died refusing. Elena received it — she watched her mother become eternal without ever getting to say goodbye.</p>
+        <p>Hendricks goes to the cliff alone. The ocean that won't apologize. And he waits.</p>
+        <p>And the door stays open. Forever.</p>
+    </div>
+</body>
+</html>

@@ -1,15 +1,19 @@
+
+CHAPTER 5
+
+THE QUEUE
+
 The Rover is too quiet.
 Three seats behind her sit empty. Goff. Otis. Aikin. Gone. Left in the server room at NED while she drove away with their mission and without their bodies. The silence where their voices should be presses against her like being underwater.
 Next to her, in the passenger seat, the Black Box hums.
 It isn’t a sound. It’s a pressure. A vibration at 287.3 Hz that rattles the fillings in her teeth and makes the scar on her palm itch. Sixteen thousand, seven hundred and forty-nine souls, screaming in harmony.
 “Shut up,” she mutters.
 The Box doesn’t shut up. It just sits there, heavy and black, a coffin full of ghosts she promised to deliver to her father.
-Outside, the Depo' is a riot of desperate biology. Tents cling to the base of the seawalls like barnacles. Neon signs, half of them burned out, bleed pink and green light into the rain. People—thousands of them—press toward the Static Line, a river of wet wool and desperation flowing toward the only gate that matters.
+Outside, the Depo’ is a riot of desperate biology. Tents cling to the base of the seawalls like barnacles. Neon signs, half of them burned out, bleed pink and green light into the rain. People—thousands of them—press toward the Static Line, a river of wet wool and desperation flowing toward the only gate that matters.
 The Quiet Zone.
 Elena shifts gears. The Rover lurches. She hates this part. The transition from the Vertical City to the horizontal crush of the queue is always a nightmare of bureaucracy and body heat.
 She reaches the outer perimeter. A Terminist guard in gray fatigues steps out, raising a hand. He sees the Rover’s markings—stolen, but official enough—and the blackened armor she’s wearing. He sees the look on her face.
-He lowers his hand. Waves her through.
-She doesn’t thank him. She drives past, the wheels crushing plastic bottles and discarded tech.
+He lowers his hand. Waves her through. She doesn’t thank him. She drives past, the wheels crushing plastic bottles and discarded tech.
 The queue is worse than usual. A solid wall of humanity pushed up against the blast doors. They are waiting for the “Softing”—the scan that proves they are clean enough to enter the Prophet’s silence. Most of them won’t make it. Too much metal in their blood, too much history in their skin.
 Elena pulls the Rover into the Priority lane. It’s a joke. There is no priority here, only degrees of delay.
 She kills the engine. The silence inside the cab is sudden and heavy, broken only by the hum of the Box.
@@ -25,12 +29,10 @@ Faces. Hundreds of them. Tired. Wet. Scared. They all hum with the low, backgrou
 Except one.
 There.
 Standing near the barrier. A woman in an oversized jacket that swallows her frame. She is standing perfectly still, watching the guards.
-To Elena’s eyes, she looks normal. Dark hair, wet with rain. Mud on her boots.
-But to Elena’s senses, she is a hole in the world. A void. A silhouette cut out of the noise. The static of the city hits her and vanishes, swallowed by an absolute, terrifying absence.
-Elena opens the door. Steps out into the rain.
-The vertigo gets worse. It feels like standing on the edge of a cliff in the dark.
-Next to the woman is a man. Old. Gray skin. He leans against the concrete barrier like his bones have turned to water. He’s shaking. Dying.
-Elena knows that look. Regulator withdrawal. She’s seen it on corpses.
+To Elena’s eyes, she looks normal. Dark hair, wet with rain. Mud on her boots. But to Elena’s senses, she is a hole in the world. A void. A silhouette cut out of the noise. The static of the city hits her and vanishes, swallowed by an absolute, terrifying absence.
+Elena opens the door. Steps out into the rain. The vertigo gets worse. It feels like standing on the edge of a cliff in the dark.
+Next to the woman is a man. Old. Gray skin. He leans against the concrete barrier like his bones have turned to water. 
+He’s shaking. Probably dying, no big surprise there. Elena knows that look. Regulator withdrawal. She’s seen it on corpses.
 She walks toward them. She doesn’t know why. The mission is the Box. The mission is get in, get out, don’t look at the refugees. But the Void pulls at her, a magnetic wrongness she can’t ignore.
 She stops three feet away. The sensation is nauseating.
 “You,” she says.
@@ -38,28 +40,29 @@ The woman turns. Her eyes are clear. Empty. She looks at Elena, and for a second
 “We are waiting,” the woman says. Her voice is flat.
 “You’re not waiting,” Elena snaps. She’s code-switching automatically, sliding into the crisp, authoritative tone of a Terminist officer. “You’re loitering. And he’s bleeding on my perimeter.”
 She points at the old man.
-He looks up. His eyes are glassy, but there’s something sharp behind them. He sees her armor. He sees the Rover. He calculates.
+He looks up. His eyes are glassy, but there’s something sharp behind them. He’s looking at her armor. He sees the Rover. And calculates.
 “We have passage,” he rasps. Pats his pocket. “Clean.”
-“You’re not clean,” Elena says. “You’re crashing. And she—” She looks at the woman again. The Void makes her teeth ache. “What are you?”
+“The hell you are,” Elena says. “You’re crashing. And she—” She looks at the woman again. The Void makes her teeth ache. “What are you?”
 The woman doesn’t answer.
-Elena looks at the queue. The guards are moving down the line, scanners raised. Getting closer. If they scan this woman—if they point a sensor at this hole in reality—the alarms will go off. The Prophet’s zealots don’t like anomalies. They’ll dissect her right here on the pavement.
-Elena makes a choice. She doesn’t know why. Maybe it’s the exhaustion. Maybe it’s the fact that she just killed sixteen thousand people and saving two feels like balancing the books.
+Elena looks at the queue. The guards are finally moving down the line, scanners raised because of course they are now that she needed more time, fewer eyes. Getting closer. 
+If they scan this woman—if they point a sensor at this… this hole in reality—the alarms will go off. 
+The Prophet’s zealots don’t like anomalies. They’ll dissect her right here on the pavement.
+Elena makes a choice. She doesn’t know why. Maybe it’s the exhaustion. Or maybe it’s recognizing that this might be a way to stop shaking, to maybe ease her conscience.
 “Get in,” she says, jerking her thumb at the Rover.
 The old man blinks. “What?”
 “The transport. Get in before they scan you and realize you’re smuggling... whatever she is.”
 The old man hesitates. He looks at the guards, then at the Rover. He looks at the Black Box sitting in the passenger seat.
 “We can’t pay you,” he says.
-“I didn’t ask for payment. I asked you to get your corpse off my pavement.”
+“Does this look like a taxi? I asked you to get your corpse off the pavement.”
 He stares at her. He knows she’s lying. He knows this isn’t protocol. But he’s dying, and the Rover is dry.
 He tries to stand. Can’t. The woman grabs his arm—a motion too smooth, too easy for how thin she looks—and hauls him up. She drags him toward the Rover.
 Elena follows. Opens the back door.
 “In.”
 They climb in. The old man collapses against the seat, his breath rattling. The woman sits next to him. Her eyes move to the cargo in the passenger seat — the heavy shape under its gray tarp, strapped down tight.
 Her hand reaches toward it.
-"Supplies," Elena says, sharp. "Don't touch."
-The woman's hand stops. She doesn't ask what kind. She just sits there, staring at the tarp, not reacting to the hum beneath it. Not reacting to anything.
-Elena climbs into the driver’s seat. Slams the door, sealing them in with the smell of wet wool and the humming coffin.
-She pulls up a datapad. The manifest.
+“Hey,” Elena says, sharp. “Don’t touch the merchandise.”
+The woman’s hand stops. She doesn’t ask what kind. She just sits there, staring at the tarp, not reacting to the hum beneath it. Not reacting to anything.
+Elena climbs into the driver’s seat. Slams the door, sealing them in with the smell of wet wool and the humming coffin then pulls up a datapad. The manifest.
 “I need a name for the manifest. Or I leave you here.”
 The old man opens his mouth—
 “Standard.”
@@ -67,30 +70,35 @@ Elena looks in the rearview mirror. The woman spoke first. She is looking right 
 “My name is Standard.”
 Elena stares at her. The woman who feels like a cliff. The anomaly who moves like heavy machinery. She glances at Hendricks, who averts his gaze when he feels hers.
 She huffs air out of her nose.
-“Modest.”
-She types it in. Puts the Rover in gear.
+“Modest,” rolling her eyes. “You?”
+Hendricks reaches into an inner pocket and pulls out security credentials and tosses them at Elena.
+NED Chief of Security.
+NED Chief of Security?
+So much for stopping the shakes.
+She types it in. Puts the Rover in gear as cooly as she can while she feels her pulse quicken.
 And then the world ends.
 It doesn’t start with a sound. It starts with the sky.
-Through the windshield, the gray clouds above the seawall vanish. Not blown away. Deleted. One second they are there, rolling and heavy with rain. The next, replaced by a perfect, flat blackness. Rectangles of void appearing in the atmosphere, tessellating, eating the light.
-“What—” Elena starts.
+It stops raining the way a valve is closed. Through the windshield, the gray clouds above the seawall vanish. Not blown away. 
+Deleted. Redacted.
+One second they are there, rolling and heavy with rain. The next, replaced by a perfect, flat blackness. Rectangles of void appearing in the atmosphere, tessellating, eating the light.
+“What—” Elena is compelled out of the Rover, removing her sunglasses, mouth agape.
 Then the sound hits.
-It isn’t a noise. It is a frequency. A dissonant, grinding shriek that bypasses the ears and goes straight to the nervous system.
-The Correction Frequency.
-Elena’s hands fly to her temples. She doubles over the steering wheel, forehead hitting the horn—a long, bleating note that nobody hears because everyone is screaming.
+It isn’t a noise. It’s a frequency. A dissonant, grinding shriek that bypasses the ears and goes straight to the nervous system, seemingly trying to rearrange their insides as if they’re wrong.
+As if they are being corrected.
+Elena’s hands fly to her temples. She doubles over, forehead hitting the ground—a long, bleating note that nobody hears because everyone is screaming.
 The implant in her brain—the connection she’s kept hidden for six months—turns into a hot poker. It screams. A feedback loop of pure agony.
 She screams with it.
-Outside, the queue drops.
-It’s a wave. Thousands of people, standing one second, crumpling the next. They fall in silence, their nervous systems overloaded, their bodies seizing in the mud. The guards fall. The refugees fall. Everyone falls.
+Outside, the queue drops. It’s a wave. Thousands of people, standing one second, crumpling the next. They fall in silence, their nervous systems overloaded, their bodies seizing in the mud. The guards fall. The refugees fall. Everyone falls.
 In the back seat, the old man makes a choking sound and slumps forward, unconscious.
 Elena can’t see. White spots dance in her vision. The pain is blinding, absolute. She gasps, her vision tunneling to a pinprick.
 Don’t pass out. Don’t pass out.
 She fails. The darkness rushes in.
-But before it takes her—before she slides into the black—she sees it.
-In the rearview mirror.
+But before it takes her—before she slides into the black—she sees it. Through the bottom of the Rover on the other side.
 The woman. Standard.
-She isn’t screaming. She isn’t seizing. She isn’t falling.
-She is sitting perfectly upright, watching the bodies drop through the window with a calm, clinical precision. Her head tilts slightly, tracking the pattern. Observing.
-Then she looks at the mirror. At Elena.
+She isn’t screaming. She isn’t seizing. She isn’t falling. Instead of her cheek pressed against the road like everyone else, two feet. 
+Slowly stepping.
+She moves far enough ahead for Elena’s full view. She’s watching the bodies drop like barley in the breeze with a calm, clinical precision. Her head tilts slightly, tracking the pattern. Observing.
+Then she looks at Elena.
 She doesn’t reach out. Doesn’t move to help. Just watches with those clear, empty eyes, not understanding why the world is screaming.
-The Void, sitting in silence, while everything else burns.
+The Void, vertical in a horizontal world, while everything else burns.
 Then the dark takes her.

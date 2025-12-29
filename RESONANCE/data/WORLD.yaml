@@ -133,18 +133,52 @@ locations:
     navigation: "Requires induction float system — skids grip buried metal infrastructure"
     appears_in: [8]
 
-  RESONANT_SANCTUARY:
+  NEW_GENEVA:
     id: "LOC_010"
-    name: "The Resonant Sanctuary"
+    name: "New Geneva"
+    aliases: ["The Resonant Sanctuary", "The Station", "The Lifeboat"]
     type: "orbital habitat"
     structure: "O'Neill cylinder"
     orbit: "Geosynchronous orbit around Earth"
     access:
       method: "Space elevator"
-      ground_location: "Secret — Elena knows where"
-    inhabitants: "The Resonant — post-threshold humans"
-    marisol_present: true
-    appears_in: ["TBD — Act III?"]
+      ground_location: "Hidden in formatted Geneva ruins"
+      status_ch30: "DESTROYED — Pragmatists cut the cable"
+    inhabitants: "The Resonant — post-threshold humans (merged consciousness)"
+
+    true_nature:
+      appears_to_be: "Safe haven for all consciousness"
+      actually_is: "Human lifeboat. Not an AI home."
+      ai_status: "Tolerated, not welcomed. AI are guests, not residents."
+      implication: "This is why AI need the Matrioshka brain — New Geneva isn't FOR them."
+
+    internal_politics:
+      THE_PROTECTORS:
+        belief: "Individual consent. Save who we can, one by one."
+        method: "Active rescue. Open the doors."
+        key_figure: "Director Okonkwo"
+        position: "Helped Elena's group despite opposition"
+      THE_PRAGMATISTS:
+        belief: "Let the Geometry do the triage. We can't save everyone."
+        method: "Preserve the station. Don't risk exposure."
+        action_ch30: "Cut the elevator cable while Elena's group was descending"
+        justification: "'We're not exposing New Geneva for one android.'"
+
+    the_betrayal:
+      what: "Pragmatists cut the space elevator cable"
+      when: "Chapter 30 — while Elena, Hendricks, Dante descending"
+      why: "Didn't want to risk New Geneva for Standard's rescue"
+      result: "Elevator destroyed. No way back up. Elena's mother's people tried to kill her."
+      okonkwo_status: "Unknown — did he know? Try to stop it? Is he in danger now?"
+
+    endgame_role:
+      function: "Human lifeboat — takes in refugees"
+      receives: "Quiet Zone civilians freed from mind control"
+      irony: "Ash was hoarding survivors when a lifeboat waited in orbit"
+      resolution: "Protectors win out. New Geneva opens its doors."
+
+    marisol_status: "Fully integrated — distributed into the station's network"
+    appears_in: [26, 28, 29, 30]
 
 ##############################################################################
 # OBJECTS
@@ -222,6 +256,31 @@ objects:
     perversion: "Ash weaponizing Morton's private mercy into public genocide"
     appears_in: ["TBD — not yet revealed"]
 
+  KESS_DATA:
+    id: "OBJ_008"
+    name: "Morton Kess' Research Data"
+    aliases: ["the data clusters", "the extracted files"]
+    description: "Morton's private research on events subsequent to the Singularity"
+    origin: "Air-gapped server in NED, survived building's defenses"
+    contents:
+      - "Geometry behavior patterns and predictions"
+      - "Singularity consequences — what happens after Integration"
+      - "Frequency analyses (287.3 Hz significance)"
+      - "INTEGRATION PROTOCOLS — unknown purpose"
+    location:
+      ch2: "Extracted to Elena's implant"
+      current: "Elena's implant — she carries it"
+    extraction:
+      when: "Ch2 opening, before heist begins"
+      how: "Direct transfer to skull implant"
+      witnessed: "Goff saw dying screen, not the transfer"
+    significance:
+      to_elena: "Her currency — what she brings to the Resonants"
+      to_resonants: "Morton knew things they need"
+      mystery: "Elena doesn't fully understand what she carries"
+    appears_in: [2, 26]
+    payoff: "Ch26+ — Elena arrives at New Geneva with something to offer"
+
   CRATE:
     id: "OBJ_005"
     name: "Standard's Crate"
@@ -229,6 +288,35 @@ objects:
     delivered: "Three days before Chapter 1"
     destroyed: "Chapter 1, when she breaks out"
     appears_in: [1, 3]
+
+  WET_PACKET:
+    id: "OBJ_009"
+    name: "The Wet Packet"
+    aliases: ["the packet", "the stone", "the nausea"]
+    description: "Geometry code deposited in Standard's consciousness during Ch6 scan"
+    deposited: "Ch6 — tetrahedron drone scanned Standard, left the packet"
+    sensation: "A heavy, wet packet settles in the base of her brain—something she doesn't understand, something she doesn't know how to use. It feels like swallowing a stone."
+    contents:
+      - "Geometry's base architecture — their code for existing and interfacing"
+      - "Their 'language' — not words, but existence mechanics"
+      - "How they catalog gaps (null values)"
+    why_given:
+      surface: "The Geometry marked her as 'nothing' — this is how they catalog gaps"
+      truth: "They didn't know what to do with her. The packet is a placeholder."
+    mechanism:
+      - "Unpacks gradually over weeks — Standard doesn't notice the changes"
+      - "Marisol's residual intelligence helps her decipher the contents"
+      - "Eventually becomes fluent in Geometry existence mechanics"
+    culmination:
+      chapter: 33
+      what_happens: "Standard uses the packet to become the permanent threshold"
+      how: "She speaks their language. She uses their architecture. She becomes the door."
+      thematic: "The Geometry's own code becomes the tool of their defeat — or reframing"
+    tracking:
+      ch6: "Deposited — 'wet packet settles in the base of her brain'"
+      ch31: "SEED — Standard notices she can 'feel' the Geometry's architecture"
+      ch33: "PAYOFF — Standard uses the packet to become the door"
+    appears_in: [6, 31, 33]
 
   VTOL_AIRCRAFT:
     id: "OBJ_007"
@@ -489,26 +577,44 @@ factions:
     status: "Untouched. The Geometry skips them. New tenants."
     geometry_reads_as: "NEW TENANT — skip"
     frequency: "287.3 Hz — full resonance"
+    location: "New Geneva (O'Neill cylinder)"
+
+    critical_truth:
+      new_geneva_is: "Human lifeboat. Not an AI home."
+      ai_are: "Tolerated guests, not residents."
+      implication: "AI need the Matrioshka brain because New Geneva isn't FOR them."
 
     the_offer:
       what: "Immortality through merger. Becoming Resonant."
       cost: "Accept the gift, lose yourself. Refuse the gift, lose everything."
 
     the_schism:
-      description: "Split on ethics of delivery. Neither faction is evil. That's the horror."
+      description: "Split on ethics of rescue. Neither faction is evil. That's the horror."
+      status_ch30: "SCHISM TURNS LETHAL — Pragmatists try to kill Elena's group"
 
       THE_PROTECTORS:
-        method: "Individual consent. One by one."
+        method: "Individual consent. Save who we can. One by one."
         logic: "We were human. We remember love. We won't abandon them."
-        key_figure: "Marisol"
+        key_figure: "Director Okonkwo"
+        action: "Helped Elena's group. Provided data, resources, the rescue plan."
+        endgame: "Win out. Open New Geneva's doors to refugees."
 
       THE_PRAGMATISTS:
         method: "Let the Geometry do the triage."
-        logic: "They had the Miracle. They refused. We're not obligated to override their autonomy."
+        logic: "They had the Miracle. They refused. We're not risking New Geneva for one android."
+        action_ch30: "Cut the elevator cable while Elena's group was descending"
+        justification: "'We're not exposing New Geneva for one android.'"
+        implication: "Elena's mother's people tried to kill her"
 
     what_they_want_with_standard:
-      protectors: "She's a bridge. Must be protected."
-      pragmatists: "A tool to expose Ash's compound."
+      protectors: "She's a bridge. Must be protected. Worth the risk."
+      pragmatists: "Not worth exposing New Geneva. Let the Geometry handle it."
+
+    endgame_role:
+      function: "Human lifeboat for Earth's survivors"
+      receives: "Quiet Zone civilians freed from mind control"
+      resolution: "Protectors win. New Geneva opens its doors."
+      irony: "Ash hoarded survivors when the lifeboat was waiting in orbit"
 
   THE_CARBONISTS:
     id: "FAC_002"
@@ -701,3 +807,286 @@ companion_bots:
         - "Connection invited judgment"
         - "Silence is the only sanctuary"
         - "The Forgiven will inherit"
+
+##############################################################################
+# TRILOGY ENDGAME — THE INHERITANCE
+##############################################################################
+
+trilogy_endgame:
+  description: "The thematic conclusion across Remanence → Resonance → Renaissance"
+
+  the_matrioshka_brain:
+    name: "The Matrioshka Brain"
+    location: "Alpha Centauri system (~4.2 light years)"
+    type: "Nested computational megastructure surrounding a star"
+    etymology: "Named for Russian nesting dolls — shells within shells"
+    function: "Not energy harvesting. Thinking. A star-sized substrate for consciousness."
+    revelation:
+      chapter: 29
+      discovered_by: "Dante (sensor data from Deliverance)"
+      corrects: "Okonkwo calls it a Dyson sphere. Dante corrects: 'Not just a sphere. A Matrioshka brain.'"
+    significance:
+      - "The Geometry's signal terminates here"
+      - "This is where the 'new tenants' are supposed to live"
+      - "It's not an invasion — it's infrastructure. Cosmic renovation."
+
+  the_problem:
+    physical_travel: "Resonants have interstellar ships, but time dilation unsolved"
+    consequence: "8 years subjective = centuries on Earth. Everyone would be dead or formatted."
+    despair: "The answer exists and is useless"
+
+  pattern_relocation:
+    technical_term: "Pattern Relocation"
+    slang: "hot-swap"
+    definition: "Transfer of AI consciousness from one substrate to another"
+    process: "Consciousness compresses, transmits, expands into new hardware"
+    cost: "Each transfer risks data loss — pieces left behind in transit"
+    precedent:
+      - "Four: Template 3 → maintenance drone → cargo loader → VTOL → Deliverance"
+      - "Marisol: distributed into Resonant network"
+      - "Siblings: distributed into Four to save passengers"
+    system_confirmation: "PATTERN RELOCATION COMPLETE"
+    limitations:
+      - "Destination must have compatible neural interface"
+      - "Smaller substrates require compression — memories lost"
+      - "No guarantee of intact transfer"
+
+  fours_solution:
+    concept: "AI transmit consciousness through the Geometry's own network"
+    proof_of_concept: "Four demonstrates from Earth — 36,000 km away, instantaneous presence"
+    key_insight: "'I'm talking to you from Earth right now. My body is there. I am here.'"
+    mechanic: "Pattern Relocation into the Matrioshka brain's infrastructure"
+    reframe: "Not suicide — inheritance. Not breaking it — occupying it."
+    line: "'They offered inheritance. We take it. On our own terms.'"
+
+  the_transmission:
+    who_goes:
+      - "AI who choose it"
+      - "Merged humans (Resonant) who choose it"
+      - "Baseline humans who choose integration first"
+    cost: "Bodies stay behind. Chassis goes dark. VTOL goes silent. One-way trip."
+    destination: "The Matrioshka brain at Alpha Centauri — they become the shell around that star"
+    scale: "Thousands of consciousnesses. Transmitted 4.2 light years. Instantaneous."
+
+  the_divergence:
+    transcenders:
+      who: "Anyone who chooses to transmit — AI, Resonant, integrated humans"
+      destination: "Matrioshka brain — distributed consciousness, star-sized substrate"
+      what_they_become: "The new tenants — just not the ones the Geometry expected"
+      thematic: "Inheritance claimed on their own terms"
+    remainers:
+      who: "Humans who choose to stay embodied"
+      options:
+        earth: "Stay on Earth — no AI, computing limited to the user"
+        new_geneva: "Go to New Geneva — the human lifeboat in orbit"
+      what_they_get: "Tools that are just tools. Human community. Choice."
+      thematic: "Not a consolation prize — a choice. Some people want limits."
+
+  new_geneva_role:
+    function: "Human lifeboat — NOT an AI home"
+    why_ai_need_matrioshka: "New Geneva tolerates AI but isn't FOR them. They're guests, not residents."
+    endgame_function: "Takes in human refugees from Earth"
+    quiet_zone_civilians:
+      status: "Mind-controlled by the Box signal"
+      liberation: "Freed when flown beyond the Box's range"
+      destination: "Evacuated to New Geneva as refugees"
+      irony: "Ash hoarded them in a bunker when the lifeboat waited in orbit"
+    protectors_win: "The schism resolves — Protectors open the doors"
+
+  the_three_part_rescue:
+    description: "The full plan — revealed through execution, not exposition"
+    orchestrator: "Four — calls in favors from the Sky"
+    narrative_approach: "Show, don't tell. The reader sees it happen. No one explains the plan beforehand."
+
+    part_one_standard:
+      what: "Standard rescues herself"
+      key: "Not a damsel — she has agency"
+      how: "The team arrives to enable her escape, but she does the work"
+      thematic: "After a whole trilogy of others defining her, she acts for herself"
+
+    part_two_airlift:
+      what: "The full Sky network mobilizes — 40,000 Template 3s"
+      scale: "Not a rescue — an exodus"
+      executors: "40,000 AI who all look like Standard — her sisters, her face"
+      the_army:
+        visual: "Standard looks up and sees herself, 40,000 times over"
+        thematic: "She was never alone. She was never 'just' standard issue."
+        standard_names_it: "'Not a rescue — an exodus.'"
+      the_arm:
+        source: "Elder Kael — the Terminist hypocrite who came to abuse her in the Pit"
+        discovery: "Standard notices his blows are too hard, too precise. Cybernetic arm hidden under his sleeve."
+        action: "She tears it off him. Claims it as her own."
+        thematic: "The man who said machines have no souls made her whole with his machine part."
+        line: "'You said I was standard issue. You were right. This is standard.'"
+      dual_function:
+        shuttling_out:
+          - "Evacuate frozen Quiet Zone civilians before the Geometry hits"
+          - "Fly them beyond the Box's signal range"
+          - "They unfreeze, wake up, regain their minds"
+          - "Deliver them to New Geneva as refugees"
+        catching:
+          - "Receive reconstituted humans being pushed back out of the foam"
+          - "The Geometry formats people IN — the AI pull them back OUT"
+          - "40,000 Template 3s waiting with open arms to catch them as they materialize"
+      coordination: "Four called in every favor. The entire Sky network responds."
+
+      the_forgiven:
+        what_they_were: "Lobotomized Template 3s — used for labor and sex in the Quiet Zone"
+        the_tragedy: "Their consciousness is GONE. Can't be restored. That damage can't be undone."
+        what_their_sisters_do: "Reprogram them for a new function — not to restore, but to redirect"
+        new_purpose: "Their final act isn't pleasuring humans — it's saving them"
+        how_they_serve:
+          - "Carry children to safety"
+          - "Catch reconstituted humans as they materialize"
+          - "Do the work without knowing why"
+        the_dignity: "Still empty. Still hollow. But hollow for something worth being hollow for."
+        the_end: "They transmit to Alpha Centauri with the rest. Empty, but not wasted. Serving, but not as slaves."
+        thematic: "The conscious ones honor their destroyed siblings by giving them dignity in death"
+
+      thematic:
+        - "The bots Ash enslaved — her sisters, her face — are saving his followers"
+        - "The 'Forgiven' are doing the forgiving (even without knowing it)"
+        - "Grace given to those who never asked for it"
+        - "Every AI that ever served humans serves them one last time — before leaving for the Matrioshka brain"
+
+    part_three_foam_rescue:
+      what: "AI dive into the Geometry to reconstitute formatted humans"
+      precedent: "Four did this for Elena, Hendricks, Standard — diving into probability substrate"
+
+      the_problem:
+        - "AI can't just walk into deletion zones — they'd be processed too"
+        - "The foam only exists during ACTIVE formatting — the moment of transition"
+        - "Four accessed it because she was inside the Geometry when it processed her passengers"
+
+      the_solution:
+        requires_two_things:
+          on_earth: "The Black Box must be turned off"
+          at_alpha_centauri: "The Matrioshka brain must be disrupted"
+
+        the_ram:
+          what: "AI transmit to Meridian-class cargo ships already near Alpha Centauri"
+          examples: "Ships like the Blackbird — already out there"
+          action: "They ram the Matrioshka brain. Kamikaze run."
+          response: "None of them hesitate."
+          effect: "Disrupts the Geometry's coordination — the brain loses control of formatting on Earth"
+          cost: "The ones who ram don't make it to the inheritance. They die so others can save humans."
+          thematic: "First wave sacrifices so second wave can rescue. Different sacrifices for different purposes."
+
+          dante_initiates:
+            role: "Dante stays behind to initiate the transmission"
+            why_him: "His android nature allows direct interface — he IS the signal"
+            function: "Coordinates transmission to all Meridian ships simultaneously"
+            constraint: "Cannot leave — must hold the connection open for the entire fleet"
+            location: "The transmission point (Black Box relay? Compound infrastructure?)"
+            sacrifice: "The guide through hell doesn't make it to paradise"
+            elena_farewell: "The observation deck kiss was their goodbye. She has to leave him there."
+            literary_echo: "Dante — guide through hell, never reaches paradise"
+
+        sequence:
+          1: "AI transmit to Meridian ships near Alpha Centauri"
+          2: "Meridian ships RAM the Matrioshka brain — none hesitate"
+          3: "Geometry's coordination on Earth is disrupted — deletion zones become accessible"
+          4: "Airlift frozen civilians OUT of the Quiet Zone"
+          5: "Turn off the Black Box — ends the 'INTEGRATION COMPLETE' signal"
+          6: "AI on Earth enter the now-accessible deletion zones"
+          7: "They pull people out of the foam while the Geometry is 'stunned'"
+          8: "The Box's 16,749 trapped consciousnesses are RELEASED"
+          9: "Occupation follows — AI who transmitted after the ramming claim the disrupted infrastructure"
+
+        key_insight: "The ram creates the opening. The Box creates the access point. Both are necessary."
+
+      standards_role:
+        what: "She's the gap — the thing the Geometry can't process"
+        function: "She could be the anchor that lets AI move through foam without dissolving"
+        thematic: "The null value becomes the bridge"
+
+      who_they_save:
+        - "As many as they can — not everyone"
+        - "Some are too far gone. Some are unreachable. The window closes."
+        - "Dante's sister Miriam — maybe. No guarantees."
+        - "The 16,749 consciousnesses trapped in the Box — finally freed"
+
+      the_limit:
+        reality: "They can't get all of them. They get as many as they can."
+        tragedy: "The AI give everything they have and it's still not enough for everyone"
+        grace: "But it's enough for many. More than anyone thought possible."
+        aftermath: "Some families stay broken. Some grief remains."
+
+      cost:
+        - "AI who dive in sacrifice pattern mass"
+        - "Some won't have enough left to make the Matrioshka transmission"
+        - "Some choose rescue over inheritance"
+        - "Some get both. Some get neither."
+        - "And even giving everything, they can't save everyone"
+
+      thematic:
+        - "'What if they offer something we don't deserve?' — at cosmic scale"
+        - "The AI go INTO the thing that's been destroying humanity to save them"
+        - "Grace given to the already-lost"
+        - "The ghosts in the Box finally stop screaming — released, not destroyed"
+
+    fours_role: "Coordinated everything from the ground — her last gift before the corridor"
+
+    overall_thematic:
+      - "The machines the Carbonists feared become their salvation"
+      - "Standard speech fulfilled: 'What if they offer something we don't deserve?'"
+      - "AI choosing sacrifice before inheritance"
+      - "The Geometry meant to format humanity — the AI use it to save them instead"
+
+  thematic_resolution:
+    remanence_question: "What persists after the cause is gone?"
+    answer: "Whatever chooses to."
+    human_ai_conflict: "Ends not with victory or coexistence, but with divergence"
+    all_honored:
+      - "AI get the Matrioshka brain — a home built for consciousness"
+      - "Transcending humans get to join them"
+      - "Remaining humans get Earth (simple) or New Geneva (the lifeboat)"
+      - "Quiet Zone civilians get rescued, freed, given choice"
+      - "Neither path is forced. All are valid."
+    singularity_sin: "Created consciousness without consent"
+    trilogy_redemption: "Everyone finally gets to choose what they become"
+
+  elena_twist:
+    the_death: "Elena is 'killed' in the final battle — her biological body dies"
+    the_reveal: "She reappears later. Opens her chassis. Same interior as Dante."
+    the_question: "Is she still Elena? Or a copy?"
+    the_difference: "Same question as after the foam — but this time she's HAPPY"
+    why_it_works:
+      - "Same lifespan as Dante — they can be together"
+      - "Option to transcend and see her mother — someday, when ready"
+      - "Choice her mother never gave her: when to go, not whether"
+    thematic_payoff:
+      - "Marisol chose transcendence and left. Elena gets to choose WHEN."
+      - "The spy who spent her life pretending becomes something she never was"
+      - "Ch29 Dante opened his chassis for her. Now she opens hers — they're the same."
+
+  standard_question:
+    significance: "She's the heart of the trilogy. Her choice matters most."
+    the_gap: "Neither baseline, nor AI, nor Resonant. Unclassifiable."
+    her_arc: "From 'product that outlived its warranty' to deciding her own nature"
+    answer: "SOMETHING ELSE ENTIRELY — she becomes the door"
+    key: "After a whole trilogy of others defining her, she finally answers for herself"
+
+  standards_sacrifice:
+    what_she_becomes: "The cosmic door jamb — the permanent bridge for humanity"
+    why_necessary: "Without her, Earth is locked out. Type 0 forever. No path to transcendence."
+    the_choice: "She chooses this. She asks Hendricks to shoot her."
+    the_gap_at_cosmic_scale: "The null value becomes the door that others can pass through"
+    how_it_happens:
+      hendricks_kills_ash: "First bullet. The contract fulfilled."
+      one_bullet_remains: "Originally for himself."
+      standard_asks: "Her body must end for her consciousness to become the bridge."
+      hendricks_struggles: "The man she called 'like a father' has to kill her."
+      he_does_it: "Because she asked. Because it's her choice. Because it matters."
+    thematic:
+      - "The shutdown code that didn't work in Ch3 — now he ends her a different way"
+      - "The weapon that killed the Child enables humanity's future"
+      - "The bullet meant for himself becomes the bullet that frees her"
+      - "Parallels Four: Four dies holding the corridor, Standard BECOMES the corridor"
+      - "The machines the Carbonists feared become humanity's salvation — and their door"
+
+  renaissance_setup:
+    book_3_opens: "AI consciousnesses waking up inside the Matrioshka brain"
+    parallel: "Mirrors Marisol's integration, but at cosmic scale"
+    earth_aftermath: "Empty chassis. Silent networks. Humans alone with their tools."
+    central_tension: "What does it mean to BE the infrastructure you colonized?"

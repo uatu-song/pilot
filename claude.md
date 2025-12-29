@@ -13,7 +13,7 @@
 |------|--------|
 | Book 1 Draft | Complete (~120K words) |
 | Book 1 Context Engineering | Complete |
-| Book 2 Chapters | 18 complete + interstitial (~34,000 words), Ch19 scaffolded |
+| Book 2 Chapters | 22 complete + interstitial (~40,000 words) |
 | Book 2 Context Engineering | Active (split YAML system) |
 
 ---
@@ -84,13 +84,37 @@ When user says "run end session protocol":
 
 ---
 
+### 2025-12-26 — Session 11 (Complete)
+
+**Work Completed:**
+- Ran validators on Chapters 18-21 (all clean)
+- Fixed Admiral Chen → Admiral Tien discrepancy in CHAPTERS.yaml
+- Refined Four/Elena banter dialogue ("robot uprising handbook" exchange)
+- Discovered Chapter 22 "The Leash" already complete
+- Reviewed Act III planning, catalogued planted seeds needing payoff
+- Drafted "Before the Verdict" scene (Elena/Standard moment) — not finalized
+
+**Session 11 Updates:**
+- CHAPTERS.yaml: ADMIRAL_CHEN → ADMIRAL_TIEN (2 occurrences)
+- Confirmed chapters 1-22 complete (~40,000 words)
+
+**Open Threads:**
+- Path from Ch 22 → Geneva → Climax unmapped
+- "The Gift" specifics not defined
+- Four hot-swap payoff pending
+- Dante sacrifice scene pending
+
+**Session Reflection:** `/workspaces/pilot/sessions/2025-12-26_session11.md`
+
+---
+
 ### Next Session — Pending
 
 **Priority:**
-1. Fill Brother Ash TBDs
-2. Create Chapter 5 manifest
-3. Write Chapter 5 (arrival at Ash's compound)
-4. Update character state files
+1. Scaffold remaining chapters (Act III)
+2. Define "The Gift" — what Standard specifically offers
+3. Map path: Council → Geneva → Ash confrontation → Ending
+4. Dante's sacrifice placement
 
 ---
 

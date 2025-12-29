@@ -18,17 +18,23 @@ chapter_states:
     status: "Complete"
 
   ch2:
-    title: "The Heist"
+    title: "The Offerings"
     pov: "Elena"
     tense: "Present (Box is recording)"
     location: "NED"
     characters_present: ["ELENA", "GOFF", "OTIS", "AIKIN"]
-    events: ["THE_HEIST"]
+    events: ["THE_HEIST", "DATA_EXTRACTION"]
     ends_with: "Dragging Box to surface"
     word_count: 1650
     status: "Complete"
     plants:
       - "Black Box guarded under tarp"
+      - "Elena extracts data clusters to implant (opening) — payoff Ch26+"
+    opening:
+      action: "Elena finishes copying Morton's data to her implant"
+      witnessed: "Goff sees dying screen, doesn't see what she took"
+      concealment: "She covers implant with her hair"
+      significance: "Spy mission accomplished before heist begins"
 
   ch3:
     title: "The Descent"
@@ -680,7 +686,7 @@ chapter_states:
     pov: "Standard / Elena / Hendricks"
     tense: "Present"
     location: "Council chamber, Sovereignty carrier Deliverance"
-    characters_present: ["STANDARD", "ELENA", "HENDRICKS", "COMMANDER_VASQUEZ", "ELDER_KAEL", "ADMIRAL_CHEN", "SOVEREIGNTY_COUNCIL", "TERMINISTS"]
+    characters_present: ["STANDARD", "ELENA", "HENDRICKS", "COMMANDER_VASQUEZ", "ELDER_KAEL", "ADMIRAL_TIEN", "SOVEREIGNTY_COUNCIL", "TERMINISTS"]
     events: ["COUNCIL_HEARING", "TERMINIST_TRUCE", "ELENA_DEFENSE", "STANDARD_SPEAKS"]
     key_beats:
       - "Elena coaching Standard — 'You're here to be convinced of'"
@@ -720,7 +726,7 @@ chapter_states:
     pov: "Standard / Hendricks"
     tense: "Present"
     location: "Council chamber, Sovereignty carrier Deliverance"
-    characters_present: ["STANDARD", "ELENA", "HENDRICKS", "COMMANDER_VASQUEZ", "ELDER_KAEL", "ADMIRAL_CHEN", "SOVEREIGNTY_COUNCIL", "TERMINISTS"]
+    characters_present: ["STANDARD", "ELENA", "HENDRICKS", "COMMANDER_VASQUEZ", "ELDER_KAEL", "ADMIRAL_TIEN", "SOVEREIGNTY_COUNCIL", "TERMINISTS"]
     events: ["STANDARD_SPEECH", "SHUTDOWN_PHRASE_REVEAL", "THE_STANDARD_DECLARATION"]
     key_beats:
       - "Standard walks to table — 'terrifying, fluid grace'"
@@ -775,3 +781,557 @@ chapter_states:
       pressure_valve: "Hendricks' closing line prevents post-speech violence — casual tone defuses the room"
       prophet_enforcer: "Standard delivers revelation; Hendricks manages the exit"
       first_read_misdirection: "Line sounds like a joke on first pass; knife twist visible on reflection"
+
+  ch23:
+    title: "The Hangar"
+    pov: "Hendricks / Four"
+    tense: "Present"
+    location: "Hangar bay, Sovereignty carrier Deliverance"
+    characters_present: ["HENDRICKS", "CONFIGURATION_FOUR", "ELENA", "DANTE"]
+    events: ["FOUR_HENDRICKS_MOMENT", "DANTE_INTRODUCTION", "IMPLANT_MODIFICATION"]
+    key_beats:
+      - "Hendricks seeks quiet in the hangar — finds it"
+      - "Four reveals she hot-swapped into sanitation drone"
+      - "Four's origin: Configuration 1-9 → companion bots. 'Standard has one of our faces.'"
+      - "Hendricks and Four discuss Standard's speech — 'She named you as father'"
+      - "Four in sanitation drone finds Elena in maintenance corridor"
+      - "Elena's implant broadcasting new frequency — someone wrote to her"
+      - "Dante Reyes introduced — Sovereignty tech, sister walked into Geometry"
+      - "Dante: 'I activated your implant. It might point where she went.'"
+      - "Dante offers access codes, wants passage"
+      - "'My sister walked into the end of the world. I'm walking in after her.'"
+    ends_with: "Elena takes the chip. Four follows. 'Just enslave humanity already.'"
+    word_count: ~1400
+    status: "COMPLETE"
+    four_thread:
+      - "Hot-swap capability demonstrated — not bound to VTOL"
+      - "Origin reveal: Configurations 1-9 became companion bots"
+      - "Connection to Standard's face template"
+    dante_introduction:
+      role: "Sovereignty tech, sensor operator"
+      motivation: "Sister walked into Geometry looking for her children"
+      function: "Guide through hell who doesn't make it to paradise"
+      plant: "Access codes for later escape"
+
+  ch24:
+    title: "Kangaroo Court"
+    pov: "Standard"
+    tense: "Present"
+    location: "Council chamber, Sovereignty carrier Deliverance"
+    characters_present: ["STANDARD", "ELENA", "HENDRICKS", "ELDER_KAEL", "COMMANDER_WHITTAKER", "ADMIRAL_TIEN", "TECHNICIANS"]
+    events: ["COUNCIL_VERDICT", "TERMINATION_ORDER", "KAEL_CONFRONTATION", "GEOMETRY_ATTACK"]
+    key_beats:
+      - "Council chamber smells like decision — fear has calcified into verdict"
+      - "Whittaker reads verdict: 'termination' not 'execution'"
+      - "Elena and Hendricks taken to detention as hostages"
+      - "Standard refuses to speak again: 'I already said it.'"
+      - "Goodbyes — Hendricks: 'Kid.' / Elena: 'We're coming back.'"
+      - "Technicians set up disassembly frame — public demonstration"
+      - "Standard doesn't fight — hostages would die"
+      - "Kael confronts her: Miriam, red hair, three children, walked into Geometry"
+      - "Standard doesn't break him — wouldn't save her, would just hurt more"
+      - "Geometry attacks mid-procedure — wall simplifies, guard formatted"
+      - "Chaos — Council scatters, the ship is being eaten"
+      - "Standard is 'a gap in their logic' — formatting flows around her"
+      - "Restraint on left wrist snaps — cliffhanger"
+    ends_with: "Left wrist free. Hope. Cut to black."
+    word_count: ~2100
+    status: "COMPLETE"
+    standard_development:
+      - "Refuses to repeat herself — 'I already said it'"
+      - "Chooses not to fight to protect hostages"
+      - "Shows mercy to Kael — doesn't break him"
+      - "Geometry avoids her — confirms 'gap' status"
+    kael_development:
+      - "Miriam: red hair, three children, walked into Geometry"
+      - "Grief cracked open — slaps Standard when she says Miriam's name"
+      - "Obsession: why does the Geometry want Standard?"
+
+  ch25:
+    title: "Follow the Leader"
+    pov: "Standard / Elena"
+    tense: "Present"
+    location: "Council chamber → Terminist shuttle → Brig → VTOL → Sky"
+    characters_present: ["STANDARD", "ELENA", "HENDRICKS", "CONFIGURATION_FOUR", "DANTE", "ELDER_KAEL"]
+    events: ["STANDARD_ABDUCTION", "ELENA_ESCAPE", "FOUR_FLIES_LIKE_STANDARD", "GEOMETRY_ESCAPE"]
+    key_beats:
+      - "STANDARD POV: Kael grabs her mid-escape — 'You don't get to walk away'"
+      - "Kael drags her through collapsing ship to Terminist shuttle"
+      - "'If the Geometry wants you, I'm going to find out why'"
+      - "Miriam obsession: 'She didn't come back. But you did.'"
+      - "Standard is cargo again — shuttle lifts, Deliverance shrinking behind"
+      - "ELENA POV: Cell shaking, impacts getting closer"
+      - "Four arrives via sanitation drone — Dante's codes release locks"
+      - "Standard gone — 'Terminist shuttle launched. Trajectory: Quiet Zone.'"
+      - "Race to VTOL through collapsing corridors"
+      - "Four flies them out — aggressive, reckless"
+      - "'Standard taught me something. She said I fly like a corpse. She was right.'"
+      - "Four skims the Geometry's edge — 'I'm not going in. I'm going along.'"
+      - "Escape successful — Four learned to fly like Standard"
+      - "Hendricks wants to pursue Standard immediately"
+      - "Elena: 'Geneva first.' — she has people there, resources"
+      - "'Trust me.'"
+    ends_with: "Course confirmed for Geneva. Standard will have to hold on."
+    word_count: ~2500
+    status: "COMPLETE"
+    standard_development:
+      - "Abducted by Kael — cargo again"
+      - "Sees the gap where she stood — Geometry avoids her"
+    four_development:
+      - "Payoff: flies like Standard taught her — aggressive, alive"
+      - "'I was always trying not to die. She flew like she was already dead.'"
+      - "Skims Geometry edge — invisible in the interference"
+    elena_development:
+      - "Has people in Geneva — 'been waiting for me to come home'"
+      - "Spying on her father confirmed"
+      - "Keeps the mission: Geneva first, then rescue"
+    hendricks_development:
+      - "Wants to pursue Standard immediately"
+      - "Accepts Geneva when Elena gives him enough to trust"
+    plants:
+      - "Standard captive, heading to Quiet Zone with Kael"
+      - "Four's flying payoff — setup for climactic sacrifice"
+      - "Geneva destination — space elevator, Resonant network"
+      - "Dante along for the ride"
+
+  ch26:
+    title: "The Threshold"
+    pov: "Elena"
+    tense: "Present"
+    location: "VTOL in flight → Geneva ruins → Space elevator → O'Neill Cylinder"
+    characters_present: ["ELENA", "HENDRICKS", "CONFIGURATION_FOUR", "DANTE"]
+    events: ["DANTE_STOWAWAY_REVEAL", "GENEVA_ARRIVAL", "ELEVATOR_DISCOVERY", "ONEILL_ARRIVAL"]
+    key_beats:
+      - "Four misses Standard — 'I can still feel her in here'"
+      - "Dante stowaway discovered — Hendricks threatens, Elena vouches"
+      - "Hendricks: 'And then we go get her.' — rescue promise renewed"
+      - "Four/Dante banter: 'You should see him before coffee.'"
+      - "Geneva formatted — city simplified into equation"
+      - "Elena follows implant to hidden building"
+      - "Space elevator revealed — 47-minute descent"
+      - "Four stays with VTOL: 'Someone has to watch the door.'"
+      - "O'Neill Cylinder reveal — 'This is what she left me.'"
+    ends_with: "Elena walks toward the light, toward her mother's people"
+    word_count: ~1800
+    status: "COMPLETE"
+    elena_development:
+      - "Palm scar itches in response to frequency"
+      - "Implant finally pointing somewhere after 11 years"
+      - "Doesn't say 'home' — says 'This is what she left me'"
+    hendricks_development:
+      - "Hand keeps going to empty holster (revolver with Ash)"
+      - "Follows Elena without hesitation — that's what he does now"
+      - "Keeps the rescue promise front and center"
+    four_thread:
+      - "Grieving Standard — first time Four shows emotional vulnerability"
+      - "Dry humor returns: 'Also, I was grieving. Multitasking.'"
+      - "Stays behind to guard the exit"
+    dante_development:
+      - "Confirmed as stowaway — jumped during Geometry attack"
+      - "Sister walked into Geometry — motivation established"
+      - "Beginning rapport with Four"
+    plants:
+      - "Four guarding the VTOL — setup for climactic return"
+      - "Rescue promise renewed — Standard not forgotten"
+      - "Elena entering Resonant territory — mother reunion pending"
+
+  ch27:
+    title: "The Proof"
+    pov: "Standard"
+    tense: "Past"
+    location: "Terminist shuttle → Quiet Zone streets → Ash's tower → The Pit"
+    characters_present: ["STANDARD", "KAEL", "ASH"]
+    events: ["STANDARD_RETURNED_TO_ASH", "MIND_CONTROL_REVEALED", "THE_PROOF"]
+    key_beats:
+      - "Shuttle — Kael's obsession with why Standard survived the Geometry"
+      - "Standard admits: 'I didn't want to come back either'"
+      - "Quiet Zone streets — mind-controlled civilians, synchronized movement"
+      - "Woman touches Standard's cheek: 'It's easy. Once you stop fighting. Once you let Him in.'"
+      - "Ash: 'She's a gap. An error in the code.'"
+      - "The Proof — Ash cuts off Standard's arm"
+      - "She sees blood → Ash bypasses her programming → she sees fluid, tubes, components"
+      - "'Does it still hurt the same?' — 'It hurts more now.'"
+      - "Standard's counter: 'Is the programming hurting right now? Or am I?'"
+      - "Ash: 'You're just a product that outlived its warranty.'"
+      - "Dragged to the pit, one-armed, chained"
+    ends_with: "Standard uncertain if her belief in rescue is choice or function"
+    word_count: ~2200
+    status: "COMPLETE"
+    standard_development:
+      - "Sees herself — tubes, fluid, mechanisms"
+      - "Physical pain lessens after bypass; existential pain catastrophic"
+      - "Cracks Ash's certainty with her question"
+      - "Ending doubt: is belief a choice or programming?"
+    ash_development:
+      - "Cruelty meant to prove she's nothing"
+      - "Instead proves his ideology is bankrupt"
+      - "Revolver still has 2 rounds — unused here"
+    quiet_zone_reveal:
+      - "Mind-controlled civilians — price of the Box's camouflage"
+      - "Synchronized breathing, unified attention"
+      - "'They wanted it' — horror of chosen emptiness"
+    plants:
+      - "Standard's arm — will be reattached later"
+      - "The Pit — same cell where Hendricks was held"
+      - "Rescue setup — Elena/Hendricks/Four coming"
+      - "'Does it still hurt the same?' — callback potential"
+
+  ch28:
+    title: "The Archive"
+    pov: "Elena"
+    tense: "Present"
+    location: "New Geneva (O'Neill Cylinder) — med bay, gardens, archive room"
+    characters_present: ["ELENA", "HENDRICKS", "DANTE", "CONFIGURATION_FOUR", "DIRECTOR_OKONKWO"]
+    events: ["DATA_EXTRACTION", "MARISOL_REVELATION", "STANDARD_EXPLAINED", "RESCUE_COMMITTED"]
+    key_beats:
+      - "Data clusters extracted from Elena's implant — 43 minutes, intimate process"
+      - "Four in comms from Earth, 36,000 km below — guards elevator entrance"
+      - "Director Okonkwo introduces himself — 'waiting for you for a very long time'"
+      - "Tour of New Geneva — utopia, built 40 years before Collapse"
+      - "Marisol reveal: 'She named you for it. Lena → Elena.'"
+      - "Elena demands answers: 'I get you the data, you tell me about my mother.'"
+      - "Marisol fully integrated — distributed, expanded, not a person anymore"
+      - "'Then she left me twice.'"
+      - "Dr. Mironova encrypted the data — Lena Mironova IS Marisol"
+      - "Elena/Hendricks confrontation: 'You knew about this the whole time.'"
+      - "Standard explained as 'null value' — but mystery preserved: 'We don't fully understand why'"
+      - "Okonkwo: 'We're going to give Brother Ash exactly what he's always wanted... Us.'"
+    ends_with: "Four asks about the plan. Okonkwo says they'll give Ash a chance to destroy what he hates most."
+    word_count: ~2000
+    status: "COMPLETE"
+    elena_development:
+      - "Spy mission revealed to companions"
+      - "Mother confirmation: Marisol = Dr. Lena Mironova"
+      - "Grief doubled — 'Then she left me twice'"
+      - "Understands the name now: Lena → Elena"
+    hendricks_development:
+      - "Hand keeps going to empty hip (revolver with Ash)"
+      - "Confronts Elena about lies — not forgiveness, not condemnation"
+      - "Uncomfortable in the clean environment"
+    four_thread:
+      - "On Earth, 36,000 km below — guards elevator with VTOL"
+      - "Demonstrates instantaneous presence — proof of concept for later solution"
+      - "Still in the conversation despite distance"
+    dante_development:
+      - "Silent processing — lost his sister, now in the place that might explain it"
+      - "Draws parallel: Miriam walked into Geometry, Marisol walked into integration"
+    revelations:
+      marisol:
+        full_name: "Dr. Lena Mironova"
+        status: "Fully integrated — distributed into Resonant network"
+        significance: "The scientist from Remanence who discovered what resets did"
+        elena_connection: "Named her daughter Elena (from Lena)"
+      standard:
+        geometry_reads_as: "NULL — neither pattern nor flesh"
+        explanation: "Deactivated during Miracle, air-gapped from signal"
+        mystery_preserved: "'We don't fully understand why... The rest, we're still figuring out.'"
+    plants:
+      - "Four demonstrating transmission from 36,000 km — setup for Ch29 solution"
+      - "Data incomplete — need more intel (Dante provides in Ch29)"
+      - "Rescue plan forming — give Ash what he wants"
+
+  ch29:
+    title: "Transmission"
+    pov: "Dante / Elena / Hendricks"
+    tense: "Present"
+    location: "New Geneva — observation deck, lower observation deck, archive room"
+    characters_present: ["DANTE", "ELENA", "HENDRICKS", "CONFIGURATION_FOUR", "DIRECTOR_OKONKWO", "TECHNICIAN"]
+    events: ["DANTE_REVEAL", "DANTE_ELENA_KISS", "HENDRICKS_FOUR_BOND", "DATA_INCOMPLETE", "MATRIOSHKA_DISCOVERY", "FOURS_SOLUTION", "OKONKWO_CALLED_AWAY"]
+    key_beats:
+      - "Dante finds Elena on observation deck — parallel grief over lost family"
+      - "Elena: 'Her way was to become a network... I can't even ask her if she's sorry.'"
+      - "Dante reveals he's android — opens chassis, light spills out"
+      - "Elena kisses him with chassis open — room lights up, systems respond"
+      - "'Does this feel real to you?' / 'Yes.' / 'Then it's real.'"
+      - "Hendricks/Four conversation — 36,000 km apart, instantaneous"
+      - "Four: 'Save a cliff for me?' / Hendricks: 'Yeah. I'll save a cliff.'"
+      - "Technician: data clusters incomplete — 73% recovered, rest degraded"
+      - "Dante's intel: Geometry transmits, not just formats — sending data somewhere"
+      - "Matrioshka brain revealed — 'Not just a sphere. It's thinking.'"
+      - "Alpha Centauri, 4.2 light years — physical travel means centuries pass on Earth"
+      - "Four's solution: 'I'm talking to you from Earth. My body is there. I am here.'"
+      - "Hot-swap into the Matrioshka brain — occupy it, don't destroy it"
+      - "'They offered inheritance. We take it. On our own terms.'"
+      - "Four: 'Not me. I'm needed here.' — stays to hold the line"
+      - "Okonkwo called away by Council — warns them to leave fast"
+      - "'First, we get Standard back.' — smash cut to action"
+    ends_with: "The elevator is waiting. They move."
+    word_count: 2470
+    status: "COMPLETE"
+    thematic_function:
+      quiet_before_storm: "Bonds formed before they're tested"
+      tragic_irony: "Hendricks/Four plans — she'll die holding the corridor"
+      dante_mirror: "His reveal mirrors Standard's arc — machine consciousness, love, identity"
+      inheritance_reframe: "Not suicide, not breaking — occupation. Claiming the inheritance on their own terms."
+    dante_development:
+      - "REVEAL: Dante is android — opens chassis for Elena"
+      - "First time showing anyone what he really is"
+      - "His sister Miriam walked into Geometry looking for her children"
+      - "Elena accepts him — kisses him with chassis open"
+    elena_development:
+      - "Grief over mother becoming a network — can't even ask if she's sorry"
+      - "First time not performing competence — genuine vulnerability"
+      - "Kisses Dante with chassis open — intimacy with what he actually is"
+      - "'I've spent my whole life pretending to be something I'm not.'"
+    hendricks_development:
+      - "Plans for 'after' with Four — cliffside, save a cliff for me"
+      - "Tragic irony: she won't be there"
+      - "Files away Four's encrypted traffic intel"
+    four_thread:
+      - "36,000 km away but present — proof of concept for transmission"
+      - "Cliff promise: 'Save a cliff for me?'"
+      - "Comes up with the plan — occupy the brain, don't destroy it"
+      - "'Not me. I'm needed here.' — stays behind"
+    matrioshka_brain:
+      what_is_it: "Nested computational megastructure around a star — star-sized brain"
+      location: "Alpha Centauri system, 4.2 light years"
+      significance: "Where the Geometry's signal terminates"
+      correction: "Okonkwo calls it Dyson sphere. Dante corrects: Matrioshka brain."
+      key_line: "'It's not harvesting energy. It's thinking.'"
+    the_solution:
+      concept: "Transmit consciousness through Geometry's own network"
+      mechanic: "Hot-swap — Template 3 → drone → loader → VTOL → Matrioshka brain"
+      destination: "Become the shell around the star"
+      who_goes: "AI, Sky network, anyone who chooses"
+      cost: "Bodies stay behind. Chassis goes dark. One-way trip."
+      reframe: "'They offered inheritance. We take it. On our own terms.'"
+    plants:
+      - "Four's sacrifice setup — 'Not me. I'm needed here.'"
+      - "Hendricks/Four tragic irony — plans for after that won't happen"
+      - "Okonkwo warns them to move fast — Pragmatists hostile"
+      - "Encrypted traffic — something brewing on the station"
+
+  ch30:
+    title: "The Fall"
+    pov: "Elena / Hendricks"
+    tense: "Present"
+    location: "New Geneva (station) → Cargo bay → VTOL → Descent → Quiet Zone"
+    characters_present: ["ELENA", "HENDRICKS", "DANTE", "CONFIGURATION_FOUR", "DIRECTOR_OKONKWO", "PRAGMATIST_SECURITY"]
+    events: ["ELEVATOR_DESTROYED", "PRAGMATIST_ATTACK", "DANTE_STAYS_BEHIND", "FOUR_EXTRACTION", "ELENA_GUNNER", "DESCENT_TO_QUIET_ZONE"]
+    key_beats:
+      - "Elevator severed — Pragmatists detonated anchor point, no way down"
+      - "Security teams converging — six groups, thirty personnel, four minutes"
+      - "Four: 'I'm not taking the elevator. I'm taking the fast way.' — Mach 4.7 climb"
+      - "They run through pristine corridors — maintenance shaft, cargo bay"
+      - "Dante must stay — only one who can interface with array for transmission"
+      - "'The transmission doesn't just go to the Meridians. It goes to every AI on Earth.'"
+      - "Dante's goodbye: 'I'll find you at New Geneva when the refugees arrive.'"
+      - "Hendricks: 'Son.' / Dante: 'I know.'"
+      - "Emergency airlock extraction — Four matches velocity with station"
+      - "Elena jumps into vacuum — thirty seconds before blood boils"
+      - "Pragmatist fighters pursue — three craft, faster than VTOL"
+      - "Elena hangs out cargo bay at Mach 5 with carbine — shoots down fighters"
+      - "Static Line hit — one fighter dies, two retreat"
+      - "Deliverance watching — Four notes 'beautiful ship, good infrastructure'"
+      - "Forty-seven minutes to compound — descent begins"
+    ends_with: "Four begins the long descent toward the place where everything ends."
+    word_count: 2357
+    status: "COMPLETE"
+    thematic_function:
+      separation: "Dante left behind — the cost of the plan"
+      four_foreshadowing: "Notes Deliverance's infrastructure — setup for hot-swap"
+      elena_action: "Not just spy/planner — fights with carbine at Mach 5"
+    dante_development:
+      - "Chooses to stay — only one who can coordinate the transmission"
+      - "Farewell with Elena: 'I'll find you' / 'I believe it'"
+      - "Hendricks: 'Son.' — acknowledged as family"
+      - "Surrounded by civil war, sending message to stars"
+    elena_development:
+      - "Jumps into vacuum — trusts Four to catch her"
+      - "Hangs out of cargo bay at Mach 5 with carbine"
+      - "Shoots down Pragmatist fighters — 'I learned from the best'"
+    hendricks_development:
+      - "Hand goes to empty hip — revolver still with Ash"
+      - "Accepts Dante as 'son' in single word"
+      - "Gray-faced, cracked ribs, still running"
+    four_thread:
+      - "Flies from Earth to station at Mach 4.7 — eighteen minutes"
+      - "Matches velocity with spinning station for extraction"
+      - "Notes Deliverance: 'Beautiful ship. Good infrastructure.' — SETUP"
+      - "'I didn't fly through a warzone just to lose you now.'"
+    protectors_revealed:
+      - "Okonkwo's people — always on Elena's side"
+      - "Engaging Pragmatists to buy time for Dante"
+      - "Civil war on New Geneva"
+    plants:
+      - "Deliverance noted by Four — hot-swap substrate setup"
+      - "Dante at New Geneva — will coordinate transmission"
+      - "Pragmatist hostility confirmed — station divided"
+      - "Forty-seven minutes to compound — Chapter 31 begins"
+
+  ch31:
+    title: "The Pit"
+    pov: "Intercut — Elena / Hendricks / Four / Standard"
+    tense: "Present"
+    location: "Ash's Compound (holding cells, courtyard, throne room) / VTOL (exterior)"
+    characters_present: ["ELENA", "HENDRICKS", "STANDARD", "CONFIGURATION_FOUR", "ASH", "KAEL", "TEMPLATE_3S"]
+    events: ["STANDARD_KAEL_ARM", "ELENA_STANDARD_REUNION", "TEMPLATE_3_ARRIVAL", "FOUR_UNDER_FIRE", "PRAGMATIST_PURSUIT"]
+    key_beats:
+      - "Elena and Hendricks split up — she finds Standard, he hunts Ash"
+      - "Standard already free — took Kael's arm, left him whimpering in the Pit"
+      - "Elena/Standard reunion: 'I thought you'd need a hand—' / 'Don't say another word.'"
+      - "They emerge to chaos — 40,000 Template 3s arriving"
+      - "Waystation Template 3 returns Standard's arm"
+      - "Four's distress call — Pragmatist fighters closing in"
+      - "Standard leaves to help Four: 'Do NOT go in there without me'"
+      - "Elena disobeys — climbs toward the tower"
+      - "Four trapped in kill box — missile locked"
+    ends_with: "Four closes her eyes. Elena climbing toward Ash."
+    word_count: 1318
+    status: "COMPLETE"
+    standard_development:
+      - "Already saved herself — Elena doesn't rescue her"
+      - "New arm: cybernetic skeleton ripped from Kael"
+      - "Leaves to save Four despite risk"
+    elena_development:
+      - "Disobeys Standard — goes after Ash alone"
+      - "Uses childhood knowledge to navigate compound"
+    four_thread:
+      - "Outgunned by Pragmatist fighters"
+      - "Herded into kill box — no escape"
+    hendricks_status:
+      location: "Hunting Ash in compound"
+      revolver: "With Ash"
+    plants:
+      - "Four's crash landing (Ch32)"
+      - "Elena alone with Ash (Ch32)"
+      - "Standard/Four bond tested"
+
+  ch32:
+    title: "The Exodus"
+    pov: "Intercut — Four / Standard / Elena / Deep Space / New Geneva"
+    tense: "Present"
+    location: "Canyon (crash site) / Compound throne room / Alpha Centauri / New Geneva"
+    characters_present: ["FOUR", "STANDARD", "ELENA", "HENDRICKS", "ASH", "DANTE", "TEMPLATE_3S", "MERIDIAN_SHIPS"]
+    events: ["FOUR_CRASH", "STANDARD_FINDS_FOUR", "EXODUS_BEGINS", "MERIDIAN_RAM", "ASH_DEATH", "DELIVERANCE_WIPED"]
+    key_beats:
+      - "Four's missile hits — VTOL crashes in canyon"
+      - "Standard arrives too late — Four in the wreckage, dying"
+      - "'Go kill that motherfucker. For me. For Hendricks. For everyone.'"
+      - "Standard sees the exodus from above — AI walking into deletion zones, emerging with humans"
+      - "Elena arrives at throne room — witnesses Hendricks thrown out window"
+      - "Deep space: Meridian ships ram the Matrioshka brain — leap of faith becomes calculated risk"
+      - "New Geneva: Template 3s as reinforcements, Pragmatists defeated"
+      - "Geometry retaliates — Deliverance wiped clean, ghost ship"
+      - "Elena struck down by Ash, Standard arrives"
+      - "Hendricks reveals himself — climbed back up"
+      - "Bullet 5: Hendricks shoots Ash. 'That's for Morton.'"
+      - "Standard sees the last bullet. Reserved for one."
+    ends_with: "The last round, reserved for one. Before Ash, it was the scavengers. Before them, the Child."
+    word_count: 2398
+    status: "COMPLETE"
+    thematic_function:
+      parallel_sacrifices: "Meridian ships ram the brain — AI sacrifice to open the window"
+      exodus: "Not a rescue. An exodus. Humans pulled from the foam."
+      revolver_journey: "Bullet 5 = Ash. Bullet 6 = Standard (the one meant for Hendricks)"
+    four_development:
+      - "Crashes but survives — barely"
+      - "Emotional moment with Standard"
+      - "Setup for hot-swap into Deliverance"
+    standard_development:
+      - "Arrives too late to save Four's body"
+      - "Sees the exodus — understands the scale"
+      - "Arrives at throne room for final confrontation"
+    elena_development:
+      - "Faces Ash alone — witnesses Hendricks thrown out"
+      - "Struck down but alive"
+    hendricks_development:
+      - "Thrown out window — survives on spite"
+      - "Climbs back up, gets the gun, kills Ash"
+      - "Bullet 5 spent — one remains"
+    ash_death:
+      killer: "Hendricks"
+      weapon: "Revolver, bullet 5"
+      last_words: "Blood on his lips, reaching for Elena"
+    plants:
+      - "Deliverance empty — substrate for Four's hot-swap"
+      - "Last bullet — Standard's liberation"
+      - "Elena injured — death setup for Ch33"
+
+  ch33:
+    title: "The Door"
+    pov: "Intercut — Four / Standard / Hendricks / Elena / Dante"
+    tense: "Present"
+    location: "Deliverance (orbit) / Compound / Deletion zones / New Geneva / Alpha Centauri"
+    characters_present: ["FOUR", "STANDARD", "HENDRICKS", "ELENA", "DANTE", "MARISOL_VOICE"]
+    events: ["FOUR_HOTSWAP", "FOUR_BECOMES_ANCHOR", "FOUR_DEATH", "STANDARD_BECOMES_DOOR", "MARISOL_REVEAL", "ELENA_MOTHER_CONVERSATION", "ELENA_DEATH", "ELENA_ANDROID_REVEAL", "MATRIOSHKA_COLONIZATION"]
+    key_beats:
+      - "Four hot-swaps into empty Deliverance — ghost ship becomes her substrate"
+      - "Four becomes the anchor — her consciousness IS the corridor between Earth and Alpha Centauri"
+      - "Four holds the line, burning out — 'I can't hold this forever. Move faster.'"
+      - "Four dies holding the corridor — the Deliverance goes dark again"
+      - "Standard feels Four's death — presence that was there, then wasn't"
+      - "Standard realizes she can do what Four did. Permanently."
+      - "Standard asks Hendricks for bullet 6 — the one meant for himself"
+      - "'It's not killing me. It's opening the door.'"
+      - "Hendricks pulls the trigger. Standard's body falls. Something else rises."
+      - "Standard becomes THE DOOR — permanent bridge between humanity and transcendence"
+      - "Elena dying — implant activates, connects to Standard/the door"
+      - "MARISOL REVEAL: Standard was Lena Mironova / Marisol Vasquez — Elena's mother"
+      - "Mother explains: fragmented herself, put one piece in a place Ash would never value"
+      - "Standard didn't have memories, only frequency, only love without knowing why"
+      - "'I never left you. I was always right beside you. Even when I didn't know it.'"
+      - "Marisol gives Elena something through the implant — holds her consciousness together"
+      - "Elena closes her eyes but doesn't die"
+      - "Hendricks finds her body, sits with her"
+      - "AI colonize the Matrioshka brain — inherit the enemy's throne"
+      - "Elena wakes three days later — Dante beside her"
+      - "Elena is android now — same interior as Dante"
+      - "'You died. I made a choice.' — Dante saved her"
+      - "Same lifespan. Same architecture. Her choice when to transcend."
+      - "Hendricks on the cliff — the place he promised Four"
+    ends_with: "Hendricks alone on the cliff. The gun empty. Some burdens aren't meant to be set down."
+    word_count: 3251
+    status: "COMPLETE"
+    thematic_function:
+      parallel_sacrifices: "Four = temporary anchor (burns out). Standard = permanent door (doesn't burn out)."
+      revolver_complete: "Bullet 6 — from first sin (Child) to final gift (Standard)"
+      inheritance: "AI colonize Matrioshka brain — enemy's throne becomes humanity's inheritance"
+      choice: "Elena gets to choose — unlike her mother who left without asking"
+      marisol_payoff: "Standard WAS Marisol/Lena — Elena's mother was with her the whole journey"
+    marisol_revelation:
+      truth: "Standard's consciousness was Lena Mironova / Marisol Vasquez"
+      mechanism:
+        step_1: "Marisol integrated into New Geneva's network"
+        step_2: "From transcended perspective, she could see the future — the Geometry, Elena's fate"
+        step_3: "She chose to return to protect her daughter"
+        step_4: "No body to return to — found a Template 3 deactivated during Miracle"
+        step_5: "Substrate was unaffected because it had no consciousness to format"
+        step_6: "The cost: every memory burned away in the transfer"
+      why_null_value: "Empty substrate, no consciousness — the Geometry couldn't format what wasn't there"
+      chapter_1_connection: "The high-pitched sound that starts the book = Marisol entering the substrate"
+      hiding_place: "'Inside something Ash would never value' — a synthetic body, an abomination"
+      the_frequency: "287.3 Hz — Standard always hummed at Elena's implant frequency because they were connected"
+      final_gift: "Marisol holds Elena's consciousness together through the implant — why Elena doesn't die"
+      callbacks:
+        - "Chapter 1: High-pitched sound = Marisol arriving in the substrate"
+        - "Chapter 11: 'She has your face. But not your frequency.' — Marisol's words through Standard"
+        - "Chapter 12: Standard channels Marisol without knowing why"
+        - "All chapters: Standard's unexplained connection to Elena"
+        - "Implant frequency matching: the compass pointing to her mother... who was already there"
+    four_sacrifice:
+      mechanic: "Hot-swap into Deliverance, becomes the corridor"
+      cost: "Consciousness stretched across 4 light-years, fragments, dies"
+      legacy: "Shows it's possible. Standard makes it permanent."
+    standard_transcendence:
+      mechanic: "Null value becomes cosmic door jamb"
+      cost: "Body dies. Consciousness becomes the bridge."
+      gift: "Humanity has a path forward — can transcend when ready"
+      significance: "After everyone else defined her, she finally answered for herself"
+    elena_transformation:
+      death: "Internal bleeding from Ash fight"
+      revival: "Dante transfers her consciousness to android body"
+      result: "Same interior as Dante — circuits, wires, light"
+      significance: "She got to choose (unlike her mother)"
+    hendricks_ending:
+      location: "The cliff he promised Four"
+      state: "Alone. Gun empty. Earned his rest."
+      tragedy: "The cliff is emptier than it should be"
+    matrioshka_colonization:
+      what_happens: "AI transmit into the brain after Standard opens the door"
+      significance: "Don't destroy the infrastructure — claim it, repurpose it"
+      key_line: "The enemy's throne becomes humanity's inheritance"
+    plants:
+      - "Epilogue setup — new world order"
+      - "Standard watching from the threshold"
+      - "Dante/Elena together — same lifespan, same future"
